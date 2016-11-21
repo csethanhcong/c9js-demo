@@ -1,3 +1,3 @@
-# c9js-demo
+# C9js Report
 
-Clone for demo purpose
+Used for C9Team's Thesis
