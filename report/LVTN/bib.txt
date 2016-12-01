@@ -1,0 +1,67 @@
+\section{Tài li?u tham kh?o}
+
+\begin{thebibliography}{}
+
+\bibitem{dataviz_wiki} Data visualization - Wikipedia. \url{https://en.wikipedia.org/wiki/Data_visualization}
+
+\bibitem{wiki_history_1} Data Visualization for Human Perception, The Interaction Design Foundation, Retrieved 2015-11-23. \url{https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/data-visualization-for-human-perception}
+
+\bibitem{wiki_history_2} Friendly \& Michael, "A Brief History of Data Visualization", York University, Springer-Verlag, Retrieved 2015-11-22, \url{http://www.datavis.ca/papers/hbook.pdf}
+
+\bibitem{c9js_github} C9js OpenSource, GitHub, 2016, \url{https://github.com/csethanhcong/C9js}
+
+\bibitem{c9js_repo} C9js Repository, 2016, \url{https://en.wikipedia.org/wiki/Repository_(version_control)}
+
+\bibitem{paper1} Steve LaValle, Eric Lesser, Rebecca Shockley, Michael S. Hopkins and Nina Kruschwitz, MIT. Big Data, Analytics and the Path From Insights to Value, 2015. \url{http://search.proquest.com/openview/863e390a27e9a69d59ee5ffe2204f293/1?pq-origsite=gscholar}
+
+\bibitem{web_evolution} The Evolution of the Web, Google, Hyperakt, Vizzuality. \url{http://www.evolutionoftheweb.com/}
+
+\bibitem{technology_boom} Bùng n? thông tin: co h?i và thách th?c, 18/08/2015. \url{http://skhcn.binhthuan.gov.vn/wps/portal/!ut/p/c4/04_SB8K8xLLM9MSSzPy8xBz9CP0os3hfRxMDTyNnA3cLPzdDA88woxBfc89gQxd3Y_2CbEdFAPd11IA!/?WCM_PORTLET=PC_7_MA40I2C0G8NF10IV2TM7IS1D45_WCM&WCM_GLOBAL_CONTEXT=/wps/wcm/connect/sbn_khcn_vi/sbn_khcn/kho_noi_dung/tin_tuc/hoat_dong/b070b5004985499baf8bbf7ba796b3b8&cur_id=b070b5004985499baf8bbf7ba796b3b8}
+
+
+\bibitem{bigdata} T.Alan Keahey, IBM. Using visualization to understand big data, 2013. \url{www.iotdataviz.com/meetup/1/YTW03349USEN.PDF}
+
+\bibitem{gapminder} Gapminder. About Gapminder, 22, 5, 2016. \url{http://www.gapminder.org/about-gapminder/our-mission/}
+
+\bibitem{gapminderworld} Gapminder World?. How may I use Gapminder World?. \url{http://www.gapminder.org/faq_frequently_asked_questions/#13}
+
+\bibitem{subgraph} Gapminder Sub-graph. Examples about Gapminder sub-graph. \url{https://www.gapminder.org/tools/bubbles#_state_marker_size}
+
+
+\bibitem{c3js} c3js. C3.js | D3-based reusable chart library, 22, 5, 2016. \url{http://c3js.org/}
+
+\bibitem{mapme} Maps built with Mapme. Plot your Story - Combine maps, photos, videos \& words. \url{http://mapme.com/gallery/}
+
+\bibitem{osm} OpenStreetMap. The project that creates and distributes free geographic data for the world. \url{https://www.openstreetmap.org/}
+
+\bibitem{prototypejs} Prototype JavaScript Framework. A foundation for ambitious web applications, 2, 2005. \url{https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework}
+
+\bibitem{es6} ECMAScript 6 — New Features: Overview \& Comparison. Copyright (c) 2015-2016 Ralf S. Engelschall. \url{http://es6-features.org/}
+
+\bibitem{jqueryusage} W3Techs. Usage statistics and market share of JQuery for websites, 10, 4, 2016. \url{https://w3techs.com/technologies/details/js-jquery/all/all}
+
+\bibitem{jqueryintro1} jQuery. jQuery, 10, 4, 2016. \url{https://jquery.com/}
+
+\bibitem{jqueryintro2} Wikipedia. jQuery, 22, 5, 2016. \url{https://en.wikipedia.org/wiki/JQuery}
+
+\bibitem{sizzle} Wiki. Sizzle. \url{https://github.com/jquery/sizzle/wiki}
+
+\bibitem{gha} World Health Organization (WHO). Global Health Atlas, 10, 4, 2016. \url{http://apps.who.int/globalatlas/}
+
+\bibitem{ghaex} WHO. Health workforce: Density of physicsians, 10, 4, 2016. \url{http://gamapserver.who.int/gho/interactive_charts/health_workforce/PhysiciansDensity_Total/atlas.html}
+
+\bibitem{d3jsintro1} D3.js. D3.js - Data-Driven Documents, 10, 4, 2016. \url{https://d3js.org/}
+
+\bibitem{d3jsintro2} Dashing D3.js. Why build Data Visualization with D3.js, 10, 4, 2016. \url{https://www.dashingd3js.com/why-build-with-d3js}
+
+\bibitem{jsintro} Mozilla Developer Network. Introduction - JavaScript, 10, 4, 2016. \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction}
+
+\bibitem{ol} Open Layers 3. A high-performance, feature-packed library for all your mapping needs. \url{http://openlayers.org/en/latest/doc/}
+
+\bibitem{googlemap} Google Maps. Web mapping service developed by Google, 10, 2004. \url{https://en.wikipedia.org/wiki/Google_Maps}
+
+\bibitem{bingmap} Bing Maps. Web mapping service provided as a part of Microsoft's Bing suite of search engines and powered by the Bing Maps for Enterprise framework, 12, 5, 2010. \url{https://en.wikipedia.org/wiki/Bing_Maps}
+
+\bibitem{ol3} Open Layers 3. Release Builds \url{http://openlayers.org/download/}
+
+\end{thebibliography}

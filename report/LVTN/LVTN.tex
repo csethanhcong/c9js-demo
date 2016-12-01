@@ -8,6 +8,224 @@
 \usepackage{extramarks} % Required for headers and footers
 \usepackage[usenames,dvipsnames]{color} % Required for custom colors
 \usepackage{graphicx} % Required to insert images
+\usepackage[nottoc]{tocbibind} % Required to generate bibliography
+
+% Required to counter number of caption in each figure
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+
+% Required to style figure number
+\usepackage{caption}
+\captionsetup[figure]{font=small,labelfont=bf}
+\captionsetup[lstlisting]{font=small,labelfont=bf}
+
+% Required to redefine space of section, subsection
+\usepackage{titlesec}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+% Set spacing between each paragraph
+\setlength{\parindent}{4em}
+\setlength{\parskip}{1em}
+\renewcommand{\baselinestretch}{1.2}
+
+% Required to create new blank page
+\newcommand*\NewPage{\newpage\null\thispagestyle{empty}\newpage}
+
+% Required to define JS-like quote
+\usepackage{listings}
+\usepackage{color}
+\definecolor{editorGray}{rgb}{0.95, 0.95, 0.95}
+\definecolor{editorOcher}{rgb}{1, 0.5, 0} % #FF7F00 -> rgb(239, 169, 0)
+\definecolor{editorGreen}{rgb}{0, 0.5, 0} % #007C00 -> rgb(0, 124, 0)
+\usepackage{upquote}
+\usepackage{listings}
+\lstdefinelanguage{JavaScript}{
+  morekeywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
+  morecomment=[s]{/*}{*/},
+  morecomment=[l]//,
+  morestring=[b]",
+  morestring=[b]'
+}
+
+\lstdefinelanguage{HTML5}{
+        language=html,
+        sensitive=true, 
+        alsoletter={<>=-},
+        otherkeywords={
+        % HTML tags
+        <, </, >,
+            </a, <a, </a>,
+            </abbr, <abbr, </abbr>,
+            </address, <address, </address>,
+            </area, <area, </area>,
+            </area, <area, </area>,
+            </article, <article, </article>,
+            </aside, <aside, </aside>,
+            </audio, <audio, </audio>,
+            </audio, <audio, </audio>,
+            </b, <b, </b>,
+            </base, <base, </base>,
+            </bdi, <bdi, </bdi>,
+            </bdo, <bdo, </bdo>,
+            </blockquote, <blockquote, </blockquote>,
+            </body, <body, </body>,
+            </br, <br, </br>,
+            </button, <button, </button>,
+            </canvas, <canvas, </canvas>,
+            </caption, <caption, </caption>,
+            </cite, <cite, </cite>,
+            </code, <code, </code>,
+            </col, <col, </col>,
+            </colgroup, <colgroup, </colgroup>,
+            </data, <data, </data>,
+            </datalist, <datalist, </datalist>,
+            </dd, <dd, </dd>,
+            </del, <del, </del>,
+            </details, <details, </details>,
+            </dfn, <dfn, </dfn>,
+            </div, <div, </div>,
+            </dl, <dl, </dl>,
+            </dt, <dt, </dt>,
+            </em, <em, </em>,
+            </embed, <embed, </embed>,
+            </fieldset, <fieldset, </fieldset>,
+            </figcaption, <figcaption, </figcaption>,
+            </figure, <figure, </figure>,
+            </footer, <footer, </footer>,
+            </form, <form, </form>,
+            </h1, <h1, </h1>,
+            </h2, <h2, </h2>,
+            </h3, <h3, </h3>,
+            </h4, <h4, </h4>,
+            </h5, <h5, </h5>,
+            </h6, <h6, </h6>,
+            </head, <head, </head>,
+            </header, <header, </header>,
+            </hr, <hr, </hr>,
+            </html, <html, </html>,
+            </i, <i, </i>,
+            </iframe, <iframe, </iframe>,
+            </img, <img, </img>,
+            </input, <input, </input>,
+            </ins, <ins, </ins>,
+            </kbd, <kbd, </kbd>,
+            </keygen, <keygen, </keygen>,
+            </label, <label, </label>,
+            </legend, <legend, </legend>,
+            </li, <li, </li>,
+            </link, <link, </link>,
+            </main, <main, </main>,
+            </map, <map, </map>,
+            </mark, <mark, </mark>,
+            </math, <math, </math>,
+            </menu, <menu, </menu>,
+            </menuitem, <menuitem, </menuitem>,
+            </meta, <meta, </meta>,
+            </meter, <meter, </meter>,
+            </nav, <nav, </nav>,
+            </noscript, <noscript, </noscript>,
+            </object, <object, </object>,
+            </ol, <ol, </ol>,
+            </optgroup, <optgroup, </optgroup>,
+            </option, <option, </option>,
+            </output, <output, </output>,
+            </p, <p, </p>,
+            </param, <param, </param>,
+            </pre, <pre, </pre>,
+            </progress, <progress, </progress>,
+            </q, <q, </q>,
+            </rp, <rp, </rp>,
+            </rt, <rt, </rt>,
+            </ruby, <ruby, </ruby>,
+            </s, <s, </s>,
+            </samp, <samp, </samp>,
+            </script, <script, </script>,
+            </section, <section, </section>,
+            </select, <select, </select>,
+            </small, <small, </small>,
+            </source, <source, </source>,
+            </span, <span, </span>,
+            </strong, <strong, </strong>,
+            </style, <style, </style>,
+            </summary, <summary, </summary>,
+            </sup, <sup, </sup>,
+            </svg, <svg, </svg>,
+            </table, <table, </table>,
+            </tbody, <tbody, </tbody>,
+            </td, <td, </td>,
+            </template, <template, </template>,
+            </textarea, <textarea, </textarea>,
+            </tfoot, <tfoot, </tfoot>,
+            </th, <th, </th>,
+            </thead, <thead, </thead>,
+            </time, <time, </time>,
+            </title, <title, </title>,
+            </tr, <tr, </tr>,
+            </track, <track, </track>,
+            </u, <u, </u>,
+            </ul, <ul, </ul>,
+            </var, <var, </var>,
+            </video, <video, </video>,
+            </wbr, <wbr, </wbr>,
+            />, <!
+        },  
+        ndkeywords={
+        % General
+        =,
+        % HTML attributes
+        charset=, id=, width=, height=,
+        % CSS properties
+        border:, transform:, -moz-transform:, transition-duration:, transition-property:, transition-timing-function:
+        },  
+        morecomment=[s]{<!--}{-->},
+        tag=[s]
+}
+
+\lstset{%
+    % Basic design
+    backgroundcolor=\color{editorGray},
+    basicstyle={\small\ttfamily},   
+    frame=l,
+    % Line numbers
+    xleftmargin={0.75cm},
+    numbers=left,
+    stepnumber=1,
+    firstnumber=1,
+    numberfirstline=true,
+    % Caption
+    captionpos=b,
+    % Code design   
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{darkgray}\ttfamily,
+    ndkeywordstyle=\color{editorGreen}\bfseries,
+    stringstyle=\color{editorOcher},
+    % Code
+    language=HTML5,
+    alsolanguage=JavaScript,
+    alsodigit={.:;},
+    tabsize=2,
+    showtabs=false,
+    showspaces=false,
+    showstringspaces=false,
+    extendedchars=true,
+    breaklines=true,        
+    % Support for German umlauts
+    literate=%
+    {Ö}{{\"O}}1
+    {Ä}{{\"A}}1
+    {Ü}{{\"U}}1
+    {ß}{{\ss}}1
+    {ü}{{\"u}}1
+    {ä}{{\"a}}1
+    {ö}{{\"o}}1
+}
+\renewcommand{\lstlistingname}{\textbf{Mã nguồn}}% Listing -> Code
+\renewcommand{\lstlistlistingname}{Danh sách \lstlistingname}% List of Listings -> List of Code
+
+% Center the caption
+\usepackage[justification=centering]{caption}
 
 % Margins
 \topmargin=-0.45in
@@ -83,6 +301,7 @@
 \begin{flushleft} \large
 \textbf{Hội đồng:}\\
 \tab[2cm] GVHD: TS. Lương Thế Nhân\\
+\tab[2cm] GVHD: TS. Huỳnh Tường Nguyên\\
 \tab[2cm] GVPB: ThS. Trần Giang Sơn\\
 \end{flushleft}
 
@@ -104,7 +323,14 @@
 \end{titlepage}
 
 \thispagestyle{empty}
+\NewPage
 \tableofcontents
+\NewPage
+\newpage
+\listoffigures % Prints the list of figures
+\newpage
+\addcontentsline{toc}{section}{Danh sách mã nguồn}
+\lstlistoflistings
 \thispagestyle{empty}
 \newpage
 %----------------------------------------------%
@@ -137,23 +363,58 @@ Sự tăng trưởng trong khối lượng dữ liệu trong các dự án với
 
 Các công nghệ trên nền Web hiện đại như HTML5, CSS3 và các thư viện JavaScript mạnh mẽ mang đến những triển vọng về trực quan trên các trình duyệt hiện tại. Hiện tại đã có hàng chục, thậm chí hàng trăm các loại thư viện, framework và ứng dụng phục vụ cho nhu cầu trực quan tuỳ từng mục đích cụ thể của cá nhân, doanh nghiệp, các công trình nghiên cứu,...
 
-\subsubsection{Ngữ cảnh đề tài}
-
-
 \subsection{Lí do chọn đề tài}
+\myparagraph{Đam mê trong các công nghệ mới trên nền tảng Web}
+Ngày nay, \cite{web_evolution} Web ngày càng phát triển và trở thành một thế lực riêng, một đế chế riêng bao gồm các \textit{Web pages} và \textit{Web apps}, xây dựng nên từ các video, hình ảnh hay các nội dung tương tác. Điều mà người dùng phổ thông không để ý đến đó là các công nghệ Web và các trình duyệt đã đóng góp rất lớn trong quá trình trên.
 
+Qua thời gian, các công nghệ Web tiến hoá và ngày càng đem lại nhiều trả nghiệm mới lạ cho các lập trình viên, nhằm đáp ứng khả năng sáng tạo và tạo mọi điều kiện để họ thể hiện khả năng thông qua nó. 
+
+Nhóm đề tài gồm các thành viên từng làm việc với nhiều dự án liên quan đến Web. Đặc biệt đều có hứng thú và đam mê với khả năng của các xu hướng phát triển hiện tại, cũng như muốn khám phá khả năng bản thân trong thế giới luôn luôn đổi mới không ngừng của Web, đó là một trong những lí do nhóm chọn đề tài này.
+
+\myparagraph{Đóng góp vào sự phát triển của trực quan dữ liệu}
+\cite{technology_boom} Có thể nói, với sự phát triển khoa học và công nghệ như vũ bảo vào những năm cuối thập niên này,những sản phẩm công nghệ  mới phát triển rầm rộ đã đem lại nhiều tiện ích cho cuộc sống, nó được ứng dụng rộng rãi ở nhiều lĩnh vực; đặc biệt là lĩnh vực thông tin truyền thông. Hệ thống thông tin điện tử, trực tuyến, các Website của các tổ chức, đơn vị, doanh nghiệp được phát triển mạnh mẽ, góp phần tăng cường mối quan hệ, giao lưu, hợp tác phát triển ở nhiều lĩnh vực, nhất là lĩnh vực kinh tế , văn hóa xả hội, khoa học công nghệ, y tế, giáo dục, giải trí, con người có trong tay nhiều công cụ để chia sẻ thông tin của mình qua blog, website, diễn đàn, qua  các trang mạng xã hội như Facebook, Youtube, Twitter.
+
+Trong thời đại bùng nổ thông tin hiện nay, được tiếp sức bởi các loại công nghệ tiên các phương tiện thông tin hiện đại đã giúp cho thế giới xích lại gần nhau một cách nhanh chóng hơn. Đặc biệt, công nghệ truyền thông Internet đang phát triển như vũ bão, tạo nên những siêu lộ thông tin có dung lượng lớn và tốc độ cao, chuyển tải mọi thông tin một cách nhanh chóng.
+
+Trong thời đại mà thông tin được coi như một loại tài sản, việc kết hợp trực quan dữ liệu với Web có thể được xem như một xu thế mới, một hướng đi đầy tiềm năng trong tương lại. Với mong muốn đóng góp vào quá trình này, đề tài \textit{Trực quan dữ liệu với C9js} có thể xem như một viên gạch trong bức tường đang xây dựng của trực quan dữ liệu.
 \subsection{Mục tiêu đề tài}
+%----------------------------------%
+\myparagraph{Rút ngắn thời gian cho các lập trình viên}
+Mang trực quan dữ liệu trở thành một ứng dụng trên nền Web vừa dễ vừa khó. Dễ ở việc các công nghệ Web rất đa dạng, phong phú, thậm chí là bao la khi đáp ứng các nhu cầu của trực quan dữ liệu. Nhưng đó cũng là điểm hạn chế, khi có quá nhiều thư viện, nền tảng, công nghệ lập trình viên cần nắm rõ và kết hợp nếu muốn hiện thực ý tưởng thành một ứng dụng mang tính thực tế trên Web.
+
+Bản thân nhóm cũng là các lập trình viên thích khám phá và nghiên cứu các công nghệ mới và phong phú trong thế giới Web. Mục tiêu thư viện C9js đề ra là giúp các lập trình viên khác khi sử dụng C9js sẽ cảm thấy dễ dàng nắm bắt, không đòi hỏi quá nhiều nỗ lực trong việc tìm hiểu hay xây dựng một ví dụ mẫu. Mặt khác, giảm thiểu tối đa thời gian cần thiết để đưa trực quan dữ liệu lên Web của mình.
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Hướng đến cộng đồng mã nguồn mở}
+C9js hiện tại được triển khai là một mã nguồn mở (open-source) tại GitHub\cite{c9js_github}. Các công nghệ được sử dụng trong C9js hoàn toàn là mã nguồn mở, nên nhóm quyết định đóng góp vào cộng đồng một thư viện với khả năng mang trực quan dữ liệu trở thành một công cụ dễ dàng triển khai trên Web. 
+
+Về kiến trúc, cũng như tài liệu (documentation), C9js được thể hiện rất rõ ràng với mong muốn ngay từ ban đầu là nhận được sự đóng góp cũng như phát triển lâu dài từ các lập trình viên khác trong cộng đồng mã nguồn mở GitHub. Hiện tại, repository\cite{c9js_repo} của C9js trên GitHub đã nhận được sự quan tâm và đánh giá từ cộng đồng. Các thông số cụ thể (tính đến thời điểm bài báo cáo này) như hình 1.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.8]{image/repo_status}
+    \caption{Thông số đánh giá nhận được từ GitHub}
+    \label{fig:repo_status}
+	\end{center}
+\end{figure}
+%----------------------------------%
+
 %----------------------------------------------%
+\newpage
 \section{Kiến thức nền tảng và Công nghệ}
 \subsection{Công trình liên quan}
 \subsubsection{Công cụ hỗ trợ trực quan dữ liệu phân tán Gapminder}
+%----------------------------------%
 \myparagraph{Giới thiệu}
 Gapminder\cite{gapminder} được thành lập tại Stockholm bởi Ola Rosling, Anna Rosling Rönnlund và Hans Rosling vào ngày 25 tháng 2 năm 2005. 
 
 Gapminder là một tổ chức phi lợi nhuận nhằm thúc đẩy sự phát triển bền vững toàn cầu, và là một thành tựu đánh dấu mục tiêu phát triển mang tầm thế kỷ của tổ chức Liên Hiệp Quốc (United Nations). Với mục tiêu đề ra nhằm gia tăng khả năng tìm hiểu, phân tích và đánh giá các thống kê , dữ liệu liên quan đến các vấn đề xã hội, tài chính và phát triển môi trường ở địa phương, quốc gia, và tầm thế giới.
 
 Gapminder hoạt động dựa trên nền tảng được xác định trước, xây dựng các dịch vụ bởi ban quản trị, đôi khi hợp tác với các dự án  tại các trường đại học, các tổ chức quốc tế, cơ quan Nhà nước cũng như các tổ chức phi chính phủ.
+%----------------------------------%
 
+%----------------------------------%
 \myparagraph{Mục tiêu}
 Các hoạt động ban đầu là theo đuổi sự phát triển của ứng dụng Trendalyzer (tháng 3 năm 2006). Trendalyzer là một phần mềm biểu diễn chuỗi thời gian thống kê bằng cách chuyển đổi những con số khô khan, nhàm chán thành các đồ thị chuyển động thú vị, và đặc biệt là khả năng tương tác. Trendalyzer còn được biết đến dưới tên gọi Gapminder World, xây dựng trên nền tảng web biểu diễn dữ liệu thống kê theo dòng thời gian cho tất cả các quốc gia trên thế giới.
 
@@ -167,71 +428,86 @@ Từ năm 2008 Gapminder còn cung cấp các biểu đồ con (sub-graph)\cite{
 	\begin{center}
     \includegraphics[scale=.4]{image/gapminder}
     \caption{Đồ thị trực quan dữ liệu Gapminder World}
-    \label{refhinh1}
+    \label{fig:gapminder}
 	\end{center}
 \end{figure}
 
-Như ở hình 1, chúng ta có thể thấy với 1 lượng dữ liệu lớn (ở đây là độ tuổi kỳ vọng ở các quốc gia trên thế giới), có thể được thể hiện trực quan bởi đồ thị bong bóng (bubble chart). Qua kích thước các bong bóng, có thể thấy sự tương quan khác biệt giữa các quốc gia như thế nào. Hay khi trỏ vào 1 bong bóng, chúng ta thấy được số liệu chi tiết ở quốc gia đó, như trong hình là độ tuổi kỳ vọng ở Ấn Độ, vào năm 1962 là 42.6. Ngoài ra ở phía dưới đồ thị, có 1 thanh thể hiện dòng thời gian (timeline), khi thanh thời gian trượt đi, kích thước các quả bóng thay đổi theo như số liệu tương ứng ở các năm của các quốc gia.
+Như ở hình 2, chúng ta có thể thấy với 1 lượng dữ liệu lớn (ở đây là độ tuổi kỳ vọng ở các quốc gia trên thế giới), có thể được thể hiện trực quan bởi đồ thị bong bóng (bubble chart). Qua kích thước các bong bóng, có thể thấy sự tương quan khác biệt giữa các quốc gia như thế nào. Hay khi trỏ vào 1 bong bóng, chúng ta thấy được số liệu chi tiết ở quốc gia đó, như trong hình là độ tuổi kỳ vọng ở Ấn Độ, vào năm 1962 là 42.6. Ngoài ra ở phía dưới đồ thị, có 1 thanh thể hiện dòng thời gian (timeline), khi thanh thời gian trượt đi, kích thước các quả bóng thay đổi theo như số liệu tương ứng ở các năm của các quốc gia.
+%----------------------------------%
 
+%----------------------------------%
 \myparagraph{Phương pháp}
 Gapminder sử dụng D3.js, một thư việc JavaScript phổ biến trong việc thao tác với các thành phần của một trang web (Document Object Model) dựa trên dữ liệu. 
 
 D3 cho phép thể hiện dữ liệu thông qua HTML, SVG và CSS. D3 còn là một tiêu chuẩn web cung cấp hầu hết các khả năng mà một trình duyệt hiện đại mang lại, mà không cần phải tự viết lại hay dựa trên một nền tảng khuôn khổ. Kết hợp các thành phần trực quan mạnh mẽ và hướng tiếp cận dữ liệu để thao tác trên DOM.
+%----------------------------------%
 
-\subsubsection{Đánh giá}
+%----------------------------------%
+\myparagraph{Đánh giá}
 Với mục tiêu luôn luôn cập nhật các công cụ cũng như dữ liệu, nhằm đảm bảo tính xác thực, và đúng đắn của ứng dụng, Gapminder World đảm bảo nguồn dữ liệu chính xác nhất và cập nhật nhất.
 Dữ liệu đề tài sẽ sử dụng từ Gapminder để đảm bảo nguồn thông tin luôn xác thực và thể hiện đúng đắn nhất các xu hướng phát triển toàn cầu.
 
 Ngoài ra, cách sử dụng các biểu đồ con để hiển thị dữ liệu liên quan của một đối tượng được tương tác giúp người dùng dễ dàng nắm bắt được chính xác các thông tin muốn truyền đạt, tăng tính thân thiện cũng như trải nghiệm người dùng. Áp dụng tính hiệu quả trên, đề tài đề xuất sử dụng cách thể hiện trải nghiệm người dùng (UI/UX) kế thừa các đặc tính của Gapminder World. 
 
 Về thư viện D3.js được sử dụng trong Gapminder World, đây là một thư viện mạnh mẽ tiếp cận dữ liệu dựa trên các thao tác với DOM. D3.js cho phép tái sử dụng các thành phần và trình nhúng (plugin) một cách đơn giản và hiệu quả. Đề tài đề xuất sử dụng D3.js làm thư viện chính để hiện thực thư viện tương tác giữa các đồ thị.
-
-\subsection{Global Health Atlas - WHO}
-\subsubsection{Giới thiệu}
+%----------------------------------%
+\subsubsection{Global Health Atlas - WHO}
+%----------------------------------%
+\myparagraph{Giới thiệu}
 Trong một môi trường điện tử, WHO’s Communicable Disease Global Atlas được dùng cho việc phân tích và so sánh dữ liệu chuẩn, thống kê các bệnh truyền nhiễm ở các quốc gia, vùng lãnh thổ, và toàn thế giới. Việc phân tích và biểu diễn dữ liệu ngày càng được hỗ trợ tốt hơn thông qua các thông tin về dân số, điều kiện kinh tế xã hội, và các yếu tố môi trường. Với việc làm đó, biểu đồ Atlas này có thể cho biết được những yếu tố gây ra bệnh truyền nhiễm (2007)\cite{gha}.
 \begin{figure}[htp]
     \begin{center}
     \includegraphics[scale=.4]{image/globalatlas}
     \caption{Biểu đồ tương tác về mật độ bác sĩ của WHO}
-    \label{refhinh2}
+    \label{fig:globalatlas}
     \end{center}
 \end{figure}
+%----------------------------------%
 
-\subsubsection{Mục tiêu}
+%----------------------------------%
+\myparagraph{Mục tiêu}
 Ban đầu, với mục đích cung cấp những dữ liệu, báo cáo về các bệnh truyền nhiễm chính (sốt rét, HIV/AIDS,..), thì ngày nay Global Atlas của WHO cũng dùng để phân tích, biểu diễn, so sánh dữ liệu từ những vấn đề liên quan đến y tế khác như: mật độ bác sĩ, số lượng người chết do tai nạn giao thông, tuổi thọ trung bình,… 
+%----------------------------------%
 
-\subsubsection{Phương pháp}
+%----------------------------------%
+\myparagraph{Phương pháp}
 Trực quan dữ liệu thành nhiều dạng biểu đồ khác nhau, các biểu đồ có thể tương tác với nhau giúp cho việc nhìn nhận, phân tích, đánh giá thông tin một cách chính xác, đầy đủ.
 
 Ứng dụng\cite{ghaex} bao gồm các thành phần:
 
-\indent \indent \textbullet \ Bảng dữ liệu: được lấy từ database của WHO
+\begin{list}{}{}
+\item[•] \emph{Bảng dữ liệu:} Được lấy từ database của WHO.
+\item[•] \emph{Bản đồ (Map):} Dùng thư viện Google Maps, kết hợp với bảng dữ liệu để tạo ra biểu đồ.
+\item[•] \emph{Biểu đồ cột:} Dựa vào bảng dữ liệu để tạo ra biểu đồ.
+\item[•] \emph{Chú thích:} Phân vùng dữ liệu.
+\end{list}
 
-\indent \indent \textbullet \ Map: dùng thư viện Google Maps, kết hợp với bảng dữ liệu để tạo ra biểu đồ
+Tính năng: Ứng dụng hỗ trợ tương tác giữa các biểu đồ, bảng dữ liệu
 
-\indent \indent \textbullet \ Biểu đồ cột: dựa vào bảng dữ liệu để tạo ra biểu đồ
+\begin{list}{}{}
+\item[•] Khi click vào một hàng trong bảng dữ liệu (hình 4), bên map sẽ phóng to đến vùng tương ứng, bên biểu đồ cột sẽ nổi bật cột tương ứng. Các tương tác sẽ được thể hiện tương tự khi click vào các biểu đồ.
 
-\indent \indent \textbullet \ Chú thích: phân vùng dữ liệu
-
-Tính năng: ứng dụng hỗ trợ tương tác giữa các biểu đồ, bảng dữ liệu:
-
-\indent \indent \textbullet \ Khi click vào 1 hàng trong bảng dữ liệu, bên map sẽ phóng to đến vùng tương ứng, bên biểu đồ cột sẽ nổi bật cột tương ứng. Các tương tác sẽ được thể hiện tương tự khi click vào các biểu đồ.
 \begin{figure}[htp]
     \begin{center}
     \includegraphics[scale=.4]{image/clickatlas}
     \caption{Tương tác khi click vào một hàng trong bảng dữ liệu}
-    \label{refhinh3}
+    \label{fig:clickatlas}
     \end{center}
 \end{figure}
-\indent \indent \textbullet \ Khi hover lên 1 hàng trong bảng dữ liệu, bên các biểu đồ cũng sẽ được làm nổi bật vùng tương ứng như khi click, nhưng với 1 màu sắc khác (bên map sẽ không phóng to đến vùng tương ứng).
+
+\item[•] Khi hover lên một hàng trong bảng dữ liệu (hình 5), bên các biểu đồ cũng sẽ được làm nổi bật vùng tương ứng như khi click, nhưng với 1 màu sắc khác (bên map sẽ không phóng to đến vùng tương ứng).
+\end{list}
+
 \begin{figure}[htp]
     \begin{center}
     \includegraphics[scale=.4]{image/hoveratlas}
     \caption{Tương tác khi hover lên Map}
-    \label{refhinh4}
+    \label{fig:hoveratlas}
     \end{center}
 \end{figure}
+%----------------------------------%
 
+%----------------------------------%
 \myparagraph{Đánh giá}
 Dữ liệu được WHO thu thập trên toàn thế giới, cập nhật theo thời gian, đảm bảo tính chính xác của ứng dụng.
 
@@ -240,8 +516,9 @@ Bên cạnh đó, việc trực quan thành nhiều loại biểu đồ, thể h
 Một tính năng khác đó là việc tương tác giữa các giữa các đồ thị giúp người dùng có nhiều cái nhìn từ nguồn dữ liệu, hiểu được thông tin rút trích từ các đồ thị, tăng tính thân thiện, trải nghiệm của người dùng.
 
 Do đó, đề tài đề xuất sử dụng nhiều đồ thị để biểu diễn cho nguồn dữ liệu đầu vào, và sự tương tác giữa các đồ thị.
-
+%----------------------------------%
 \subsubsection{Thư viện đồ thị C3.js}
+%----------------------------------%
 \myparagraph{Giới thiệu}
 C3.js là một thư viện mã nguồn mở \cite{c3js} dựa trên thư viện D3.js , nhằm cho phép người dùng có cái nhìn sâu hơn về các ứng dụng web tích hợp đồ thị.
 
@@ -250,46 +527,52 @@ Toàn bộ mã nguồn của thư viện nằm ở: \url{https://github.com/masa
 	\begin{center}
     \includegraphics[scale=.4]{image/c3js}
     \caption{Thư viện đồ thị C3js}
-    \label{refhinh5}
+    \label{fig:c3js}
 	\end{center}
 \end{figure}
+%----------------------------------%
 
+%----------------------------------%
 \myparagraph{Mục tiêu}
 \begin{itemize}
-        \item[•]Sự thoải mái (Comfortable):
-        C3 giúp người dùng có thể dễ dàng tạo một đồ thị dựa trên D3 bằng cách gộp chung các đoạn code cần thiết để cấu trúc một đồ thị hoàn chỉnh. Qua đó, người dùng không cần phải viết các đoạn code D3 rườm rà như trước nữa.
+    \item[•] \emph{Sự thoải mái (Comfortable):} C3 giúp người dùng có thể dễ dàng tạo một đồ thị dựa trên D3 bằng cách gộp chung các đoạn code cần thiết để cấu trúc một đồ thị hoàn chỉnh. Qua đó, người dùng không cần phải viết các đoạn code D3 rườm rà như trước nữa.
+    
 \begin{figure}[htp]
 	\begin{center}
     \includegraphics[scale=.3]{image/c3syntax}
     \caption{Thư viện đồ thị C3js}
-    \label{refhinh6}
+    \label{fig:c3syntax}
 	\end{center}
 \end{figure}
+
 [Hình 6] Thông qua một số câu lệnh định nghĩa dữ liệu, C3 khởi tạo một đồ thị cho phép tương tác một cách trực quan thông qua hover, click,.. các thành phần của đồ thị.
 
-        \item[•]Khả năng tuỳ chỉnh (Customizable):
-        C3 cung cấp các class tương ứng cho mỗi đối tượng trong đồ thị khi khởi tạo. Qua đó, người dùng có thể định nghĩa các style theo ý muốn theo class cũng như mở rộng cấu trúc các thành phần của đồ thị (trục dữ liệu, hình dạng hiển thị, kiểu đồ thị,.. ) một cách trực tiếp.
+    \item[•] \emph{Khả năng tuỳ chỉnh (Customizable):} C3 cung cấp các class tương ứng cho mỗi đối tượng trong đồ thị khi khởi tạo. Qua đó, người dùng có thể định nghĩa các style theo ý muốn theo class cũng như mở rộng cấu trúc các thành phần của đồ thị (trục dữ liệu, hình dạng hiển thị, kiểu đồ thị,.. ) một cách trực tiếp.
+    
 \begin{figure}[htp]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3custom}
     \caption{Thư viện đồ thị C3js}
-    \label{refhinh7}
+    \label{fig:c3custom}
 	\end{center}
-\end{figure}      
-[Hình 7] Trục hoành của đồ thị được tuỳ chỉnh theo thời gian hiện tại với định dạng hoàn toàn tuỳ thuộc người sử dụng.
+\end{figure}    
+  
+(Hình 7) Trục hoành của đồ thị được tuỳ chỉnh theo thời gian hiện tại với định dạng hoàn toàn tuỳ thuộc người sử dụng.
  
-        \item[•]Khả năng kiểm soát (Controllable):
-        C3 cung cấp đa dạng các APIs và các hàm callback để truy xuất trạng thái của đồ thị. Bằng cách đó, người dùng có thể cập nhật lại đồ thị thậm chí sau khi đồ thị đã được thể hiện. [Hình 8] Thể hiện một số thành phần được hỗ trợ bởi thư viện C3js.
+    \item[•] \emph{Khả năng kiểm soát (Controllable):} C3 cung cấp đa dạng các APIs và các hàm callback để truy xuất trạng thái của đồ thị. Bằng cách đó, người dùng có thể cập nhật lại đồ thị thậm chí sau khi đồ thị đã được thể hiện. [Hình 8] Thể hiện một số thành phần được hỗ trợ bởi thư viện C3js.
+    
 \begin{figure}[htp]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3apis}
     \caption{Thư viện đồ thị C3js}
-    \label{refhinh8}
+    \label{fig:c3apis}
 	\end{center}
 \end{figure}
 
 \end{itemize}
+%----------------------------------%
 
+%----------------------------------%
 \myparagraph{Phương pháp}
 Như đã trình bày ở trên, C3js sử dụng thư viện D3js nhằm tạo các đồ thị có khả năng tái sử dụng, cũng như giúp người dùng đào sâu hơn vào khái niệm trực quan dữ liệu thông qua đồ thị trên nền ứng dụng web.
 
@@ -299,51 +582,48 @@ Ngoài ra dựa theo cấu trúc mã nguồn mà C3js chia sẻ, có thể thấ
 	\begin{center}
     \includegraphics[scale=.4]{image/c3source}
     \caption{Thư viện đồ thị C3js}
-    \label{refhinh9}
+    \label{fig:c3source}
 	\end{center}
 \end{figure}
+%----------------------------------%
 
+%----------------------------------%
 \myparagraph{Đánh giá}
 Cách tổ chức và hiện thực theo hướng hướng đối tượng như trên giúp tiết kiệm số dòng mã, tận dụng khả năng tái sử dụng, đồng thời giúp việc mở rộng về sau rất hiệu quả.
 
 Đề tài đề xuất sử dụng cách hiện thực API theo hướng như thư viện C3js.
 
+%----------------------------------%
 \subsubsection{Ứng dụng tạo bản đồ online Mapme}
-
-\subsection{Kiến thức nền tảng}
-
-Trực quan dữ liệu đã trở thành một lĩnh vực nghiên cứu trong những năm gần đây. Nhiều trường đại học đã mở các Khoa chyên nghiên cứu về Trực quan và có một số chương trình ưu việt phục vụ nhu cầu nghiên cứu và chế tạo các nguyên mẫu của sinh viên. Cộng đồng nghiên cứu này bao gồm các cá nhân đến từ nhiều lĩnh vực không chỉ riêng Khoa học Máy tính, như tâm thần học và thậm chí các doanh nghiệp, nơi tạo môi trường lý tưởng để phát triển lý thuyết Trực quan một cách thực tế và mang tính cách mạng nhất.
-
-Chúng ta đang bắt đầu nhận thấy các sản phẩm Trực quan dữ liệu đang thực sự tiện ích như thế nào. Khi một công ty có thể phân tích big data, họ sẽ được nhiều lợi ích. Trong một cuộc khảo sát \cite{paper1}, 63\% cho rằng họ tin tưởng việc hiểu biết và khai thác big data 1 cách hiệu quả có thể tạo ra lợi thế cạnh tranh cho tổ chức. Phân tích big data có thể giúp họ cải thiện việc ra quyết định, tạo ra 1 cái nhìn toàn diện về khách hàng của họ, tăng tính bảo mật và kiểm soát, phân tích hoạt động và gia tăng kho dữ liệu. Trực quan hóa có vai trò quan trọng trong việc sử dụng big data để có 1 cái nhìn đầy đủ về khách hàng của họ.
-
-Bởi vì những lợi ích mà Trực quan hoá mang lại, dựa trên những công trình nghiên cứu liên quan, mục tiêu của đề tài là xây dựng một thư viện hỗ trợ người dùng có thể dễ dàng tiếp cận và xây dựng một ứng dụng để trực quan dữ liệu. Đồng thời, so sánh  đánh giá các phương pháp đã có để tìm ra mô hình thiết kế phù hợp.  
-
-
-\subsection{Các công trình liên quan}
-\subsubsection{Giới thiệu}
+%----------------------------------%
+\myparagraph{Giới thiệu}
 Mapme\cite{mapme} là một ứng dụng cho phép người dùng tạo bản đồ, dữ liệu đươc xử lý trực tiếp từ các file Excel đầu vào. Bản đồ tạo ra có các marker tương ứng với dữ liệu, có khả năng tương tác trực tiếp thông qua các sự kiện định nghĩa trước. Ngoài ra, bản đồ được tạo ra còn có thể được nhúng vào các trang web khác thông qua một đoạn mã nhúng. Đặc biệt toàn bộ tương tác từ những bước khởi tạo bản đồ đầu tiên, đến lúc xuất thành quả, đều không yêu cầu người dùng phải viết một dòng mã nào.
 
 \begin{figure}[htp]
 	\begin{center}
     \includegraphics[scale=.4]{image/mapme}
     \caption{Ứng dụng tạo bản đồ online Mapme}
-    \label{refhinh10}
+    \label{fig:mapme}
     \end{center}
 \end{figure}
+%----------------------------------%
 
-\subsubsection{Mục tiêu}
+%----------------------------------%
+\myparagraph{Mục tiêu}
 Đầu tiên nói đến các đối tượng mà Mapme hướng tới, đó là các tổ chức, chính phủ, các doanh nghiệp hay các tổ chức cộng đồng phi lợi nhuận.
 
 Phục vụ trong các lĩnh vực khác nhau như giáo dục, các sự kiện, xuất bản hay truyền thụ cảm hứng trong đời sống hằng ngày.
+%----------------------------------%
 
-\subsubsection{Phương pháp}
+%----------------------------------%
+\myparagraph{Phương pháp}
 Sử dụng OpenStreetMap (viết tắt OSM)\cite{osm}, một dịch vụ bản đồ thế giới trực tuyến với nội dung mở, nhằm mục đích cung cấp dữ liệu địa lý do nhiều người cùng cộng tác với nhau trên hệ thống Wiki. Nó thường được gọi "Wikipedia của bản đồ". Dự án OSM được sáng lập năm 2004, chủ yếu để cạnh tranh với các công ty và cơ quan chính phủ cung cấp dữ liệu địa lý theo các điều khoản sử dụng được coi là quá chặt chẽ. OSM cho phép ứng dụng cập nhật dữ liệu địa lý trực tuyến một cách chính xác, luôn được cập nhật nhằm đảm bảo các dữ liệu luôn đi sát thực tế nhất.
 
 \begin{figure}[htp]
 	\begin{center}
     \includegraphics[scale=.4]{image/mapmeOSM}
     \caption{Ứng dụng tạo bản đồ online Mapme}
-    \label{refhinh11}
+    \label{fig:mapmeOSM}
 	\end{center}
 \end{figure}
 
@@ -354,381 +634,252 @@ Ngoài ra, người dùng còn có thể tương tác với các marker này đ�
 	\begin{center}
     \includegraphics[scale=.8]{image/mapmeExport}
     \caption{Ứng dụng tạo bản đồ online Mapme}
-    \label{refhinh12}
+    \label{fig:mapmeExport}
 	\end{center}
 \end{figure}
 
 Đặc biệt, Mapme còn hỗ trợ sinh mã nhúng [Hình 12], dưới dạng iframe, giúp người dùng nhúng trực tiếp bản đồ mình vừa tạo vào các website tuỳ mục đích.
+%----------------------------------%
 
-\subsubsection{Đánh giá}
+%----------------------------------%
+\myparagraph{Đánh giá}
 Đầu tiên là về cách sử dụng OpenStreetMap làm dịch vụ cung cấp bản đồ, đảm bảo ứng dụng luôn chính xác về các dữ liệu địa lý so với thực tế. Nhóm đề tài đề xuất sử dụng OpenStreetMap làm dịch vụ cung cấp bản đồ cho API mà nhóm đề tài thực hiện.
 
 Ngoài ra, ứng dụng cho phép người dùng tương tác trực tiếp với các marker trên bản đồ, hiển thị các thông tin liên quan đến các địa điểm đó. Thay vì phải đọc các dữ liệu thô theo vùng miền, theo quốc gia, vùng lãnh thổ như trước, cách tương tác này giúp người dùng dễ dàng cập nhật thông tin cũng như có cái nhìn tổng quan, khả năng so sánh giữa các địa điểm khác nhau mà không phải chăm chú vào các con số nhàm chám như trước.
+%----------------------------------%
 
+\subsection{Kiến thức nền tảng}
+\subsubsection{JavaScript}
+%----------------------------------%
+\myparagraph{Giới thiệu}
+Javascript là một ngôn ngữ nhẹ (lightweight), thông dịch, hướng đối tượng với first-class function, và được biết đến nhất như là một ngôn ngữ kịch bản (scripting language) cho các trang Web, nhưng Javascript cũng có thể được sử dụng trong các môi trường non-browser như node.js hay Apache CouchDB. Javascript là một prototype-based, ngôn ngữ kịch bản đa mô hình lập trình (multi-paradigm), động (dynamic), hỗ trợ nhiều kiểu như hướng đối tượng, lập trình mệnh lệnh (imperative programming), và lập trình hàm (functional programming).
 
-\subsection{Kiến thức nền}
+Chuẩn cho Javascript là ECMAScript. Phiên bản hiện nay là ECMAScript 7 được công bố vào tháng 6/2016. Tuy nhiên, cho đến hiện nay, các trình duyệt chỉ hỗ trợ chuẩn ECMAScript 5, sắp tới đây sẽ hỗ trợ cho ECMAScript 6. Nhóm sử dụng chuẩn ECMAScript 6 như là tiêu chuẩn để coding thư viện. Các tính năng mạnh mẽ của ECMAScript 6 sẽ được liệt kê ở những phần sau.
+%----------------------------------%
 
-Qua việc tìm hiểu cũng như những phần trình bày về các công trình liên quan đến đề tài, nhóm đề tài nhận thấy cần phải nắm được những kiến thức cơ bản sau để hỗ trợ tốt hơn cho việc hiện thực API về trực quan dữ liệu:
-\subsection{JavaScript}
-\subsubsection{Giới thiệu}
-JavaScript\citep{jsintro}, theo phiên bản hiện hành mới nhất ECMAScript 6\cite{es6}, là một ngôn ngữ lập trình kịch bản (scripting language), đa nền tảng (cross-platform), nhỏ và nhẹ (lightweight). Ngôn ngữ này được dùng rộng rãi cho các trang web, nhưng cũng được dùng để tạo khả năng viết script sử dụng các đối tượng nằm sẵn trong các ứng dụng.
-
-\subsubsection{Mục tiêu}
-Mục tiêu của JavaScript là cung cấp cho các nhà phát triển Web một số khả năng và quyền điều khiển chức năng cho trang Web. Mã JavaScript có khả năng nhúng trong tài liệu HTML để điều khiển nội dung của trang Web và kiểm tra sự hợp lệ của dữ liệu mà người dùng nhập vào. Khi một trang hiển thị trong trình duyệt, các câu lệnh được trình duyệt thông dịch và thực thi.
-
-\subsubsection{Tính năng}
+%----------------------------------%
+\myparagraph{Tính năng}
 JavaScript nâng cao sự linh động và khả năng tương tác cho website bằng cách sử dụng các hiệu ứng của nó như thực hiện các phép tính, kiểm tra form, viết các trò chơi, bổ sung các hiệu ứng đặc biệt, tuỳ biến các chọn lựa đồ hoạ, tạo ra các mật khẩu bảo mật và hơn thế nữa.
 
 Cụ thể, JavaScript có thể được dùng để:
-\begin{itemize}
-\item[•] Tương tác với người dùng: Chúng ta có thể viết mã để đáp lại các sự kiện. Các sự kiện này sẽ có thể phát sinh bởi người dùng: nhấp chuột hay được phát sinh từ hệ thống, định lại kích thước của trang …
+\begin{list}{}{}
+\item[•] \emph{Tương tác với người dùng:} Chúng ta có thể viết mã để đáp lại các sự kiện. Các sự kiện này sẽ có thể phát sinh bởi người dùng: nhấp chuột hay được phát sinh từ hệ thống, định lại kích thước của trang …
+\item[•] \emph{Thay đổi nội dung động:} Mã JavaScript có thể dùng để thay đổi nội dung và vị trí các phần tử một cách động trên một trang nhằm đáp lại sự tương tác với người dùng.
+\item[•] \emph{Kiểm tra tính hợp lệ dữ liệu:} Chúng ta có thể viết mã nhằm kiểm tra tính hợp lệ của dữ liệu do người dùng nhập vào trước khi nó được gửi lên Web server để xử lý.
+\end{list}
+%----------------------------------%
 
-\item[•] Thay đổi nội dung động: Mã JavaScript có thể dùng để thay đổi nội dung và vị trí các phần tử một cách động trên một trang nhằm đáp lại sự tương tác với người dùng.
+%----------------------------------%
+\myparagraph{ECMAScript 6}
+ECMAScript 6 hay gọi tắt là ES6 hay ES2015, đây là phiên bản nâng cấp, tập hợp các kỹ năng nâng cao của Javascript. ES6 ra đời năm 2015 nên cái tên ES2015 được lấy làm tên chính thức với nhiều tính năng mới học hỏi các ngôn ngữ cấp cao khác, hy vọng dần theo thời gian Javascript trở thành một ngôn ngữ lập trình hướng đối tượng.
 
-\item[•] Kiểm tra tính hợp lệ dữ liệu: Chúng ta có thể viết mã nhằm kiểm tra tính hợp lệ của dữ liệu do người dùng nhập vào trước khi nó được gửi lên Web server để xử lý.
-\end{itemize}
+Một số tính năng mạnh mẽ của ES6:
+\begin{list}{}{}
+\item[•] \emph{Classes:} Với việc hỗ trợ class, các cú pháp trông đẹp đẽ, đơn giản, dễ nhìn, rõ ràng hơn rất nhiều  trong việc tạo ra đối tượng và giải quyết vấn đề thừa kế.
+\item[•] \emph{Modules:} Hỗ trợ import/export các giá trị (biến, hàm, …) từ/đến các module.
+\item[•] \emph{Block Scoped:} Khai báo biến với từ khóa let để cho biết biến này chỉ tồn tại trong phạm vi block của nó.
+\item[•] \emph{Destructuring Assignment:} Dễ dàng khởi tạo các biến trong suốt các câu lệnh gán từ một mảng.
+\item[•] \emph{Arrow function}
+\item[•] \emph{Default Parameter Values:} Cho phép gán giá trị mặc định cho tham số.
+\item[•] \emph{Rest Parameter:} Kết hợp các argument còn lại thành một tham số của hàm.
+\end{list}
+%----------------------------------%
 
-\subsubsection{Ứng dụng}
+%----------------------------------%
+\myparagraph{Ứng dụng}
 Dựa trên những đặc điểm và khả năng mạnh mẽ trong hỗ trợ lập trình API của JavaScript đã kể trên, nhóm đề xuất sử dụng JavaScript làm ngôn ngữ chính để hiện thực API.
-Ngoài ra, nhóm đề xuất sử dụng chuẩn mới nhất, ECMAScript 6 làm tiêu chuẩn cho các ràng buộc, quy tắc (coding conventions) khi hiện thực API.
 
-\subsection{jQuery}
-\subsubsection{Giới thiệu}
-jQuery\cite{jqueryintro1}\cite{jqueryintro2} là một thư viện đa nền tảng (cross-platform) mã nguồn mở dựa trên ngôn ngữ JavaScript, được tạo bởi John Resig vào năm 2006. jQuery là một thư viện JavaScript phổ biến nhất được sử dụng hiện nay.
+Ngoài ra, nhóm đề xuất sử dụng chuẩn ECMAScript 6 làm tiêu chuẩn cho các ràng buộc, quy tắc (coding conventions) khi hiện thực API.
+%----------------------------------%
+\subsubsection{D3.js}
+%----------------------------------%
+\myparagraph{Giới thiệu}
+D3.js được viết bởi Mike Bostock, là 1 thư viện JavaScript dùng để thao tác với document dựa trên dữ liệu (data). D3 giúp mang dữ liệu đến cuộc sống bằng cách sử dụng HTML, SVG, và CSS. Sức mạnh của D3 trên chuẩn web cung cấp đầy đủ các tính năng của những trình duyệt hiện đại mà không buộc mình vào một khuôn khổ nhất định nào, kết hợp với các thành phần trực quan mạnh mẽ và một phương pháp hướng dữ liệu để thao tác DOM (Document Object Model).
 
-Theo thống kê (2016)\cite{jqueryusage}, cho tới hiện nay thì jQuery được sử dụng bởi 96\% của tất cả các trang web có sử dụng thư viện JavaScript.
+D3 không phải là framework giải quyết mỗi vấn đề riêng biệt nào, thay vào đó D3 giải quyết điểm cốt lõi của vấn đề: sự thao tác hiệu quả các document dựa trên dữ liệu. Do đó, D3 có được sự linh hoạt cao, có thể sử dụng toàn bộ các tính năng của các tiêu chuẩn web như HTML, SVG, và CSS.
+
+D3 cho phép nhúng bất kì kiểu dữ liệu nào vào 1 phần tử DOM, và sau đó có thể áp dụng CSS3, HTML, và/hoặc SVG lên dữ liệu này. Cuối cùng, D3.js có thể giúp tạo ra dữ liệu tương tác thông qua việc sử dụng những sự biến đổi (transformation), chuyển đổi (transition) hướng dữ liệu của D3.js.
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Tính năng}
+Một số tính năng mạnh mẽ của D3:
+\begin{list}{}{}
+\item[•] \emph{Selections:} Tập hợp các node tùy ý gọi là selections, và D3 sử dụng phương pháp declarative để biến đổi selections này. Đặc biệt D3 cũng áp dụng các selectors được định nghĩa bởi W3C Selectors API, nhờ đó các phần tử sẽ được chọn lựa ra một cách dễ dàng.
+\item[•] \emph{Dynamic Properties:} Dễ dàng thay đổi các thuộc tính, style một các động thông qua các function trong D3.
+\item[•] \emph{Enter và Exit:} Sử dụng enter và exit các selections, người dùng có thể tạo ra nhiều node mới cho các dữ liệu mới và xóa các node mà không cần thiết. Với việc sử dụng đúng những tác vụ cần thiết trên các node sẽ làm tăng hiệu suất và mang đến những hiệu ứng chuyển đổi tuyệt vời hơn.
+\item[•] \emph{Transformation:} D3 sử dụng các tiêu chuẩn web: HTML, SVG, và CSS. Do đó nếu trình duyệt giới thiệu một phiên bản mới, người dùng có thể sử dụng D3 ngay lập tức, không yêu cầu cập nhật. Ngoài ra giúp người dùng dễ dàng debug với sự trợ giúp của trình duyệt.
+\item[•] \emph{Transitions:} Interpolator của D3 hỗ trợ cả 2 kiểu primitive, ví dụ như là số và số nhúng trong string (font-size, dữ liệu về path, …) và các giá trị phức tạp. Người dùng thậm chí có thể mở rộng interpolator để hỗ trợ cho các thuộc tính phức tạp và cấu trúc dữ liệu.
+\end{list}
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Ứng dụng}
+D3 được viết bằng JavaScript, và sử dụng kiểu lập trình hàm (functional programming) do đó có thể sử dụng lại code và thêm những hàm chức năng mà người dùng muốn. Điều đó có nghĩa là nó sẽ mạnh mẽ như thế nào là dựa vào người dùng muốn làm ra nó. Cách người dùng chọn để định dạng, thao tác, tương tác với dữ liệu là tùy thuộc ở họ.
+
+D3 rất thích hợp dùng trong đề tài, nó giúp xây dựng framework trực quan dữ liệu mà người dùng muốn, dễ dàng sử dụng, do đó giúp tạo ra API một cách dễ dàng hơn, API dễ hiểu, dễ sử dụng.
+%----------------------------------%
+
+\subsubsection{OpenLayers}
+%----------------------------------%
+\myparagraph{Giới thiệu}
+OpenLayers được tạo ra bởi MetaCarta sau hội nghị O'Reilly Where 2.0 (29-30/06/2005) và chính thức phát hành thành mã nguồn mở trước hội nghị  O'Reilly Where 2.0 (13-14/06/2006) bởi MetaCarta Labs. Hai dự án khác về công cụ xây dựng bản đồ phát hành bởi MetaCarta là FeatureServer và TileCache. Từ tháng 11/2007, OpenLayers trở thành dự án mã nguồn mở chính thức của Hội đồng Không gian địa lý.
+
+Sơ qua về OpenLayers, đây là một thư viện JavaScript mã nguồn mở (được chứng nhận bởi BSD License) nhằm phục vụ mục đích biểu diễn thông tin trên bản đồ  đối với các trình duyệt Web, không phụ thuộc phía server. Nó cung cấp API chuyên về xây dựng các ứng dụng địa lý trên nền Web tương tự như Google Maps và Bing Maps, với một điểm khác biệt duy nhất, OpenLayers hoàn toàn miễn phí, được xây dựng và phát triển nên bởi cộng đồng phát triển phần mềm mã nguồn mở. Thư viện xây dựng trên Prototype JavaScript Framework.
+
+Hiện nay, OpenLayers đã ra tới phiên bản OpenLayers 3. OpenLayers 3 được viết lại nhằm dễ hiểu hơn, hướng tới các tính năng của HTML5 và CSS3. Thư viện tiếp tục hỗ trợ trình chiếu, các giao thức tiêu chuẩn và các chức năng chỉnh sửa. Phiên bản mới này tập trung vào cải thiện hiệu năng, xây dựng đơn giản hơn, các thành phần trở nên trực quan hơn, API được cải tiến và còn nhiều hơn nữa.
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Tính năng}
+Openlayers có 4 tính năng chính:
+\begin{list}{}{}
+\item[•] \emph{Thể hiện Lớp dưới dạng ô (Tiled Layers):} Các lớp này được kéo về từ OpenStreetMap (OSM), Bing, MapBox, Stamen, MapQuest và bất cứ nguồn nào mà bạn có thể tìm thấy. Hỗ trợ đa dạng các Layer mà bạn có thể sử dụng trong ứng dụng của mình.
+\item[•] \emph{Thể hiện Lớp dưới dạng Vector (Vector Layers):} Sinh ra dữ liệu dạng vector từ GeoJSON, TopoJSON, KML, GML và một số định dạng khác.
+\item[•] \emph{Tính đối ứng nhanh gọn (Fast \& Mobile Ready):} Hỗ trợ tùy chỉnh các thành phần một cách nhanh gọn và thuận tiện nhất. Cho phép xây dựng một bản tùy chỉnh gọn nhẹ gồm các thành phần mà lập trình viên cần.
+\item[•] \emph{Mài dũa các góc cạnh và dễ dàng tùy chỉnh (Cutting Edge \& Easy to Customize):} Bản đồ sinh ra bởi công nghệ WebGL, Canvas 2D, và từ những tính năng ưu việt nhất của HTML5. Dễ dàng tùy chỉnh style bằng CSS.
+\end{list}
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Ứng dụng}
+Đề tài hướng tới xây dựng thư viện JavaScript cho phép tương tác giữa bản đồ và các đồ thị dựa trên dữ liệu đầu vào, cho nên OpenLayers, cụ thể OpenLayers 3 sẽ là công cụ đắc lực cho việc xây dựng thành phần bản đồ trong đề tài.
+%----------------------------------%
+%----------------------------------------------%
+%----------------------------------------------%
+\newpage
+\section{Giới thiệu thư viện C9js}
+%----------------------------------%
+\subsection{Mô tả bài toán}
+Thông qua các công trình đã tìm hiểu, nhóm đề tài đánh giá và trích xuất ra các điểm hạn chế, các vấn đề mà các công trình đó chưa giải quyết được hoặc đã giải quyết nhưng đã lỗi thời cần nâng cấp để phù hợp với bối cảnh hiện tại của các công nghệ Web. Phần đánh giá, so sánh với các công trình liên quan sẽ được thể hiện chi tiết trong mục \textbf{Đánh giá}.
+
+\myparagraph{Bài toán mà nhóm đề tài đặt ra:}
+\textit{Hỗ trợ trực quan dữ liệu trên Web thông qua thư viện C9js}.
+ 
+\myparagraph{Các vấn đề \textit{"thắt nút"} cần giải quyết:}
+Cũng là các mục tiêu và hướng phát triển \textbf{C9js} đã, đang và mong muốn đạt được: 
+\begin{list}{}{}
+\item[•] \emph{Hoàn toàn là mã nguồn mở:} \textbf{C9js} là thư viện JavaScript mã nguồn mở, được triển khai thông qua GitHub ở địa chỉ \url{https://github.com/csethanhcong/C9js}.
+
+\item[•] \emph{Kiến trúc xây dựng theo tiêu chuẩn ES2015 (hay ES6):} Nghiên cứu cẩn trọng qua các mã nguồn mở có khả năng trực quan dữ liệu, việc chon kiến trúc để xây dựng từ ban đầu là rất quan trọng, đặc biệt trong khả năng mở rộng nhằm đáp ứng nhu cầu tuỳ chỉnh hay đóng góp từ cộng đồng mã nguồn mở.
+
+\item[•] \emph{Bao gồm các tính năng mới, mạnh mẽ:}
+Các tính năng riêng biệt của C9js được thể hiện rõ trên trang chủ của thư viện, tại địa chỉ \url{http://c9js.me/}. Phần trình bày chi tiết sẽ được nêu ở phần sau
 
 \begin{figure}[htp]
-    \begin{center}
-     \includegraphics[scale=.6]{image/js-jquery}
-    \end{center}
-    \caption{Vị trí của jQuery so với những thư viện JavaScript khác}
-    \label{refhinh13}
+	\begin{center}
+    \includegraphics[scale=.5]{image/c9js_feature}
+    \caption{Các tính năng chính của C9js trên trang chủ c9js.me}
+    \label{fig:c9js_feature}
+	\end{center}
 \end{figure}
 
-\subsubsection{Mục tiêu}
-Với phương châm là “write less, do more”, jQuery được thiết kế nhằm đơn giản hóa các nhiệm vụ khác nhau bằng cách viết ít mã hơn. 
+\end{list}
 
-Thành phần quan trọng của jQuery là thư viện thao tác DOM (Document Object Model). DOM là 1 biểu diễn cấu trúc cây của tất cả các thành phần của 1 trang web và jQuery đơn giản hóa các cú pháp cho việc tìm kiếm, chọn lựa, và thao tác những phần tử DOM.
-
-\subsubsection{Tính năng}
-\begin{itemize}
-\item[•] Việc lựa chọn các phần tử DOM sử dụng công cụ Sizzle (selector mã nguồn mở)\cite{sizzle}
-
-\item[•] Thao tác với DOM dựa trên CSS Selector
-
-\item[•] Sư kiện (event)
-
-\item[•] Tạo chuyển động
-
-\item[•] Hỗ trợ AJAX
-
-\item[•] Có thể mở rộng thông qua các plug-in
-
-\item[•] Được hỗ trợ bởi nhiều trình duyệt
-
-\item[•] Cập nhật và hỗ trợ các công nghệ web mới nhất (HTML5 \& CSS3)
-\end{itemize}
-
-\subsubsection{Ứng dụng}
-Dựa trên những đặc điểm cũng như tính năng mạnh mẽ của jQuery nói trên, đề tài sẽ đề xuất sử dụng jQuery như là 1 ngôn ngữ chính, tạo ra một API dễ dàng tìm hiểu, sử dụng với một số lượng mã (code) ít nhất để có thể tạo được ứng dụng của riêng mình.
-
-\subsection{d3.js}
-\subsubsection{Giới thiệu}
-D3.js\cite{d3jsintro1}. được viết bởi Mike Bostock, là 1 thư viện JavaScript dùng để thao tác với document dựa trên dữ liệu (data). D3 giúp mang dữ liệu đến cuộc sống bằng cách sử dụng HTML, SVG, và CSS. D3 trên chuẩn web cung cấp đầy đủ các tính năng của những trình duyệt hiện đại mà không buộc mình vào một khuôn khổ nhất định nào, kết hợp với các thành phần trực quan mạnh mẽ và một phương pháp hướng dữ liệu để thao tác DOM.
-
-\begin{center}
-    \begin{figure}[htp]
-    \begin{center}
-     \includegraphics[scale=.6]{image/d3}
-    \end{center}
-    \caption{Một ví dụ về d3.js}
-    \label{refhinh14}
-    \end{figure}
-\end{center}
-
-\subsubsection{Mục tiêu}
-D3.js giúp nhúng dữ liệu vào trong các phần tử DOM. Sau đó, có thể áp dụng CSS3, HTML, và/hoặc SVG lên dữ liệu này. Cuối cùng, D3.js có thể giúp tạo ra dữ liệu tương tác thông qua việc sử dụng những sự biến đổi (transformation), chuyển đổi (transition) hướng dữ liệu của D3.js
-
-\subsubsection{Ứng dụng}
-D3.js được viết trong JavaScript, do đó có thể sử dụng lại code và thêm những hàm chức năng mà người dùng muốn. Cách người dùng chọn để định dạng, thao tác, tương tác với dữ liệu là tùy thuộc ở họ.\citep{d3jsintro2}
-
-D3.js rất thích hợp dùng trong đề tài, nó giúp xây dựng framework trực quan dữ liệu mà người dùng muốn, dễ dàng sử dụng, do đó giúp tạo ra API một cách dễ dàng hơn, API dễ hiểu, dễ sử dụng.
-
-\subsection{OpenLayers}
-\subsubsection{Giới thiệu}
-OpenLayers\cite{ol} được tạo ra bởi MetaCarta sau hội nghị O'Reilly Where 2.0 (29-30/06/2005) và chính thức phát hành thành mã nguồn mở trước hội nghị  O'Reilly Where 2.0 (13-14/06/2006) bởi MetaCarta Labs. Hai dự án khác về công cụ xây dựng bản đồ phát hành bởi MetaCarta là FeatureServer và TileCache. Từ tháng 11/2007, OpenLayers trở thành dự án mã nguồn mở chính thức của Hội đồng Không gian địa lý.
-
-Sơ qua về OpenLayers, đây là một thư viện JavaScript mã nguồn mở (được chứng nhận bởi BSD License) nhằm phục vụ mục đích biểu diễn thông tin trên bản đồ  đối với các trình duyệt Web, không phụ thuộc phía server. Nó cung cấp API chuyên về xây dựng các ứng dụng địa lý trên nền Web tương tự như Google Maps\cite{googlemap} và Bing Maps\cite{bingmap}, với một điểm khác biệt duy nhất, OpenLayers hoàn toàn miễn phí, được xây dựng và phát triển nên bởi cộng đồng phát triển phần mềm mã nguồn mở. Thư viện xây dựng trên Prototype JavaScript Framework\cite{prototypejs}.
-
-Hiện nay, OpenLayers đã ra tới phiên bản OpenLayers 3\cite{ol3}. OpenLayers 3 được viết lại nhằm dễ hiểu hơn, hướng tới các tính năng của HTML5 và CSS3. Thư viện tiếp tục hỗ trợ trình chiếu, các giao thức tiêu chuẩn và các chức năng chỉnh sửa. Phiên bản mới này tập trung vào cải thiện hiệu năng, xây dựng đơn giản hơn, các thành phần trở nên trực quan hơn, API được cải tiến và còn nhiều hơn nữa.
-
-Mã nguồn của thư viện nằm ở địa chỉ sau: \url{https://github.com/openlayers/ol3/}
-
-\subsubsection{Mục tiêu}
-Như đã trình bày ở trên, OpenLayers hỗ trợ các lập trình viên hiển thị thông tin dưới dạng bản đồ, hay bất cứ nhu cầu nào liên quan về bản đồ một cách hiệu quả và đơn giản nhất.
-
-\subsubsection{Đặc điểm}
-    \begin{figure}[htp]
-		\begin{center}
-     	\includegraphics[scale=.4]{image/ol-feature}
-    	\caption{Các đặc điểm chính của OpenLayers}
-    	\label{refhinh15}
-		\end{center}
-    \end{figure}
-OpenLayers có 4 đặc điểm chính:
-\begin{itemize}
-\item[•]Thể hiện Lớp dưới dạng ô (Tiled Layers): 
-Các lớp này được kéo về từ OpenStreetMap (OSM), Bing, MapBox, Stamen, MapQuest và bất cứ nguồn nào mà bạn có thể tìm thấy. Hỗ trợ đa dạng các Layer mà bạn có thể sử dụng trong ứng dụng của mình.
-
-\item[•]Thể hiện Lớp dưới dạng Vector (Vector Layers):
-Sinh ra dữ liệu dạng vector từ GeoJSON, TopoJSON, KML, GML và một số định dạng khác.
-
-\item[•]Tính đối ứng nhanh gọn (Fast \& Mobile Ready):
-Hỗ trợ tùy chỉnh các thành phần một cách nhanh gọn và thuận tiện nhất. Cho phép xây dựng một bản tùy chỉnh gọn nhẹ gồm các thành phần mà lập trình viên cần.
-
-\item[•]Mài dũa các góc cạnh và dễ dàng tùy chỉnh (Cutting Edge \& Easy to Customize):
-Bản đồ sinh ra bởi công nghệ WebGL, Canvas 2D, và từ những tính năng ưu việt nhất của HTML5. Dễ dàng tùy chỉnh style bằng CSS.
-
-\end{itemize}
-
-\subsubsection{Ứng dụng}
-Đề tài hướng tới xây dựng thư viện JavaScript cho phép tương tác giữa bản đồ và các đồ thị dựa trên dữ liệu đầu vào, cho nên OpenLayers, cụ thể OpenLayers 3 sẽ là công cụ đắc lực cho việc xây dựng thành phần bản đồ trong đề tài. 
-
-
-%----------------------------------------------%
-%----------------------------------------------%
-\section{Giới thiệu thư viện C9js}
-\subsection{Mô tả bài toán}
+%----------------------------------%
+%----------------------------------%
 \subsection{Hướng dẫn sử dụng}
+Với mong muốn đem lại trải nghiệm nhanh nhất, đơn giản nhất và ít tốn công sức nhất cho người dùng (ở đây là các lập trình viên), nhóm đề tài đã triển khai Website \url{http://c9js.me/} gồm các hướng dẫn từ cơ bản đến chuyên sâu, và gồm cả các ví dụ cụ thể nhất. 
+
+Qua Website c9js.me, có thể thấy mục \textbf{Getting Started} ở các nút ở trang chủ (landing page) hay thông qua menu ở đầu trang như hình \ref{fig:getting_started}
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.8]{image/getting_started}
+    \caption{Menu hướng dẫn trên trang chủ c9js.me}
+    \label{fig:getting_started}
+	\end{center}
+\end{figure}
+
+Khi đó, màn hình hướng dẫn xuất hiện như hình \ref{fig:gs_1}
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.5]{image/gs_1}
+    \caption{Trang hướng dẫn trên Website c9js.me}
+    \label{fig:gs_1}
+	\end{center}
+\end{figure}
+
+Như có thể thấy, menu giao diện bên trái thể hiện các mục hướng dẫn người dùng, bao gồm các bước cơ bản nhất để sử dụng và tuỳ biến các tính năng trong C9js theo ý muốn
+
+\subsubsection{Cài đặt (Setup)}
+\myparagraph{Tải xuống (Download):}
+Hiện tại, nhằm đáp ứng tối đa lượng người dùng, C9js được triển khai qua nhiều kênh khác nhau
+
+\begin{list}{}{}
+\item[•] \emph{Tải trực tiếp:} Có thể tải trực tiếp ở địa chỉ \url{https://github.com/csethanhcong/C9js/releases/latest}.
+
+\item[•] \emph{Các trình quản lý tập tin (Package Manager):} Hiện tại phổ biến nhất có 2 trình quản lý là \textbf{npm} và \textbf{bower}. Và C9js được phân phối qua cả 2 kênh này. Người dùng cài đặt thông qua một trong các lệnh:
+
+\begin{itemize}
+\item[-] \textbf{npm:} npm install C9js
+\item[-] \textbf{bower:} bower install C9js
+\end{itemize}
+
+\item[•] \emph{Mạng phân phối nội dung (CDN):} Ngoài ra, người dùng còn có thể truy cập các mã nguồn cần thiết từ C9js thông qua hai dịch vụ CDN phổ biến là \textbf{npmcdn} và \textbf{unpkg}
+
+\begin{itemize}
+\item[-] \textbf{npmcdn:} 
+	\begin{lstlisting}[caption=Tải mã nguồn thông qua \textbf{npmcdn}]
+<link href="https://npmcdn.com/C9js/dist/C9.min.css" type="text/css" rel="stylesheet" >
+<script src="https://npmcdn.com/C9js/dist/C9.min.js" type="text/javascript"></script>
+	\end{lstlisting}
+
+\item[-] \textbf{unpkg:}
+	\begin{lstlisting}[caption=Tải mã nguồn thông qua \textbf{unpkg}]
+<link href="https://unpkg.com/C9js/dist/C9.min.css" type="text/css" rel="stylesheet" >
+<script src="https://unpkg.com/C9js/dist/C9.min.js" type="text/javascript"></script>
+	\end{lstlisting}
+\end{itemize}
+
+\end{list}
+
+\myparagraph{Cách dùng (Usage):}
+Thư viện C9js hỗ trợ tạo biểu đồ dựa trên \textit{d3.js} và bản đồ dựa trên \textit{OpenLayers 3} nên người dùng cần tải các thư viện này trước. 
+
+Tuỳ theo mục đích sử dụng, nếu chỉ dùng chức năng tạo biểu đồ thì chỉ cần tải thư viện \textit{d3.js}, tương tự đối với chức năng tạo bản đồ.
+
+\begin{lstlisting}[caption=Tải mã nguồn \textit{d3.js} trước tiên]
+<link href="/path/to/C9.css" rel="stylesheet" type="text/css">
+<!-- Load d3.js and C9.js -->
+<script src="/path/to/d3.v3.min.js" charset="utf-8"></script>
+<script src="/path/to/C9.min.js"></script>
+\end{lstlisting}
+
+\begin{lstlisting}[caption=Tải mã nguồn \textit{OpenLayers 3} nếu muốn sử dụng chức năng Bản đồ]
+<link rel="stylesheet" href="https://openlayers.org/en/v3.19.1/css/ol.css" type="text/css">
+<script src="https://openlayers.org/en/v3.19.1/build/ol.js" type="text/javascript"></script>
+<script src="/path/to/C9.min.js"></script>
+\end{lstlisting}
+
+%----------------------------------%
+%----------------------------------%
 \subsection{Các ví dụ minh hoạ}
+
+%----------------------------------%
+%----------------------------------%
 \subsection{Ứng dụng thực tế}
+
+%----------------------------------%
 %----------------------------------------------%
 %----------------------------------------------%
+\newpage
 \section{Quá trình thực hiện}
 \subsection{Kiến trúc xây dựng}
 \subsection{Hiện thực thư viện}
 %----------------------------------------------%
 %----------------------------------------------%
+\newpage
 \section{Kết luận}
 \subsection{Đánh giá}
 \subsection{Hướng phát triển}
 \subsection{Kết luận}
 %----------------------------------------------%
 %----------------------------------------------%
-\section{Tài liệu tham khảo}
-%----------------------------------------------%
-
-
-
-\section{Giải pháp đề xuất}
-
-\subsection{Mô tả bài toán}
-Qua các kiến thức thu được từ các công trình nghiên cứu liên quan đã tìm hiểu, nhóm đề xuất bài toán: "Xây dựng thư viện hỗ trợ phát triển các ứng dụng nền tảng Web trong tương tác dữ liệu đa phương tiện". Nhóm nhận thấy các công trình liên quan hiện tại chủ yếu hỗ trợ vào một thể hiện dữ liệu nhất định (hoặc dạng đồ thị, hoặc dạng bản đồ) mà chưa có công trình nào tập trung vào yếu tố tương tác giữa các mô hình này, dẫn đến sự tương quan trong việc biểu diễn các loại dữ liệu giảm tính hiệu quả cũng như chưa thể thoát hẳn khỏi các cách biểu diễn truyền thống. Hoặc là đã  xây dựng các mô hình trực quan cho phép tương tác giữa các loại mô hình (điển hình như công trình Global Health Atlas - WHO đã trình bày ở trên) nhưng công nghệ đã cũ và không tự sinh thư viện hay mã nguồn hỗ trợ người dùng có thể tự xây dựng ứng dụng tương tự.
-
-Do đó, nhóm nhận thấy bài toán đề xuất phù hợp để thực hiện và phát triển.
-
-\subsection{Kiến trúc thư viện dự kiến xây dựng}
-Qua bài toán đề xuất, nhóm nhận thấy cần xây dựng mô hình với 3 thành phần chính như hình 16:
-
-%\begin{figure}[htp]
-	\begin{center}
-    \includegraphics[scale=.6]{model/model}
-    
-    Hình 16. Mô hình dự kiến xây dựng
-    %\label{refhinh16}
-	\end{center}
-%\end{figure}
-
-Với 3 thành phần (Component) chính là Map, Chart và Interaction, mỗi thành phần thể hiện rõ ràng chức năng tương ứng: 
-\begin{itemize}
-\item[•] Map: 
-Map là một đối tượng biểu diễn dữ liệu dưới dạng bản đồ
-\item[•] Chart:
-Chart biểu diễn dữ liệu đầu vào dưới dạng các dạng đồ thị định nghĩ trước (nhóm đề xuất một số dạng đồ thị phổ biến như đồ thị dạng thanh, dạng tròn, dạng mảnh và dạng dòng thời gian) phụ thuộc kiểu dữ liệu đầu vào cung cấp bởi người dùng.
-\item[•] Interaction:
-Liên kết hai thành phần thể hiện dữ liệu trên là lớp Interaction, cung cấp các sự kiện hỗ trợ tương tác như Click, Hover trên từng đối tượng dữ liệu; Highlight các Component tương ứng theo các sự kiện được định nghĩa bởi người dùng.
-\end{itemize}
-
-Hình 17 là kiến trúc mã nguồn đề tài dự kiến hiện thực, gồm các file mã nguồn JavaScript được tổ chức tương ứng theo các thành phần đã định nghĩa ở trên:
-
-%\begin{figure}[htp]
-	\begin{center}
-    \includegraphics[scale=.8]{image/api_model}
-    
-    Hình 17. Kiến trúc mã nguồn dự kiến hiện thực
-    %\label{refhinh17}
-    \end{center}
-%\end{figure}
-
-
-\subsection{Mô hình dữ liệu dự kiến xây dựng}
-\begin{itemize}
-\item[•] Dữ liệu dạng bản đồ: 
-Dữ liệu được tham khảo từ nguồn: \url{https://mapzen.com/data/borders}{https://mapzen.com/data/borders}. 
-Dữ liệu bản đồ được thể hiện dạng JSON, tổ chức theo các mức (administrative level) từ 1 tới 10, tương ứng từ biên giới quốc gia tới tỉnh, thành phố trực thuộc trung ương, quận, huyện, thị xã, thành phố thuộc tỉnh đến phường, xã, thị trấn.
-
-Đề tài dự kiến hỗ trợ bản đồ Việt Nam ở mức độ 4 (tỉnh, thành phố trực thuộc trung ương)
-
-Mô hình chuẩn hóa dữ liệu bản đồ từ người dùng:
-	\begin{center}
-    \includegraphics[scale=.8]{model/map_data_model}
-    
-    Hình 18. Mô hình dữ liệu bản đồ dự kiến xây dựng
-    %\label{refhinh18}
-    \end{center}
-
-\item[•] Dữ liệu dạng thời gian:
-Đối với dạng dữ liệu thời gian, đề tài đề xuất mô hình chuẩn hóa dữ liệu đầu vào từ người dùng như hình 19:
-%\begin{figure}[htp]
-	\begin{center}
-    \includegraphics[scale=.8]{model/timeline_data_model}
-    
-	Hình 19. Mô hình dữ liệu thời gian dự kiến xây dựng
-    %\label{refhinh19}
-    \end{center}
-%\end{figure}
-
-\item[•] Dữ liệu dạng số:
-Dữ liệu dạng số được thể hiện theo các cặp (name, value) như hình 20:
-%\begin{figure}[htp]
-	\begin{center}
-    \includegraphics[scale=.8]{model/numerical_data_model}
-    
-    Hình 20. Mô hình dữ liệu dạng số dự kiến xây dựng
-    %\label{refhinh20}
-    \end{center}
-%\end{figure}
-
-\end{itemize}
-
-\section{Phương pháp đánh giá}
-
-Bên cạnh việc thực hiện API, đề tài cũng thực hiện chương trình xây dựng một trang web mẫu sử dụng API làm ra để thể hiện tương tác các loại dữ liệu khác nhau.
-
-%\begin{figure}[htp]
-	\begin{center}
-    \includegraphics[scale=.8]{image/api_sample}
-    
-    Hình 21. Ví dụ về một output của API đã xây dựng
-    %\label{refhinh21}
-    \end{center}
-%\end{figure}
-
-\begin{itemize}
-
-\item[•] Đầu vào là API đã được xây dựng mẫu
-
-\item[•] Đầu ra là thể hiện của dữ liệu đồ thị sau khi sử dụng API.
-\end{itemize}
-
-\section{Kế hoạch thực hiện}
-
-Trong giai đoạn thực tập tốt nghiệp, nhóm đã thực hiện được:
-
-\begin{itemize}
-
-\item[•]Tìm hiểu về các công trình liên quan đến các thư viện web cho phép biểu diễn dữ liệu thành các dạng biểu đồ, bản đồ, và sự tương tác giữa chúng
-
-\item[•]Đề xuất bài toán cụ thể nhóm sẽ thực hiện
-
-\item[•]Tìm hiểu về các công cụ hỗ trợ cho việc thực hiện đề tài
-
-\item[•]Hiện thực được API cho phần biểu đồ
-
-\item[•]Mã nguồn thư viện nhóm đề tài đặt ở: \url{https://github.com/csethanhcong/d3js}
-
-\end{itemize}
-Kế hoạch dự kiến thực hiện trong giai đoạn luận văn tốt nghiệp:
-
-\begin{itemize}
-\item[•]Chuẩn hóa dữ liệu cho các dạng bản đồ, biểu đồ
-
-\item[•]Hiện thực một thư viện cho phép người dùng có thể tự tạo ra một ứng dụng web tương tác dựa trên các loại dữ liệu khác nhau.
-
-\item[•]Đánh giá và so sánh thư viện đã hiện thực được với những thư viện hiện có
-
-\item[•]Tổng hợp và viết báo cáo
-
-\end{itemize}
-
-Kế hoạch thực hiện chi tiết của nhóm đề tài đề xuất cho tương lai được thể hiện ở sơ đồ Gantt hình 22:
-
-%\begin{figure}[htp]
-	\begin{center}
-    \includegraphics[]{image/gantt}
-    
-    Hình 22. Kế hoạch thực hiện trong tương lai
-    %\label{refhinh22}
-    \end{center}
-%\end{figure}
-
-\section{Kết luận}
-
-Năm 2006, Michael Palmer có viết “Data is the new oil”, điều đó có nghĩa rằng dữ liệu chỉ ở dạng thô, nó có giá trị, tuy nhiên nếu chưa qua sàng lọc thì nó không thể được sử dụng. Vì vậy dữ liệu phải được khai phá, phân tích để có thể có được giá trị thật sự.
-
-Dữ liệu ngày nay rất phong phú, đa dạng. Để có thể phân tích được nó không phải là 1 việc dễ dàng. Có 1 câu thành ngữ: “A Picture is worth 1000 words”, nghĩa là 1 bức tranh có trị giá ngàn từ. Điều đó đã nói lên sức mạnh của việc phân tích dữ liệu thành dạng hình ảnh trực quan, sinh động, để con người có thể dễ dàng nắm bắt và hiểu được.
-
-Do đó, với tầm quan trọng của việc trực quan hóa dữ liệu, nhóm đã quyết định chọn đề tài này. Nhóm cũng xin cảm ơn thầy Lương Thế Nhân đã giúp đỡ, tận tình hướng dẫn nhóm thực hiện đề tài. Nhóm xin hứa sẽ quyết tâm hoàn thành tốt đề tài này.
-
 \newpage
-\section{Tài liệu tham khảo}
+\bibliography{refs}
+\bibliographystyle{unsrt}
 
-\begin{thebibliography}{}
-
-\bibitem{dataviz_wiki} Data visualization - Wikipedia. \url{https://en.wikipedia.org/wiki/Data_visualization}
-
-\bibitem{wiki_history_1} Data Visualization for Human Perception, The Interaction Design Foundation, Retrieved 2015-11-23. \url{https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/data-visualization-for-human-perception}
-
-\bibitem{wiki_history_2} Friendly \& Michael, "A Brief History of Data Visualization", York University, Springer-Verlag, Retrieved 2015-11-22, \url{http://www.datavis.ca/papers/hbook.pdf}
-
-\bibitem{paper1} Steve LaValle, Eric Lesser, Rebecca Shockley, Michael S. Hopkins and Nina Kruschwitz, MIT. Big Data, Analytics and the Path From Insights to Value, 2015. \url{http://search.proquest.com/openview/863e390a27e9a69d59ee5ffe2204f293/1?pq-origsite=gscholar}
-
-\bibitem{bigdata} T.Alan Keahey, IBM. Using visualization to understand big data, 2013. \url{www.iotdataviz.com/meetup/1/YTW03349USEN.PDF}
-
-\bibitem{gapminder} Gapminder. About Gapminder, 22, 5, 2016. \url{http://www.gapminder.org/about-gapminder/our-mission/}
-
-\bibitem{gapminderworld} Gapminder World?. How may I use Gapminder World?. \url{http://www.gapminder.org/faq_frequently_asked_questions/#13}
-
-\bibitem{subgraph} Gapminder Sub-graph. Examples about Gapminder sub-graph. \url{https://www.gapminder.org/tools/bubbles#_state_marker_size}
-
-
-\bibitem{c3js} c3js. C3.js | D3-based reusable chart library, 22, 5, 2016. \url{http://c3js.org/}
-
-\bibitem{mapme} Maps built with Mapme. Plot your Story - Combine maps, photos, videos \& words. \url{http://mapme.com/gallery/}
-
-\bibitem{osm} OpenStreetMap. The project that creates and distributes free geographic data for the world. \url{https://www.openstreetmap.org/}
-
-\bibitem{prototypejs} Prototype JavaScript Framework. A foundation for ambitious web applications, 2, 2005. \url{https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework}
-
-\bibitem{es6} ECMAScript 6 — New Features: Overview \& Comparison. Copyright (c) 2015-2016 Ralf S. Engelschall. \url{http://es6-features.org/}
-
-\bibitem{jqueryusage} W3Techs. Usage statistics and market share of JQuery for websites, 10, 4, 2016. \url{https://w3techs.com/technologies/details/js-jquery/all/all}
-
-\bibitem{jqueryintro1} jQuery. jQuery, 10, 4, 2016. \url{https://jquery.com/}
-
-\bibitem{jqueryintro2} Wikipedia. jQuery, 22, 5, 2016. \url{https://en.wikipedia.org/wiki/JQuery}
-
-\bibitem{sizzle} Wiki. Sizzle. \url{https://github.com/jquery/sizzle/wiki}
-
-\bibitem{gha} World Health Organization (WHO). Global Health Atlas, 10, 4, 2016. \url{http://apps.who.int/globalatlas/}
-
-\bibitem{ghaex} WHO. Health workforce: Density of physicsians, 10, 4, 2016. \url{http://gamapserver.who.int/gho/interactive_charts/health_workforce/PhysiciansDensity_Total/atlas.html}
-
-\bibitem{d3jsintro1} D3.js. D3.js - Data-Driven Documents, 10, 4, 2016. \url{https://d3js.org/}
-
-\bibitem{d3jsintro2} Dashing D3.js. Why build Data Visualization with D3.js, 10, 4, 2016. \url{https://www.dashingd3js.com/why-build-with-d3js}
-
-\bibitem{jsintro} Mozilla Developer Network. Introduction - JavaScript, 10, 4, 2016. \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction}
-
-\bibitem{ol} Open Layers 3. A high-performance, feature-packed library for all your mapping needs. \url{http://openlayers.org/en/latest/doc/}
-
-\bibitem{googlemap} Google Maps. Web mapping service developed by Google, 10, 2004. \url{https://en.wikipedia.org/wiki/Google_Maps}
-
-\bibitem{bingmap} Bing Maps. Web mapping service provided as a part of Microsoft's Bing suite of search engines and powered by the Bing Maps for Enterprise framework, 12, 5, 2010. \url{https://en.wikipedia.org/wiki/Bing_Maps}
-
-\bibitem{ol3} Open Layers 3. Release Builds \url{http://openlayers.org/download/}
-
-\end{thebibliography}
+%----------------------------------------------%
 
 \end{document}
