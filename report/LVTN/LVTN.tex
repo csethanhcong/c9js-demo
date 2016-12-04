@@ -10,9 +10,23 @@
 \usepackage{graphicx} % Required to insert images
 \usepackage[nottoc]{tocbibind} % Required to generate bibliography
 
+% Ẩn khung đỏ trong reference
+\hypersetup{
+    colorlinks=false,
+    pdfborder={0 0 0},
+}
+
 % Required to counter number of caption in each figure
 \usepackage{chngcntr}
 \counterwithin{figure}{section}
+
+% Dùng để tạo Hình ảnh 1.1 trong mục lục
+\usepackage{tocloft}
+\newlength{\mylen}
+\renewcommand{\cftfigpresnum}{\figurename\enspace}
+\renewcommand{\cftfigaftersnum}{:}
+\settowidth{\mylen}{\cftfigpresnum\cftfigaftersnum}
+\addtolength{\cftfignumwidth}{\mylen}
 
 % Required to style figure number
 \usepackage{caption}
@@ -30,7 +44,7 @@
 \setlength{\parskip}{1em}
 \renewcommand{\baselinestretch}{1.2}
 
-% Required to create new blank page
+% Tạo trang trống, không đếm số trang
 \newcommand*\NewPage{\newpage\null\thispagestyle{empty}\newpage}
 
 % Required to define JS-like quote
@@ -40,7 +54,6 @@
 \definecolor{editorOcher}{rgb}{1, 0.5, 0} % #FF7F00 -> rgb(239, 169, 0)
 \definecolor{editorGreen}{rgb}{0, 0.5, 0} % #007C00 -> rgb(0, 124, 0)
 \usepackage{upquote}
-\usepackage{listings}
 \lstdefinelanguage{JavaScript}{
   morekeywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
   morecomment=[s]{/*}{*/},
@@ -221,11 +234,40 @@
     {ä}{{\"a}}1
     {ö}{{\"o}}1
 }
-\renewcommand{\lstlistingname}{\textbf{Mã nguồn}}% Listing -> Code
-\renewcommand{\lstlistlistingname}{Danh sách \lstlistingname}% List of Listings -> List of Code
 
 % Center the caption
-\usepackage[justification=centering]{caption}
+%\usepackage[justification=centering]{caption}
+\usepackage{textcomp}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}
+  {
+  {\parbox{\dimexpr\textwidth-2\fboxsep}{\centering #1#2#3}}
+  }
+\captionsetup[lstlisting]{format=listing} %,labelfont=white
+
+\renewcommand{\lstlistingname}{Mã nguồn}% Listing -> Code
+\renewcommand{\lstlistlistingname}{Danh sách mã nguồn}% List of Listings -> List of Code
+
+\AtBeginDocument{ %
+  \counterwithout{lstlisting}{section}
+}
+
+\newlength\mylencode
+
+\begingroup
+\makeatletter
+\let\newcounter\@gobble\let\setcounter\@gobbletwo
+  \globaldefs\@ne \let\c@loldepth\@ne
+  \newlistof{listings}{lol}{\lstlistlistingname}
+  \newlistentry{lstlisting}{lol}{0}
+\makeatother
+\endgroup
+
+\renewcommand{\cftlstlistingpresnum}{\lstlistingname\enspace}
+\renewcommand{\cftlstlistingaftersnum}{:}
+\settowidth{\mylencode}{\cftlstlistingpresnum\cftlstlistingaftersnum}
+\addtolength{\cftlstlistingnumwidth}{\mylencode}
+
 
 % Margins
 \topmargin=-0.45in
@@ -852,8 +894,111 @@ Tuỳ theo mục đích sử dụng, nếu chỉ dùng chức năng tạo biểu
 <script src="/path/to/C9.min.js"></script>
 \end{lstlisting}
 
+\subsubsection{Tạo biểu đồ và bản đồ với C9js}
+Sau khi đã tải đầy đủ các tập tin như bước trên, người dùng có thể tạo biểu đồ, bản đồ tương tác với các mã nguồn dựng sẵn.
+
+\myparagraph{Tạo bản đồ cột (Bar Chart):}
+C9js đươc nhóm xây dựng dựa trên các tính năng mới nhất của \textit{ES6}, ngoài ra còn mong muốn đem lại sự tiện dụng và rõ ràng cho người dùng.
+
+Đầu tiên, cần tạo một \textit{khung chứa (container)} trong cấu trúc cây \textbf{DOM} của Website.
+
+\begin{lstlisting}[caption=Tạo \textit{container} để chứa biểu đồ]
+<div id="chart"></div>
+\end{lstlisting}
+
+Sau đó, khởi tạo biểu đồ như Mã nguồn \ref{code:construct_C9js}
+
+\begin{lstlisting}[caption=Khởi tạo biểu đồ với C9js,label={code:construct_C9js}]
+var option = {
+    id: "chart",
+    data: {
+        plain: [
+            {name: "A", value:  10},
+            {name: "B", value:  20},
+            {name: "C", value:  50},
+            {name: "D", value:  30},
+            {name: "E", value:  70},
+        ],
+    }, 
+};
+var barChart = new C9.BarChart(option);
+barChart.draw();
+\end{lstlisting}
+
+Khi đó, trên Website sẽ xuất hiện biểu đồ cột như hình \ref{fig:gs_2}, người dùng có thể tương tác với các thành phần trên đồ thị như \textit{Cột, Chú thích (Legend)}.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.7]{image/gs_2}
+    \caption{Đồ thị cột từ C9js}
+    \label{fig:gs_2}
+	\end{center}
+\end{figure}
+
+Ngoài ra, C9js còn hỗ trợ tạo nhiều loại đồ thị khác nhau như: \textit{Đồ thị đường (Line Chart), đồ thị thời gian (Timeline), đồ thị tròn (Pie Chart), đồ thị hình xuyến (Donut Chart)}.
+
+\myparagraph{Tạo bản đồ (Map):}
+Giống như tạo biểu đồ, đầu tiên người dùng cần tạo một \textit{container} cho bản đồ.
+
+\begin{lstlisting}[caption=Tạo \textit{container} để chứa bản đồ]
+<div id="chart"></div>
+\end{lstlisting}
+
+Khởi tạo bản đồ tại \textit{container} đó.
+
+\begin{lstlisting}[caption=Khởi tạo bản đồ với C9js]
+var option = {
+    id: "map",
+};
+var map = new C9.Map(option);
+map.draw();
+\end{lstlisting}
+
+Kết quả ta có bản đồ với \textbf{Layer} mặc định là \textit{Tile} cùng \textbf{dữ liệu địa lý} được cung cấp bởi \textit{OpenStreetMap} như hình \ref{fig:gs_3}. Bên cạnh đó, C9js hỗ trợ nhiều loại \textbf{Layer} khác nhau như: \textit{Tile, Vector, Image, VectorTile,...} với nhiều nhà cung cấp \textbf{dữ liệu địa lý} khác nhau như: \textit{OpenStreetMap\citep{osm}, Bing Map\citep{bingmap}, Stamen\citep{stamen}, ...}.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.7]{image/gs_3}
+    \caption{Bản đồ từ C9js}
+    \label{fig:gs_3}
+	\end{center}
+\end{figure}
+
+Hình \ref{fig:gs_3} là bản đồ dạng tĩnh. C9js cho phép người dùng thêm dữ liệu tuỳ biến và tương tác trên bản đồ.
+
+\begin{lstlisting}[caption=Thêm dữ liệu vào Bản đồ với C9js, label={code:gs_map_data}]
+var options = {  
+    id:"map",
+    layers: {
+        type: "Image",
+        source: {
+            name: "ImageVector",
+            source: {
+                name: 'Vector',
+                url: 'https://openlayers.org/en/v3.19.1/examples/data/geojson/countries.geojson',
+                format: 'GeoJSON'   
+            }
+        }
+    },
+};
+var map = new C9.Map(option);
+map.draw();
+\end{lstlisting}
+
+Như Mã nguồn \ref{code:gs_map_data}, với dữ liệu được truyền vào thông qua địa chỉ bên ngoài (ở đây là dữ liệu các quốc gia được lấy từ \textit{OpenLayers}) bởi thông số \textit{url}. Ta được kết quả như hình \ref{fig:gs_4}. , các giá trị được thể hiện khi đưa chuột (\textit{hover}) lên các vùng trên bản đồ, ở đây là tên các quốc gia trên thế giới.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.7]{image/gs_4}
+    \caption{Thêm dữ liệu vào bản đồ với C9js}
+    \label{fig:gs_4}
+	\end{center}
+\end{figure}
 %----------------------------------%
 %----------------------------------%
+\subsubsection{Tuỳ biến định dạng dữ liệu đầu vào}
+\subsubsection{Tuỳ biến kiểu đồ thị}
+\subsubsection{Cập nhật đồ thị theo dữ liệu}
 \subsection{Các ví dụ minh hoạ}
 
 %----------------------------------%
