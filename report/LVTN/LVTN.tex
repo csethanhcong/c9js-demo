@@ -19,6 +19,7 @@
 % Required to counter number of caption in each figure
 \usepackage{chngcntr}
 \counterwithin{figure}{section}
+\counterwithin{table}{section}
 
 % Dùng để tạo Hình ảnh 1.1 trong mục lục
 \usepackage{tocloft}
@@ -28,10 +29,18 @@
 \settowidth{\mylen}{\cftfigpresnum\cftfigaftersnum}
 \addtolength{\cftfignumwidth}{\mylen}
 
+% Dùng để tạo Bảng 1.1 trong mục lục
+\renewcommand{\cfttabpresnum}{\tablename\enspace}
+\renewcommand{\cfttabaftersnum}{:}
+\settowidth{\mylen}{\cfttabpresnum\cfttabaftersnum}
+\addtolength{\cfttabnumwidth}{\mylen}
+%\setlength{\cfttabnumwidth}{\mylen}
+
 % Required to style figure number
 \usepackage{caption}
 \captionsetup[figure]{font=small,labelfont=bf}
 \captionsetup[lstlisting]{font=small,labelfont=bf}
+\captionsetup[table]{font=small,labelfont=bf}
 
 % Required to redefine space of section, subsection
 \usepackage{titlesec}
@@ -50,6 +59,7 @@
 % Required to define JS-like quote
 \usepackage{listings}
 \usepackage{color}
+\definecolor{darkgray}{rgb}{0.66, 0.66, 0.66}
 \definecolor{editorGray}{rgb}{0.95, 0.95, 0.95}
 \definecolor{editorOcher}{rgb}{1, 0.5, 0} % #FF7F00 -> rgb(239, 169, 0)
 \definecolor{editorGreen}{rgb}{0, 0.5, 0} % #007C00 -> rgb(0, 124, 0)
@@ -249,10 +259,8 @@
 \renewcommand{\lstlistlistingname}{Danh sách mã nguồn}% List of Listings -> List of Code
 
 \AtBeginDocument{ %
-  \counterwithout{lstlisting}{section}
+  \counterwithin{lstlisting}{section}
 }
-
-\newlength\mylencode
 
 \begingroup
 \makeatletter
@@ -263,11 +271,10 @@
 \makeatother
 \endgroup
 
-\renewcommand{\cftlstlistingpresnum}{\lstlistingname\enspace}
-\renewcommand{\cftlstlistingaftersnum}{:}
-\settowidth{\mylencode}{\cftlstlistingpresnum\cftlstlistingaftersnum}
-\addtolength{\cftlstlistingnumwidth}{\mylencode}
-
+\renewcommand{\cftlstlistingpresnum}{\enspace\enspace\lstlistingname\enspace}
+\renewcommand{\cftlstlistingaftersnum}{:\enspace}
+\settowidth{\mylen}{\cftlstlistingpresnum\cftlstlistingaftersnum}
+\addtolength{\cftlstlistingnumwidth}{\mylen}
 
 % Margins
 \topmargin=-0.45in
@@ -303,78 +310,69 @@
 % My own defined commands
 \newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\\} % Newline after paragraph
 
+% Tạo subsubsubsection và biến đếm
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+% Tạo đường chéo trong table
+\usepackage{slashbox}
+% Dùng array trong table
+\usepackage{array}
+% Tự set width cho cell trong table
+\usepackage{tabu}
+
+% Thêm dấu độ (degree)
+\usepackage{gensymb}
+
 \begin{document}
-\begin{titlepage}
-
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
-\newcommand\tab[1][1cm]{\hspace*{#1}}
-
-\center % Center everything on the page
- 
-%----------------------------------------------------------------------------------------
-%	HEADING SECTIONS
-%----------------------------------------------------------------------------------------
-
-\textsc{\large ĐẠI HỌC BÁCH KHOA THÀNH PHỐ HỒ CHÍ MINH}\\[0.2cm] % Name of your university/college
-\textsc{\Large \scshape khoa khoa học và kỹ thuật máy tính}\\[0.5cm] % Major heading such as course name 
-\begin{center}
-    \includegraphics[scale=.14]{image/logo}
-\end{center}
-
-\textsc{\large BÁO CÁO LUẬN VĂN TỐT NGHIỆP}\\[0.2cm] % Minor heading such as course title
-
-%----------------------------------------------------------------------------------------
-%	TITLE SECTION
-%----------------------------------------------------------------------------------------
-
-\HRule \\[0.4cm]
-{ \huge \bfseries Trực quan dữ liệu với thư viện C9js}\\[0.4cm] % Title of your document
-\HRule \\[0.8cm]
-
-%----------------------------------------------------------------------------------------
-%	AUTHOR SECTION
-%----------------------------------------------------------------------------------------
-\begin{flushright}
-\begin{minipage}{0.7\textwidth}
-
-\end{minipage}
-\end{flushright}
-
-\begin{flushleft} \large
-\textbf{Hội đồng:}\\
-\tab[2cm] GVHD: TS. Lương Thế Nhân\\
-\tab[2cm] GVHD: TS. Huỳnh Tường Nguyên\\
-\tab[2cm] GVPB: ThS. Trần Giang Sơn\\
-\end{flushleft}
-
-\begin{flushleft} \large
-\textbf{Sinh viên thực hiện:}\\
-\tab[2cm] Phạm Thành Công\quad \ - 51200399\\
-\tab[2cm] Đỗ Đặng Thanh Huy - 51201337\\[1.5cm]
-\end{flushleft}
-
-%----------------------------------------------------------------------------------------
-%	DATE SECTION
-%----------------------------------------------------------------------------------------
-
-%{\large \today}\\[3cm] % Date, change the \today to a set date if you want to be precise
-\large \emph{Thành phố Hồ Chí Minh, 05/2016}
-
-\vfill % Fill the rest of the page with whitespace
-
-\end{titlepage}
+\input{titlepage}
 
 \thispagestyle{empty}
 \NewPage
+\pagenumbering{roman} %numbering before main content starts
 \tableofcontents
 \NewPage
-\newpage
+%\newpage
 \listoffigures % Prints the list of figures
-\newpage
+\clearpage
+%\newpage
+\listoftables
+\clearpage
+%\newpage
 \addcontentsline{toc}{section}{Danh sách mã nguồn}
 \lstlistoflistings
-\thispagestyle{empty}
-\newpage
+\clearpage
+%\thispagestyle{empty}
+%\newpage
+\pagenumbering{arabic} %reset numbering to normal for the main content
 %----------------------------------------------%
 \section{Giới thiệu đề tài}
 \subsection{Bối cảnh}
@@ -694,16 +692,16 @@ Ngoài ra, ứng dụng cho phép người dùng tương tác trực tiếp vớ
 \subsubsection{JavaScript}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-Javascript là một ngôn ngữ nhẹ (lightweight), thông dịch, hướng đối tượng với first-class function, và được biết đến nhất như là một ngôn ngữ kịch bản (scripting language) cho các trang Web, nhưng Javascript cũng có thể được sử dụng trong các môi trường non-browser như node.js hay Apache CouchDB. Javascript là một prototype-based, ngôn ngữ kịch bản đa mô hình lập trình (multi-paradigm), động (dynamic), hỗ trợ nhiều kiểu như hướng đối tượng, lập trình mệnh lệnh (imperative programming), và lập trình hàm (functional programming).
+\textbf{JavaScript} là một ngôn ngữ nhẹ (lightweight), thông dịch, hướng đối tượng với first-class function, và được biết đến nhất như là một ngôn ngữ kịch bản (scripting language) cho các trang Web, nhưng \textbf{JavaScript} cũng có thể được sử dụng trong các môi trường non-browser như node.js hay Apache CouchDB. Javascript là một prototype-based, ngôn ngữ kịch bản đa mô hình lập trình (multi-paradigm), động (dynamic), hỗ trợ nhiều kiểu như hướng đối tượng, lập trình mệnh lệnh (imperative programming), và lập trình hàm (functional programming).
 
-Chuẩn cho Javascript là ECMAScript. Phiên bản hiện nay là ECMAScript 7 được công bố vào tháng 6/2016. Tuy nhiên, cho đến hiện nay, các trình duyệt chỉ hỗ trợ chuẩn ECMAScript 5, sắp tới đây sẽ hỗ trợ cho ECMAScript 6. Nhóm sử dụng chuẩn ECMAScript 6 như là tiêu chuẩn để coding thư viện. Các tính năng mạnh mẽ của ECMAScript 6 sẽ được liệt kê ở những phần sau.
+Chuẩn cho \textbf{JavaScript} là \textbf{ECMAScript}. Phiên bản hiện nay là \textbf{ECMAScript 7} được công bố vào tháng 6/2016. Tuy nhiên, cho đến hiện nay, các trình duyệt chỉ hỗ trợ chuẩn \textbf{ECMAScript 5}, sắp tới đây sẽ hỗ trợ cho \textbf{ECMAScript 6}. Nhóm sử dụng chuẩn \textbf{ECMAScript 6} như là tiêu chuẩn để coding thư viện. Các tính năng mạnh mẽ của \textbf{ECMAScript 6} sẽ được liệt kê ở những phần sau.
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Tính năng}
-JavaScript nâng cao sự linh động và khả năng tương tác cho website bằng cách sử dụng các hiệu ứng của nó như thực hiện các phép tính, kiểm tra form, viết các trò chơi, bổ sung các hiệu ứng đặc biệt, tuỳ biến các chọn lựa đồ hoạ, tạo ra các mật khẩu bảo mật và hơn thế nữa.
+\textbf{JavaScript} nâng cao sự linh động và khả năng tương tác cho website bằng cách sử dụng các hiệu ứng của nó như thực hiện các phép tính, kiểm tra form, viết các trò chơi, bổ sung các hiệu ứng đặc biệt, tuỳ biến các chọn lựa đồ hoạ, tạo ra các mật khẩu bảo mật và hơn thế nữa.
 
-Cụ thể, JavaScript có thể được dùng để:
+Cụ thể, \textbf{JavaScript} có thể được dùng để:
 \begin{list}{}{}
 \item[•] \emph{Tương tác với người dùng:} Chúng ta có thể viết mã để đáp lại các sự kiện. Các sự kiện này sẽ có thể phát sinh bởi người dùng: nhấp chuột hay được phát sinh từ hệ thống, định lại kích thước của trang …
 \item[•] \emph{Thay đổi nội dung động:} Mã JavaScript có thể dùng để thay đổi nội dung và vị trí các phần tử một cách động trên một trang nhằm đáp lại sự tương tác với người dùng.
@@ -787,6 +785,267 @@ Openlayers có 4 tính năng chính:
 \myparagraph{Ứng dụng}
 Đề tài hướng tới xây dựng thư viện JavaScript cho phép tương tác giữa bản đồ và các đồ thị dựa trên dữ liệu đầu vào, cho nên OpenLayers, cụ thể OpenLayers 3 sẽ là công cụ đắc lực cho việc xây dựng thành phần bản đồ trong đề tài.
 %----------------------------------%
+
+\subsubsection{Webpack}
+%----------------------------------%
+\myparagraph{Giới thiệu}
+Webpack là một mô-đun đóng gói (module bundler) rất mạnh. Một gói (bundle) là một tập tin Javascript mà kết hợp với các tài nguyên đi chung với nhau và nên được gửi trả về client trong một phản hồi cho một tập tin yêu cầu duy nhất. Một bundle có thể bao gồm các dạng tập tin như Javascript, CSS, HTML, và hầu hết bất kì loại tập tin khác.
+
+Có 4 khái niệm quan trọng (core concept) trong Webpack:
+
+\begin{list}{}{}
+\item[•] \emph{Entry:} Webpack tạo ra đồ thị của tất cả các phụ thuộc (dependency) trong ứng dụng. Điểm bắt đầu của đồ thị này chính là điểm đầu vào (entry). Điểm đầu vào nói cho webpack biết được nơi bắt đầu và đi theo đồ thị này để biết cần gộp những gì.
+\item[•] \emph{Output:} Một khi đã gộp tất cả các tài nguyên lại với nhau, người lập trình cần nói cho webpack biết nơi đóng gói ứng dụng. Output mô tả cho webpack cách xử lý các mã được gộp.
+\item[•] \emph{Loaders:} Mọi tài nguyên trong dự án của người lập trình đều là mối quan tâm của webpack (điều này không có nghĩa là mọi tài nguyên đều được gộp lại cùng với nhau). Webpack xem mỗi tập tin (css, html, scss, jgp, …) như là một mô-đun. Tuy nhiên, webpack chỉ biết Javascript. Loaders trong webpack sẽ chuyển đổi những tập tin này thành những mô-đun khi nó được thêm vào trong đồ thị.
+\item[•] \emph{Plugins:} Loaders chỉ thực thi chuyển đổi trên mỗi tập tin, do đó plugins được sử dụng rất phổ biến để thực hiện những hành động và chức năng tùy chỉnh trên các mảnh (chunk) hoặc bộ (compilation) của các mô-đun. Hệ thống plugin của webpack cực kỳ mạnh mẽ và dễ dàng tùy chỉnh.
+\end{list}
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Hoạt động và Tính năng}
+Webpack quét toàn bộ source code của ứng dụng, tìm kiếm câu lệnh import, xây dựng một đồ thị của những dependency, và cho ra 1 hoặc nhiều bundle. Với 1 số các plugin hỗ trợ, Webpack có thể tiền xử lí (preprocess) và thu gọn (minify) các tập tin không phải Javascript khác nhau như CoffeeScript, Typescript, SASS, và LESS,… và có thể chuyển đổi code từ ES6 sang ES5 để chạy được trên trình duyệt.
+
+Một số tính năng đáng chú ý của webpack:
+
+\begin{list}{}{}
+\item[•] Hỗ trợ các module format như AMD, CommonJS thông qua các loader (plug-in) như ES6.
+\item[•] Hỗ trợ các package manager như bower, npm
+\item[•] Các loader cho dạng không phải code như CSS, template, …
+\item[•] Có chế độ chạy trên môi trường phát triển.
+\end{list}
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Ứng dụng}
+Với các tính năng mạnh mẽ của Webpack, C9js sử dụng Webpack để:
+
+\begin{list}{}{}
+\item[•] Chuyển đổi code từ ES6 sang ES5 nhờ vào loader Babel.
+\item[•] Đóng gói các tập tin Javascript thành một tập tin duy nhất, dùng cho việc triển khai (release).
+\item[•] Hỗ trợ chạy trên môi trường phát triển (development environment).
+\end{list}
+
+Một ví dụ về việc áp dụng Webpack trong quá trình phát triển thư viện: Hình \ref{fig:webpack_build} Theo dõi sự thay đổi của các tập tin Javascript, CSS trong quá trình coding để tiến hành build lại thư viện.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.8]{image/webpack_build}
+    \caption{Theo dõi thay đổi mã nguồn với Webpack}
+    \label{fig:webpack_build}
+	\end{center}
+\end{figure}
+%----------------------------------%
+
+\subsubsection{Unit Testing}
+Kiểm thử đơn vị (\textbf{Unit Testing}), còn được gọi là kiểm thử thành phần (component testing), tập trung vào việc kiểm tra các phần nhỏ của source code như là class mà người phát triển (developer) viết nên. Những test này có ý nghĩa rất quan trọng trong việc giúp đỡ người phát triển đảm bảo những phần nhỏ trong code chạy đúng theo mong đợi và hoạt động một cách chính xác khi được kết hợp với những phần khác của ứng dụng. Kiểm thử như vậy giúp cho việc quản lí ứng dụng theo thời gian bằng cách đảm bảo những thay đổi do người lập trình tạo ra sẽ không vô tình ảnh hưởng đến những phần khác của hệ thống.
+
+Việc kiểm thử đối với Javascript đang ngày càng trở nên quan trọng đối với người lập trình. Ngày nay, có rất nhiều framework để chọn lựa cho việc kiểm thử. Và C9js đã sử dụng những công cụ sau để thực hiện việc kiểm thử:
+
+\subsubsubsection{Jasmine}
+%----------------------------------%
+\myparagraph{Các khái niệm liên quan}
+
+\textit{Test-driven development (TDD):}
+\begin{list}{}{}
+\item[•] Là một phương pháp tiên tiến để phát triển phần mềm bắt đầu với việc phát triển các test cho mỗi một tính năng. Các test có thể chạy không đúng như mong muốn bởi vì nó được phát triển thậm chí trước cả khi phát triển phần mềm. Người lập trình sau đó sẽ phát triển và cấu trúc lại mã để vượt qua được những test này. 
+\item[•] Mục tiêu của TDD là khuyến khích các thiết kế đơn giản và tạo ra sự tự tin (Kent Beck), viết mã một cách gọn gàng và chạy được (Ron Jeffries).
+\item[•] TDD liên quan đến test-first programming, tức viết test trước khi viết vừa đủ mã để thực hiện test và cấu trúc lại.
+\end{list}
+
+\textit{Behavior-driven development (BDD):}
+\begin{list}{}{}
+\item[•] Là một quá trình phát triển phần mềm được mở rộng từ TDD. BDD kết hợp những kĩ thuật chung và nguyên tắc của TDD để cung cấp cho việc phát triển phần mềm cũng như quản lý các đội (team) với các công cụ được chia sẽ và một quá trình chia sẽ để hợp tác với nhau trong quá trình phát triển phần mềm.
+
+\item[•] Mục tiêu của BDD là tập trung vào việc lấy được hiểu biết rõ ràng về hành vi của phần mềm thông qua thảo luận với các bên liên quan. BDD viết các test bằng ngôn ngữ tự nhiên giúp cho người không phải là lập trình viên cũng có thể đọc được. Các lập trình viên sẽ sử dụng ngôn ngữ thuần túy của họ để mô tả mục đích mã (code) mà họ viết. Điều này sẽ giúp cho các lập trình viên tập trung vào vấn đề tại sao mã này nên được viết ra, chứ không phải về vấn đề kĩ thuật, và giảm thiểu tối đa vấn đề dịch thuật giữa các ngôn ngữ.
+\end{list}
+%----------------------------------%
+%----------------------------------%
+\myparagraph{Giới thiệu về Jasmine}
+Jasmine là một framework theo mô hình BDD (behavior-driven framework), tức là sự phát triển hướng theo hành vi cho Javascript, dùng cho việc kiểm thử mã Javascript. Jasmine không phụ thuộc vào bất kì framework Javascript nào, không yêu cầu DOM, và cú pháp của Jasmine rất gọn gàng, rõ ràng, dễ dàng viết các test.
+%----------------------------------%
+%----------------------------------%
+\myparagraph{Đặc điểm}
+Để thấy được đặc điểm, cũng như các điểm mạnh, điểm yếu của Jasmine, chúng ta sẽ so sánh nó với một framework phổ biến khác dùng cho việc kiểm thử, đó là Mocha.
+
+\begin{list}{}{}
+\item[•] \emph{API:} 
+API của Jasmine và Mocha tương tự như nhau. Người lập trình viết bộ mô tả kiểm thử (test suite) với những khối (block) describe và với mỗi testcase, hay còn gọi là một đặc tả (spec), thì sử dụng hàm it.
+
+\begin{lstlisting}[caption=Cấu trúc của một test-suite trong Jasmine,label={code:jasmine_1}]
+describe('calculator add()', function() {
+	it('should add 2 numbers together', function() {
+		// assertions go here
+	});
+});
+\end{lstlisting}
+
+Sự khác nhau bắt đầu đến từ các hàm khẳng định hoặc kỳ vọng (assertion or expectation). Mocha không có thư viện khẳng định (assertion library) được xây dựng sẵn (có thể dùng một số thư viện hỗ trợ thêm như: Chai, should.js, expect.js,…), trong khi đó Jasmine thì hầu như có mọi thứ được xây dựng sẵn.
+
+\begin{lstlisting}[caption=Ví dụ sử dụng expect trong Jasmine,label={code:jasmine_2}]
+expect(calculator.add(1, 4)).toEqual(5);
+\end{lstlisting}
+
+\item[•] \emph{Kiểm tra đôi (test doubles):}
+Test doubles thường được so sánh với đôi đóng thế (stunt doubles), tức là khi thay thế một object bằng một object khác dùng cho mục đích kiểm thử, tương tự như cách các diễn viên được thay thế bởi diễn viên đóng thế trong các cảnh hành động nguy hiểm.
+
+Trong Jasmine, test doubles có hình thái của spy. Một spy là một hàm thay thế một hàm cụ thể mà người lập trình muốn điều khiển hành vi của nó trong một test và ghi lại cách mà hàm đó được sử dụng trong suốt quá trình thực thi của test đó.
+Ngược lại đối với Mocha, nó không có thư viện cho test double. Thay vào đó người lập trình cần dùng thêm Sinon.
+
+Spy trong Jasmine hầu như làm được mọi thứ cần thiết cho test doubles, do đó người lập trình có thể không cần sử dụng Sinon nếu đang dùng Jasmine, nhưng Jasmine và Sinon có thể được sử dụng chung với nhau nếu người lập trình cần.
+
+\item[•] \emph{Kiểm thử bất đồng bộ:}
+Kiểm thử bất đồng bộ trong Jasmine phiên bản 2.x và Mocha là giống nhau.
+
+\begin{lstlisting}[caption=Ví dụ sử dụng Jasmine để kiểm thử bất đồng bộ,label={code:jasmine_3}]
+it('should resolve with the User object', function(done) {
+	var dfd = new $.Deferred();
+	var promise = dfd.promise();
+	var stub = sinon.stub(User.prototype, 'fetch').returns(promise);
+	
+	dfd.resolve({name: 'David'});
+	
+	User.get().then(function(user) {
+		expect(user instanceOf User).toBe(true);
+		done();
+	});
+});
+\end{lstlisting}
+
+Ở ví dụ Mã nguồn \ref{code:jasmine_3}, User là một constructor có hàm tĩnh get. Hàm get sử dụng fetch để thực hiện gửi yêu cầu XHR (bất đồng bộ). Ở đây người lập trình muốn kiểm tra khi hàm get thực thi xong, thì giá trị trả về là một instance của User.
+
+\item[•] \emph{Sinon (Sinon Fake Server):}
+Một tính năng có trong Sinon nhưng không có trong Jasmine đó là fake server. Điều này cho phép người lập trình có thể thiết lập những phản hồi giả cho những yêu cầu AJAX.
+
+\item[•] \emph{Thực thi các testcase:}
+Trong Mocha, người lập trình có thể chạy các test bằng cách viết dòng lệnh như Mã nguồn \ref{code:mocha_test} trong command line:
+
+\begin{lstlisting}[caption=Khởi chạy trình kiểm thử testcase với Mocha,label={code:mocha_test}]
+mocha test --recursive --watch
+\end{lstlisting}
+
+Trong Jasmine, người lập trình không có tiện ích giống như Mocha. Thay vào đó, người lập trình phải sử dụng những trình chạy test (test runner), và một test runner rất phổ biến đó là Karma, sẽ được trình bày kĩ ở phần tiếp theo.
+\\
+
+Tóm lại, Jasmine có hầu hết mọi thứ được xây dựng sẵn bao gồm các thư viện kỳ vọng và các tiện ích test double. Tuy nhiên, Jasmine không có một test runner vì vậy người lập trình cần một công cụ như Karma để làm việc này.
+\end{list}
+%----------------------------------%
+
+\subsubsubsection{Karma}
+
+%----------------------------------%
+\myparagraph{Giới thiệu}
+Karma là một môi trường để chạy test (test runner) cho Javascript chạy trên nền Node.js. Karma rất thích hợp để kiểm thử AngularJS hoặc bất kì các dự án Javascript khác. Sử dụng Karma để chạy các test thì người lập trình sẽ dùng một trong những các bộ mô tả kiểm thử Javascript phổ biến như Jasmine, Mocha, Qunit, … và những test đó được thực thi không chỉ trong những trình duyệt khác nhau do người lập trình chọn (Chrome, PhantomJS, Safari,…), mà còn có thể là trên các thiết bị (platform) họ chọn (máy tính để bàn, điện thoại, máy tính bảng). Ở Karma, người lập trình dễ dàng tùy chỉnh, tích hợp với các dịch vụ tích hợp liên tục phổ biến (continuous intergration packages) như Travis CI, Jenkins, Semaphore và có sự hỗ trợ mạnh mẽ về các plugin.
+
+Nhìn chung, Karma có các tính năng tương tự như Webpack: preprocessor, plugin, loader,… Sức mạnh của Karma nằm ở khả năng chạy các test trên các trình duyệt khác nhau. 
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Hoạt động và Tính năng}
+Karma sẽ tạo ra một server giả, và sau đó chạy các test ở nhiều loại trình duyệt khác nhau do người dùng chỉ định sử dụng dữ liệu từ server giả đó. Do Karma chỉ là môi trường nên nó cần một framework như Jasmine, Mocha để chạy test. Kết quả của mỗi test trên mỗi trình duyệt sẽ được xem xét và hiển thị thông qua command line để giúp người lập trình có thể nhìn thấy trình duyệt nào và test nào thành công hay thất bại.
+
+Karma có thể làm những việc sau:
+
+\begin{list}{}{}
+\item[•] Tạo ra web server.
+\item[•] Thực thi lại các test đối với mỗi trình duyệt.
+\item[•] Hiển thị kết quả của mỗi test trong console.
+\end{list}
+%----------------------------------%
+
+\subsubsubsection{PhantomJS}
+%----------------------------------%
+\myparagraph{Giới thiệu}
+PhantomJS là một trình duyệt không có giao diện người dùng nhưng lại cung cấp Javascript API (headless webkit scriptable), làm cho trình duyệt trở nên hữu dụng. Nó có sự hỗ trợ nhanh chóng và thuần túy cho nhiều chuẩn web khác nhau như: xử lí DOM, bộ chọn CSS (CSS selector), JSON, Canvas, và SVG.
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Tính năng}
+PhantomJS có các tính năng sau:
+
+\begin{list}{}{}
+\item[•] \emph{Chụp ảnh màn hình (screen capture):} Vì PhantomJS sử dụng WebKit, một bố cục thực (real layout) và phần mềm dựng hình (rendering engine), do đó nó có thể chụp hình một trang web. Bởi vì PhantomJS có thể vẽ mọi thứ trên trang web, nên nó có thể được sử dụng để chuyển đổi nội dung không chỉ trong HTML và CSS, mà còn SVG và Canvas.
+\item[•] \emph{Kiểm thử (testing):} Đây là một tính năng phổ biến của PhantomJS. Nó phù hợp cho việc kiểm thử dựa trên command line, và là một phần của tích hợp liên tục. PhantomJS được xem như là công cụ phổ biến để chạy các unit test. Những công cụ như Mocha, Casper rất thích hợp khi kết hợp với PhantomJS, vì những công cụ này dựa trên nó.
+\item[•] \emph{Giám sát mạng (network monitoring):} Bởi vì PhantomJS cho phép kiểm tra lưu lượng mạng, nên nó phù hợp để xây dựng nên các bản phân tích về hành vi và hiệu suất mạng.
+\item[•] \emph{Giả lập trang (page automation):} Do PhantomJS có thể tải và thao tác một trang web, nên nó rất phù hợp để giả lập nên nhiều trang khác nhau.
+\item[•] \emph{Giao tiếp giữa các quá trình (inter process communication):} Hỗ trợ việc giao tiếp giữa PhantomJS và các quá trình khác (I/O, HTTP,…).
+\end{list}
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Ưu điểm và nhược điểm}
+Chúng ta sẽ so sánh với một trình duyệt cũng rất phổ biến trong việc hỗ trợ kiểm thử, đó là jsdom, để tìm ra điểm mạnh cũng như điểm yếu của PhantomJS:
+
+\begin{table}
+\begin{tabu} to 1\textwidth { | X[l] | X[l] | X[l] | }
+\hline
+\textbf{Tiêu chí} & \textbf{PhantomJS} & \textbf{jsdom}\\
+\hline\hline
+Định nghĩa & Là một trình duyệt hoàn chỉnh (không hỗ trợ giao diện), với kỹ thuật dựng hình (rendering engine) rất cũ và hiếm thấy & Không phải là một trình duyệt hoàn chỉnh, nó không thể bố cục và dựng hình, và cũng không hỗ trợ điều hướng trang. Chỉ hỗ trợ DOM, HTML, canvas, nhiều web API khác (không hỗ trợ SVG), và chạy kịch bản (script)\\
+\hline
+Môi trường thực thi & Cần một trình thực thi (executable) để chạy PhantomJS, là native-code nên cần được biên dịch thông qua một framework & Hoàn toàn là JavaScript, có thể chạy thông qua NodeJS \\
+\hline
+Chi phí (overhead) để tải trang & Cao, tốn nhiều thời gian, do đó việc chạy test-case có thể mất vài phút & Mất vài giây với cùng số lượng test-case \\
+\hline
+Cách thực thi mã nguồn (load script) & Nếu tạo một đoạn mã  để kiểm (test) thử trong PhantomJS, thì test đó sẽ chạy ở một quá trình khác chứ không phải là ở ứng dụng web. Vì vậy khi thực hiện nhiều bước trong test và các bước này phụ thuộc lẫn nhau, khi đó ứng dụng có thể thay đổi DOM trong những bước này & Ngược lại với PhantomJS, các test sẽ nằm trong cùng luồng (thread) với ứng dụng web, do đó nếu test đang thực thi mã Javascript, thì ứng dụng web không thể chạy mã của nó cho tới khi test đó được thực thi xong\\
+\hline
+\end{tabu}
+\caption{So sánh PhantomJS và jsdom}
+\label{table:phantomjs_jsdom}
+\end{table}
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Ứng dụng}
+Hiện nay thì xu hướng sử dụng Mocha/Chai/jsdom ngày càng phổ biến, hiệu suất tốt hơn so với Jasmine/Karma/PhantomJS rất nhiều, đặc biệt là đối với những dự án lớn. Đã có nhiều dự án lớn đi theo mô hình TDD, bắt đầu với Jasmine/Karma/PhantomJS, tuy nhiên sau một thời gian, người ta đã nhận thấy món nợ kĩ thuật (technical debt) trở nên ngày càng lớn do tốc độ chạy của bộ ba này quá chậm khi dự án ngày một lớn hơn, khi đó Mocha/Chai/jsdom là một lựa chọn tốt hơn để giải quyết vấn đề và ngày càng được ưa chuộng.
+
+C9js ban đầu cũng đã sử dụng bộ Mocha/Chai/jsdom để thực hiện việc kiểm thử. Tuy nhiên vì một lí do lớn nhất C9js đã không sử dụng, chính là jsdom không hỗ trợ SVG. Mà đây là thành phần chính trong các biểu đồ, do D3 dựng lên (render). Trong khi PhantomJS có hỗ trợ đầy đủ các chuẩn web, thuận lợi cho việc kiểm thử các thành phần khác nhau.
+%----------------------------------%
+
+\subsubsubsection{Istanbul}
+%----------------------------------%
+\myparagraph{Giới thiệu}
+Là công cụ dùng để đo lường mức độ mà mã nguồn (source code) của thư viện, ứng dụng Javascript đã được kiểm thử thông qua các bộ mô tả kiểm thử (test suite), hay còn gọi với một thuật ngữ là code coverage. Istanbul được viết bằng Javascript.
+
+Istanbul sẽ đo đạc số lượng các câu lệnh (statement), nhánh (branch), hàm (function), dòng lệnh (line) đã chạy bằng những test mà người lập trình đã viết nên.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.5]{image/istanbul_1}
+    \caption{Kết quả Unit Testing của C9js được Istanbul tổng quan}
+    \label{fig:istanbul_1}
+	\end{center}
+\end{figure}
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Tính năng}
+Các tính năng của Istanbul:
+
+\begin{list}{}{}
+\item[•] Theo dõi sự bao phủ (coverage) các câu lệnh, nhánh, và hàm của thư viện Javascript.
+\item[•] Module loader sẽ móc nối với các đoạn mã đã được đo đạc trên các kênh (github, codecov,…).
+\item[•] Chạy độc lập với trình chạy test (test runner) khi thực hiện kiểm thử đơn vị.
+\item[•] Có thể báo cáo kết quả đo đạc qua nhiều định dạng: HTML, LCOV, Cobertuna, …
+\item[•] Có khả năng sử dụng những công cụ trung gian (middleware) để kiểm thử tập tin Javascript trên trình duyệt.
+\item[•] Có thể được dùng trên command line như là một thư viện (viết dòng lệnh trong command line với istanbul đứng đầu).
+\item[•] Kiểm thử rất tốt trên node và trình duyệt.
+\end{list}
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.5]{image/istanbul_2}
+    \caption{Trạng thái các dòng lệnh C9js được cover trên GitHub, báo cáo bởi Istanbul}
+    \label{fig:istanbul_2}
+	\end{center}
+\end{figure}
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Ứng dụng}
+Istanbul hỗ trợ bao phủ mã Javascript trong nhiều trường hợp bao gồm kiểm thử đơn vị và kiểm thử chức năng (functional test) ở phía server. C9js áp dụng Istanbul để đo lường mức bao phủ của các câu lệnh, nhánh, hàm trong khi thực hiện kiểm thử đơn vị, đảm bảo tính ổn định và độ tin cậy cho mã nguồn. 
+
+%----------------------------------%
+
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
@@ -997,8 +1256,144 @@ Như Mã nguồn \ref{code:gs_map_data}, với dữ liệu được truyền và
 %----------------------------------%
 %----------------------------------%
 \subsubsection{Tuỳ biến định dạng dữ liệu đầu vào}
+Với tên gọi là DataAdapter, đây là một trong những tính năng độc đáo và mới lạ của C9js, nhằm tạo điều kiện tốt nhất cho người dùng trong quá trình tiền xử lý dữ liệu đầu vào. Nội dung cụ thể, tính năng và mô hình xây dựng nên DataAdapter sẽ được trình bày chi tiết trong mục \textbf{Kiến trúc xây dựng}.
+
+Quay lại với cách sử dụng tính năng DataAdapter. Trên trang chủ C9js, nhóm có trình bày về khái niệm cở bản để người dùng dễ dàng nắm bắt, cũng như ví dụ sử dụng. DataAdapter hỗ trợ nhiều định dạng dữ liệu khác nhau như \textit{csv (Comma-separated values), tsv (Tab-separated values), json, text, xml} và cả \textit{XHR (XMLHttpRequest)}\cite{xhr}\cite{csv}\cite{tsv}. Thêm nữa, DataAdapter còn cung cấp tính năng tự định nghĩa định dạng dữ liệu đầu vào. Ví dụ ta có một dữ liệu mẫu như Mã nguồn \ref{code:da_1}.
+
+\begin{lstlisting}[caption=Một dữ liệu mẫu với các thuộc tính lồng nhiều cấp, label={code:da_1}]
+[
+	{
+		username: 'Adam',
+		property: {
+			salary: 1000,
+			age: 28,
+		},
+		...
+	},
+	...
+]
+\end{lstlisting}
+
+Khi đó, người dùng chỉ việc định nghĩa các khoá tương ứng \textit{name, value} tuỳ ý, theo bất kỳ trường nào trong dữ liệu mẫu, như ví dụ trên có thể định nghĩa theo các khoá lồng nhiều cấp bằng dấu \textit{"."} (Mã nguồn \ref{code:da_2}).
+
+\begin{lstlisting}[caption=Định nghĩa định dạng dữ liệu đầu vào với C9js, label={code:da_2}]
+var option = {
+    data: {
+        // Your own defined-keys go here
+        keys: {
+            'name': 'username',
+            'value': 'property.salary'
+        }
+    }
+}
+var chart = new C9.BarChart(option);
+chart.draw();
+\end{lstlisting}
+
 \subsubsection{Tuỳ biến kiểu đồ thị}
+Việc trực quan dữ liệu có mang tính hiệu quả, hay gây ấn tượng với thị hiếu người dùng hay không hoàn toàn phụ thuộc vào \textit{style} của loại trực quan đó. C9js cho phép lập trình viên toàn quyền tuỳ chỉnh \textit{style} theo ý muốn và mục đích của mình.
+
+Có 3 cách để thay đổi \textit{style} trong C9js:
+
+\begin{list}{}{}
+\item[•] \emph{Thông qua các thiết lập (option) tại thời điểm khởi tạo đối tượng Chart/Map}
+
+Mã nguồn \ref{code:option_1} thực hiện các thay đổi về các trục toạ độ (axis), cụ thể là xoay các tick trên trục x 45\degree  (theo chiều kim đồng hồ), không hiện lưới (grid), đối với trục y thực hiện thay đổi nội dung hiển thị trên các tick dựa vào dữ liệu trả về. Ta được kết quả như hình \ref{fig:option_2}.
+ 
+\begin{lstlisting}[caption=Thay đổi \textit{style} tại thời điểm khởi tạo Chart, label={code:option_1}]
+var option = {
+    axis: {
+        x: {
+            show: true,
+            grid: false,
+            tick: {
+                rotate: 45
+            }
+        },
+        y: {
+            show: true,
+            tick: {
+                format: function(data, index) {
+                    return '-' + data + '-';
+                }
+            }
+        },
+    }
+};
+var chart = new C9.LineChart(option);
+chart.draw();
+\end{lstlisting}
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.8]{image/option_2}
+    \caption{Một ví dụ về thay đổi \textit{style} với C9js}
+    \label{fig:option_2}
+	\end{center}
+\end{figure}
+
+\item[•] \emph{Thông qua các CSS Selector được định nghĩa sẵn}
+
+Mỗi thành phần (axis, tick, grid, bar, legend, line, ...) trong C9js đều có các CSS Class\citep{css_class} tương ứng. Lập trình viên có thể thay đổi \textit{style} thông qua các CSS Selector này (Mã nguồn \ref{code:css_class}). Một điểm nhỏ thú vị của C9js nữa là các thành phần liên quan đến màu săc (color, background-color, font-color, ...), giá trị đầu vào có thể dưới dạng tên tiếng Anh, mã RGB hay mã Hex.
+
+\begin{lstlisting}[caption=Thay đổi \textit{style} bằng CSS Selector, label={code:css_class}]
+.c9-chart-bar.c9-custom-rect {
+    opacity: 0.5;
+    background-color: black; // rgb(), hex-code available
+}
+\end{lstlisting}
+
+\item[•] \emph{Thông qua hàm \textit{setOption}}
+
+Nhằm giảm thời gian và rắc rối khi phải đưa toàn bộ các tuỳ chỉnh, thuộc tính vào lúc khởi tạo, C9js có một tính năng gọi là hàm-đứng-riêng (stand-alone function) \textit{setOption} giúp lập trình viên có thể thay đổi tuỳ chỉnh bất cứ lúc nào sau khi khởi tạo đối tượng Chart/Map. Việc thay đổi được ví dụ như Mã nguồn \ref{code:setoption}, có thể thay đổi các tuỳ chỉnh lồng nhiều cấp bằng phân cách dấu \textit{"."}, tương tự như tính năng DataAdapter đã trình bày ở trên.
+
+\begin{lstlisting}[caption=Thay đổi \textit{style} với \textit{setOption}, label={code:setoption}]
+chart.setOption('grid.x.show', true);
+\end{lstlisting}
+
+\end{list}
+
 \subsubsection{Cập nhật đồ thị theo dữ liệu}
+Một tính năng không thể thiếu đối với trực quan dữ liệu trên nền Web, đó là cập nhật theo thời gian thực. C9js cung cấp API với hàm \textit{updateData} giúp lập trình viên hiện thực điều đó. Ví dụ \ref{code:updatedata_1} thể hiện cách sử dụng \textit{updateData}, ở đây biểu đồ \textit{DonutChart} sẽ được cập nhật lại sau 5 giây với dữ liệu mới được đưa vào, cùng định dạng với dữ liệu ban đầu.
+
+\begin{lstlisting}[caption=Cập nhật lại biểu đồ với \textit{updateData}, label={code:updatedata_1}]
+// ... chart drawn already
+var chart = new C9.DonutChart(option);
+chart.draw();
+// Then, update it
+setTimeout(function(){
+    chart.updateData([
+        {name: "Male", value:   45},
+        {name: "Female", value: 55},
+    ]);
+}, 5000);
+\end{lstlisting}
+
+Ngoài ra, lập trình viên còn có thể tái định nghĩa lại các khoá-thuộc tính trong lúc cập nhật biểu đồ. Ví dụ ta có mẫu dữ liệu ban đầu được thể hiện dưới dạng biểu đồ tròn (PieChart) với khoá là \textit{age}, sau đó có thể cập nhật lại biểu đồ với cùng mẫu dữ liệu đó, nhưng thể hiện theo khoá \textit{salary} như ví dụ \ref{code:updatedata_2}. Việc này có ý nghĩa giảm tối đa thao tác trên dữ liệu nếu lập trình viên muốn sử dụng lại dữ liệu cũ nhưng chỉ khác khoá mà không cần phải xử lý lại dữ liệu như ban đầu.
+
+\begin{lstlisting}[caption=Định nghĩa lại khoá-thuộc tính trong lúc cập nhật, label={code:updatedata_2}]
+setTimeout(function(){
+    chart.updateData([
+        {
+            name: "Male", 
+            property: {
+                age: 28,
+                salary: 5000
+            }
+        },
+        {
+            name: "Female", 
+            property: {
+                age: 30,
+                salary: 4500
+            }
+        },
+    ], {
+        value: 'property.salary'
+    });
+}, 5000);
+\end{lstlisting}
+
 \subsection{Các ví dụ minh hoạ}
 
 %----------------------------------%

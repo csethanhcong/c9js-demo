@@ -18,6 +18,13 @@
 
 \bibitem{technology_boom} Bùng n? thông tin: co h?i và thách th?c, 18/08/2015. \url{http://skhcn.binhthuan.gov.vn/wps/portal/!ut/p/c4/04_SB8K8xLLM9MSSzPy8xBz9CP0os3hfRxMDTyNnA3cLPzdDA88woxBfc89gQxd3Y_2CbEdFAPd11IA!/?WCM_PORTLET=PC_7_MA40I2C0G8NF10IV2TM7IS1D45_WCM&WCM_GLOBAL_CONTEXT=/wps/wcm/connect/sbn_khcn_vi/sbn_khcn/kho_noi_dung/tin_tuc/hoat_dong/b070b5004985499baf8bbf7ba796b3b8&cur_id=b070b5004985499baf8bbf7ba796b3b8}
 
+\bibitem{xhr} Ð?i tu?ng XMLHttpRequest trong AJAX. \url{http://hoccungdoanhnghiep.vn/tai-lieu-lap-trinh/bai-1--doi-tuong-xmlhttprequest-trong-ajax}
+
+\bibitem{csv} Comma-separated values - Wikipedia. \url{https://en.wikipedia.org/wiki/Comma-separated_values}
+
+\bibitem{tsv} TSV - Wikipedia. \url{https://en.wikipedia.org/wiki/TSV}
+
+\bibitem{css_class} Class selectors - CSS | MDN. \url{https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors}
 
 \bibitem{bigdata} T.Alan Keahey, IBM. Using visualization to understand big data, 2013. \url{www.iotdataviz.com/meetup/1/YTW03349USEN.PDF}
 
