@@ -443,7 +443,7 @@ Về kiến trúc, cũng như tài liệu (documentation), C9js được thể h
 %----------------------------------------------%
 \newpage
 \section{Kiến thức nền tảng và Công nghệ}
-\subsection{Công trình liên quan}
+\subsection{Công trình liên quan}\label{sec:related_work}
 \subsubsection{Công cụ hỗ trợ trực quan dữ liệu phân tán Gapminder}
 %----------------------------------%
 \myparagraph{Giới thiệu}
@@ -1184,7 +1184,7 @@ var barChart = new C9.BarChart(option);
 barChart.draw();
 \end{lstlisting}
 
-Khi đó, trên Website sẽ xuất hiện biểu đồ cột như hình \ref{fig:gs_2}, người dùng có thể tương tác với các thành phần trên đồ thị như \textit{Cột, Chú thích (Legend)}.
+Khi đó, trên Website sẽ xuất hiện biểu đồ cột như hình \ref{fig:gs_2}, người dùng có thể tương tác với các thành phần trên đồ thị như \textit{Cột, Chú thích (Legend)} sẽ hiển thị các \textit{Tooltip} chứa các dữ liệu liên quan đến thành phần đang được tương tác..
 
 \begin{figure}[htp]
 	\begin{center}
@@ -1395,11 +1395,50 @@ setTimeout(function(){
 \end{lstlisting}
 
 \subsection{Các ví dụ minh hoạ}
+Bên cạnh các hướng dẫn từ cơ bản đến chuyên sâu như trên, nhóm đề tài còn tạo một mục gồm các mã nguồn có sẵn ứng với các tính năng, tuỳ chỉnh và đặc điểm của C9js. Tham khảo tại mục \textbf{Examples} trên trang chủ C9js (Hình \ref{fig:getting_started}). 
 
-%----------------------------------%
-%----------------------------------%
-\subsection{Ứng dụng thực tế}
+Các ví dụ được phân loại theo (Hình \ref{fig:example_page}):
 
+\begin{list}{}{}
+\item[•] \emph{Kiểu đồ thị, bản đồ:} BarChart, LineChart, Timeline, DonutChart, PieChart, Map.
+\item[•] \emph{Các tiện ích mở rộng:} Axis, Legend, Tooltip, Table.
+\item[•] \emph{Các tính năng:} EventListener, DataAdapter, UpdateData.
+\item[•] \emph{Các ví dụ mở rộng:} Advance Examples.
+\end{list}
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.6]{image/example_page}
+    \caption{Các ví dụ được phân loại theo kiểu đồ thị}
+    \label{fig:example_page}
+	\end{center}
+\end{figure}
+
+Cấu trúc của một trang ví dụ bao gồm ba thành phần (Hình \ref{fig:example_page_2}):
+
+\begin{list}{}{}
+\item[1 - ] Biểu đồ, bản đồ được tạo ra.
+\item[2 - ] Mã nguồn mẫu.
+\item[3 - ] Đường dẫn tới trang \href{https://jsfiddle.net/}{\textit{jsfiddle}} - đây là một trang chỉnh sửa code trực tuyến, nhóm đã để sẵn code mẫu như trên ví dụ và người dùng có thể trực tiếp chỉnh sửa ở \textit{jsfiddle}.
+\end{list}
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.5]{image/example_page_2}
+    \caption{Cấu trúc một trang ví dụ trên trang chủ C9js}
+    \label{fig:example_page_2}
+	\end{center}
+\end{figure}
+
+Bên cạnh đó, nhóm còn tạo sẵn ví dụ mở rộng: Tương tác giữa bản đồ - biểu đồ (nằm trong mục Advance Examples), một phần nhằm tái hiện ứng dụng Global Health Atlas - WHO\cite{einstein} đã trình bày ở mục \ref{sec:related_work}, một phần muốn giúp người dùng có cái nhìn sâu sắc hơn về tính tương tác trong C9js. Qua đó, có thể tạo các ví dụ mở rộng khác dựa trên mã nguồn mẫu. Như có thể thấy ở hình \ref{fig:advance_1}, có ba thành phần chính được tạo ra: \textit{BarChart, Map, Table}. Khi tương tác với một điểm trên \textit{Map}, \textit{BarChart} sẽ được cập nhật lại dựa trên dữ liệu trả về từ sự kiện tương tác với \textit{Map} - đây là tính năng EventListener của C9js, các tương tác (click, hover, mousemove) trên các thành phần của C9js (Chart, Map) sẽ được trả về dữ liệu tương ứng với điểm đó. Đối với thành phần \textit{Table}, khi hover lên \textit{BarChart}, hàng chứa giá trị tương đương sẽ được làm nổi bật giúp người dùng có cái nhìn trực quan và sinh động đối với dữ liệu.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.6]{image/advance_1}
+    \caption{Ví dụ mở rộng tái hiện ứng dụng GHA-WHO}
+    \label{fig:advance_1}
+	\end{center}
+\end{figure}
 %----------------------------------%
 %----------------------------------------------%
 %----------------------------------------------%
