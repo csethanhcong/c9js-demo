@@ -34,6 +34,9 @@
 
 \bibitem{subgraph} Gapminder Sub-graph. Examples about Gapminder sub-graph. \url{https://www.gapminder.org/tools/bubbles#_state_marker_size}
 
+\bibitem{codecov_wiki} Code coverage - Wikipedia. \url{https://en.wikipedia.org/wiki/Code_coverage}
+
+\bibitem{component_based} Component-based software engineering - Wikipedia. \url{https://en.wikipedia.org/wiki/Component-based_software_engineering#Software_component}
 
 \bibitem{c3js} c3js. C3.js | D3-based reusable chart library, 22, 5, 2016. \url{http://c3js.org/}
 

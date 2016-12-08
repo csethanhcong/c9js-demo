@@ -23,20 +23,24 @@
 \BOOKMARK [4][-]{subsubsubsection.2.2.5.2}{Karma}{subsubsection.2.2.5}% 23
 \BOOKMARK [4][-]{subsubsubsection.2.2.5.3}{PhantomJS}{subsubsection.2.2.5}% 24
 \BOOKMARK [4][-]{subsubsubsection.2.2.5.4}{Istanbul}{subsubsection.2.2.5}% 25
-\BOOKMARK [1][-]{section.3}{Gii thiu th vin C9js}{}% 26
-\BOOKMARK [2][-]{subsection.3.1}{M\364 ta b\340i to\341n}{section.3}% 27
-\BOOKMARK [2][-]{subsection.3.2}{Hng dn s dung}{section.3}% 28
-\BOOKMARK [3][-]{subsubsection.3.2.1}{C\340i t \(Setup\)}{subsection.3.2}% 29
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Tao biu \040v\340 ban \040vi C9js}{subsection.3.2}% 30
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Tuy bin inh dang d liu u v\340o}{subsection.3.2}% 31
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Tuy bin kiu \040thi}{subsection.3.2}% 32
-\BOOKMARK [3][-]{subsubsection.3.2.5}{Cp nht \040thi theo d liu}{subsection.3.2}% 33
-\BOOKMARK [2][-]{subsection.3.3}{C\341c v\355 du minh hoa}{section.3}% 34
-\BOOKMARK [1][-]{section.4}{Qu\341 tr\354nh thc hin}{}% 35
-\BOOKMARK [2][-]{subsection.4.1}{Kin tr\372c x\342y dng}{section.4}% 36
-\BOOKMARK [2][-]{subsection.4.2}{Hin thc th vin}{section.4}% 37
-\BOOKMARK [1][-]{section.5}{Kt lun}{}% 38
-\BOOKMARK [2][-]{subsection.5.1}{\320\341nh gi\341}{section.5}% 39
-\BOOKMARK [2][-]{subsection.5.2}{Hng ph\341t trin}{section.5}% 40
-\BOOKMARK [2][-]{subsection.5.3}{Kt lun}{section.5}% 41
-\BOOKMARK [1][-]{subsection.5.3}{T\340i liu tham khao}{}% 42
+\BOOKMARK [3][-]{subsubsection.2.2.6}{Code Coverage}{subsection.2.2}% 26
+\BOOKMARK [3][-]{subsubsection.2.2.7}{Semantic Versioning \(1.5\)}{subsection.2.2}% 27
+\BOOKMARK [3][-]{subsubsection.2.2.8}{CI-CD \(1.5\)}{subsection.2.2}% 28
+\BOOKMARK [1][-]{section.3}{Th vin C9js}{}% 29
+\BOOKMARK [2][-]{subsection.3.1}{M\364 ta b\340i to\341n}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.2}{Hng dn s dung}{section.3}% 31
+\BOOKMARK [3][-]{subsubsection.3.2.1}{C\340i t \(Setup\)}{subsection.3.2}% 32
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Tao biu \040v\340 ban \040vi C9js}{subsection.3.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Tuy bin inh dang d liu u v\340o}{subsection.3.2}% 34
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Tuy bin kiu \040thi}{subsection.3.2}% 35
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Cp nht \040thi theo d liu}{subsection.3.2}% 36
+\BOOKMARK [2][-]{subsection.3.3}{C\341c v\355 du minh hoa}{section.3}% 37
+\BOOKMARK [2][-]{subsection.3.4}{C\341c h\340m chc nang \(API\)}{section.3}% 38
+\BOOKMARK [1][-]{section.4}{Hin thc th vin \(12\)}{}% 39
+\BOOKMARK [2][-]{subsection.4.1}{Kin tr\372c x\342y dng \(7\)}{section.4}% 40
+\BOOKMARK [2][-]{subsection.4.2}{Hin thc th vin \(5\)}{section.4}% 41
+\BOOKMARK [1][-]{section.5}{Kt lun \(7\)}{}% 42
+\BOOKMARK [2][-]{subsection.5.1}{\320\341nh gi\341 \(Unit Testing vs So s\341nh vi c\341c CTLQ\) \(5\)}{section.5}% 43
+\BOOKMARK [2][-]{subsection.5.2}{Hng ph\341t trin \(1\)}{section.5}% 44
+\BOOKMARK [2][-]{subsection.5.3}{Kt lun \(1\)}{section.5}% 45
+\BOOKMARK [1][-]{subsection.5.3}{T\340i liu tham khao}{}% 46

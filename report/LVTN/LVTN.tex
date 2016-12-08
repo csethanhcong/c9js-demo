@@ -352,6 +352,9 @@
 % Thêm dấu độ (degree)
 \usepackage{gensymb}
 
+% Multirow trong table
+\usepackage{multirow}
+
 \begin{document}
 \input{titlepage}
 
@@ -419,7 +422,7 @@ Trong thời đại bùng nổ thông tin hiện nay, được tiếp sức bở
 Trong thời đại mà thông tin được coi như một loại tài sản, việc kết hợp trực quan dữ liệu với Web có thể được xem như một xu thế mới, một hướng đi đầy tiềm năng trong tương lại. Với mong muốn đóng góp vào quá trình này, đề tài \textit{Trực quan dữ liệu với C9js} có thể xem như một viên gạch trong bức tường đang xây dựng của trực quan dữ liệu.
 \subsection{Mục tiêu đề tài}
 %----------------------------------%
-\myparagraph{Rút ngắn thời gian cho các lập trình viên}
+\myparagraph{Công cụ hỗ trợ trực quan giúp rút ngắn thời gian cho các lập trình viên}
 Mang trực quan dữ liệu trở thành một ứng dụng trên nền Web vừa dễ vừa khó. Dễ ở việc các công nghệ Web rất đa dạng, phong phú, thậm chí là bao la khi đáp ứng các nhu cầu của trực quan dữ liệu. Nhưng đó cũng là điểm hạn chế, khi có quá nhiều thư viện, nền tảng, công nghệ lập trình viên cần nắm rõ và kết hợp nếu muốn hiện thực ý tưởng thành một ứng dụng mang tính thực tế trên Web.
 
 Bản thân nhóm cũng là các lập trình viên thích khám phá và nghiên cứu các công nghệ mới và phong phú trong thế giới Web. Mục tiêu thư viện C9js đề ra là giúp các lập trình viên khác khi sử dụng C9js sẽ cảm thấy dễ dàng nắm bắt, không đòi hỏi quá nhiều nỗ lực trong việc tìm hiểu hay xây dựng một ví dụ mẫu. Mặt khác, giảm thiểu tối đa thời gian cần thiết để đưa trực quan dữ liệu lên Web của mình.
@@ -1001,7 +1004,7 @@ Hiện nay thì xu hướng sử dụng Mocha/Chai/jsdom ngày càng phổ biế
 C9js ban đầu cũng đã sử dụng bộ Mocha/Chai/jsdom để thực hiện việc kiểm thử. Tuy nhiên vì một lí do lớn nhất C9js đã không sử dụng, chính là jsdom không hỗ trợ SVG. Mà đây là thành phần chính trong các biểu đồ, do D3 dựng lên (render). Trong khi PhantomJS có hỗ trợ đầy đủ các chuẩn web, thuận lợi cho việc kiểm thử các thành phần khác nhau.
 %----------------------------------%
 
-\subsubsubsection{Istanbul}
+\subsubsubsection{Istanbul}\label{sec:istanbul}
 %----------------------------------%
 \myparagraph{Giới thiệu}
 Là công cụ dùng để đo lường mức độ mà mã nguồn (source code) của thư viện, ứng dụng Javascript đã được kiểm thử thông qua các bộ mô tả kiểm thử (test suite), hay còn gọi với một thuật ngữ là code coverage. Istanbul được viết bằng Javascript.
@@ -1047,9 +1050,82 @@ Istanbul hỗ trợ bao phủ mã Javascript trong nhiều trường hợp bao g
 %----------------------------------%
 
 %----------------------------------------------%
+%----------------------------------%
+
+\subsubsection{Code Coverage}
+%----------------------------------%
+\myparagraph{Giới thiệu}
+Như đã giới thiệu sơ qua về thuật ngữ code coverage ở mục \ref{sec:istanbul} (Istanbul), ở phần này sẽ nói rõ hơn về thuật ngữ này cũng như công cụ để báo cáo mức độ bao phủ mã nguồn, đó là codecov.io.
+
+\textit{Code coverage:}
+
+Là một sự đo lường được dùng để cho thấy những dòng nào trong mã nguồn được thực thi bởi bộ mô tả kiểm thử (test suite). Có ba thuật ngữ được dùng để mô tả sự thực thi của mỗi dòng:
+
+\begin{list}{}{}
+\item[•] \emph{Hit:} Cho biết đoạn mã được thực thi.
+\item[•] \emph{Partial:} Cho biết đoạn mã không hoàn toàn được thực thi và vẫn còn nhánh (branch) không được thực thi.
+\item[•] \emph{Miss:} Cho biết đoạn mã không được thực thi.
+\end{list}
+
+Độ bao phủ được tính bằng công thức:
+\[
+    \frac{\textit{total hits}}{\sum{(\textit{hit, partial, miss})}}
+\]
+
+Theo thuật ngữ của Layman\citep{codecov_wiki} Code coverage cung cấp sự đo lường trực quan của mã nguồn được thực thi bởi bộ kiểm thử. Thông tin này cho lập trình viên biết họ cần viết những test mới ở đâu để đạt được mức độ bao phủ cao hơn. Code coverage thúc đẩy lập trình viên tăng mức độ bao phủ, và có thể tìm ra các lỗi mới, các vấn đề về cú pháp trong mã nguồn trong quá trình phát triển, để họ có thể giải quyết trước khi đưa ứng dụng ra cộng đồng.
+
+\textit{Codecov.io:}
+
+Là công cụ hỗ trợ tạo báo cáo về mức độ bao phủ mã nguồn của codecov.io và có thêm một huy hiệu coverage trong tập tin README của mã nguồn C9js trên GitHub (Hình \ref{fig:codecovio}). 
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.5]{image/codecovio}
+    \caption{Huy hiệu coverage được thêm vào reposioty C9js}
+    \label{fig:codecovio}
+	\end{center}
+\end{figure}
+
+Codecov.io đem vấn đề bao phủ mã nguồn lên một tầm cao mới. Không giống như những công cụ coverage khác, các công cụ mã nguồn mở hay tính phí. Codecov tập trung vào vấn đề tích hợp (integration) và thúc đẩy các pull request (các yêu cầu được ghép mã vào nhánh chính – master) một cách trong sáng. Công cụ Codecov cho phép các số liệu bao phủ (coverage) được thể hiện trực tiếp trong quá trình làm việc (workflow) để thúc đẩy nhiều hơn việc tăng cao mức độ bao phủ, đặc biệt là ở các pull request, nơi mà ở trong những quy trình làm việc hiện đại ngày nay, các tính năng mới và các vấn đề sửa lỗi xảy ra phổ biến.
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Tính năng}
+
+\begin{list}{}{}
+\item[•] \emph{Browser Extension:} Hỗ trợ xuất báo cáo với các đo đạc, thông số trên trình duyệt. Dễ dàng theo dõi và có cái nhìn tổng quan.
+\item[•] \emph{Auto-Merging Builds:} Hỗ trợ hầu hết các ngôn ngữ, kết hợp với tích hợp liên tục và xây dựng trong một báo cáo.
+\item[•] \emph{Notifications:} Gửi thông báo qua nhiều kênh giao tiếp như Slack, Gitter, Hipchat, hỗ trợ tạo Webhook,… .
+\item[•] \emph{Coverage Compare:} So sánh sự khác biệt trong sự thay đổi mã nguồn nhờ \textit{git diff}.
+\item[•] \emph{Pull Request Comments:} Là một bản mô tả chi tiết của một pull request. Nó cung cấp thông tin chi tiết về các thay đổi trong sự bao phủ (coverage) của pull request để giúp tăng nhanh tốc độ xem lại mã nguồn và đảm bảo các pull request đều đã được kiểm tra.
+\item[•] \emph{Commit Status:} Trạng thái dự án trong thư mục codecov sẽ đo đạc độ bao phủ của dự án đó và so sánh nó với pull request hoặc commit cha (parent commit).
+\end{list}
+
+%----------------------------------%
+
+%----------------------------------%
+\myparagraph{Ứng dụng}
+
+C9js sử dụng codecov.io để cho biết mức độ bao phủ của mã nguồn thư viện trực tiếp trên các kênh như GitHub và codecov.io:
+
+\begin{list}{}{}
+\item[•] \emph{GitHub}: \url{https://github.com/csethanhcong/C9js}
+\item[•] \emph{codecov.io}: \url{https://codecov.io/gh/csethanhcong/C9js}
+\end{list}
+
+Qua các báo cáo mà codecov.io đem lại như tính chính xác của mã nguồn (thông qua các test đã đạt hay không đạt), số lượng các câu lệnh, dòng, nhánh, hàm đã được bao phủ (cover),… đã góp phần làm cho mã nguồn thêm sự ổn định và tin cậy.
+
+%----------------------------------%
+\subsubsection{Semantic Versioning (1.5)}
+%----------------------------------%
+
+%----------------------------------%
+%----------------------------------%
+\subsubsection{CI-CD (1.5)}
+
 %----------------------------------------------%
 \newpage
-\section{Giới thiệu thư viện C9js}
+\section{Thư viện C9js}
 %----------------------------------%
 \subsection{Mô tả bài toán}
 Thông qua các công trình đã tìm hiểu, nhóm đề tài đánh giá và trích xuất ra các điểm hạn chế, các vấn đề mà các công trình đó chưa giải quyết được hoặc đã giải quyết nhưng đã lỗi thời cần nâng cấp để phù hợp với bối cảnh hiện tại của các công nghệ Web. Phần đánh giá, so sánh với các công trình liên quan sẽ được thể hiện chi tiết trong mục \textbf{Đánh giá}.
@@ -1062,10 +1138,10 @@ Cũng là các mục tiêu và hướng phát triển \textbf{C9js} đã, đang 
 \begin{list}{}{}
 \item[•] \emph{Hoàn toàn là mã nguồn mở:} \textbf{C9js} là thư viện JavaScript mã nguồn mở, được triển khai thông qua GitHub ở địa chỉ \url{https://github.com/csethanhcong/C9js}.
 
-\item[•] \emph{Kiến trúc xây dựng theo tiêu chuẩn ES2015 (hay ES6):} Nghiên cứu cẩn trọng qua các mã nguồn mở có khả năng trực quan dữ liệu, việc chon kiến trúc để xây dựng từ ban đầu là rất quan trọng, đặc biệt trong khả năng mở rộng nhằm đáp ứng nhu cầu tuỳ chỉnh hay đóng góp từ cộng đồng mã nguồn mở.
+\item[•] \emph{Kiến trúc xây dựng theo tiêu chuẩn ES2015 (hay ES6):} Nghiên cứu cẩn trọng qua các mã nguồn mở có khả năng trực quan dữ liệu, việc chon kiến trúc để xây dựng từ ban đầu là rất quan trọng, đặc biệt trong khả năng mở rộng nhằm đáp ứng nhu cầu tuỳ chỉnh hay đóng góp từ cộng đồng mã nguồn mở. Tiêu chuẩn ES6 hỗ trợ lập trình hướng đối tượng với các tính năng như \textit{class, import/export, kế thừa} đáp ứng được yêu cầu mở rộng về sau của C9js, cũng như tính năng \textit{getter/setter} giúp đảm bảo các thuộc tính được bảo toàn, không được truy xuất trực tiếp bởi người dùng.
 
-\item[•] \emph{Bao gồm các tính năng mới, mạnh mẽ:}
-Các tính năng riêng biệt của C9js được thể hiện rõ trên trang chủ của thư viện, tại địa chỉ \url{http://c9js.me/}. Phần trình bày chi tiết sẽ được nêu ở phần sau
+\item[•] \emph{Bao gồm các tính năng mới và mạnh mẽ:}
+Các tính năng riêng biệt của C9js được thể hiện rõ trên trang chủ của thư viện, tại địa chỉ \url{http://c9js.me/}. Ví dụ như tính năng \textit{DataAdapter}, đây là tính năng mới hỗ trợ người dùng tự định nghĩa định dạng dữ liệu đầu vào, giảm thiểu tối đa nỗ lực trong quá trình tiền xử lý dữ liệu. Ngoài ra còn có các tính năng khác phát triển và có nhiều đặc tính nổi bật. Phần trình bày chi tiết sẽ được nêu ở phần sau.
 
 \begin{figure}[htp]
 	\begin{center}
@@ -1440,19 +1516,151 @@ Bên cạnh đó, nhóm còn tạo sẵn ví dụ mở rộng: Tương tác gi�
 	\end{center}
 \end{figure}
 %----------------------------------%
+\subsection{Các hàm chức năng (API)}
+C9js gồm hai thành phần chính là Chart và Map, nên API được tổ chức nhằm hỗ trợ tối đa các lập trình viên theo hai thành phần này.
+
+\myparagraph{Chart}
+
+\begin{enumerate}
+\item draw(): Tạo Chart dựa vào đối tượng đã được khai báo và khởi tạo.
+
+\item setOption(\textit{key, value}): Thay đổi một tuỳ chỉnh trong đối tượng khởi tạo.
+	\begin{list}{}{}
+		\item[•] \textit{key} <String>: Khoá định nghĩa tuỳ chỉnh sẽ thay đổi.
+		\item[•] \textit{value} <String, Number>: Giá trị áp dụng cho thay đổi.
+	\end{list}
+	
+\item updateData(\textit{newData [, newDataConfig]}): Cập nhật lại đồ thị dựa trên dữ liệu mới nhập vào.
+	\begin{list}{}{}
+		\item[•] \textit{newData} <Object>: Dữ liệu mới để cập nhật.
+		\item[•] \textit{newDataConfig } <Object>: Định nghĩa lại khoá mới.
+	\end{list}
+	
+\item on(\textit{eventType, callback}): Lắng nghe sự kiện và trả về dữ liệu tương ứng trên đối tượng được tương tác.
+	\begin{list}{}{}
+		\item[•] \textit{eventType} <String>: Loại sự kiện (hover, click, mousemove).
+		\item[•] \textit{callback} <Function>: Chứa dữ liệu trả về.
+	\end{list}
+\end{enumerate}
+
+\myparagraph{Map}
+
+Đối với Map, C9js phân biệt hai loại đối tượng (\textit{Object}) như sau:
+
+\begin{list}{}{}
+\item[•] Đối tượng người dùng tự định nghĩa: Thông qua các hàm addData() hoặc createObject() và sẽ gồm các trường sau khi chuẩn hoá là coor (\textit{coordinate}), name, value.
+\item[•] Đối tượng GeoJSON: Đối tượng được tạo ra bởi tập tin GeoJson truyền vào bởi người dùng, dữ liệu mặc định sẽ được C9js truy xuất thông qua trường \textit{properties} (mặc định các tập tin GeoJSON có trường này) và trường \textit{id}.
+\end{list}
+
+Các hàm API của Map trong C9js được liệt kê như sau:
+
+\begin{enumerate}
+\item addData(plain [, keys]): Tạo một/nhiều đối tượng trên bản đồ (Line, Polygon, Marker), có thể định nghĩa khoá đầu vào.
+	\begin{list}{}{}
+		\item[•] \textit{plain} <Object>: Dữ liệu đầu vào, yêu cầu có các trường \textit{coor, name, value}.
+		\item[•] \textit{keys} <Object>: Định nghĩa các trường dữ liệu đầu vào để C9js truy xuất.
+	\end{list}
+	
+\item createObject(\textit{data, style}): Tạo một đối tượng mẫu trên Map, chứa các trường theo yêu cầu.
+	\begin{list}{}{}
+		\item[•] \textit{data} <Object>: Dữ liệu đầu vào, yêu cầu có các trường \textit{coor, name, value}.
+		\item[•] \textit{style} <Object>: Tuỳ chỉnh style cho đối tượng được vẽ lên Map.
+	\end{list}
+	
+\item getObjects(): Trả về FeatureObject từ OpenLayers, người dùng có thể truy xuất dữ liệu qua hàm get('data').
+
+\item createLayerFromGeojson(\textit{url, data, style}): Tương tự như hàm createObject() nhưng ở đây có thêm tham số \textit{url} cho phép người dùng tải tập tin GeoJSON để liên kết với dữ liệu đầu vào.
+	\begin{list}{}{}
+		\item[•] \textit{url} <String>: Đường dẫn chứa tập tin GeoJSON.
+		\item[•] \textit{data} <Object>:
+		\begin{list}{}{}
+			\item[-] \emph{plain} <Object>: Dữ liệu thô, chứa các trường \textit{coor, name, value}.
+			\item[-] \emph{file} <Object>: Dữ liệu đầu vào được tải từ tập tin
+			\item[-] \emph{process} <Function>: Hàm cho phép người dùng tiền xử lý dữ liệu, như thêm/xoá/sửa.
+			\item[-] \emph{condition} <Function>: Điều kiện để liên kết dữ liệu từ tập tin GeoJSON với dữ liệu đầu vào của người dùng. 
+		\end{list}
+		\item[•] \textit{style} <Object>: Tuỳ chỉnh style cho đối tượng được vẽ lên Map.
+	\end{list}
+	
+\item updateGeojsonData(\textit{url, data, style}): Tương tự như hàm createLayerFromGeojson(), dùng để cập nhật lại dữ liệu tại một đối tượng trên Map.
+	\begin{list}{}{}
+		\item[•] \textit{url} <String>: Đường dẫn chứa tập tin GeoJSON.
+		\item[•] \textit{data} <Object>:
+		\begin{list}{}{}
+			\item[-] \emph{plain} <Object>: Dữ liệu thô, chứa các trường \textit{coor, name, value}.
+			\item[-] \emph{file} <Object>: Dữ liệu đầu vào được tải từ tập tin
+			\item[-] \emph{process} <Function>: Hàm cho phép người dùng tiền xử lý dữ liệu, như thêm/xoá/sửa.
+			\item[-] \emph{condition} <Function>: Điều kiện để liên kết dữ liệu từ tập tin GeoJSON với dữ liệu đầu vào của người dùng. 
+		\end{list}
+		\item[•] \textit{style} <Object>: Tuỳ chỉnh style cho đối tượng được vẽ lên Map.
+	\end{list}
+	
+\item on(\textit{eventType, callback}): Lắng nghe sự kiện và trả về dữ liệu tương ứng trên đối tượng được tương tác, ở đây là \textit{FeatureObject} - đối tượng cung cấp bởi OpenLayers, người dùng có thể truy xuất dữ liệu đối tượng bằng hàm get('data').
+	\begin{list}{}{}
+		\item[•] \textit{eventType} <String>: Loại sự kiện (hover, click, mousemove).
+		\item[•] \textit{callback} <Function>: Chứa dữ liệu trả về.
+	\end{list}
+\end{enumerate}
+
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
-\section{Quá trình thực hiện}
-\subsection{Kiến trúc xây dựng}
-\subsection{Hiện thực thư viện}
+\section{Hiện thực thư viện (12)}
+\subsection{Kiến trúc xây dựng (7)}
+Thư viện C9js được nhóm xây dựng trên hai nguyên tắc chính, xuyên suốt cả quá trình phát triển: \textit{Component-based} và \textit{Data-driven}.
+
+\myparagraph{Component-based} 
+\textit{Component-based}\cite{component_based} được hiểu là xây dựng theo kiến trúc chia nhỏ thành các thành phần riêng biệt, hoạt động theo từng luồng chức năng riêng biệt, không tác động tới các thành phần khác. Việc xây dựng theo tiêu chí này giúp kiến trúc rõ ràng, mã nguồn trong sáng, việc mở rộng các thành phần về sau không ảnh hưởng tới các thành phần đã tồn tại.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=1]{image/chart}
+    \caption{Kiến trúc các thành phần của Chart trong C9js}
+    \label{fig:chart}
+	\end{center}
+\end{figure}
+
+Đối với thành phần Chart, có một \textit{Base Class} là \textit{Chart} sẽ bao gồm:
+\begin{list}{}{}
+\item[-] Các thuộc tính chính:
+\begin{list}{}{}
+\item[•] \emph{margin:} Khoảng cách tới khung chứa ngoài của Chart.
+\item[•] \emph{size:} Bao gồm chiều rộng (\textit{width}) và chiều cao (\textit{height}).
+\item[•] \emph{colorRange:} Mảng chứa giá trị các màu để thể hiện lên các thành phần một cách nhất quán.
+\item[•] \emph{id:} \textit{id} của khung chứa Chart.\\
+...
+\end{list}
+\item[-] Các thành phần trong \textit{Utils}:
+\begin{list}{}{}
+\item[•] \emph{Tooltip:} Bảng hiển thị khi lướt chuột qua các thành phần Chart.
+\item[•] \emph{Legend:} Chú thích các dữ liệu.
+\item[•] \emph{Axis:} Các trục toạ độ (\textit{x, y}).
+\item[•] \emph{Table:} Bảng tổng quan dữ liệu.
+\item[•] \emph{Title:} Tiêu đề Chart.
+\end{list}
+\end{list}
+
+Ngoài ra, còn có thành phần \textit{Events} bao gồm các sự kiện tương tác (\textit{click, hover, mousemove}) trên các thành phần của Chart. Khi các sự kiện này xảy ra, dữ liệu tương ứng tại vùng được tương tác sẽ được trả về cho người dùng.
+
+Kế thừa,...
+
+\myparagraph{Data-driven}.
+(định nghĩa)
+(Luồng phát sinh dữ liệu callback) hình
+
+\subsection{Hiện thực thư viện (5)}
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
-\section{Kết luận}
-\subsection{Đánh giá}
-\subsection{Hướng phát triển}
-\subsection{Kết luận}
+\section{Kết luận (7)}
+\subsection{Đánh giá (Unit Testing vs So sánh với các CTLQ) (5)}
+- Unit Testing
+- So sánh với c3 => Rút ra các factor để đánh vào đáp ứng Mục tiêu => Tính năng mới => Rút ngắn time
+- So sánh với WIND => Lỗi thời
+=> Ưu
+=> Nhược -> Hướng phát triển
+\subsection{Hướng phát triển (1)}
+\subsection{Kết luận (1)}
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
