@@ -1620,7 +1620,7 @@ Thư viện C9js được nhóm xây dựng trên hai nguyên tắc chính, xuy�
 	\end{center}
 \end{figure}
 
-Đối với thành phần Chart, có một \textit{Base Class} là \textit{Chart} sẽ bao gồm:
+Đối với thành phần Chart (Hình \ref{fig:chart}), có một \textit{Base Class} là \textit{Chart} sẽ bao gồm:
 \begin{list}{}{}
 \item[-] Các thuộc tính chính:
 \begin{list}{}{}
@@ -1642,10 +1642,22 @@ Thư viện C9js được nhóm xây dựng trên hai nguyên tắc chính, xuy�
 
 Ngoài ra, còn có thành phần \textit{Events} bao gồm các sự kiện tương tác (\textit{click, hover, mousemove}) trên các thành phần của Chart. Khi các sự kiện này xảy ra, dữ liệu tương ứng tại vùng được tương tác sẽ được trả về cho người dùng.
 
-Kế thừa,...
+Kế thừa từ \textit{Base Class - Chart}, các đồ thị khác nhau như đồ thị cột (\textit{Bar Chart}), đồ thị tròn (\textit{Pie Chart}), đồ thị dòng (\textit{Line Chart}), đồ thị thời gian (\textit{Timeline Chart}), đồ thị hình khuyên (\textit{Donut Chart}) sẽ là các đối tượng chính được lập trình viên sử dụng trong mã nguồn của họ.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=0.6]{image/chart_flow}
+    \caption{Luồng thực thi một đối tượng trong Chart của C9js}
+    \label{fig:chart_flow}
+	\end{center}
+\end{figure}
+
+Ví dụ minh hoạt (Hình \ref{fig:chart_flow}) mô tả một đối tượng \textit{BarChart} được vẽ bởi C9js. Tại thời điểm khởi tạo, lớp (\textit{Class}) sẽ gọi hàm khởi tạo của đối tượng \textit{Base}, sau đó các thuộc tính mà phương thức mà mỗi đối tượng \textit{Chart} đều có sẽ được tạo thông qua hàm \textit{initConfig()}. Tiếp theo, các tuỳ chỉnh người dùng nhập vào lúc khởi tạo sẽ được kết hợp với các tuỳ chỉnh mặc định bởi hàm \textit{updateConfig()} - vì các tuỳ chỉnh trong C9js thuộc kiểu \textit{Object} nên hàm \textit{updateConfig()} hỗ trợ tính năng trộn sâu (\textit{Deep Merge})\cite{merge_deep} nhằm đảm bảo các tuỳ chỉnh thống nhất và toàn vẹn. Cuối cùng, biểu đồ được hiển thị trên Web thông qua hàm \textit{draw()}, nhưng trước tiên các đối tượng của lớp \textit{Base} sẽ được vẽ trước bằng \textit{super.draw()}. Ngoài ra, C9js còn cung cấp các API như \textit{setOption()} và \textit{updateData()}, xét về bản chất cả hai hàm này đều cập nhật các thuộc tính trong một đối tượng của C9js nên sẽ gọi hàm \textit{updateConfig()} để thực hiện thao tác này và cập nhật lại đồ thị bằng \textit{draw()} .
 
 \myparagraph{Data-driven}.
-(định nghĩa)
+\textit{Data-driven}\cite{data_driven} là mô hình lập trình tập trung vào xử lý và thao tác trên dữ liệu, dữ liệu sinh ra sẽ kiểm soát luồng thực thi chương trình.
+
+
 (Luồng phát sinh dữ liệu callback) hình
 
 \subsection{Hiện thực thư viện (5)}

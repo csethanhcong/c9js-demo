@@ -56,6 +56,10 @@
 
 \bibitem{sizzle} Wiki. Sizzle. \url{https://github.com/jquery/sizzle/wiki}
 
+\bibitem{merge_deep} Painfully Obvious, Blog Archive, Deep-extending objects in JavaScript. \url{http://andrewdupont.net/2009/08/28/deep-extending-objects-in-javascript/}
+
+\bibitem{data_driven} Data-driven programming - Wikipedia. \url{https://en.wikipedia.org/wiki/Data-driven_programming}
+
 \bibitem{gha} World Health Organization (WHO). Global Health Atlas, 10, 4, 2016. \url{http://apps.who.int/globalatlas/}
 
 \bibitem{ghaex} WHO. Health workforce: Density of physicsians, 10, 4, 2016. \url{http://gamapserver.who.int/gho/interactive_charts/health_workforce/PhysiciansDensity_Total/atlas.html}
