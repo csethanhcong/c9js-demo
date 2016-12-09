@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  9 DEC 2016 18:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  9 DEC 2016 22:20
 entering extended mode
 **LVTN.tex
 (D:\LVTN\c9js-demo\report\LVTN\LVTN.tex
@@ -1024,7 +1024,7 @@ Package gensymb Info: Using \textohm for \ohm on input line 358.
 Package gensymb Info: Using \textmu for \micro on input line 358.
 
 (D:\LVTN\c9js-demo\report\LVTN\titlepage.tex
-<image/logo.png, id=185, 1007.765pt x 1027.84pt>
+<image/logo.png, id=197, 1007.765pt x 1027.84pt>
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 15.
@@ -1325,7 +1325,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 436.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [4]
-<image/repo_status.png, id=407, 268.00125pt x 32.37094pt>
+<image/repo_status.png, id=431, 268.00125pt x 32.37094pt>
 File: image/repo_status.png Graphic file (type png)
 
 <use image/repo_status.png>
@@ -1443,7 +1443,7 @@ Package pdftex.def Info: image/logo.png used on input line 468.
 Package natbib Warning: Citation `subgraph' on page 7 undefined on input line 4
 68.
 
-<image/gapminder.png, id=421, 1013.28563pt x 484.05844pt>
+<image/gapminder.png, id=445, 1013.28563pt x 484.05844pt>
 File: image/gapminder.png Graphic file (type png)
 
 <use image/gapminder.png>
@@ -1457,7 +1457,7 @@ Package pdftex.def Info: image/logo.png used on input line 487.
 
 Package natbib Warning: Citation `gha' on page 8 undefined on input line 500.
 
-<image/globalatlas.png, id=427, 1027.58907pt x 478.78876pt>
+<image/globalatlas.png, id=451, 1027.58907pt x 478.78876pt>
 File: image/globalatlas.png Graphic file (type png)
 
 <use image/globalatlas.png>
@@ -1477,14 +1477,14 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 531.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [9 <D:/LVTN/c9js-demo/report/LVTN/image/globalatlas.png>]
-<image/clickatlas.png, id=441, 1027.58907pt x 481.8pt>
+<image/clickatlas.png, id=465, 1027.58907pt x 481.8pt>
 File: image/clickatlas.png Graphic file (type png)
 
 <use image/clickatlas.png>
 Package pdftex.def Info: image/clickatlas.png used on input line 535.
 (pdftex.def)             Requested size: 411.02835pt x 192.71658pt.
 
-<image/hoveratlas.png, id=442, 1028.34187pt x 478.78876pt>
+<image/hoveratlas.png, id=466, 1028.34187pt x 478.78876pt>
 File: image/hoveratlas.png Graphic file (type png)
 
 <use image/hoveratlas.png>
@@ -1535,7 +1535,7 @@ LaTeX Font Info:    Try loading font information for T5+cmtt on input line 568.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\vntex\t5cmtt.fd"
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<image/c3js.png, id=450, 1020.81375pt x 415.5525pt>
+<image/c3js.png, id=474, 1020.81375pt x 415.5525pt>
 File: image/c3js.png Graphic file (type png)
  <use image/c3js.png>
 Package pdftex.def Info: image/c3js.png used on input line 571.
@@ -1545,7 +1545,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 579--580
 
  []
 
-<image/c3syntax.png, id=451, 1371.1225pt x 1248.665pt>
+<image/c3syntax.png, id=475, 1371.1225pt x 1248.665pt>
 File: image/c3syntax.png Graphic file (type png)
 
 <use image/c3syntax.png>
@@ -1562,14 +1562,14 @@ Package pdftex.def Info: image/logo.png used on input line 592.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [12 <D:/LVTN/c9js-demo/report/LVTN/image/c3js.png> <D:/LVTN/c9js-demo/report/L
 VTN/image/c3syntax.png>]
-<image/c3custom.png, id=465, 1015.54407pt x 348.55219pt>
+<image/c3custom.png, id=489, 1015.54407pt x 348.55219pt>
 File: image/c3custom.png Graphic file (type png)
 
 <use image/c3custom.png>
 Package pdftex.def Info: image/c3custom.png used on input line 597.
 (pdftex.def)             Requested size: 406.21043pt x 139.4184pt.
 
-<image/c3apis.png, id=466, 1014.79124pt x 475.02469pt>
+<image/c3apis.png, id=490, 1014.79124pt x 475.02469pt>
 File: image/c3apis.png Graphic file (type png)
  <use image/c3apis.png>
 Package pdftex.def Info: image/c3apis.png used on input line 609.
@@ -1580,7 +1580,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 623.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [13 <D:/LVTN/c9js-demo/report/LVTN/image/c3custom.png>]
-<image/c3source.png, id=473, 992.20688pt x 621.07031pt>
+<image/c3source.png, id=497, 992.20688pt x 621.07031pt>
 File: image/c3source.png Graphic file (type png)
 
 <use image/c3source.png>
@@ -1627,7 +1627,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package natbib Warning: Citation `mapme' on page 14 undefined on input line 643
 .
 
-<image/mapme.png, id=474, 1015.54407pt x 488.57532pt>
+<image/mapme.png, id=498, 1015.54407pt x 488.57532pt>
 File: image/mapme.png Graphic file (type png)
  <use image/mapme.png>
 Package pdftex.def Info: image/mapme.png used on input line 647.
@@ -1648,14 +1648,14 @@ rt/LVTN/image/mapme.png>]
 
 Package natbib Warning: Citation `osm' on page 16 undefined on input line 663.
 
-<image/mapmeOSM.png, id=488, 1028.34187pt x 491.58656pt>
+<image/mapmeOSM.png, id=512, 1028.34187pt x 491.58656pt>
 File: image/mapmeOSM.png Graphic file (type png)
 
 <use image/mapmeOSM.png>
 Package pdftex.def Info: image/mapmeOSM.png used on input line 667.
 (pdftex.def)             Requested size: 411.32947pt x 196.63113pt.
 
-<image/mapmeExport.png, id=489, 525.46312pt x 311.66437pt>
+<image/mapmeExport.png, id=513, 525.46312pt x 311.66437pt>
 File: image/mapmeExport.png Graphic file (type png)
 
 <use image/mapmeExport.png>
@@ -1733,7 +1733,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 810.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
 
-[23] <image/webpack_build.png, id=541, 511.9125pt x 258.21469pt>
+[23] <image/webpack_build.png, id=565, 511.9125pt x 258.21469pt>
 File: image/webpack_build.png Graphic file (type png)
 
 <use image/webpack_build.png>
@@ -1822,7 +1822,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1011.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [32]
-<image/istanbul_1.png, id=613, 955.31906pt x 134.00063pt>
+<image/istanbul_1.png, id=637, 955.31906pt x 134.00063pt>
 File: image/istanbul_1.png Graphic file (type png)
 
 <use image/istanbul_1.png>
@@ -1833,7 +1833,7 @@ Overfull \hbox (7.90337pt too wide) in paragraph at lines 1016--1017
  [] 
  []
 
-<image/istanbul_2.png, id=614, 851.43094pt x 147.55125pt>
+<image/istanbul_2.png, id=638, 851.43094pt x 147.55125pt>
 File: image/istanbul_2.png Graphic file (type png)
 
 <use image/istanbul_2.png>
@@ -1853,7 +1853,7 @@ Package pdftex.def Info: image/logo.png used on input line 1073.
 Package natbib Warning: Citation `codecov_wiki' on page 35 undefined on input l
 ine 1075.
 
-<image/codecovio.png, id=630, 407.27156pt x 124.96687pt>
+<image/codecovio.png, id=654, 407.27156pt x 124.96687pt>
 File: image/codecovio.png Graphic file (type png)
 
 <use image/codecovio.png>
@@ -1873,880 +1873,983 @@ Underfull \hbox (badness 10000) in paragraph at lines 1107--1108
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 1121--1122
+
+ []
+
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1127.
+Package pdftex.def Info: image/logo.png used on input line 1123.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [36]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1127.
+Package pdftex.def Info: image/logo.png used on input line 1146.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [37]
+<image/semantic_1.png, id=676, 581.17125pt x 310.15875pt>
+File: image/semantic_1.png Graphic file (type png)
 
-Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1128.
+<use image/semantic_1.png>
+Package pdftex.def Info: image/semantic_1.png used on input line 1153.
+(pdftex.def)             Requested size: 464.93764pt x 248.12733pt.
+
+<image/semantic_2.png, id=677, 552.56438pt x 335.75438pt>
+File: image/semantic_2.png Graphic file (type png)
+
+<use image/semantic_2.png>
+Package pdftex.def Info: image/semantic_2.png used on input line 1161.
+(pdftex.def)             Requested size: 442.0521pt x 268.60387pt.
 
 
-Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+Package hyperref Warning: Composite letter `\textdotbelow+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1128.
+(hyperref)                removing `\textdotbelow' on input line 1171.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1128.
+(hyperref)                removing `\ohorn' on input line 1171.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 1171.
+
+
+Package natbib Warning: Citation `cd' on page 38 undefined on input line 1174.
+
+File: image/logo.png Graphic file (type png)
+<use image/logo.png>
+Package pdftex.def Info: image/logo.png used on input line 1175.
+(pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
+ [38 <D:/LVTN/c9js-demo/report/LVTN/image/semantic_1.png>]
+File: image/logo.png Graphic file (type png)
+
+<use image/logo.png>
+Package pdftex.def Info: image/logo.png used on input line 1182.
+(pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
+ [39 <D:/LVTN/c9js-demo/report/LVTN/image/semantic_2.png>]
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 1196.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 1130.
+(hyperref)                removing `\ecircumflex' on input line 1196.
 
-<image/c9js_feature.png, id=651, 954.56625pt x 306.39468pt>
-File: image/c9js_feature.png Graphic file (type png)
 
-<use image/c9js_feature.png>
-Package pdftex.def Info: image/c9js_feature.png used on input line 1148.
-(pdftex.def)             Requested size: 477.28197pt x 153.19696pt.
+Package hyperref Warning: Composite letter `\textdotbelow+u'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 1196.
 
-Overfull \hbox (7.52698pt too wide) in paragraph at lines 1148--1149
+
+Package natbib Warning: Citation `cd' on page 40 undefined on input line 1199.
+
+File: image/logo.png Graphic file (type png)
+<use image/logo.png>
+Package pdftex.def Info: image/logo.png used on input line 1213.
+(pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
+ [40]
+Underfull \hbox (badness 10000) in paragraph at lines 1225--1226
+
+ []
+
+File: image/logo.png Graphic file (type png)
+<use image/logo.png>
+Package pdftex.def Info: image/logo.png used on input line 1233.
+(pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
+ [41] <image/ci_cd.png, id=705, 518.6878pt x 314.67563pt>
+File: image/ci_cd.png Graphic file (type png)
+
+<use image/ci_cd.png>
+Package pdftex.def Info: image/ci_cd.png used on input line 1242.
+(pdftex.def)             Requested size: 518.68654pt x 314.67485pt.
+
+Overfull \hbox (48.93155pt too wide) in paragraph at lines 1242--1243
  [] 
  []
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1152.
+Package pdftex.def Info: image/logo.png used on input line 1249.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [38]
+ [42 <D:/LVTN/c9js-demo/report/LVTN/image/ci_cd.png>]
+<image/ci_c9.png, id=713, 383.18156pt x 201.00093pt>
+File: image/ci_c9.png Graphic file (type png)
+ <use image/ci_c9.png>
+Package pdftex.def Info: image/ci_c9.png used on input line 1252.
+(pdftex.def)             Requested size: 383.18062pt x 201.00043pt.
+File: image/logo.png Graphic file (type png)
+
+<use image/logo.png>
+Package pdftex.def Info: image/logo.png used on input line 1259.
+(pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
+ [43 <D:/LVTN/c9js-demo/report/LVTN/image/ci_c9.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1158.
+(hyperref)                removing `\uhorn' on input line 1260.
+
+
+Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textdotbelow' on input line 1260.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\ecircumflex' on input line 1260.
+
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\h' on input line 1262.
+
+<image/c9js_feature.png, id=720, 954.56625pt x 306.39468pt>
+File: image/c9js_feature.png Graphic file (type png)
+
+<use image/c9js_feature.png>
+Package pdftex.def Info: image/c9js_feature.png used on input line 1280.
+(pdftex.def)             Requested size: 477.28197pt x 153.19696pt.
+
+Overfull \hbox (7.52698pt too wide) in paragraph at lines 1280--1281
+ [] 
+ []
+
+File: image/logo.png Graphic file (type png)
+<use image/logo.png>
+Package pdftex.def Info: image/logo.png used on input line 1284.
+(pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
+ [44]
+
+Package hyperref Warning: Glyph not defined in PD1 encoding,
+(hyperref)                removing `\uhorn' on input line 1290.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1158.
+(hyperref)                removing `\textacute' on input line 1290.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 1158.
+(hyperref)                removing `\ohorn' on input line 1290.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 1158.
+(hyperref)                removing `\texttilde' on input line 1290.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 1158.
+(hyperref)                removing `\acircumflex' on input line 1290.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 1158.
+(hyperref)                removing `\h' on input line 1290.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1158.
+(hyperref)                removing `\uhorn' on input line 1290.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1158.
+(hyperref)                removing `\textdotbelow' on input line 1290.
 
-<image/getting_started.png, id=661, 295.85532pt x 32.37094pt>
+<image/getting_started.png, id=730, 295.85532pt x 32.37094pt>
 File: image/getting_started.png Graphic file (type png)
 
 <use image/getting_started.png>
-Package pdftex.def Info: image/getting_started.png used on input line 1165.
+Package pdftex.def Info: image/getting_started.png used on input line 1297.
 (pdftex.def)             Requested size: 236.68456pt x 25.89677pt.
 
-<image/gs_1.png, id=663, 885.3075pt x 380.17032pt>
+<image/gs_1.png, id=732, 885.3075pt x 380.17032pt>
 File: image/gs_1.png Graphic file (type png)
  <use image/gs_1.png>
-Package pdftex.def Info: image/gs_1.png used on input line 1174.
+Package pdftex.def Info: image/gs_1.png used on input line 1306.
 (pdftex.def)             Requested size: 442.65266pt x 190.08469pt.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 1182.
+(hyperref)                removing `\dj' on input line 1314.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\abreve'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1182.
+(hyperref)                removing `\textdotbelow' on input line 1314.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\abreve' on input line 1182.
+(hyperref)                removing `\abreve' on input line 1314.
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1185.
+Package pdftex.def Info: image/logo.png used on input line 1317.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [39 <D:/LVTN/c9js-demo/report/LVTN/image/c9js_feature.png> <D:/LVTN/c9js-demo/
+ [45 <D:/LVTN/c9js-demo/report/LVTN/image/c9js_feature.png> <D:/LVTN/c9js-demo/
 report/LVTN/image/getting_started.png>]
 File: image/logo.png Graphic file (type png)
 
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1202.
+Package pdftex.def Info: image/logo.png used on input line 1334.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [40 <D:/LVTN/c9js-demo/report/LVTN/image/gs_1.png>]
-Overfull \hbox (72.99667pt too wide) in paragraph at lines 1203--1203
+ [46 <D:/LVTN/c9js-demo/report/LVTN/image/gs_1.png>]
+Overfull \hbox (72.99667pt too wide) in paragraph at lines 1335--1335
 [] $[]$ 
  []
 
 
-Overfull \hbox (72.99667pt too wide) in paragraph at lines 1209--1209
+Overfull \hbox (72.99667pt too wide) in paragraph at lines 1341--1341
 [] $[]$ 
  []
 
 
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1224--1224
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1356--1356
 [] $[]$ 
  []
 
 
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1230--1230
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1362--1362
 [] $[]$ 
  []
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1232.
+Package pdftex.def Info: image/logo.png used on input line 1364.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [41pdfTeX warning (ext4): destination with the same identifier (name{lstnumber
+ [47pdfTeX warning (ext4): destination with the same identifier (name{lstnumber
 .\\z@\040.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1232 ...biểu đồ và bản đồ với C9js}
+l.1364 ...biểu đồ và bản đồ với C9js}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{lstnumber.\\z@\040.2}) has been already us
 ed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1232 ...biểu đồ và bản đồ với C9js}
+l.1364 ...biểu đồ và bản đồ với C9js}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{lstnumber.\\z@\040.1}) has been already us
 ed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1232 ...biểu đồ và bản đồ với C9js}
+l.1364 ...biểu đồ và bản đồ với C9js}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{lstnumber.\\z@\040.2}) has been already us
 ed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1232 ...biểu đồ và bản đồ với C9js}
+l.1364 ...biểu đồ và bản đồ với C9js}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{lstnumber.\\z@\040.1}) has been already us
 ed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1232 ...biểu đồ và bản đồ với C9js}
+l.1364 ...biểu đồ và bản đồ với C9js}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{lstnumber.\\z@\040.2}) has been already us
 ed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1232 ...biểu đồ và bản đồ với C9js}
+l.1364 ...biểu đồ và bản đồ với C9js}
                                                   pdfTeX warning (ext4): destin
 ation with the same identifier (name{lstnumber.\\z@\040.3}) has been already us
 ed, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1232 ...biểu đồ và bản đồ với C9js}
+l.1364 ...biểu đồ và bản đồ với C9js}
                                                   ]
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1232.
+(hyperref)                removing `\textdotbelow' on input line 1364.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 1232.
+(hyperref)                removing `\h' on input line 1364.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1232.
+(hyperref)                removing `\ecircumflex' on input line 1364.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 1232.
+(hyperref)                removing `\dj' on input line 1364.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 1232.
+(hyperref)                removing `\textasciigrave' on input line 1364.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 1232.
+(hyperref)                removing `\ocircumflex' on input line 1364.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 1232.
+(hyperref)                removing `\h' on input line 1364.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 1232.
+(hyperref)                removing `\dj' on input line 1364.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 1232.
+(hyperref)                removing `\textasciigrave' on input line 1364.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 1232.
+(hyperref)                removing `\ocircumflex' on input line 1364.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1232.
+(hyperref)                removing `\textacute' on input line 1364.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 1232.
+(hyperref)                removing `\ohorn' on input line 1364.
 
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.\\z
 @\040.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1241 <div
+l.1373 <div
             id="chart"></div>
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1242--1242
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1374--1374
 [] $[]$ 
  []
 
 
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1261--1261
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1393--1393
 [] $[]$ 
  []
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1264.
+Package pdftex.def Info: image/logo.png used on input line 1396.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [42] <image/gs_2.png, id=710, 588.69937pt x 375.65344pt>
+ [48] <image/gs_2.png, id=778, 588.69937pt x 375.65344pt>
 File: image/gs_2.png Graphic file (type png)
 
 <use image/gs_2.png>
-Package pdftex.def Info: image/gs_2.png used on input line 1267.
+Package pdftex.def Info: image/gs_2.png used on input line 1399.
 (pdftex.def)             Requested size: 412.08675pt x 262.9556pt.
 pdfTeX warning (ext4): destination with the same identifier (name{lstnumber.\\z
 @\040.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1279 <div
+l.1411 <div
             id="chart"></div>
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1280--1280
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1412--1412
 [] $[]$ 
  []
 
 
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1290--1290
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1422--1422
 [] $[]$ 
  []
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1290.
+Package pdftex.def Info: image/logo.png used on input line 1422.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [43 <D:/LVTN/c9js-demo/report/LVTN/image/gs_2.png>]
+ [49 <D:/LVTN/c9js-demo/report/LVTN/image/gs_2.png>]
 
-Package natbib Warning: Citation `osm' on page 44 undefined on input line 1292.
-
-
-
-Package natbib Warning: Citation `bingmap' on page 44 undefined on input line 1
-292.
+Package natbib Warning: Citation `osm' on page 50 undefined on input line 1424.
 
 
-Package natbib Warning: Citation `stamen' on page 44 undefined on input line 12
-92.
 
-<image/gs_3.png, id=721, 638.385pt x 322.95656pt>
+Package natbib Warning: Citation `bingmap' on page 50 undefined on input line 1
+424.
+
+
+Package natbib Warning: Citation `stamen' on page 50 undefined on input line 14
+24.
+
+<image/gs_3.png, id=789, 638.385pt x 322.95656pt>
 File: image/gs_3.png Graphic file (type png)
  <use image/gs_3.png>
-Package pdftex.def Info: image/gs_3.png used on input line 1296.
+Package pdftex.def Info: image/gs_3.png used on input line 1428.
 (pdftex.def)             Requested size: 446.86644pt x 226.06804pt.
 File: image/logo.png Graphic file (type png)
 
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1313.
+Package pdftex.def Info: image/logo.png used on input line 1445.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [44 <D:/LVTN/c9js-demo/report/LVTN/image/gs_3.png>]
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1321--1321
+ [50 <D:/LVTN/c9js-demo/report/LVTN/image/gs_3.png>]
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1453--1453
 [] $[]$ 
  []
 
-<image/gs_4.png, id=740, 640.64343pt x 344.78813pt>
+<image/gs_4.png, id=808, 640.64343pt x 344.78813pt>
 File: image/gs_4.png Graphic file (type png)
  <use image/gs_4.png>
-Package pdftex.def Info: image/gs_4.png used on input line 1327.
+Package pdftex.def Info: image/gs_4.png used on input line 1459.
 (pdftex.def)             Requested size: 448.44734pt x 241.35004pt.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+y'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 1334.
+(hyperref)                removing `\textasciigrave' on input line 1466.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1334.
+(hyperref)                removing `\textacute' on input line 1466.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1334.
+(hyperref)                removing `\ecircumflex' on input line 1466.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 1334.
+(hyperref)                removing `\dj' on input line 1466.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1334.
+(hyperref)                removing `\textdotbelow' on input line 1466.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1334.
+(hyperref)                removing `\textdotbelow' on input line 1466.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 1334.
+(hyperref)                removing `\texttilde' on input line 1466.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1334.
+(hyperref)                removing `\uhorn' on input line 1466.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1334.
+(hyperref)                removing `\textdotbelow' on input line 1466.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1334.
+(hyperref)                removing `\ecircumflex' on input line 1466.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 1334.
+(hyperref)                removing `\dj' on input line 1466.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 1334.
+(hyperref)                removing `\textasciigrave' on input line 1466.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 1334.
+(hyperref)                removing `\acircumflex' on input line 1466.
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1336.
+Package pdftex.def Info: image/logo.png used on input line 1468.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [45 <D:/LVTN/c9js-demo/report/LVTN/image/gs_4.png>]
+ [51 <D:/LVTN/c9js-demo/report/LVTN/image/gs_4.png>]
 
-Package natbib Warning: Citation `xhr' on page 46 undefined on input line 1337.
-
-
-
-Package natbib Warning: Citation `csv' on page 46 undefined on input line 1337.
+Package natbib Warning: Citation `xhr' on page 52 undefined on input line 1469.
 
 
 
-Package natbib Warning: Citation `tsv' on page 46 undefined on input line 1337.
+Package natbib Warning: Citation `csv' on page 52 undefined on input line 1469.
 
 
 
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1351--1351
+Package natbib Warning: Citation `tsv' on page 52 undefined on input line 1469.
+
+
+
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1483--1483
 [] $[]$ 
  []
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1359.
+Package pdftex.def Info: image/logo.png used on input line 1491.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [46]
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1367--1367
+ [52]
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1499--1499
 [] $[]$ 
  []
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+y'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 1369.
+(hyperref)                removing `\textasciigrave' on input line 1501.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1369.
+(hyperref)                removing `\textacute' on input line 1501.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1369.
+(hyperref)                removing `\ecircumflex' on input line 1501.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 1369.
+(hyperref)                removing `\h' on input line 1501.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1369.
+(hyperref)                removing `\ecircumflex' on input line 1501.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 1369.
+(hyperref)                removing `\dj' on input line 1501.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 1369.
+(hyperref)                removing `\textasciigrave' on input line 1501.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 1369.
+(hyperref)                removing `\ocircumflex' on input line 1501.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1369.
+(hyperref)                removing `\textdotbelow' on input line 1501.
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1388.
+Package pdftex.def Info: image/logo.png used on input line 1520.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [47]
-Overfull \hbox (47.14699pt too wide) in paragraph at lines 1401--1401
+ [53]
+Overfull \hbox (47.14699pt too wide) in paragraph at lines 1533--1533
 [] $[]$ 
  []
 
-<image/option_2.png, id=797, 574.39594pt x 367.3725pt>
+<image/option_2.png, id=865, 574.39594pt x 367.3725pt>
 File: image/option_2.png Graphic file (type png)
 
 <use image/option_2.png>
-Package pdftex.def Info: image/option_2.png used on input line 1405.
+Package pdftex.def Info: image/option_2.png used on input line 1537.
 (pdftex.def)             Requested size: 459.51736pt x 293.89838pt.
 
 
-Package natbib Warning: Citation `css_class' on page 48 undefined on input line
- 1413.
+Package natbib Warning: Citation `css_class' on page 54 undefined on input line
+ 1545.
 
 
-Overfull \hbox (47.14699pt too wide) in paragraph at lines 1420--1420
+Overfull \hbox (47.14699pt too wide) in paragraph at lines 1552--1552
 [] $[]$ 
  []
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1425.
+Package pdftex.def Info: image/logo.png used on input line 1557.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [48]
+ [54]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1425.
+Package pdftex.def Info: image/logo.png used on input line 1557.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [49 <D:/LVTN/c9js-demo/report/LVTN/image/option_2.png>]
-Overfull \hbox (47.14699pt too wide) in paragraph at lines 1428--1428
+ [55 <D:/LVTN/c9js-demo/report/LVTN/image/option_2.png>]
+Overfull \hbox (47.14699pt too wide) in paragraph at lines 1560--1560
 [] $[]$ 
  []
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1432.
+(hyperref)                removing `\textdotbelow' on input line 1564.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 1432.
+(hyperref)                removing `\acircumflex' on input line 1564.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1432.
+(hyperref)                removing `\textdotbelow' on input line 1564.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 1432.
+(hyperref)                removing `\acircumflex' on input line 1564.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\dj' on input line 1432.
+(hyperref)                removing `\dj' on input line 1564.
 
 
 Package hyperref Warning: Composite letter `\textasciigrave+\ocircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciigrave' on input line 1432.
+(hyperref)                removing `\textasciigrave' on input line 1564.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ocircumflex' on input line 1432.
+(hyperref)                removing `\ocircumflex' on input line 1564.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+i'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1432.
+(hyperref)                removing `\textdotbelow' on input line 1564.
 
 
 Package hyperref Warning: Composite letter `\texttilde+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\texttilde' on input line 1432.
+(hyperref)                removing `\texttilde' on input line 1564.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1432.
+(hyperref)                removing `\uhorn' on input line 1564.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1432.
+(hyperref)                removing `\textdotbelow' on input line 1564.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1432.
+(hyperref)                removing `\ecircumflex' on input line 1564.
 
 
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1446--1446
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1578--1578
 [] $[]$ 
  []
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1451.
+Package pdftex.def Info: image/logo.png used on input line 1583.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [50]
-Overfull \hbox (17.7723pt too wide) in paragraph at lines 1471--1471
+ [56]
+Overfull \hbox (17.7723pt too wide) in paragraph at lines 1603--1603
 [] $[]$ 
  []
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1473.
+(hyperref)                removing `\textdotbelow' on input line 1605.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+a'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1473.
+(hyperref)                removing `\textdotbelow' on input line 1605.
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1481.
+Package pdftex.def Info: image/logo.png used on input line 1613.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [51]
-<image/example_page.png, id=870, 707.64375pt x 644.4075pt>
+ [57]
+<image/example_page.png, id=938, 707.64375pt x 644.4075pt>
 File: image/example_page.png Graphic file (type png)
 
 <use image/example_page.png>
-Package pdftex.def Info: image/example_page.png used on input line 1487.
+Package pdftex.def Info: image/example_page.png used on input line 1619.
 (pdftex.def)             Requested size: 424.58952pt x 386.64748pt.
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1499.
+Package pdftex.def Info: image/logo.png used on input line 1631.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [52 <D:/LVTN/c9js-demo/report/LVTN/image/example_page.png>]
-<image/example_page_2.png, id=879, 949.29657pt x 880.03781pt>
+ [58 <D:/LVTN/c9js-demo/report/LVTN/image/example_page.png>]
+<image/example_page_2.png, id=947, 949.29657pt x 880.03781pt>
 File: image/example_page_2.png Graphic file (type png)
 
 <use image/example_page_2.png>
-Package pdftex.def Info: image/example_page_2.png used on input line 1503.
+Package pdftex.def Info: image/example_page_2.png used on input line 1635.
 (pdftex.def)             Requested size: 474.64713pt x 440.01782pt.
 
-Overfull \hbox (4.89214pt too wide) in paragraph at lines 1503--1504
+Overfull \hbox (4.89214pt too wide) in paragraph at lines 1635--1636
  [] 
  []
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1510.
+Package pdftex.def Info: image/logo.png used on input line 1642.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [53 <D:/LVTN/c9js-demo/report/LVTN/image/example_page_2.png>] <image/advance_1
-.png, id=889, 787.44188pt x 698.61pt>
+ [59 <D:/LVTN/c9js-demo/report/LVTN/image/example_page_2.png>] <image/advance_1
+.png, id=957, 787.44188pt x 698.61pt>
 File: image/advance_1.png Graphic file (type png)
 
 <use image/advance_1.png>
-Package pdftex.def Info: image/advance_1.png used on input line 1513.
+Package pdftex.def Info: image/advance_1.png used on input line 1645.
 (pdftex.def)             Requested size: 472.46877pt x 419.16924pt.
 
-Overfull \hbox (2.71378pt too wide) in paragraph at lines 1513--1514
+Overfull \hbox (2.71378pt too wide) in paragraph at lines 1645--1646
  [] 
  []
 
 
 Package hyperref Warning: Composite letter `\textacute+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1519.
+(hyperref)                removing `\textacute' on input line 1651.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1519.
+(hyperref)                removing `\uhorn' on input line 1651.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\u' on input line 1519.
+(hyperref)                removing `\u' on input line 1651.
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1522.
+Package pdftex.def Info: image/logo.png used on input line 1654.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [54 <D:/LVTN/c9js-demo/report/LVTN/image/advance_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1522--1523
+ [60 <D:/LVTN/c9js-demo/report/LVTN/image/advance_1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1654--1655
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1547
+Underfull \hbox (badness 10000) in paragraph at lines 1678--1679
 
  []
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1553.
+Package pdftex.def Info: image/logo.png used on input line 1685.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [55]
+ [61]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1581.
+Package pdftex.def Info: image/logo.png used on input line 1713.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [56]
+ [62]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1607.
+Package pdftex.def Info: image/logo.png used on input line 1739.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
 
-[57]
+[63]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1608.
+(hyperref)                removing `\textdotbelow' on input line 1740.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1608.
+(hyperref)                removing `\ecircumflex' on input line 1740.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1608.
+(hyperref)                removing `\textdotbelow' on input line 1740.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1608.
+(hyperref)                removing `\uhorn' on input line 1740.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1608.
+(hyperref)                removing `\uhorn' on input line 1740.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1608.
+(hyperref)                removing `\textdotbelow' on input line 1740.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1608.
+(hyperref)                removing `\ecircumflex' on input line 1740.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1609.
+(hyperref)                removing `\textacute' on input line 1741.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1609.
+(hyperref)                removing `\ecircumflex' on input line 1741.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1609.
+(hyperref)                removing `\textdotbelow' on input line 1741.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1609.
+(hyperref)                removing `\uhorn' on input line 1741.
 
 
-Package natbib Warning: Citation `component_based' on page 58 undefined on inpu
-t line 1613.
+Package natbib Warning: Citation `component_based' on page 64 undefined on inpu
+t line 1745.
 
-<image/chart.png, id=919, 417.56pt x 238.8925pt>
+<image/chart.png, id=987, 417.56pt x 238.8925pt>
 File: image/chart.png Graphic file (type png)
  <use image/chart.png>
-Package pdftex.def Info: image/chart.png used on input line 1617.
+Package pdftex.def Info: image/chart.png used on input line 1749.
 (pdftex.def)             Requested size: 417.55896pt x 238.8919pt.
 File: image/logo.png Graphic file (type png)
 
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1629.
+Package pdftex.def Info: image/logo.png used on input line 1761.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [58 <D:/LVTN/c9js-demo/report/LVTN/image/chart.png>]
-<image/chart_flow.png, id=928, 656.4525pt x 494.84875pt>
+ [64 <D:/LVTN/c9js-demo/report/LVTN/image/chart.png>]
+<image/chart_flow.png, id=996, 656.4525pt x 494.84875pt>
 File: image/chart_flow.png Graphic file (type png)
 
 <use image/chart_flow.png>
-Package pdftex.def Info: image/chart_flow.png used on input line 1649.
+Package pdftex.def Info: image/chart_flow.png used on input line 1781.
 (pdftex.def)             Requested size: 393.87454pt x 296.91154pt.
 
 
-Package natbib Warning: Citation `merge_deep' on page 59 undefined on input lin
-e 1655.
+Package natbib Warning: Citation `merge_deep' on page 65 undefined on input lin
+e 1787.
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1656.
+Package pdftex.def Info: image/logo.png used on input line 1788.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [59]
+ [65]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1656.
+Package pdftex.def Info: image/logo.png used on input line 1788.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [60 <D:/LVTN/c9js-demo/report/LVTN/image/chart_flow.png>]
+ [66 <D:/LVTN/c9js-demo/report/LVTN/image/chart_flow.png>]
 
-Package natbib Warning: Citation `data_driven' on page 61 undefined on input li
-ne 1658.
+Package natbib Warning: Citation `data_driven' on page 67 undefined on input li
+ne 1790.
 
-<image/data_model.png, id=939, 405.515pt x 154.5775pt>
+<image/data_model.png, id=1007, 405.515pt x 154.5775pt>
 File: image/data_model.png Graphic file (type png)
 
 <use image/data_model.png>
-Package pdftex.def Info: image/data_model.png used on input line 1662.
+Package pdftex.def Info: image/data_model.png used on input line 1794.
 (pdftex.def)             Requested size: 243.31087pt x 92.7472pt.
 
 
-Package natbib Warning: Citation `uuid' on page 61 undefined on input line 1694
+Package natbib Warning: Citation `uuid' on page 67 undefined on input line 1826
 .
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1695.
+Package pdftex.def Info: image/logo.png used on input line 1827.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [61 <D:/LVTN/c9js-demo/report/LVTN/image/data_model.png>]
-<image/data_flow.png, id=949, 586.19pt x 424.58624pt>
+ [67 <D:/LVTN/c9js-demo/report/LVTN/image/data_model.png>]
+<image/data_flow.png, id=1017, 586.19pt x 424.58624pt>
 File: image/data_flow.png Graphic file (type png)
 
 <use image/data_flow.png>
-Package pdftex.def Info: image/data_flow.png used on input line 1698.
+Package pdftex.def Info: image/data_flow.png used on input line 1830.
 (pdftex.def)             Requested size: 351.7167pt x 254.75371pt.
 
 
-Package natbib Warning: Citation `callback' on page 62 undefined on input line 
-1704.
+Package natbib Warning: Citation `callback' on page 68 undefined on input line 
+1836.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1706.
+(hyperref)                removing `\textdotbelow' on input line 1838.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1706.
+(hyperref)                removing `\ecircumflex' on input line 1838.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1706.
+(hyperref)                removing `\textdotbelow' on input line 1838.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1706.
+(hyperref)                removing `\uhorn' on input line 1838.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1706.
+(hyperref)                removing `\uhorn' on input line 1838.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1706.
+(hyperref)                removing `\textdotbelow' on input line 1838.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1706.
+(hyperref)                removing `\ecircumflex' on input line 1838.
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1709.
+Package pdftex.def Info: image/logo.png used on input line 1841.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [62]
+ [68]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1710.
+(hyperref)                removing `\textacute' on input line 1842.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1710.
+(hyperref)                removing `\ecircumflex' on input line 1842.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1710.
+(hyperref)                removing `\textdotbelow' on input line 1842.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 1710.
+(hyperref)                removing `\acircumflex' on input line 1842.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1711.
+(hyperref)                removing `\textacute' on input line 1843.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 1711.
+(hyperref)                removing `\ohorn' on input line 1843.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\uhorn' on input line 1717.
+(hyperref)                removing `\uhorn' on input line 1849.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ohorn'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1717.
+(hyperref)                removing `\textacute' on input line 1849.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ohorn' on input line 1717.
+(hyperref)                removing `\ohorn' on input line 1849.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\h' on input line 1717.
+(hyperref)                removing `\h' on input line 1849.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1717.
+(hyperref)                removing `\ecircumflex' on input line 1849.
 
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textacute' on input line 1718.
+(hyperref)                removing `\textacute' on input line 1850.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\ecircumflex' on input line 1718.
+(hyperref)                removing `\ecircumflex' on input line 1850.
 
 
 Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textdotbelow' on input line 1718.
+(hyperref)                removing `\textdotbelow' on input line 1850.
 
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
-(hyperref)                removing `\acircumflex' on input line 1718.
+(hyperref)                removing `\acircumflex' on input line 1850.
 
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1721.
+Package pdftex.def Info: image/logo.png used on input line 1853.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [63 <D:/LVTN/c9js-demo/report/LVTN/image/data_flow.png>]
+ [69 <D:/LVTN/c9js-demo/report/LVTN/image/data_flow.png>]
 (D:\LVTN\c9js-demo\report\LVTN\LVTN.bbl
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
@@ -2769,24 +2872,31 @@ Package natbib Warning: There were undefined citations.
 AED: lastpage setting LastPage
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 1727.
+Package pdftex.def Info: image/logo.png used on input line 1859.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [64]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1727.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1727.
+ [70]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1859.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1859.
  (D:\LVTN\c9js-demo\report\LVTN\LVTN.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1727.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1727.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1859.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1859.
 
-Package rerunfilecheck Info: File `LVTN.out' has not changed.
-(rerunfilecheck)             Checksum: 96E3368E17FA52F877E274537C314BF1;3438.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1727.
+
+
+Package rerunfilecheck Warning: File `LVTN.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `LVTN.out':
+(rerunfilecheck)             Before: 8805B10849C802F3D453032CF5A0F69B;3755
+(rerunfilecheck)             After:  61D440D9141FD62A4939772C7C164D35;3739.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1859.
  ) 
 Here is how much of TeX's memory you used:
- 12722 strings out of 493921
- 180834 string characters out of 3147267
+ 12774 strings out of 493921
+ 181687 string characters out of 3147267
  352747 words of memory out of 3000000
- 15426 multiletter control sequences out of 15000+200000
+ 15450 multiletter control sequences out of 15000+200000
  27836 words of font info for 53 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  38i,18n,58p,1433b,2415s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2805,9 +2915,9 @@ ex/vnr/vnti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti12.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti8.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/vntex/vnr/vntt10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/vntex/vnr/vntt12.pfb>
-Output written on LVTN.pdf (73 pages, 3044550 bytes).
+Output written on LVTN.pdf (79 pages, 3206127 bytes).
 PDF statistics:
- 1103 PDF objects out of 1200 (max. 8388607)
- 377 named destinations out of 1000 (max. 500000)
- 529 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1176 PDF objects out of 1200 (max. 8388607)
+ 401 named destinations out of 1000 (max. 500000)
+ 573 words of extra memory for PDF output out of 10000 (max. 10000000)
 

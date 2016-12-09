@@ -66,6 +66,8 @@
 
 \bibitem{gha} World Health Organization (WHO). Global Health Atlas, 10, 4, 2016. \url{http://apps.who.int/globalatlas/}
 
+\bibitem{cd} ContinuousDelivery, 2013-05-30. \url{https://martinfowler.com/bliki/ContinuousDelivery.html}
+
 \bibitem{ghaex} WHO. Health workforce: Density of physicsians, 10, 4, 2016. \url{http://gamapserver.who.int/gho/interactive_charts/health_workforce/PhysiciansDensity_Total/atlas.html}
 
 \bibitem{d3jsintro1} D3.js. D3.js - Data-Driven Documents, 10, 4, 2016. \url{https://d3js.org/}

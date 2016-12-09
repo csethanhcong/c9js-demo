@@ -1116,13 +1116,145 @@ C9js sử dụng codecov.io để cho biết mức độ bao phủ của mã ngu
 Qua các báo cáo mà codecov.io đem lại như tính chính xác của mã nguồn (thông qua các test đã đạt hay không đạt), số lượng các câu lệnh, dòng, nhánh, hàm đã được bao phủ (cover),… đã góp phần làm cho mã nguồn thêm sự ổn định và tin cậy.
 
 %----------------------------------%
-\subsubsection{Semantic Versioning (1.5)}
+\subsubsection{Semantic Versioning}
+%----------------------------------%
+\myparagraph{Giới thiệu}
+
+Trong hệ thống có nhiều các phụ thuộc (\textit{dependency}), vấn đề phát hành (\textit{release}) những gói phiên bản mới nhanh chóng trở thành nổi ác mộng. 
+
+\begin{list}{}{}
+\item[•] Nếu các đặc tả phụ thuộc (\textit{dependency specification}) quá chặt chẽ, người dùng sẽ ở trong tình trạng khóa phiên bản (version lock), tức là gói (package) không có khả năng nâng cấp mà không phải phát hành ra một phiên bản mới đối với mỗi gói phụ thuộc.
+\item[•] Nếu các phụ thuộc được đặc tả quá lỏng lẽo, các phiên bản sẽ trở nên hỗn tạp (\textit{version promiscuity}).
+\end{list}
+
+Những nguyên nhân trên sẽ khiến dự án gặp khó khăn trong việc phát triển sau này. Và một giải pháp cho vấn đề này đó là đưa ra một tập các quy tắc và yêu cầu để chỉ ra cách các số phiên bản được gán cho và tăng lên. Và hệ thống này được gọi là \textit{Semantic Versioning}, dưới hệ thống này, số phiên bản và cách nó thay đổi sẽ cho biết ý nghĩa về những đoạn mã và những gì đã được thay đổi từ một phiên bản đến phiên bản tiếp theo.
+
+\textit{Semantic Versioning} định nghĩa số phiên bản sẽ theo định dạng \texttt{x.y.z}, hay còn có thể ghi là \texttt{major.minor.patch}, mỗi con số này tăng lên sẽ có nghĩa là:
+
+\begin{list}{}{}
+\item[•] Thay đổi \textit{MAJOR} khi có một thay đổi lớn trong API mà không tương thích với API phiên bản trước, hay nói các khác là hoàn toàn khác với API trước trong mã nguồn, về kiến trúc cũng như cách sử dụng API.
+\item[•] Thay đổi \textit{MINOR} khi có thêm chức năng mới cho API, sự thay đổi này vẫn giữ được sự tương thích đối với API phiên bản trước.
+\item[•] Thay đổi \textit{PATCH} khi sửa chữa các lỗi (fix bug) có trong API.
+\end{list}
 %----------------------------------%
 
 %----------------------------------%
-%----------------------------------%
-\subsubsection{CI-CD (1.5)}
+\myparagraph{Semantic Release}
+Semanic Release là công cụ giúp cho việc xuất bản package một cách hoàn toàn tự động:
 
+\begin{list}{}{}
+\item[•] Xác định phiên bản một các đúng đắn dựa vào commit của những người lập trình, số phiên bản được xác định giống như các quy tắc mà \textit{Semantic Versioning} đã đưa ra.
+\item[•] Tạo một bản phát hành trên \textit{Github}, bao gồm tag cho phiên bản, tạo ra \textit{changelog} (Hình \ref{fig:semantic_1}).
+\item[•] Phát hành qua các kênh như \textit{npm, bower, GitHub} (Hình \ref{fig:semantic_2}).
+\end{list}
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.8]{image/semantic_1}
+    \caption{Triển khai trên \textit{GitHub} với \textit{Semantic Release}}
+    \label{fig:semantic_1}
+	\end{center}
+\end{figure}
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=.8]{image/semantic_2}
+    \caption{Triển khai trên \textit{npm} với \textit{Semantic Release}}
+    \label{fig:semantic_2}
+	\end{center}
+\end{figure}
+%----------------------------------%
+\subsubsection{CI-CD}
+%----------------------------------%
+Dưới đây là những phương pháp phát triển phần mềm mà C9js đã sử dụng:
+
+\subsubsubsection{Tích hợp liên tục (Continuous Integration)}
+
+\myparagraph{Khái niệm}
+Theo Martin Fowler\cite{cd}, tích hợp liên tục là phương pháp phát triển phần mềm đòi hỏi các thành viên trong nhóm tích hợp công việc thường xuyên. Mỗi ngày, các thành viên đều phải theo dõi và phát triển công việc của họ ít nhất một lần. Việc này sẽ được một nhóm khác kiểm tra tự động, nhóm này sẽ tiền hành kiểm thử truy hồi để phát hiện lỗi nhanh nhất có thể. Cả nhóm thấy rằng phương pháp tiếp cận này giúp giảm bớt vấn đề về tích hợp hơn và cho phép phát triển phần mềm gắn kết nhanh hơn.
+
+\myparagraph{1.1.2.	Điều kiện áp dụng}
+Những dự án được hưởng lợi từ tích hợp liên tục:
+
+\begin{list}{}{}
+\item[•] Nhóm phát triển có ít hơn 50 người, độ phức tạp của dự án không cao.
+\item[•] Các sản phẩm có sử dụng phần mềm nhúng.
+\end{list}
+
+\myparagraph{Lợi ích}
+Một số lợi ích mà tích hợp liên tục mang lại:
+
+\begin{list}{}{}
+\item[•] Giảm thiểu rủi ro vì có thể phát hiện sớm lỗi, tiết kiệm thời gian và tiền bạc khi sửa lỗi.
+\item[•] Hạn chế lỗi khi sắp đến ngày bàn giao sản phẩm.
+\item[•] Nhà phát triển giảm thời gian sửa lỗi khi phát hiện lỗi lúc chạy kiểm thử đơn vị do họ thường xuyên tích hợp.
+\item[•] Luôn có sản phẩm có thể chạy hoặc demo cho khách hàng.
+\end{list}
+%----------------------------------%
+
+%----------------------------------%
+\subsubsubsection{Chuyển giao liên tục (Continuous Delivery)}
+
+\myparagraph{Khái niệm}
+Theo Martin Fowler\cite{cd}, Chuyển giao liên tục là nguyên tắc phát triển phần mềm mà ở đó phần mềm có thể được phát hành ở bất kì thời gian nào.
+
+\myparagraph{Điều kiện áp dụng}
+Nên áp dụng chuyển giao liên tục khi:
+\begin{list}{}{}
+\item[•] Phần mềm có thể triển khai xuyên suốt vòng đời của nó.
+\item[•] Ưu tiên việc triển khai hơn là tạo ra tính năng mới.
+\item[•] Mọi người có thể lấy được phản hồi nhanh chóng và tự động khi có người thay đổi hệ thống.
+\item[•] Có thể triển khai bất kì phiên bản ở bất kì môi trường nào theo nhu cầu.
+\end{list}
+
+\myparagraph{Lợi ích}
+Các lợi ích chủ yếu của chuyển giao liên tục:
+\begin{list}{}{}
+\item[•] Giảm rủi ro khi triển khai: khi người phát triển triển khai những thay đổi nhỏ, khi đó khả năng sai sót sẽ ít hơn và dễ dàng sửa lỗi khi trục trặc phát sinh.
+\item[•] Tiến trình trở nên tin cậy: những nhà phát triển theo dõi tiến trình bằng cách theo dõi công việc khi hoàn thành. Nếu “hoàn thành” tức là “nhà phát triển sẽ thông báo là nó được hoàn thành”, điều này có ít độ tin cậy hơn việc triển khai nó thành sản phẩm.
+\item[•] Phản hồi người dùng: rủi ro lớn nhất đối với bất kì phần mềm nào đó là nhà phát triển cho ra một thứ nào đó không hữu dụng. Nếu nhà lập trình làm việc với người dùng thật sớm hơn và thường xuyên hơn, thì họ sẽ có được phản hồi nhanh chóng hơn để tìm ra giá trị thực sự của phần mềm.
+\end{list}
+%----------------------------------%
+
+%----------------------------------%
+\subsubsubsection{Travis CI}
+
+\myparagraph{Giới thiệu}
+Travis CI là hệ thống hiện thực tích hợp liên tục (CI) nhanh chóng và gọn lẹ, tích hợp với Github, GitLab, Bitbucket.
+
+\myparagraph{Tính năng}
+\begin{list}{}{}
+\item[•] Theo dõi các test khi các test này chạy.
+\item[•] Giữ các cấu hình (config) cùng với mã nguồn của nhà phát triển.
+\item[•] Hỗ trợ thông báo qua các kênh: Slack, HipChat, Email,...
+\item[•] Một máy ảo hoàn toàn mới mỗi khi biên dịch (build).
+\item[•] Chạy các test song song.
+\item[•] Hỗ trợ thêm các hệ điều hành Linux, Mac (và iOS).
+\item[•] Có command line và API mạnh mẽ.
+\item[•] Hoàn toàn miễn phí cho các phần mềm mã nguồn mở.
+\end{list}
+
+\myparagraph{Ứng dụng}
+Mọi việc trở nên tự động khi sử dụng Travis CI. Mỗi khi commit mã nguồn, hệ thống sẽ tự động lấy mã từ nguồn tích hợp, biên dịch, sau đó chạy các bộ kiểm thử cũng như thông báo tình trạng hiện tại của dự án qua nhiều kênh: email, Slack, ... từ đó dễ dàng tìm ra “hung thủ” làm hư hại mã, cũng như các test không vượt qua được,... Sau khi hệ thống chạy thành công, có thể yêu cầu thực hiện một vài tác vụ như báo cáo độ bao phủ mã nguồn, phát hành phần mềm,...
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=1]{image/ci_cd}
+    \caption{Sự kết hợp giữa tích hợp liên tục (CI) và phát triển theo hướng kiểm thử (TDD)}
+    \label{fig:ci_cd}
+	\end{center}
+\end{figure}
+
+C9js áp dụng Travis CI để hiện thực tích hợp liên tục, phát triển hướng kiểm thử, cùng với chuyển giao liên tục trong quá trình phát triển thư viện (Hình \ref{fig:ci_c9}). Qui trình thực hiện sẽ được nêu chi tiết trong phần Hiện thực thư viện.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=1]{image/ci_c9}
+    \caption{Chạy kiểm thử đơn vị thư viện C9js bởi Travis CI}
+    \label{fig:ci_c9}
+	\end{center}
+\end{figure}
+%----------------------------------%
 %----------------------------------------------%
 \newpage
 \section{Thư viện C9js}
@@ -1605,8 +1737,8 @@ Các hàm API của Map trong C9js được liệt kê như sau:
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
-\section{Hiện thực thư viện (12)}
-\subsection{Kiến trúc xây dựng (7)}
+\section{Hiện thực thư viện (10)}
+\subsection{Kiến trúc xây dựng (5)}
 Thư viện C9js được nhóm xây dựng trên hai nguyên tắc chính, xuyên suốt cả quá trình phát triển: \textit{Component-based} và \textit{Data-driven}.
 
 \myparagraph{Component-based} 
