@@ -60,6 +60,10 @@
 
 \bibitem{data_driven} Data-driven programming - Wikipedia. \url{https://en.wikipedia.org/wiki/Data-driven_programming}
 
+\bibitem{uuid} Universally unique identifier - Wikipedia. \url{https://en.wikipedia.org/wiki/Universally_unique_identifier}
+
+\bibitem{callback} Declaring and Using Callbacks, MozDevNet. \url{https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_and_Using_Callbacks}
+
 \bibitem{gha} World Health Organization (WHO). Global Health Atlas, 10, 4, 2016. \url{http://apps.who.int/globalatlas/}
 
 \bibitem{ghaex} WHO. Health workforce: Density of physicsians, 10, 4, 2016. \url{http://gamapserver.who.int/gho/interactive_charts/health_workforce/PhysiciansDensity_Total/atlas.html}

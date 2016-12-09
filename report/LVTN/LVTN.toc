@@ -99,9 +99,9 @@
 \contentsline {subsection}{\numberline {4.1}Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c x\IeC {\^a}y d\IeC {\d \uhorn }ng (7)}{58}{subsection.4.1}
 \contentsline {paragraph}{Component-based}{58}{section*.90}
 \contentsline {paragraph}{Data-driven}{61}{section*.93}
-\contentsline {subsection}{\numberline {4.2}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n (5)}{61}{subsection.4.2}
-\contentsline {section}{\numberline {5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n (7)}{62}{section.5}
-\contentsline {subsection}{\numberline {5.1}\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a} (Unit Testing vs So s\IeC {\'a}nh v\IeC {\'\ohorn }i c\IeC {\'a}c CTLQ) (5)}{62}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n (1)}{62}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n (1)}{62}{subsection.5.3}
-\contentsline {section}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{63}{subsection.5.3}
+\contentsline {subsection}{\numberline {4.2}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n (5)}{62}{subsection.4.2}
+\contentsline {section}{\numberline {5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n (7)}{63}{section.5}
+\contentsline {subsection}{\numberline {5.1}\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a} (Unit Testing vs So s\IeC {\'a}nh v\IeC {\'\ohorn }i c\IeC {\'a}c CTLQ) (5)}{63}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n (1)}{63}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n (1)}{63}{subsection.5.3}
+\contentsline {section}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{64}{subsection.5.3}

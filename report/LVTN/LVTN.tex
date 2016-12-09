@@ -1654,11 +1654,54 @@ Kế thừa từ \textit{Base Class - Chart}, các đồ thị khác nhau như �
 
 Ví dụ minh hoạt (Hình \ref{fig:chart_flow}) mô tả một đối tượng \textit{BarChart} được vẽ bởi C9js. Tại thời điểm khởi tạo, lớp (\textit{Class}) sẽ gọi hàm khởi tạo của đối tượng \textit{Base}, sau đó các thuộc tính mà phương thức mà mỗi đối tượng \textit{Chart} đều có sẽ được tạo thông qua hàm \textit{initConfig()}. Tiếp theo, các tuỳ chỉnh người dùng nhập vào lúc khởi tạo sẽ được kết hợp với các tuỳ chỉnh mặc định bởi hàm \textit{updateConfig()} - vì các tuỳ chỉnh trong C9js thuộc kiểu \textit{Object} nên hàm \textit{updateConfig()} hỗ trợ tính năng trộn sâu (\textit{Deep Merge})\cite{merge_deep} nhằm đảm bảo các tuỳ chỉnh thống nhất và toàn vẹn. Cuối cùng, biểu đồ được hiển thị trên Web thông qua hàm \textit{draw()}, nhưng trước tiên các đối tượng của lớp \textit{Base} sẽ được vẽ trước bằng \textit{super.draw()}. Ngoài ra, C9js còn cung cấp các API như \textit{setOption()} và \textit{updateData()}, xét về bản chất cả hai hàm này đều cập nhật các thuộc tính trong một đối tượng của C9js nên sẽ gọi hàm \textit{updateConfig()} để thực hiện thao tác này và cập nhật lại đồ thị bằng \textit{draw()} .
 
-\myparagraph{Data-driven}.
+\myparagraph{Data-driven}
 \textit{Data-driven}\cite{data_driven} là mô hình lập trình tập trung vào xử lý và thao tác trên dữ liệu, dữ liệu sinh ra sẽ kiểm soát luồng thực thi chương trình.
 
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=0.6]{image/data_model}
+    \caption{Mô hình chuẩn hoá dữ liệu bởi \textit{Data Adapter} trong C9js}
+    \label{fig:data_model}
+	\end{center}
+\end{figure}
 
-(Luồng phát sinh dữ liệu callback) hình
+Trong C9js, có một thành phần gọi là \textit{Data Adapter}. Đây là thành phần đảm nhận nhiệm vụ xử lý toàn bộ về phần dữ liệu. Từ dữ liệu thô người dùng nhập vào hoặc có thể từ một tập tin hay một yêu cầu bên ngoài (\textit{external request}), \textit{Data Adapter} sẽ kết hợp với định đạng tự định nghĩa bởi người dùng (\textit{user-defined format}) để đưa ra dữ liệu được chuẩn hoá và sử dụng trong các thành phần khác như Chart, Map (Hình \ref{fig:data_model}). Chính thành phần này tạo nên tính năng \textit{DataAdapter}, là một tính năng mới, giúp gạt đi những giới hạn về định nghĩa dữ liệu đầu vào mà các thư viện khác thường gặp. 
+
+Về định dạng tự định nghĩa bởi người dùng, ở ví dụ \ref{code:da_2} có chỉ cách thực thi, thông qua các trường như \textit{name, value} cần định nghĩa để tạo ra dữ liệu chuẩn hoá(\textit{normalized data}). Dữ liệu chuẩn hoá trong C9js thực chất có các trường bắt buộc tuỳ theo từng đối tượng Chart (\textit{Bar Chart, Line Chart, ...}) hay \textit{Map} được liệt kê như bảng \ref{table:da_1}.
+
+\begin{table}
+\begin{tabu} to 1\textwidth { | X[l] | X[l] | }
+\hline
+\textbf{Đối tượng} & \textbf{Các trường sau khi chuẩn hoá}\\
+\hline\hline
+Bar Chart & name, value\\
+\hline
+Line Chart & name, x(giá trị theo trục x), y(giá trị theo trục y) \\
+\hline
+Timeline Chart & name, value \\
+\hline
+Donut Chart & name, value \\
+\hline
+Pie Chart & name, value \\
+\hline
+Map & name, value, coor(toạ độ) \\
+\hline
+\end{tabu}
+\caption{Các trường trong một tập dữ liệu đã chuẩn hoá}
+\label{table:da_1}
+\end{table}
+
+\textit{Data Adapter} còn có chức năng tạo một trường gọi là \textit{data-ref}. Vì các thành phần trong C9js đều tương tác được với nhau thông qua thao tác của người dùng, nên cần thiết phải có một cầu nối giữa các thành phần này dựa trên một sự nhất quán về dữ liệu, hay nói cách khác, phải dựa trên một đặc điểm chung liên quan tới dữ liệu. Mỗi một giá trị (vì mỗi tập dữ liệu đầu vào đều được chuyển thành các mảng chứa các dữ liệu con) sẽ được \textit{đánh dấu} bằng một \textit{UUID}\cite{uuid} có định dạng \texttt{c9-xxxxxx-4xxx-yxxx}, khi đó thông qua các \textit{selection} của \textit{d3} ta có thể dễ dàng tham khảo đến tất cả các thành phần đang có chung \textit{UUID} về dữ liệu đang được tương tác.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=0.6]{image/data_flow}
+    \caption{Quá trình nhận dữ liệu được chuẩn hoá trong C9js}
+    \label{fig:data_flow}
+	\end{center}
+\end{figure}
+
+Bây giờ, xét về luồng đi của dữ liệu trong C9js. Qua hình \ref{fig:data_flow}, khi người dùng khởi tạo một đối tượng trong C9js và gọi hàm \textit{draw()} để hiển thị ra Web, lúc đó một đối tượng \textit{DataAdapter} sẽ được khởi tạo và xử lý dữ liệu trên đối tượng ban đầu. Quá trình \textit{process} bao gồm các thao tác như xử lý tập tin (nếu người dùng truyền dữ liệu thông qua tập tin), xử lý yêu cầu (nếu là \textit{external request}) và cuối cùng là chuẩn hoá dữ liệu như đã trình bày ở trên. Để đảm bảo dữ liệu luôn sẵn sàng trước khi hiển thị, nhóm sử dụng tính năng \textit{callback}\cite{callback} trong JavaScript. Sau khi dữ liệu đã được xử lý xong, các thao tác để hiển thị các thành phần của Chart, Map được đưa vào trong \textit{callback} và thực thi với \textit{data} sau cuối.
 
 \subsection{Hiện thực thư viện (5)}
 %----------------------------------------------%
