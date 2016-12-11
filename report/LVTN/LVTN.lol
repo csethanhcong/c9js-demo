@@ -18,3 +18,5 @@
 \contentsline {lstlisting}{\numberline {3.14}Thay \IeC {\dj }\IeC {\h \ocircumflex }i \textit {style} v\IeC {\'\ohorn }i \textit {setOption}}{56}{lstlisting.3.14}
 \contentsline {lstlisting}{\numberline {3.15}C\IeC {\d \acircumflex }p nh\IeC {\d \acircumflex }t l\IeC {\d a}i bi\IeC {\h \ecircumflex }u \IeC {\dj }\IeC {\`\ocircumflex } v\IeC {\'\ohorn }i \textit {updateData}}{56}{lstlisting.3.15}
 \contentsline {lstlisting}{\numberline {3.16}\IeC {\DJ }\IeC {\d i}nh ngh\IeC {\~\i }a l\IeC {\d a}i kho\IeC {\'a}-thu\IeC {\d \ocircumflex }c t\IeC {\'\i }nh trong l\IeC {\'u}c c\IeC {\d \acircumflex }p nh\IeC {\d \acircumflex }t}{57}{lstlisting.3.16}
+\contentsline {lstlisting}{\numberline {4.1}M\IeC {\d \ocircumflex }t testcase trong C9js \IeC {\dj }\IeC {\uhorn }\IeC {\d \ohorn }c vi\IeC {\'\ecircumflex }t b\IeC {\`\abreve }ng Jasmine}{71}{lstlisting.4.1}
+\contentsline {lstlisting}{\numberline {4.2}C\IeC {\'\acircumflex }u h\IeC {\`\i }nh TravisCI ki\IeC {\h \ecircumflex }m so\IeC {\'a}t c\IeC {\h a} 3 giai \IeC {\dj }o\IeC {\d a}n}{74}{lstlisting.4.2}

@@ -1677,7 +1677,7 @@ C9js gồm hai thành phần chính là Chart và Map, nên API được tổ ch
 
 \myparagraph{Map}
 
-Đối với Map, C9js phân biệt hai loại đối tượng (\textit{Object}) như sau:
+Đối với Map, C9js phân biệt hai loại đối tượng (\textit{Object}) như sau: \label{sec:map_api}
 
 \begin{list}{}{}
 \item[•] Đối tượng người dùng tự định nghĩa: Thông qua các hàm addData() hoặc createObject() và sẽ gồm các trường sau khi chuẩn hoá là coor (\textit{coordinate}), name, value.
@@ -1701,7 +1701,13 @@ Các hàm API của Map trong C9js được liệt kê như sau:
 	
 \item getObjects(): Trả về FeatureObject từ OpenLayers, người dùng có thể truy xuất dữ liệu qua hàm get('data').
 
-\item createLayerFromGeojson(\textit{url, data, style}): Tương tự như hàm createObject() nhưng ở đây có thêm tham số \textit{url} cho phép người dùng tải tập tin GeoJSON để liên kết với dữ liệu đầu vào.
+\item createLayer(\textit{layerType, layerSource}): Tạo một lớp(\textit{layer}) trên Map.
+	\begin{list}{}{}
+		\item[•] \textit{layerType} <String>: Kiểu của \textit{Layer} (\textit{Tile, Vector, Image, VectorTile}).
+		\item[•] \textit{layerSource} <String>: Hỗ trợ việc cấu hình đơn giản cho nguồn(\textit{source}). C9js hỗ trợ một số nguồn như \textit{BingMaps, Stamen, TileJSON, TileArcGISRest, Vector, Cluster, ImageVector, OSM}.
+	\end{list}
+
+\item createLayerFromGeojson(\textit{url, data, style}): Tương tự như hàm createObject() nhưng ở đây có thêm tham số \textit{url} cho phép người dùng tải tập tin GeoJSON để liên kết với dữ liệu đầu vào. Là bảng mở rộng từ hàm createLayer().
 	\begin{list}{}{}
 		\item[•] \textit{url} <String>: Đường dẫn chứa tập tin GeoJSON.
 		\item[•] \textit{data} <Object>:
@@ -1737,8 +1743,8 @@ Các hàm API của Map trong C9js được liệt kê như sau:
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
-\section{Hiện thực thư viện (10)}
-\subsection{Kiến trúc xây dựng (5)}
+\section{Hiện thực thư viện}
+\subsection{Kiến trúc xây dựng}
 Thư viện C9js được nhóm xây dựng trên hai nguyên tắc chính, xuyên suốt cả quá trình phát triển: \textit{Component-based} và \textit{Data-driven}.
 
 \myparagraph{Component-based} 
@@ -1774,7 +1780,7 @@ Thư viện C9js được nhóm xây dựng trên hai nguyên tắc chính, xuy�
 
 Ngoài ra, còn có thành phần \textit{Events} bao gồm các sự kiện tương tác (\textit{click, hover, mousemove}) trên các thành phần của Chart. Khi các sự kiện này xảy ra, dữ liệu tương ứng tại vùng được tương tác sẽ được trả về cho người dùng.
 
-Kế thừa từ \textit{Base Class - Chart}, các đồ thị khác nhau như đồ thị cột (\textit{Bar Chart}), đồ thị tròn (\textit{Pie Chart}), đồ thị dòng (\textit{Line Chart}), đồ thị thời gian (\textit{Timeline Chart}), đồ thị hình khuyên (\textit{Donut Chart}) sẽ là các đối tượng chính được lập trình viên sử dụng trong mã nguồn của họ.
+Kế thừa từ \textit{Base Class - Chart}, các đồ thị khác nhau như đồ thị cột (\textit{Bar Chart}), đồ thị tròn (\textit{Pie Chart}), đồ thị dòng (\textit{Line Chart}), đồ thị thời gian (\textit{Timeline Chart}), đồ thị hình khuyên (\textit{Donut Chart}) sẽ là các đối tượng chính được lập trình viên sử dụng trong mã nguồn của họ. Ứng với mỗi thành phần sẽ có một tập tin mã nguồn tương ứng tổ chức theo cấu trúc thư mục giống như kiến trúc các thành phần của Chart trong C9js (Hình \ref{fig:chart}).
 
 \begin{figure}[htp]
 	\begin{center}
@@ -1784,7 +1790,19 @@ Kế thừa từ \textit{Base Class - Chart}, các đồ thị khác nhau như �
 	\end{center}
 \end{figure}
 
-Ví dụ minh hoạt (Hình \ref{fig:chart_flow}) mô tả một đối tượng \textit{BarChart} được vẽ bởi C9js. Tại thời điểm khởi tạo, lớp (\textit{Class}) sẽ gọi hàm khởi tạo của đối tượng \textit{Base}, sau đó các thuộc tính mà phương thức mà mỗi đối tượng \textit{Chart} đều có sẽ được tạo thông qua hàm \textit{initConfig()}. Tiếp theo, các tuỳ chỉnh người dùng nhập vào lúc khởi tạo sẽ được kết hợp với các tuỳ chỉnh mặc định bởi hàm \textit{updateConfig()} - vì các tuỳ chỉnh trong C9js thuộc kiểu \textit{Object} nên hàm \textit{updateConfig()} hỗ trợ tính năng trộn sâu (\textit{Deep Merge})\cite{merge_deep} nhằm đảm bảo các tuỳ chỉnh thống nhất và toàn vẹn. Cuối cùng, biểu đồ được hiển thị trên Web thông qua hàm \textit{draw()}, nhưng trước tiên các đối tượng của lớp \textit{Base} sẽ được vẽ trước bằng \textit{super.draw()}. Ngoài ra, C9js còn cung cấp các API như \textit{setOption()} và \textit{updateData()}, xét về bản chất cả hai hàm này đều cập nhật các thuộc tính trong một đối tượng của C9js nên sẽ gọi hàm \textit{updateConfig()} để thực hiện thao tác này và cập nhật lại đồ thị bằng \textit{draw()} .
+Ví dụ minh hoạ (Hình \ref{fig:chart_flow}) mô tả một đối tượng \textit{BarChart} được vẽ bởi C9js. Tại thời điểm khởi tạo, lớp (\textit{Class}) sẽ gọi hàm khởi tạo của đối tượng \textit{Base}, sau đó các thuộc tính mà phương thức mà mỗi đối tượng \textit{Chart} đều có sẽ được tạo thông qua hàm \textit{initConfig()}. Tiếp theo, các tuỳ chỉnh người dùng nhập vào lúc khởi tạo sẽ được kết hợp với các tuỳ chỉnh mặc định bởi hàm \textit{updateConfig()} - vì các tuỳ chỉnh trong C9js thuộc kiểu \textit{Object} nên hàm \textit{updateConfig()} hỗ trợ tính năng trộn sâu (\textit{Deep Merge})\cite{merge_deep} nhằm đảm bảo các tuỳ chỉnh thống nhất và toàn vẹn. Cuối cùng, biểu đồ được hiển thị trên Web thông qua hàm \textit{draw()}, nhưng trước tiên các đối tượng của lớp \textit{Base} sẽ được vẽ trước bằng \textit{super.draw()}. Ngoài ra, C9js còn cung cấp các API như \textit{setOption()} và \textit{updateData()}, xét về bản chất cả hai hàm này đều cập nhật các thuộc tính trong một đối tượng của C9js nên sẽ gọi hàm \textit{updateConfig()} để thực hiện thao tác này và cập nhật lại đồ thị bằng \textit{draw()} .
+
+Đối với thành phần Map, chỉ có một \textit{Class} chính là \textit{Map} sẽ bao gồm các thành phần cần cho một bản đồ cơ bản:
+
+\begin{list}{}{}
+\item[•] \emph{Bản đồ}: chứa tất cả các thành phần của bản đồ (tương ứng với thành phần ol.Map của Openlayer 3).
+\item[•] \emph{Vị trí nhìn (View)}: C9js hỗ trợ tập trung góc nhìn (zoom) đến một vị trí kinh độ, vĩ độ (longitude, latitude) cụ thể do người dùng chỉ định (tương ứng với thành phần ol.View của Openlayer 3).
+\item[•] \emph{Các lớp (Layer)}: Các lớp trên bản đồ, trong mỗi lớp phải định nghĩa nguồn (source) của lớp đó như là OSM, BingMaps, Vector,… (xem mục 3.4), có thể có nhiều lớp, đè lên lẫn nhau tùy vào thứ tự tạo lớp.
+\item[•] \emph{Các đối tượng (Feature)} như đã trình bày ở mục \ref{sec:map_api}.
+\item[•] \emph{Cửa sổ bật lên (Popup)}: Hiện lên cửa số hiển thị các dữ liệu với định dạng do người dùng chỉ định (thông qua định nghĩa thuộc tính format lúc truyền các thuộc tính cho Map).
+\end{list}
+
+Ngoài ra còn có thành phần \textit{Events} bao gồm các sự kiện như: \textit{click, pointermove} (vị trí chuột nằm trên một đối tượng) và \textit{postrender} (sau khi bản đồ được hiển thị hoàn toàn). Sau khi sự kiện xảy ra, đối tượng tương tác sẽ được trả về cho người dùng.
 
 \myparagraph{Data-driven}
 \textit{Data-driven}\cite{data_driven} là mô hình lập trình tập trung vào xử lý và thao tác trên dữ liệu, dữ liệu sinh ra sẽ kiểm soát luồng thực thi chương trình.
@@ -1835,12 +1853,130 @@ Map & name, value, coor(toạ độ) \\
 
 Bây giờ, xét về luồng đi của dữ liệu trong C9js. Qua hình \ref{fig:data_flow}, khi người dùng khởi tạo một đối tượng trong C9js và gọi hàm \textit{draw()} để hiển thị ra Web, lúc đó một đối tượng \textit{DataAdapter} sẽ được khởi tạo và xử lý dữ liệu trên đối tượng ban đầu. Quá trình \textit{process} bao gồm các thao tác như xử lý tập tin (nếu người dùng truyền dữ liệu thông qua tập tin), xử lý yêu cầu (nếu là \textit{external request}) và cuối cùng là chuẩn hoá dữ liệu như đã trình bày ở trên. Để đảm bảo dữ liệu luôn sẵn sàng trước khi hiển thị, nhóm sử dụng tính năng \textit{callback}\cite{callback} trong JavaScript. Sau khi dữ liệu đã được xử lý xong, các thao tác để hiển thị các thành phần của Chart, Map được đưa vào trong \textit{callback} và thực thi với \textit{data} sau cuối.
 
-\subsection{Hiện thực thư viện (5)}
+Đối với thành phần Map, dữ liệu sẽ được móc nối với các đối tượng, thông qua phương thức \textsf{get(‘data’)} của đối tượng, người dùng có thể lấy được dữ liệu mà họ đã nhập vào (từ dữ liệu nhập tay hoặc từ tập tin). Ngoài ra người dùng có thể lấy được kiểu của đối tượng thông qua phương thức \textsf{get(‘type’)} trên đối tượng đó, kết quả trả về sẽ là \textit{c9-geojson} nếu đó là đối tượng \textit{GeoJSON}, tương tự đối với các đối tượng thông thường sẽ là: \textit{c9-marker, c9-line, c9-polygon, c9-multipolygon}.
+
+\subsection{Hiện thực thư viện}
+Quá trình hiện thực thư viện C9js được nhóm chia làm 3 giai đoạn riêng biệt nhằm tối ưu hoá kết quả đạt được từ từng giai đoạn (Hình \ref{fig:implementation}).
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=0.4]{image/implementation}
+    \caption{Ba giai đoạn hiện thực thư viện C9js}
+    \label{fig:implementation}
+	\end{center}
+\end{figure}
+
+\subsubsection{Hiện thực (Coding)}
+Dựa trên các kiến thức nền tảng đã trình bày và kiến trúc hệ thống đề xuất xây dựng, C9js được hiện thực dưới môi trường phát triển (\textit{environment}) sử dụng \textit{Webpack, D3.js, OpenLayers} (Hình \ref{fig:webpack_1}).
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=1]{image/webpack_1}
+    \caption{Khởi chạy môi trường phát triển với Webpack}
+    \label{fig:webpack_1}
+	\end{center}
+\end{figure}
+
+Lệnh \textsf{npm run dev} sẽ chạy dựa trên tập tin cấu hình cho Webpack (\textit{webpack.config.js}) đã dựng sẵn. Ở đây, Webpack sẽ gộp chung các tập tin mã nguồn JavaScript thành một tập tin có tên \textit{C9.js}, sau đó nén và sinh tập tin \textit{source map}\cite{source_map} nhằm giảm thời gian truy vấn dòng lệnh thực thi trên mã nguồn chính. Như hình \ref{fig:webpack_1}, Webpack sẽ quan sát khi có thay đổi trong mã nguồn trong thư mục \textsf{src} nhờ vào cấu hình \textsf{--watch} và tự động sinh ra các tập tin như \textit{C9.js, C9.js.map, C9.min.css, C9.min.css.map} trong thư mục \textsf{dist}. Nhóm chỉ tập trung vào hiện thực các tính năng mà không cần quan tâm tới việc gộp, nén hay sinh các tập tin cần thiết trong quá trình phát triển.
+
+\subsubsection{Kiểm thử (Testing)}
+
+Các testcase được viết bằng \textit{Jasmine}. Như ví dụ \ref{code:jasmine_test_1} mô tả một testcase với mong muốn tạo một đối tượng \textit{BarChart} với id là \textit{\#chart}.
+
+\begin{lstlisting}[caption=Một testcase trong C9js được viết bằng Jasmine,label={code:jasmine_test_1}]
+describe('C9 Unit Test - Bar Chart', function() {
+
+    it('should create Bar Chart with id #chart', function() {
+
+        var data = [
+            {name: 'A', value: .08167},
+            {name: 'B', value: .01492},
+            {name: 'C', value: .02782}
+        ];
+
+        var option = {
+            id: "chart", 
+            width: 1100, 
+            height: 500,
+            data: {
+                plain: data,
+            }
+        };
+
+        var barChart = new C9.BarChart(option);
+        barChart.draw();
+
+        expect(barChart).toEqual(jasmine.any(C9.BarChart));
+        expect(barChart).not.toBeNull();
+        expect(barChart.id).toEqual('#chart');
+
+    });
+});
+\end{lstlisting}
+
+Các testcase được nhóm hiện thực theo đúng nguyên tắc trong thiết kế hệ thống đã đề ra, tức là hướng tới đối tượng hiện thực. Ứng với mỗi thành phần trong mã nguồn sẽ có một bộ testcase (\textit{test-suite}) mô tả các hành vi của một thành phần trong C9js, như ví dụ \ref{code:jasmine_test_1} là một \textit{test-suite} về \textit{Bar Chart}.
+
+Các \textit{test-suite} này được quản lý và kiểm soát trạng thái bởi \textit{Karma}. Thông qua lệnh \textsf{karma start}, \textit{Karma} được khởi chạy với tập tin cấu hình (\textit{karma.conf.js}) (Hình \ref{fig:karma_1}). Như có thể thấy, \textit{Karma} khởi động một \textit{server} và kiểm soát trạng thái các \textit{test-suite} trên trình duyệt mà nhóm đã chỉ định, ở đây là \textit{PhantomJS}. Kết quả, ứng với mỗi \textit{test-suite}, tình trạng \textit{SUCCESS-FAILED} của mỗi \textit{test-case} được \textit{Karma} tổng hợp lại, đồng thời đi kèm với thời gian thực thi cho mỗi \textit{test-case}. Đặc biệt, giống như \textit{Webpack}, \textit{Karma} cũng hỗ trợ chức năng \textit{live server}, tức là không cần phải chạy lại (\textit{re-run}) quá trình kiểm thử mỗi lần thay đổi mã nguồn, mà \textit{Karma} sẽ tự kiểm soát và quản lý thao tác này.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=1]{image/karma_1}
+    \caption{Kiểm soát Unit Testing với Karma}
+    \label{fig:karma_1}
+	\end{center}
+\end{figure}
+
+Bước cuối cùng trong giai đoạn Testing là phát sinh tập tin báo cáo (\textit{lcov.info}) để \textit{codecov.io} sử dụng cho mục đích thống kê mức độ bao phủ trên mã nguồn. Chi tiết về thống kê sẽ được trình bày trong mục \ref{sec:eval}.
+
+\subsubsection{Triển khai (Release)}
+
+Việc triển khai thư viện C9js qua nhiều kênh khác nhau được hỗ trợ bởi \textit{semantic-release}. \textit{Semantic-release} chia quá trình này làm 3 bước chính:
+
+\begin{enumerate}
+\item \emph{semantic-release pre}: Dựa trên các thay đổi của mã nguồn, quyết định phiên bản mới cho thư viện.
+\item \emph{npm publish}: Triển khai thư viện với phiên bản mới qua kênh \textit{npm}.
+\item \emph{semantic-release post}: Tạo \textit{changelog} và một bản triển khai trên \textit{GitHub}.
+\end{enumerate}
+
+\subsubsection*{Tổng quan}
+Với tư tưởng phát triển mã nguồn mở tích hợp và triển khai liên tục, nhóm sử dụng \textit{TravisCI} nhằm kiểm soát toàn bộ 3 giai đoạn trên. \textit{TravisCI} tiến hành qua 3 bước (Mã nguồn \ref{code:travisci}):
+
+\begin{enumerate}
+\item \emph{Before}: Khi nhận được một \textit{commit} từ \textit{GitHub}, \textit{TravisCI} tiến hành cài đặt môi trường và các phụ thuộc (\textit{dependency}) cần thiết.
+\item \emph{Running}: Tiến hành gộp, nén tập tin (\textsf{npm run build}), thực hiện Unit Testing và tạo báo cáo độ bao phủ mã nguồn (\textsf{npm run ci}).
+\item \emph{After}: Gửi báo cáo cho \textit{codecov.io} để tạo trang tổng quan và cuối cùng triển khai thông qua \textit{semantic-release}. Thông báo đến các bên liên quan nếu cài đặt \textsf{notifications: true}.
+\end{enumerate}
+
+\begin{lstlisting}[caption=Cấu hình TravisCI kiểm soát cả 3 giai đoạn,label={code:travisci}]
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+branches:
+  only:
+    - master
+notifications:
+  email: true
+node_js:
+  - '4'
+before_install:
+  - npm i -g npm@^2.0.0
+before_script:
+  - npm prune
+script:
+  - npm run build
+  - npm run ci
+after_success:
+  - npm run report-coverage
+  - npm run semantic-release
+\end{lstlisting}
+
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
 \section{Kết luận (7)}
-\subsection{Đánh giá (Unit Testing vs So sánh với các CTLQ) (5)}
+\subsection{Đánh giá (Unit Testing vs So sánh với các CTLQ) (5)}\label{sec:eval}
 - Unit Testing
 - So sánh với c3 => Rút ra các factor để đánh vào đáp ứng Mục tiêu => Tính năng mới => Rút ngắn time
 - So sánh với WIND => Lỗi thời

@@ -70,6 +70,8 @@
 
 \bibitem{ghaex} WHO. Health workforce: Density of physicsians, 10, 4, 2016. \url{http://gamapserver.who.int/gho/interactive_charts/health_workforce/PhysiciansDensity_Total/atlas.html}
 
+\bibitem{source_map} Introduction to JavaScript Source Maps - HTML5 Rocks. \url{https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/}
+
 \bibitem{d3jsintro1} D3.js. D3.js - Data-Driven Documents, 10, 4, 2016. \url{https://d3js.org/}
 
 \bibitem{d3jsintro2} Dashing D3.js. Why build Data Visualization with D3.js, 10, 4, 2016. \url{https://www.dashingd3js.com/why-build-with-d3js}
