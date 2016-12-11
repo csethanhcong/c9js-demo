@@ -76,6 +76,10 @@
 
 \bibitem{d3jsintro2} Dashing D3.js. Why build Data Visualization with D3.js, 10, 4, 2016. \url{https://www.dashingd3js.com/why-build-with-d3js}
 
+\bibitem{codecov_c9js} Codecov.io - C9js. \url{https://codecov.io/gh/csethanhcong/C9js}
+
+\bibitem{ga_c9js} Google Analytics - C9js. \url{https://analytics.google.com/analytics/web/?hl=vi&pli=1#dashboard/default/a79729339w118889956p124358060/}
+
 \bibitem{jsintro} Mozilla Developer Network. Introduction - JavaScript, 10, 4, 2016. \url{https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction}
 
 \bibitem{ol} Open Layers 3. A high-performance, feature-packed library for all your mapping needs. \url{http://openlayers.org/en/latest/doc/}

@@ -261,7 +261,7 @@
 \AtBeginDocument{ %
   \counterwithin{lstlisting}{section}
 }
-
+\newlength{\mylencode}
 \begingroup
 \makeatletter
 \let\newcounter\@gobble\let\setcounter\@gobbletwo
@@ -273,8 +273,8 @@
 
 \renewcommand{\cftlstlistingpresnum}{\enspace\enspace\lstlistingname\enspace}
 \renewcommand{\cftlstlistingaftersnum}{:\enspace}
-\settowidth{\mylen}{\cftlstlistingpresnum\cftlstlistingaftersnum}
-\addtolength{\cftlstlistingnumwidth}{\mylen}
+\settowidth{\mylencode}{\cftlstlistingpresnum\cftlstlistingaftersnum}
+\addtolength{\cftlstlistingnumwidth}{\mylencode}
 
 % Margins
 \topmargin=-0.45in
@@ -357,9 +357,13 @@
 
 \begin{document}
 \input{titlepage}
-
 \thispagestyle{empty}
 \NewPage
+
+%\input{thankpage}
+%\input{assurepage}
+%\thispagestyle{empty}
+
 \pagenumbering{roman} %numbering before main content starts
 \tableofcontents
 \NewPage
@@ -560,7 +564,7 @@ Một tính năng khác đó là việc tương tác giữa các giữa các đ�
 
 Do đó, đề tài đề xuất sử dụng nhiều đồ thị để biểu diễn cho nguồn dữ liệu đầu vào, và sự tương tác giữa các đồ thị.
 %----------------------------------%
-\subsubsection{Thư viện đồ thị C3.js}
+\subsubsection{Thư viện đồ thị C3.js}\label{sec:c3js}
 %----------------------------------%
 \myparagraph{Giới thiệu}
 C3.js là một thư viện mã nguồn mở \cite{c3js} dựa trên thư viện D3.js , nhằm cho phép người dùng có cái nhìn sâu hơn về các ứng dụng web tích hợp đồ thị.
@@ -1052,7 +1056,7 @@ Istanbul hỗ trợ bao phủ mã Javascript trong nhiều trường hợp bao g
 %----------------------------------------------%
 %----------------------------------%
 
-\subsubsection{Code Coverage}
+\subsubsection{Code Coverage}\label{sec:codecov}
 %----------------------------------%
 \myparagraph{Giới thiệu}
 Như đã giới thiệu sơ qua về thuật ngữ code coverage ở mục \ref{sec:istanbul} (Istanbul), ở phần này sẽ nói rõ hơn về thuật ngữ này cũng như công cụ để báo cáo mức độ bao phủ mã nguồn, đó là codecov.io.
@@ -1975,20 +1979,90 @@ after_success:
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
-\section{Kết luận (7)}
-\subsection{Đánh giá (Unit Testing vs So sánh với các CTLQ) (5)}\label{sec:eval}
-- Unit Testing
-- So sánh với c3 => Rút ra các factor để đánh vào đáp ứng Mục tiêu => Tính năng mới => Rút ngắn time
-- So sánh với WIND => Lỗi thời
-=> Ưu
-=> Nhược -> Hướng phát triển
-\subsection{Hướng phát triển (1)}
-\subsection{Kết luận (1)}
+\section{Kết luận}
+%----------------------------------------------%
+\subsection{Đánh giá}\label{sec:eval}
+%-------------------------------%
+\subsubsection{Đánh giá chủ quan}
+\begin{enumerate}
+\item \emph{Về trực quan hóa dữ liệu:} Hiện tại C9js đã hỗ trợ trực quan hóa dữ liệu người dùng (từ tập tin bên ngoài hoặc dữ liệu nhập tay) thành các dạng biểu đồ: cột, đường, vùng, tròn, bánh rán, thời gian; và dạng bản đồ với các tùy chỉnh cực kì đa dạng, phong phú. Ngoài ra cũng hỗ trợ tương tác trên các biểu đồ, bản đồ, qua đó theo dõi, tìm ra được xu hướng, sở thích của người dùng.
+\item \emph{Về vấn đề viết mã:} C9js là một thư viện mã nguồn mở, hướng đến cộng đồng, các công nghệ (D3, OpenLayers 3) được sử dụng cũng hoàn toàn là mã nguồn mở, từ đó các nhà phát triển khác nhau có thể hiểu được mã nguồn và đóng góp phát triển thư viện hơn. Bên cạnh đó, C9js tuân theo kiến trúc component-based, do đó có thể dễ dàng mở rộng thêm các thành phần khác nhau như là biểu đồ công tơ mét (gauge), biểu đồ phân tán (scatter plot),…
+\item \emph{Về số lượng mã viết ra:} Dễ dàng thấy được khi dùng C9js, người dùng viết ra số dòng mã ít hơn rất nhiều so với các công nghệ đã dùng ban đầu, không chỉ giúp rút ngắn thời gian lập trình cho các lập trình viên, mà còn có thể dễ dàng giúp người dùng trực quan dữ liệu nếu họ không biết về d3, Openlayer 3. Có thể tham khảo số lượng dòng mã viết ra thông qua việc tạo ra một biểu đồ cột đơn giản từ hai nguồn sau:
+	\begin{list}{}{}
+	\item[•] \emph{C9js:} \url{http://c9js.me/samples/bar_chart/single_bar_chart.html}
+	\item[•] \emph{Viết từ D3: } \url{https://bl.ocks.org/mbostock/3885304
+}
+	\end{list}
+\item \emph{Về môi trường phát triển:} C9js được phát triển theo phương pháp tích hợp liên tục kết hợp với phát triển theo hướng kiểm thử và chuyển giao liên tục với sự hỗ trợ của Travis CI, do đó vấn đề môi trường phát triển, môi trường kiểm thử cũng như xuất bản thư viện đều đã sẵn có và để làm tất cả những việc này là hoàn toàn tự động, dễ dàng hỗ trợ cho các nhà phát triển hứng thú với C9js để đóng góp phát triển thư viện sau này.
+\item \emph{Về vấn đề kiểm thử:} Mã nguồn C9js được bao phủ bởi việc kiểm thử bằng các bộ mô tả kiểm thử. Mức độ bao phủ càng cao cho thấy mã nguồn càng có độ tin cậy, độ chính xác cao, và càng ít xảy ra lỗi. Hình dưới là mức độ bao phủ mã nguồn của C9js trên \textit{Codecov.io}\cite{codecov_c9js}.
+
+Cụ thể, C9js gồm có gần 2700 câu lệnh, thông qua các bộ mô tả kiểm thử, mã nguồn của C9js đã được thực thi qua (hit) gần 1400 dòng lệnh, và còn gần 1300 dòng lệnh chưa được bao phủ (miss), và không có câu lệnh nào thuộc dạng partial, từ đó tính ra được độ bao phủ khoảng 52\% (xem cách tính cũng như các thuật ngữ ở phần \ref{sec:codecov}) (Hình \ref{fig:codecov_c9js}).
+\end{enumerate}
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=0.8]{image/codecov_c9js}
+    \caption{Mức độ bao phủ của C9js được thống kê trên \textit{Codecov.io}}
+    \label{fig:codecov_c9js}
+	\end{center}
+\end{figure}
+%-------------------------------%
+%-------------------------------%
+\subsubsection{Đánh giá khách quan}
+Sau khi xuất bản C9js, nhóm đề tài đã phổ biến thư viện trên nhiều kênh mạng xã hội, cộng đồng các lập trình viên trong và ngoài nước để cho mọi người dùng thử và thu được kết quả được trực quan bởi bản đồ ở hình \ref{fig:ga_map}. Hình \ref{fig:ga_map} cho thấy số lượt người dùng ở Việt Nam chiếm đại đa số với 233 lượt, tiếp theo sau là Nga với 131, Pháp với 15 lượt, … Kết quả trên được lấy từ thống kê của Google Analytics qua một đoạn mã để quan sát lưu lượng người dùng cung cấp bởi Google Analytics\cite{ga_c9js}.
+
+\begin{figure}[htp]
+	\begin{center}
+    \includegraphics[scale=1]{image/ga_map}
+    \caption{Mật độ truy cập và sử dụng thư viện C9js trên toàn thế giới}
+    \label{fig:ga_map}
+	\end{center}
+\end{figure}
+%-------------------------------%
+\subsubsection{So sánh với thư viện c3.js}
+Như đã giới thiệu ở mục \ref{sec:c3js}, \textit{c3.js} hiện đang là thư viện mã nguồn mở với các tính năng và mục tiêu tương đương nhất khi so sánh với C9js (Bảng \ref{table:compare_c3_c9}).
+
+\begin{table}
+\begin{tabu} to 1\textwidth { | X[l] | X[l] | X[l] | }
+\hline
+\textbf{Tiêu chí so sánh} & \textbf{C9js} & \textbf{c3.js}\\
+\hline\hline
+Hỗ trợ trực quan & Có thêm thành phần Map & Hỗ trợ nhiều loại Chart hơn, nhưng không có thành phần Map\\
+\hline
+Tính năng mở rộng & Hỗ trợ định nghĩa dữ liệu bởi người dùng (\textit{Data Adapter}), cho phép tuỳ chỉnh cấu hình bởi hàm-đứng-riêng \textit{setOption()} & Nhiều tuỳ chỉnh hơn, nhưng không có các tính năng như C9js\\
+\hline
+Kiến trúc hệ thống & Xây dựng trên chuẩn \textit{ES6} dễ dàng mở rộng & Xây dựng theo lối \textit{prototype} của \textit{ES5} đang dần được thay thế bởi cộng đồng mã nguồn mở\\
+\hline
+Hiệu suất & Cả hai thư viện đều được xây dựng thành phần Chart trên \textit{D3.js} nên hiệu suất tương đương nhau & \textit{c3.js} không hỗ trợ thành phần Map nên không thể so sánh hiệu suất ở thành phần này\\
+\hline
+Tài liệu và hướng dẫn & Đầy đủ và rõ ràng, trang chủ \url{http://c9js.me/} & Đầy đủ và rõ ràng, trang chủ \url{/http://c3js.org/}\\
+\hline
+Kiểm thử mã nguồn & Được kiểm thử với 52\% mã nguồn theo đánh giá của \textit{Codecov.io} & Đạt 64\%\\
+\hline
+Đóng góp từ cộng đồng & Triển khai được khoảng 1 tháng (tính từ thời điểm bài báo cáo) nên hiên tại chưa có phản hồi từ người dùng trên GitHub, đạt 20 \textit{star} và 4 \textit{fork} & Đã triển khai được 3 năm (từ năm 2014) và nhận được đóng góp từ 89 cộng sự khác, đạt 6362 \textit{star} và 1018 \textit{fork}\\
+\hline
+\end{tabu}
+\caption{So sánh thư viện C9js và c3.js}
+\label{table:compare_c3_c9}
+\end{table}
+
+\subsection{Hướng phát triển}
+Với mục tiêu tạo công cụ trực quan dữ liệu mới mẻ, cung cấp các tính năng mới và cải thiện một số tính năng đã có nhằm rút ngắn thời gian hiện thực ứng dụng trực quan dữ liệu trên Web cho các lập trình viên. Đồng thời, dựa trên đánh giá và so sánh với thư viện đã có sẵn, nhóm đề ra những điểm cần được cải tiến và mở rộng ở thư viện C9js:
+
+\begin{list}{}{}
+\item[•] Hỗ trợ nhiều kênh triển khai thư viện hơn, đáp ứng tối đa nhu cầu của các lập trình viên khác.
+\item[•] Hiện thực Unit Testing đạt được tỉ lệ cao hơn so với hiện tại (52\%) nhằm tăng độ tin cậy và kiểm soát mã nguồn tốt hơn.
+\item[•] Hiện thực thành phần Chart hỗ trợ nhiều hơn các loại khác nhau, có thể tham khảo thư viện \textit{c3.js} về các loại đồ thị đã có, và mở rộng thêm các loại khác như \textit{Node-link Tree, Calendar, Heat Map, Plot, ...}
+\item[•] Cải thiện các hàm chức năng trong thành phần Map để dễ dàng cho người sử dụng nhất.
+\end{list}
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
-\bibliography{refs}
-\bibliographystyle{unsrt}
+%\bibliography{refs}
+%\bibliographystyle{unsrt}
+% Hỗ trợ hiển thị URL
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,refs}
 
 %----------------------------------------------%
 
