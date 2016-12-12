@@ -50,7 +50,7 @@
 
 % Set spacing between each paragraph
 \setlength{\parindent}{4em}
-\setlength{\parskip}{1em}
+\setlength{\parskip}{0.7em}
 \renewcommand{\baselinestretch}{1.2}
 
 % Tạo trang trống, không đếm số trang
@@ -278,8 +278,8 @@
 
 % Khoảng trống trong list
 \usepackage{enumitem}
-\setlist[enumerate]{topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex}
-\setlist[itemize]{topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex}
+\setlist[enumerate]{topsep=0pt,itemsep=-1ex,partopsep=0.7ex,parsep=1ex}
+\setlist[itemize]{topsep=0pt,itemsep=-1ex,partopsep=0.7ex,parsep=1ex}
 
 % Margins
 \topmargin=-0.45in
@@ -1119,7 +1119,6 @@ Trong hệ thống có nhiều các phụ thuộc (\textit{dependency}), vấn �
 Những nguyên nhân trên sẽ khiến dự án gặp khó khăn trong việc phát triển sau này. Và một giải pháp cho vấn đề này đó là đưa ra một tập các quy tắc và yêu cầu để chỉ ra cách các số phiên bản được gán cho và tăng lên. Và hệ thống này được gọi là \textit{Semantic Versioning}, dưới hệ thống này, số phiên bản và cách nó thay đổi sẽ cho biết ý nghĩa về những đoạn mã và những gì đã được thay đổi từ một phiên bản đến phiên bản tiếp theo.
 
 \textit{Semantic Versioning} định nghĩa số phiên bản sẽ theo định dạng \texttt{x.y.z}, hay còn có thể ghi là \texttt{major.minor.patch}, mỗi con số này tăng lên sẽ có nghĩa là:
-
 \begin{itemize}
 \item[•] Thay đổi \textit{MAJOR} khi có một thay đổi lớn trong API mà không tương thích với API phiên bản trước, hay nói các khác là hoàn toàn khác với API trước trong mã nguồn, về kiến trúc cũng như cách sử dụng API.
 \item[•] Thay đổi \textit{MINOR} khi có thêm chức năng mới cho API, sự thay đổi này vẫn giữ được sự tương thích đối với API phiên bản trước.
@@ -1130,7 +1129,6 @@ Những nguyên nhân trên sẽ khiến dự án gặp khó khăn trong việc 
 %----------------------------------%
 \myparagraph{Semantic Release}
 Semanic Release là công cụ giúp cho việc xuất bản package một cách hoàn toàn tự động:
-
 \begin{itemize}
 \item[•] Xác định phiên bản một các đúng đắn dựa vào commit của những người lập trình, số phiên bản được xác định giống như các quy tắc mà \textit{Semantic Versioning} đã đưa ra.
 \item[•] Tạo một bản phát hành trên \textit{Github}, bao gồm tag cho phiên bản, tạo ra \textit{changelog} (Hình \ref{fig:semantic_1}).
@@ -1153,7 +1151,7 @@ Semanic Release là công cụ giúp cho việc xuất bản package một cách
 	\end{center}
 \end{figure}
 %----------------------------------%
-\subsubsection{CI-CD}
+\subsubsection{CI - CD}
 %----------------------------------%
 Dưới đây là những phương pháp phát triển phần mềm mà C9js đã sử dụng:
 
@@ -1773,8 +1771,8 @@ Ví dụ minh hoạ (Hình \ref{fig:chart_flow}) mô tả một đối tượng 
 
 Đối với thành phần Map, chỉ có một \textit{Class} chính là \textit{Map} sẽ bao gồm các thành phần cần cho một bản đồ cơ bản:
 \begin{itemize}
-\item[•] \emph{Bản đồ}: chứa tất cả các thành phần của bản đồ (tương ứng với thành phần \textit{ol.Map} của Openlayer 3).
-\item[•] \emph{Vị trí nhìn (View)}: C9js hỗ trợ tập trung góc nhìn (zoom) đến một vị trí kinh độ, vĩ độ (longitude, latitude) cụ thể do người dùng chỉ định (tương ứng với thành phần ol.View của Openlayer 3).
+\item[•] \emph{Bản đồ}: chứa tất cả các thành phần của bản đồ (tương ứng với thành phần \textit{ol.Map} của Openlayers 3).
+\item[•] \emph{Vị trí nhìn (View)}: C9js hỗ trợ tập trung góc nhìn (zoom) đến một vị trí kinh độ, vĩ độ (longitude, latitude) cụ thể do người dùng chỉ định (tương ứng với thành phần ol.View của Openlayers 3).
 \item[•] \emph{Các lớp (Layer)}: Các lớp trên bản đồ, trong mỗi lớp phải định nghĩa nguồn (\textit{source}) của lớp đó như là \textit{OSM, BingMaps, Vector,…} (xem mục 3.4), có thể có nhiều lớp, đè lên lẫn nhau tùy vào thứ tự tạo lớp.
 \item[•] \emph{Các đối tượng (Feature)} như đã trình bày ở mục \ref{sec:map_api}.
 \item[•] \emph{Cửa sổ bật lên (Popup)}: Hiện lên cửa số hiển thị các dữ liệu với định dạng do người dùng chỉ định (thông qua định nghĩa thuộc tính format lúc truyền các thuộc tính cho Map).
@@ -1960,7 +1958,7 @@ after_success:
 \begin{enumerate}
 \item \emph{Về trực quan hóa dữ liệu:} Hiện tại C9js đã hỗ trợ trực quan hóa dữ liệu người dùng (từ tập tin bên ngoài hoặc dữ liệu nhập tay) thành các dạng biểu đồ: cột, đường, vùng, tròn, bánh rán, thời gian; và dạng bản đồ với các tùy chỉnh cực kì đa dạng, phong phú. Ngoài ra cũng hỗ trợ tương tác trên các biểu đồ, bản đồ, qua đó theo dõi, tìm ra được xu hướng, sở thích của người dùng.
 \item \emph{Về vấn đề viết mã:} C9js là một thư viện mã nguồn mở, hướng đến cộng đồng, các công nghệ (D3, OpenLayers 3) được sử dụng cũng hoàn toàn là mã nguồn mở, từ đó các nhà phát triển khác nhau có thể hiểu được mã nguồn và đóng góp phát triển thư viện hơn. Bên cạnh đó, C9js tuân theo kiến trúc component-based, do đó có thể dễ dàng mở rộng thêm các thành phần khác nhau như là biểu đồ công tơ mét (gauge), biểu đồ phân tán (scatter plot),…
-\item \emph{Về số lượng mã viết ra:} Dễ dàng thấy được khi dùng C9js, người dùng viết ra số dòng mã ít hơn rất nhiều so với các công nghệ đã dùng ban đầu, không chỉ giúp rút ngắn thời gian lập trình cho các lập trình viên, mà còn có thể dễ dàng giúp người dùng trực quan dữ liệu nếu họ không biết về d3, Openlayer 3. Có thể tham khảo số lượng dòng mã viết ra thông qua việc tạo ra một biểu đồ cột đơn giản từ hai nguồn sau:
+\item \emph{Về số lượng mã viết ra:} Dễ dàng thấy được khi dùng C9js, người dùng viết ra số dòng mã ít hơn rất nhiều so với các công nghệ đã dùng ban đầu, không chỉ giúp rút ngắn thời gian lập trình cho các lập trình viên, mà còn có thể dễ dàng giúp người dùng trực quan dữ liệu nếu họ không biết về d3, Openlayers 3. Có thể tham khảo số lượng dòng mã viết ra thông qua việc tạo ra một biểu đồ cột đơn giản từ hai nguồn sau:
 	\begin{itemize}
 	\item[•] \emph{C9js:} \url{http://c9js.me/samples/bar_chart/single_bar_chart.html}
 	\item[•] \emph{Viết từ D3: } \url{https://bl.ocks.org/mbostock/3885304
