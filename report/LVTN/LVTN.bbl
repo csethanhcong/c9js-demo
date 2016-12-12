@@ -115,6 +115,46 @@ OpenStreetMap, ``The project that creates and distributes free geographic data
   for the world.'' [Online]. Available: \url{https://www.openstreetmap.org/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{ol}
+\BIBentryALTinterwordspacing
+O.~L. 3, ``Open layers 3. a high-performance, feature-packed library for all
+  your mapping needs.'' [Online]. Available:
+  \url{http://openlayers.org/en/latest/doc/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{prototypejs}
+\BIBentryALTinterwordspacing
+``Prototype javascript framework. a foundation for ambitious web
+  applications,'' 2 2005. [Online]. Available:
+  \url{https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework}
+\BIBentrySTDinterwordspacing
+
+\bibitem{tdd_1}
+\BIBentryALTinterwordspacing
+Wikipedia, ``Tdd - wikipedia.'' [Online]. Available:
+  \url{https://en.wikipedia.org/wiki/Test-driven_development}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bdd_1}
+\BIBentryALTinterwordspacing
+I.~Jovanovic, ``Introduction to javascript bdd testing with jasmine library.''
+  [Online]. Available:
+  \url{http://ivanjovanovic.com/2011/07/22/introduction-to-javascript-bdd-testing-with-jasmine-library/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{mocha_vs_jasmine}
+\BIBentryALTinterwordspacing
+Codementor, ``Javascript testing framework comparison: Jasmine vs mocha.''
+  [Online]. Available:
+  \url{https://www.codementor.io/javascript/tutorial/javascript-testing-framework-comparison-jasmine-vs-mocha}
+\BIBentrySTDinterwordspacing
+
+\bibitem{karma_1}
+\BIBentryALTinterwordspacing
+``Karma - a javascript test runner.'' [Online]. Available:
+  \url{http://www.methodsandtools.com/tools/karma.php}
+\BIBentrySTDinterwordspacing
+
 \bibitem{codecov_wiki}
 \BIBentryALTinterwordspacing
 Wikipedia, ``Code coverage.'' [Online]. Available:
@@ -128,9 +168,17 @@ M.~Fowler, ``Continuousdelivery,'' 5 2013. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 \bibitem{bingmap}
+\BIBentryALTinterwordspacing
 B.~Maps, ``Web mapping service provided as a part of microsoft's bing suite of
   search engines and powered by the bing maps for enterprise framework,'' 5
-  2010.
+  2010. [Online]. Available: \url{https://en.wikipedia.org/wiki/Bing_Maps}
+\BIBentrySTDinterwordspacing
+
+\bibitem{stamen}
+\BIBentryALTinterwordspacing
+Stamen, ``Stamen design: Data visualization and map design studio.'' [Online].
+  Available: \url{http://stamen.com/}
+\BIBentrySTDinterwordspacing
 
 \bibitem{xhr}
 \BIBentryALTinterwordspacing

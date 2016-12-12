@@ -276,6 +276,11 @@
 \settowidth{\mylencode}{\cftlstlistingpresnum\cftlstlistingaftersnum}
 \addtolength{\cftlstlistingnumwidth}{\mylencode}
 
+% Khoảng trống trong list
+\usepackage{enumitem}
+\setlist[enumerate]{topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex}
+\setlist[itemize]{topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex}
+
 % Margins
 \topmargin=-0.45in
 \evensidemargin=0in
@@ -438,7 +443,7 @@ C9js hiện tại được triển khai là một mã nguồn mở (open-source)
 
 Về kiến trúc, cũng như tài liệu (documentation), C9js được thể hiện rất rõ ràng với mong muốn ngay từ ban đầu là nhận được sự đóng góp cũng như phát triển lâu dài từ các lập trình viên khác trong cộng đồng mã nguồn mở GitHub. Hiện tại, repository\cite{c9js_repo} của C9js trên GitHub đã nhận được sự quan tâm và đánh giá từ cộng đồng. Các thông số cụ thể (tính đến thời điểm bài báo cáo này) như hình 1.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.8]{image/repo_status}
     \caption{Thông số đánh giá nhận được từ GitHub}
@@ -449,7 +454,7 @@ Về kiến trúc, cũng như tài liệu (documentation), C9js được thể h
 
 %----------------------------------------------%
 \newpage
-\section{Kiến thức nền tảng và Công nghệ}
+\section{Công trình liên quan và Kiến thức nền tảng}
 \subsection{Công trình liên quan}\label{sec:related_work}
 \subsubsection{Công cụ hỗ trợ trực quan dữ liệu phân tán Gapminder}
 %----------------------------------%
@@ -465,13 +470,11 @@ Gapminder hoạt động dựa trên nền tảng được xác định trước
 \myparagraph{Mục tiêu}
 Các hoạt động ban đầu là theo đuổi sự phát triển của ứng dụng Trendalyzer (tháng 3 năm 2006). Trendalyzer là một phần mềm biểu diễn chuỗi thời gian thống kê bằng cách chuyển đổi những con số khô khan, nhàm chán thành các đồ thị chuyển động thú vị, và đặc biệt là khả năng tương tác. Trendalyzer còn được biết đến dưới tên gọi Gapminder World, xây dựng trên nền tảng web biểu diễn dữ liệu thống kê theo dòng thời gian cho tất cả các quốc gia trên thế giới.
 
-Gapminder World\cite{gapminderworld} cung cấp các video, bài thuyết trình bằng Flash và các đồ thị dưới dạng PDF thể hiện xu hướng phát triển mang tính toàn cầu. 
-
-Kể từ năm 2006 Gapminder cung cấp một lượng lớn các video thể hiện thực tế dưới góc nhìn toàn cầu. 
+Gapminder World\cite{gapminderworld} cung cấp các video, bài thuyết trình bằng Flash và các đồ thị dưới dạng PDF thể hiện xu hướng phát triển mang tính toàn cầu. Kể từ năm 2006 Gapminder cung cấp một lượng lớn các video thể hiện thực tế dưới góc nhìn toàn cầu. 
 
 Từ năm 2008 Gapminder còn cung cấp các biểu đồ con (sub-graph)\cite{subgraph} thể hiện xu hướng, sự khác biệt giữa các tiểu bang của Mỹ, các tỉnh thành của Trung Quốc, hay các đồ thị đặc biệt so sánh số liệu thống kê từ các thành phố ở Trung Quốc, Mỹ, Ấn Độ với các quốc gia khác trên thế giới. Từ Gapminder World, chỉ bằng một cú click chuột, các dữ liệu, thống kê liên quan nằm sau các đồ thị được thể hiện trên các biểu đồ con.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/gapminder}
     \caption{Đồ thị trực quan dữ liệu Gapminder World}
@@ -479,7 +482,7 @@ Từ năm 2008 Gapminder còn cung cấp các biểu đồ con (sub-graph)\cite{
 	\end{center}
 \end{figure}
 
-Như ở hình 2, chúng ta có thể thấy với 1 lượng dữ liệu lớn (ở đây là độ tuổi kỳ vọng ở các quốc gia trên thế giới), có thể được thể hiện trực quan bởi đồ thị bong bóng (bubble chart). Qua kích thước các bong bóng, có thể thấy sự tương quan khác biệt giữa các quốc gia như thế nào. Hay khi trỏ vào 1 bong bóng, chúng ta thấy được số liệu chi tiết ở quốc gia đó, như trong hình là độ tuổi kỳ vọng ở Ấn Độ, vào năm 1962 là 42.6. Ngoài ra ở phía dưới đồ thị, có 1 thanh thể hiện dòng thời gian (timeline), khi thanh thời gian trượt đi, kích thước các quả bóng thay đổi theo như số liệu tương ứng ở các năm của các quốc gia.
+Như ở hình \ref{fig:gapminder}, chúng ta có thể thấy với 1 lượng dữ liệu lớn (ở đây là độ tuổi kỳ vọng ở các quốc gia trên thế giới), có thể được thể hiện trực quan bởi đồ thị bong bóng (\textit{Bubble Chart}). Qua kích thước các bong bóng, có thể thấy sự tương quan khác biệt giữa các quốc gia như thế nào. Hay khi trỏ vào 1 bong bóng, chúng ta thấy được số liệu chi tiết ở quốc gia đó, như trong hình là độ tuổi kỳ vọng ở Ấn Độ, vào năm 1962 là 42.6. Ngoài ra ở phía dưới đồ thị, có 1 thanh thể hiện dòng thời gian (timeline), khi thanh thời gian trượt đi, kích thước các quả bóng thay đổi theo như số liệu tương ứng ở các năm của các quốc gia.
 %----------------------------------%
 
 %----------------------------------%
@@ -501,8 +504,8 @@ Về thư viện D3.js được sử dụng trong Gapminder World, đây là m�
 \subsubsection{Global Health Atlas - WHO}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-Trong một môi trường điện tử, WHO’s Communicable Disease Global Atlas được dùng cho việc phân tích và so sánh dữ liệu chuẩn, thống kê các bệnh truyền nhiễm ở các quốc gia, vùng lãnh thổ, và toàn thế giới. Việc phân tích và biểu diễn dữ liệu ngày càng được hỗ trợ tốt hơn thông qua các thông tin về dân số, điều kiện kinh tế xã hội, và các yếu tố môi trường. Với việc làm đó, biểu đồ Atlas này có thể cho biết được những yếu tố gây ra bệnh truyền nhiễm (2007)\cite{gha}.
-\begin{figure}[htp]
+Trong một môi trường điện tử, WHO’s Communicable Disease Global Atlas được dùng cho việc phân tích và so sánh dữ liệu chuẩn, thống kê các bệnh truyền nhiễm ở các quốc gia, vùng lãnh thổ, và toàn thế giới. Việc phân tích và biểu diễn dữ liệu ngày càng được hỗ trợ tốt hơn thông qua các thông tin về dân số, điều kiện kinh tế xã hội, và các yếu tố môi trường. Với việc làm đó, biểu đồ Atlas này có thể cho biết được những yếu tố gây ra bệnh truyền nhiễm (\textit{2007})\cite{gha}.
+\begin{figure}[!h]
     \begin{center}
     \includegraphics[scale=.4]{image/globalatlas}
     \caption{Biểu đồ tương tác về mật độ bác sĩ của WHO}
@@ -521,20 +524,19 @@ Ban đầu, với mục đích cung cấp những dữ liệu, báo cáo về c�
 Trực quan dữ liệu thành nhiều dạng biểu đồ khác nhau, các biểu đồ có thể tương tác với nhau giúp cho việc nhìn nhận, phân tích, đánh giá thông tin một cách chính xác, đầy đủ.
 
 Ứng dụng\cite{ghaex} bao gồm các thành phần:
-
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Bảng dữ liệu:} Được lấy từ database của WHO.
 \item[•] \emph{Bản đồ (Map):} Dùng thư viện Google Maps, kết hợp với bảng dữ liệu để tạo ra biểu đồ.
 \item[•] \emph{Biểu đồ cột:} Dựa vào bảng dữ liệu để tạo ra biểu đồ.
 \item[•] \emph{Chú thích:} Phân vùng dữ liệu.
-\end{list}
+\end{itemize}
 
-Tính năng: Ứng dụng hỗ trợ tương tác giữa các biểu đồ, bảng dữ liệu
+Ứng dụng hỗ trợ tương tác giữa các biểu đồ, bảng dữ liệu (Hình \ref{fig:clickatlas}).
 
-\begin{list}{}{}
-\item[•] Khi click vào một hàng trong bảng dữ liệu (hình 4), bên map sẽ phóng to đến vùng tương ứng, bên biểu đồ cột sẽ nổi bật cột tương ứng. Các tương tác sẽ được thể hiện tương tự khi click vào các biểu đồ.
+\begin{itemize}
+\item[•] Khi click vào một hàng trong bảng dữ liệu, bên map sẽ phóng to đến vùng tương ứng, bên biểu đồ cột sẽ nổi bật cột tương ứng. Các tương tác sẽ được thể hiện tương tự khi click vào các biểu đồ.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
     \begin{center}
     \includegraphics[scale=.4]{image/clickatlas}
     \caption{Tương tác khi click vào một hàng trong bảng dữ liệu}
@@ -542,10 +544,10 @@ Tính năng: Ứng dụng hỗ trợ tương tác giữa các biểu đồ, bả
     \end{center}
 \end{figure}
 
-\item[•] Khi hover lên một hàng trong bảng dữ liệu (hình 5), bên các biểu đồ cũng sẽ được làm nổi bật vùng tương ứng như khi click, nhưng với 1 màu sắc khác (bên map sẽ không phóng to đến vùng tương ứng).
-\end{list}
+\item[•] Khi hover lên một hàng trong bảng dữ liệu, bên các biểu đồ cũng sẽ được làm nổi bật vùng tương ứng như khi click, nhưng với 1 màu sắc khác (bên map sẽ không phóng to đến vùng tương ứng).
+\end{itemize}
 
-\begin{figure}[htp]
+\begin{figure}[!h]
     \begin{center}
     \includegraphics[scale=.4]{image/hoveratlas}
     \caption{Tương tác khi hover lên Map}
@@ -556,11 +558,7 @@ Tính năng: Ứng dụng hỗ trợ tương tác giữa các biểu đồ, bả
 
 %----------------------------------%
 \myparagraph{Đánh giá}
-Dữ liệu được WHO thu thập trên toàn thế giới, cập nhật theo thời gian, đảm bảo tính chính xác của ứng dụng.
-
-Bên cạnh đó, việc trực quan thành nhiều loại biểu đồ, thể hiện được nhiều cái nhìn khác nhau của dữ liệu giúp đánh giá vấn đề 1 cách đúng đắn, đầy đủ.
-
-Một tính năng khác đó là việc tương tác giữa các giữa các đồ thị giúp người dùng có nhiều cái nhìn từ nguồn dữ liệu, hiểu được thông tin rút trích từ các đồ thị, tăng tính thân thiện, trải nghiệm của người dùng.
+Dữ liệu được WHO thu thập trên toàn thế giới, cập nhật theo thời gian, đảm bảo tính chính xác của ứng dụng. Bên cạnh đó, việc trực quan thành nhiều loại biểu đồ, thể hiện được nhiều cái nhìn khác nhau của dữ liệu giúp đánh giá vấn đề 1 cách đúng đắn, đầy đủ. Một tính năng khác đó là việc tương tác giữa các giữa các đồ thị giúp người dùng có nhiều cái nhìn từ nguồn dữ liệu, hiểu được thông tin rút trích từ các đồ thị, tăng tính thân thiện, trải nghiệm của người dùng.
 
 Do đó, đề tài đề xuất sử dụng nhiều đồ thị để biểu diễn cho nguồn dữ liệu đầu vào, và sự tương tác giữa các đồ thị.
 %----------------------------------%
@@ -570,7 +568,7 @@ Do đó, đề tài đề xuất sử dụng nhiều đồ thị để biểu di
 C3.js là một thư viện mã nguồn mở \cite{c3js} dựa trên thư viện D3.js , nhằm cho phép người dùng có cái nhìn sâu hơn về các ứng dụng web tích hợp đồ thị.
 
 Toàn bộ mã nguồn của thư viện nằm ở: \url{https://github.com/masayuki0812/c3}
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3js}
     \caption{Thư viện đồ thị C3js}
@@ -581,10 +579,11 @@ Toàn bộ mã nguồn của thư viện nằm ở: \url{https://github.com/masa
 
 %----------------------------------%
 \myparagraph{Mục tiêu}
+Các mục tiêu của C3 được trình bày trên trang chủ của mình như sau:
 \begin{itemize}
-    \item[•] \emph{Sự thoải mái (Comfortable):} C3 giúp người dùng có thể dễ dàng tạo một đồ thị dựa trên D3 bằng cách gộp chung các đoạn code cần thiết để cấu trúc một đồ thị hoàn chỉnh. Qua đó, người dùng không cần phải viết các đoạn code D3 rườm rà như trước nữa.
+\item[•] \emph{Sự thoải mái (Comfortable):} C3 giúp người dùng có thể dễ dàng tạo một đồ thị dựa trên D3 bằng cách gộp chung các đoạn code cần thiết để cấu trúc một đồ thị hoàn chỉnh. Qua đó, người dùng không cần phải viết các đoạn code D3 rườm rà như trước nữa.
     
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.3]{image/c3syntax}
     \caption{Thư viện đồ thị C3js}
@@ -592,11 +591,11 @@ Toàn bộ mã nguồn của thư viện nằm ở: \url{https://github.com/masa
 	\end{center}
 \end{figure}
 
-[Hình 6] Thông qua một số câu lệnh định nghĩa dữ liệu, C3 khởi tạo một đồ thị cho phép tương tác một cách trực quan thông qua hover, click,.. các thành phần của đồ thị.
+Thông qua một số câu lệnh định nghĩa dữ liệu (Hình \ref{fig:c3syntax}), C3 khởi tạo một đồ thị cho phép tương tác một cách trực quan thông qua hover, click,.. các thành phần của đồ thị.
 
-    \item[•] \emph{Khả năng tuỳ chỉnh (Customizable):} C3 cung cấp các class tương ứng cho mỗi đối tượng trong đồ thị khi khởi tạo. Qua đó, người dùng có thể định nghĩa các style theo ý muốn theo class cũng như mở rộng cấu trúc các thành phần của đồ thị (trục dữ liệu, hình dạng hiển thị, kiểu đồ thị,.. ) một cách trực tiếp.
+\item[•] \emph{Khả năng tuỳ chỉnh (Customizable):} C3 cung cấp các class tương ứng cho mỗi đối tượng trong đồ thị khi khởi tạo. Qua đó, người dùng có thể định nghĩa các style theo ý muốn theo class cũng như mở rộng cấu trúc các thành phần của đồ thị (trục dữ liệu, hình dạng hiển thị, kiểu đồ thị,.. ) một cách trực tiếp.
     
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3custom}
     \caption{Thư viện đồ thị C3js}
@@ -604,11 +603,11 @@ Toàn bộ mã nguồn của thư viện nằm ở: \url{https://github.com/masa
 	\end{center}
 \end{figure}    
   
-(Hình 7) Trục hoành của đồ thị được tuỳ chỉnh theo thời gian hiện tại với định dạng hoàn toàn tuỳ thuộc người sử dụng.
+Trục hoành của đồ thị được tuỳ chỉnh theo thời gian hiện tại với định dạng hoàn toàn tuỳ thuộc người sử dụng (Hình \ref{fig:c3custom}).
  
-    \item[•] \emph{Khả năng kiểm soát (Controllable):} C3 cung cấp đa dạng các APIs và các hàm callback để truy xuất trạng thái của đồ thị. Bằng cách đó, người dùng có thể cập nhật lại đồ thị thậm chí sau khi đồ thị đã được thể hiện. [Hình 8] Thể hiện một số thành phần được hỗ trợ bởi thư viện C3js.
+\item[•] \emph{Khả năng kiểm soát (Controllable):} C3 cung cấp đa dạng các APIs và các hàm callback để truy xuất trạng thái của đồ thị. Bằng cách đó, người dùng có thể cập nhật lại đồ thị thậm chí sau khi đồ thị đã được thể hiện. Thể hiện một số thành phần được hỗ trợ bởi thư viện C3js (Hình \ref{fig:c3apis}).
     
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3apis}
     \caption{Thư viện đồ thị C3js}
@@ -623,9 +622,9 @@ Toàn bộ mã nguồn của thư viện nằm ở: \url{https://github.com/masa
 \myparagraph{Phương pháp}
 Như đã trình bày ở trên, C3js sử dụng thư viện D3js nhằm tạo các đồ thị có khả năng tái sử dụng, cũng như giúp người dùng đào sâu hơn vào khái niệm trực quan dữ liệu thông qua đồ thị trên nền ứng dụng web.
 
-Ngoài ra dựa theo cấu trúc mã nguồn mà C3js chia sẻ, có thể thấy cấu trúc tổ chức của C3js theo hướng hướng đối tượng, được tổ chức theo các class (trục, dữ liệu, đồ thị,.. ) và các phương thức, thuộc tính đi kèm class.
+Ngoài ra dựa theo cấu trúc mã nguồn mà C3js chia sẻ, có thể thấy cấu trúc tổ chức của C3js theo hướng hướng đối tượng, được tổ chức theo các \textit{Class} (trục, dữ liệu, đồ thị,.. ) và các phương thức, thuộc tính đi kèm \textit{Class}.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3source}
     \caption{Thư viện đồ thị C3js}
@@ -646,7 +645,7 @@ Cách tổ chức và hiện thực theo hướng hướng đối tượng như 
 \myparagraph{Giới thiệu}
 Mapme\cite{mapme} là một ứng dụng cho phép người dùng tạo bản đồ, dữ liệu đươc xử lý trực tiếp từ các file Excel đầu vào. Bản đồ tạo ra có các marker tương ứng với dữ liệu, có khả năng tương tác trực tiếp thông qua các sự kiện định nghĩa trước. Ngoài ra, bản đồ được tạo ra còn có thể được nhúng vào các trang web khác thông qua một đoạn mã nhúng. Đặc biệt toàn bộ tương tác từ những bước khởi tạo bản đồ đầu tiên, đến lúc xuất thành quả, đều không yêu cầu người dùng phải viết một dòng mã nào.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/mapme}
     \caption{Ứng dụng tạo bản đồ online Mapme}
@@ -657,16 +656,14 @@ Mapme\cite{mapme} là một ứng dụng cho phép người dùng tạo bản đ
 
 %----------------------------------%
 \myparagraph{Mục tiêu}
-Đầu tiên nói đến các đối tượng mà Mapme hướng tới, đó là các tổ chức, chính phủ, các doanh nghiệp hay các tổ chức cộng đồng phi lợi nhuận.
-
-Phục vụ trong các lĩnh vực khác nhau như giáo dục, các sự kiện, xuất bản hay truyền thụ cảm hứng trong đời sống hằng ngày.
+Đầu tiên nói đến các đối tượng mà Mapme hướng tới, đó là các tổ chức, chính phủ, các doanh nghiệp hay các tổ chức cộng đồng phi lợi nhuận. Phục vụ trong các lĩnh vực khác nhau như giáo dục, các sự kiện, xuất bản hay truyền thụ cảm hứng trong đời sống hằng ngày.
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Phương pháp}
-Sử dụng OpenStreetMap (viết tắt OSM)\cite{osm}, một dịch vụ bản đồ thế giới trực tuyến với nội dung mở, nhằm mục đích cung cấp dữ liệu địa lý do nhiều người cùng cộng tác với nhau trên hệ thống Wiki. Nó thường được gọi "Wikipedia của bản đồ". Dự án OSM được sáng lập năm 2004, chủ yếu để cạnh tranh với các công ty và cơ quan chính phủ cung cấp dữ liệu địa lý theo các điều khoản sử dụng được coi là quá chặt chẽ. OSM cho phép ứng dụng cập nhật dữ liệu địa lý trực tuyến một cách chính xác, luôn được cập nhật nhằm đảm bảo các dữ liệu luôn đi sát thực tế nhất.
+Sử dụng OpenStreetMap (viết tắt OSM)\cite{osm}, một dịch vụ bản đồ thế giới trực tuyến với nội dung mở, nhằm mục đích cung cấp dữ liệu địa lý do nhiều người cùng cộng tác với nhau trên hệ thống Wiki. Nó thường được gọi "\textit{Wikipedia của bản đồ}". Dự án OSM được sáng lập năm 2004, chủ yếu để cạnh tranh với các công ty và cơ quan chính phủ cung cấp dữ liệu địa lý theo các điều khoản sử dụng được coi là quá chặt chẽ. OSM cho phép ứng dụng cập nhật dữ liệu địa lý trực tuyến một cách chính xác, luôn được cập nhật nhằm đảm bảo các dữ liệu luôn đi sát thực tế nhất.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/mapmeOSM}
     \caption{Ứng dụng tạo bản đồ online Mapme}
@@ -674,10 +671,10 @@ Sử dụng OpenStreetMap (viết tắt OSM)\cite{osm}, một dịch vụ bản 
 	\end{center}
 \end{figure}
 
-Như hình 11 có thể thấy, các thông tin về khởi nghiệp ở quốc gia Ireland được trực quan thông qua các biểu tượng (marker). Cùng với đó là các số liệu tương ứng được xử lý trực tiếp từ các file Excel đầu vào.
+Như hình \ref{fig:mapmeOSM} có thể thấy, các thông tin về khởi nghiệp ở quốc gia Ireland được trực quan thông qua các biểu tượng (marker). Cùng với đó là các số liệu tương ứng được xử lý trực tiếp từ các file Excel đầu vào.
 Ngoài ra, người dùng còn có thể tương tác với các marker này để thể hiện thông tin chi tiết ở các điểm chỉ định.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.8]{image/mapmeExport}
     \caption{Ứng dụng tạo bản đồ online Mapme}
@@ -685,7 +682,7 @@ Ngoài ra, người dùng còn có thể tương tác với các marker này đ�
 	\end{center}
 \end{figure}
 
-Đặc biệt, Mapme còn hỗ trợ sinh mã nhúng [Hình 12], dưới dạng iframe, giúp người dùng nhúng trực tiếp bản đồ mình vừa tạo vào các website tuỳ mục đích.
+Đặc biệt, Mapme còn hỗ trợ sinh mã nhúng (Hình \ref{fig:mapmeExport}), dưới dạng iframe, giúp người dùng nhúng trực tiếp bản đồ mình vừa tạo vào các website tuỳ mục đích.
 %----------------------------------%
 
 %----------------------------------%
@@ -709,11 +706,11 @@ Chuẩn cho JavaScript là \textit{ECMAScript}. Phiên bản hiện nay là \tex
 JavaScript nâng cao sự linh động và khả năng tương tác cho website bằng cách sử dụng các hiệu ứng của nó như thực hiện các phép tính, kiểm tra form, viết các trò chơi, bổ sung các hiệu ứng đặc biệt, tuỳ biến các chọn lựa đồ hoạ, tạo ra các mật khẩu bảo mật và hơn thế nữa.
 
 Cụ thể, JavaScript có thể được dùng để:
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Tương tác với người dùng:} Chúng ta có thể viết mã để đáp lại các sự kiện. Các sự kiện này sẽ có thể phát sinh bởi người dùng: nhấp chuột hay được phát sinh từ hệ thống, định lại kích thước của trang …
 \item[•] \emph{Thay đổi nội dung động:} Mã JavaScript có thể dùng để thay đổi nội dung và vị trí các phần tử một cách động trên một trang nhằm đáp lại sự tương tác với người dùng.
 \item[•] \emph{Kiểm tra tính hợp lệ dữ liệu:} Chúng ta có thể viết mã nhằm kiểm tra tính hợp lệ của dữ liệu do người dùng nhập vào trước khi nó được gửi lên Web server để xử lý.
-\end{list}
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
@@ -721,7 +718,7 @@ Cụ thể, JavaScript có thể được dùng để:
 ECMAScript 6 hay gọi tắt là ES6 hay ES2015, đây là phiên bản nâng cấp, tập hợp các kỹ năng nâng cao của Javascript. ES6 ra đời năm 2015 nên cái tên ES2015 được lấy làm tên chính thức với nhiều tính năng mới học hỏi các ngôn ngữ cấp cao khác, hy vọng dần theo thời gian Javascript trở thành một ngôn ngữ lập trình hướng đối tượng.
 
 Một số tính năng mạnh mẽ của ES6:
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Classes:} Với việc hỗ trợ class, các cú pháp trông đẹp đẽ, đơn giản, dễ nhìn, rõ ràng hơn rất nhiều  trong việc tạo ra đối tượng và giải quyết vấn đề thừa kế.
 \item[•] \emph{Modules:} Hỗ trợ import/export các giá trị (biến, hàm, …) từ/đến các module.
 \item[•] \emph{Block Scoped:} Khai báo biến với từ khóa let để cho biết biến này chỉ tồn tại trong phạm vi block của nó.
@@ -729,50 +726,50 @@ Một số tính năng mạnh mẽ của ES6:
 \item[•] \emph{Arrow function}
 \item[•] \emph{Default Parameter Values:} Cho phép gán giá trị mặc định cho tham số.
 \item[•] \emph{Rest Parameter:} Kết hợp các argument còn lại thành một tham số của hàm.
-\end{list}
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Ứng dụng}
 Dựa trên những đặc điểm và khả năng mạnh mẽ trong hỗ trợ lập trình API của JavaScript đã kể trên, nhóm đề xuất sử dụng JavaScript làm ngôn ngữ chính để hiện thực API.
 
-Ngoài ra, nhóm đề xuất sử dụng chuẩn ECMAScript 6 làm tiêu chuẩn cho các ràng buộc, quy tắc (coding conventions) khi hiện thực API.
+Ngoài ra, nhóm đề xuất sử dụng chuẩn \textit{ECMAScript 6} làm tiêu chuẩn cho các ràng buộc, quy tắc (\textit{coding conventions}) khi hiện thực thư viện.
 %----------------------------------%
 \subsubsection{D3.js}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-D3.js được viết bởi Mike Bostock, là 1 thư viện JavaScript dùng để thao tác với document dựa trên dữ liệu (data). D3 giúp mang dữ liệu đến cuộc sống bằng cách sử dụng HTML, SVG, và CSS. Sức mạnh của D3 trên chuẩn web cung cấp đầy đủ các tính năng của những trình duyệt hiện đại mà không buộc mình vào một khuôn khổ nhất định nào, kết hợp với các thành phần trực quan mạnh mẽ và một phương pháp hướng dữ liệu để thao tác DOM (Document Object Model).
+D3.js được viết bởi \textit{Mike Bostock}, là một thư viện JavaScript dùng để thao tác với \textit{document} dựa trên dữ liệu. D3 giúp mang dữ liệu đến cuộc sống bằng cách sử dụng HTML, SVG, và CSS. Sức mạnh của D3 trên chuẩn web cung cấp đầy đủ các tính năng của những trình duyệt hiện đại mà không buộc mình vào một khuôn khổ nhất định nào, kết hợp với các thành phần trực quan mạnh mẽ và một phương pháp hướng dữ liệu để thao tác DOM (\textit{Document Object Model}).
 
 D3 không phải là framework giải quyết mỗi vấn đề riêng biệt nào, thay vào đó D3 giải quyết điểm cốt lõi của vấn đề: sự thao tác hiệu quả các document dựa trên dữ liệu. Do đó, D3 có được sự linh hoạt cao, có thể sử dụng toàn bộ các tính năng của các tiêu chuẩn web như HTML, SVG, và CSS.
 
-D3 cho phép nhúng bất kì kiểu dữ liệu nào vào 1 phần tử DOM, và sau đó có thể áp dụng CSS3, HTML, và/hoặc SVG lên dữ liệu này. Cuối cùng, D3.js có thể giúp tạo ra dữ liệu tương tác thông qua việc sử dụng những sự biến đổi (transformation), chuyển đổi (transition) hướng dữ liệu của D3.js.
+D3 cho phép nhúng bất kì kiểu dữ liệu nào vào 1 phần tử DOM, và sau đó có thể áp dụng CSS3, HTML, và/hoặc SVG lên dữ liệu này. Cuối cùng, D3.js có thể giúp tạo ra dữ liệu tương tác thông qua việc sử dụng những sự biến đổi (\textit{transformation}), chuyển đổi (\textit{transition}) hướng dữ liệu của D3.js.
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Tính năng}
 Một số tính năng mạnh mẽ của D3:
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Selections:} Tập hợp các node tùy ý gọi là selections, và D3 sử dụng phương pháp declarative để biến đổi selections này. Đặc biệt D3 cũng áp dụng các selectors được định nghĩa bởi W3C Selectors API, nhờ đó các phần tử sẽ được chọn lựa ra một cách dễ dàng.
 \item[•] \emph{Dynamic Properties:} Dễ dàng thay đổi các thuộc tính, style một các động thông qua các function trong D3.
 \item[•] \emph{Enter và Exit:} Sử dụng enter và exit các selections, người dùng có thể tạo ra nhiều node mới cho các dữ liệu mới và xóa các node mà không cần thiết. Với việc sử dụng đúng những tác vụ cần thiết trên các node sẽ làm tăng hiệu suất và mang đến những hiệu ứng chuyển đổi tuyệt vời hơn.
 \item[•] \emph{Transformation:} D3 sử dụng các tiêu chuẩn web: HTML, SVG, và CSS. Do đó nếu trình duyệt giới thiệu một phiên bản mới, người dùng có thể sử dụng D3 ngay lập tức, không yêu cầu cập nhật. Ngoài ra giúp người dùng dễ dàng debug với sự trợ giúp của trình duyệt.
 \item[•] \emph{Transitions:} Interpolator của D3 hỗ trợ cả 2 kiểu primitive, ví dụ như là số và số nhúng trong string (font-size, dữ liệu về path, …) và các giá trị phức tạp. Người dùng thậm chí có thể mở rộng interpolator để hỗ trợ cho các thuộc tính phức tạp và cấu trúc dữ liệu.
-\end{list}
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Ứng dụng}
 D3 được viết bằng JavaScript, và sử dụng kiểu lập trình hàm (functional programming) do đó có thể sử dụng lại code và thêm những hàm chức năng mà người dùng muốn. Điều đó có nghĩa là nó sẽ mạnh mẽ như thế nào là dựa vào người dùng muốn làm ra nó. Cách người dùng chọn để định dạng, thao tác, tương tác với dữ liệu là tùy thuộc ở họ.
 
-D3 rất thích hợp dùng trong đề tài, nó giúp xây dựng framework trực quan dữ liệu mà người dùng muốn, dễ dàng sử dụng, do đó giúp tạo ra API một cách dễ dàng hơn, API dễ hiểu, dễ sử dụng.
+D3 rất thích hợp dùng trong đề tài, nó giúp xây dựng framework trực quan dữ liệu mà người dùng muốn, dễ dàng sử dụng, do đó giúp tạo ra thư viện một cách dễ dàng hơn, dễ hiểu và dễ sử dụng hơn.
 %----------------------------------%
 
 \subsubsection{OpenLayers}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-OpenLayers được tạo ra bởi MetaCarta sau hội nghị O'Reilly Where 2.0 (29-30/06/2005) và chính thức phát hành thành mã nguồn mở trước hội nghị  O'Reilly Where 2.0 (13-14/06/2006) bởi MetaCarta Labs. Hai dự án khác về công cụ xây dựng bản đồ phát hành bởi MetaCarta là FeatureServer và TileCache. Từ tháng 11/2007, OpenLayers trở thành dự án mã nguồn mở chính thức của Hội đồng Không gian địa lý.
+OpenLayers\cite{ol} được tạo ra bởi \textit{MetaCarta} sau hội nghị \textit{O'Reilly Where 2.0} (29-30/06/2005) và chính thức phát hành thành mã nguồn mở trước hội nghị  \textit{O'Reilly Where 2.0} (13-14/06/2006) bởi \textit{MetaCarta Labs}. Hai dự án khác về công cụ xây dựng bản đồ phát hành bởi \textit{MetaCarta} là \textit{FeatureServer} và \textit{TileCache}. Từ tháng 11/2007, OpenLayers trở thành dự án mã nguồn mở chính thức của Hội đồng Không gian địa lý.
 
-Sơ qua về OpenLayers, đây là một thư viện JavaScript mã nguồn mở (được chứng nhận bởi BSD License) nhằm phục vụ mục đích biểu diễn thông tin trên bản đồ  đối với các trình duyệt Web, không phụ thuộc phía server. Nó cung cấp API chuyên về xây dựng các ứng dụng địa lý trên nền Web tương tự như Google Maps và Bing Maps, với một điểm khác biệt duy nhất, OpenLayers hoàn toàn miễn phí, được xây dựng và phát triển nên bởi cộng đồng phát triển phần mềm mã nguồn mở. Thư viện xây dựng trên Prototype JavaScript Framework.
+Sơ qua về OpenLayers, đây là một thư viện JavaScript mã nguồn mở (được chứng nhận bởi BSD License) nhằm phục vụ mục đích biểu diễn thông tin trên bản đồ  đối với các trình duyệt Web, không phụ thuộc phía server. Nó cung cấp API chuyên về xây dựng các ứng dụng địa lý trên nền Web tương tự như Google Maps và Bing Maps, với một điểm khác biệt duy nhất, OpenLayers hoàn toàn miễn phí, được xây dựng và phát triển nên bởi cộng đồng phát triển phần mềm mã nguồn mở. Thư viện xây dựng trên \textit{Prototype JavaScript Framework}\citep{prototypejs}.
 
 Hiện nay, OpenLayers đã ra tới phiên bản OpenLayers 3. OpenLayers 3 được viết lại nhằm dễ hiểu hơn, hướng tới các tính năng của HTML5 và CSS3. Thư viện tiếp tục hỗ trợ trình chiếu, các giao thức tiêu chuẩn và các chức năng chỉnh sửa. Phiên bản mới này tập trung vào cải thiện hiệu năng, xây dựng đơn giản hơn, các thành phần trở nên trực quan hơn, API được cải tiến và còn nhiều hơn nữa.
 %----------------------------------%
@@ -780,12 +777,12 @@ Hiện nay, OpenLayers đã ra tới phiên bản OpenLayers 3. OpenLayers 3 đ�
 %----------------------------------%
 \myparagraph{Tính năng}
 Openlayers có 4 tính năng chính:
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Thể hiện Lớp dưới dạng ô (Tiled Layers):} Các lớp này được kéo về từ OpenStreetMap (OSM), Bing, MapBox, Stamen, MapQuest và bất cứ nguồn nào mà bạn có thể tìm thấy. Hỗ trợ đa dạng các Layer mà bạn có thể sử dụng trong ứng dụng của mình.
 \item[•] \emph{Thể hiện Lớp dưới dạng Vector (Vector Layers):} Sinh ra dữ liệu dạng vector từ GeoJSON, TopoJSON, KML, GML và một số định dạng khác.
 \item[•] \emph{Tính đối ứng nhanh gọn (Fast \& Mobile Ready):} Hỗ trợ tùy chỉnh các thành phần một cách nhanh gọn và thuận tiện nhất. Cho phép xây dựng một bản tùy chỉnh gọn nhẹ gồm các thành phần mà lập trình viên cần.
 \item[•] \emph{Mài dũa các góc cạnh và dễ dàng tùy chỉnh (Cutting Edge \& Easy to Customize):} Bản đồ sinh ra bởi công nghệ WebGL, Canvas 2D, và từ những tính năng ưu việt nhất của HTML5. Dễ dàng tùy chỉnh style bằng CSS.
-\end{list}
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
@@ -796,45 +793,43 @@ Openlayers có 4 tính năng chính:
 \subsubsection{Webpack}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-Webpack là một mô-đun đóng gói (module bundler) rất mạnh. Một gói (bundle) là một tập tin Javascript mà kết hợp với các tài nguyên đi chung với nhau và nên được gửi trả về client trong một phản hồi cho một tập tin yêu cầu duy nhất. Một bundle có thể bao gồm các dạng tập tin như Javascript, CSS, HTML, và hầu hết bất kì loại tập tin khác.
+Webpack là một mô-đun đóng gói (\textit{module bundler}) rất mạnh. Một gói (bundle) là một tập tin Javascript mà kết hợp với các tài nguyên đi chung với nhau và nên được gửi trả về client trong một phản hồi cho một tập tin yêu cầu duy nhất. Một bundle có thể bao gồm các dạng tập tin như Javascript, CSS, HTML, và hầu hết bất kì loại tập tin khác.
 
-Có 4 khái niệm quan trọng (core concept) trong Webpack:
+Có 4 khái niệm quan trọng (\textit{core concepts}) trong Webpack:
 
-\begin{list}{}{}
-\item[•] \emph{Entry:} Webpack tạo ra đồ thị của tất cả các phụ thuộc (dependency) trong ứng dụng. Điểm bắt đầu của đồ thị này chính là điểm đầu vào (entry). Điểm đầu vào nói cho webpack biết được nơi bắt đầu và đi theo đồ thị này để biết cần gộp những gì.
+\begin{itemize}
+\item[•] \emph{Entry:} Webpack tạo ra đồ thị của tất cả các phụ thuộc (\textit{dependency}) trong ứng dụng. Điểm bắt đầu của đồ thị này chính là điểm đầu vào (entry). Điểm đầu vào nói cho webpack biết được nơi bắt đầu và đi theo đồ thị này để biết cần gộp những gì.
 \item[•] \emph{Output:} Một khi đã gộp tất cả các tài nguyên lại với nhau, người lập trình cần nói cho webpack biết nơi đóng gói ứng dụng. Output mô tả cho webpack cách xử lý các mã được gộp.
-\item[•] \emph{Loaders:} Mọi tài nguyên trong dự án của người lập trình đều là mối quan tâm của webpack (điều này không có nghĩa là mọi tài nguyên đều được gộp lại cùng với nhau). Webpack xem mỗi tập tin (css, html, scss, jgp, …) như là một mô-đun. Tuy nhiên, webpack chỉ biết Javascript. Loaders trong webpack sẽ chuyển đổi những tập tin này thành những mô-đun khi nó được thêm vào trong đồ thị.
-\item[•] \emph{Plugins:} Loaders chỉ thực thi chuyển đổi trên mỗi tập tin, do đó plugins được sử dụng rất phổ biến để thực hiện những hành động và chức năng tùy chỉnh trên các mảnh (chunk) hoặc bộ (compilation) của các mô-đun. Hệ thống plugin của webpack cực kỳ mạnh mẽ và dễ dàng tùy chỉnh.
-\end{list}
+\item[•] \emph{Loaders:} Mọi tài nguyên trong dự án của người lập trình đều là mối quan tâm của webpack (điều này không có nghĩa là mọi tài nguyên đều được gộp lại cùng với nhau). Webpack xem mỗi tập tin (CSS, HTML, SCSS, JGP, …) như là một mô-đun. Tuy nhiên, webpack chỉ biết Javascript. Loaders trong webpack sẽ chuyển đổi những tập tin này thành những mô-đun khi nó được thêm vào trong đồ thị.
+\item[•] \emph{Plugins:} Loaders chỉ thực thi chuyển đổi trên mỗi tập tin, do đó plugins được sử dụng rất phổ biến để thực hiện những hành động và chức năng tùy chỉnh trên các mảnh (\textit{chunk}) hoặc bộ (\textit{compilation}) của các mô-đun. Hệ thống \textit{plugin} của webpack cực kỳ mạnh mẽ và dễ dàng tùy chỉnh.
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Hoạt động và Tính năng}
-Webpack quét toàn bộ source code của ứng dụng, tìm kiếm câu lệnh import, xây dựng một đồ thị của những dependency, và cho ra 1 hoặc nhiều bundle. Với 1 số các plugin hỗ trợ, Webpack có thể tiền xử lí (preprocess) và thu gọn (minify) các tập tin không phải Javascript khác nhau như CoffeeScript, Typescript, SASS, và LESS,… và có thể chuyển đổi code từ ES6 sang ES5 để chạy được trên trình duyệt.
+Webpack quét toàn bộ \textit{source code} của ứng dụng, tìm kiếm câu lệnh \textit{import}, xây dựng một đồ thị của những \textit{dependency}, và cho ra 1 hoặc nhiều \textit{bundle}. Với 1 số các plugin hỗ trợ, Webpack có thể tiền xử lí (preprocess) và thu gọn (minify) các tập tin không phải Javascript khác nhau như CoffeeScript, Typescript, SASS, và LESS,… và có thể chuyển đổi code từ ES6 sang ES5 để chạy được trên trình duyệt.
 
-Một số tính năng đáng chú ý của webpack:
-
-\begin{list}{}{}
+Một số tính năng đáng chú ý của Webpack:
+\begin{itemize}
 \item[•] Hỗ trợ các module format như AMD, CommonJS thông qua các loader (plug-in) như ES6.
 \item[•] Hỗ trợ các package manager như bower, npm
 \item[•] Các loader cho dạng không phải code như CSS, template, …
 \item[•] Có chế độ chạy trên môi trường phát triển.
-\end{list}
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Ứng dụng}
 Với các tính năng mạnh mẽ của Webpack, C9js sử dụng Webpack để:
+\begin{itemize}
+\item[•] Chuyển đổi mã nguồn từ \textit{ES6} sang \textit{ES5} nhờ vào loader \textit{Babel}.
+\item[•] Đóng gói các tập tin Javascript thành một tập tin duy nhất, dùng cho việc triển khai (\textit{release}).
+\item[•] Hỗ trợ chạy trên môi trường phát triển (\textit{development environment}).
+\end{itemize}
 
-\begin{list}{}{}
-\item[•] Chuyển đổi code từ ES6 sang ES5 nhờ vào loader Babel.
-\item[•] Đóng gói các tập tin Javascript thành một tập tin duy nhất, dùng cho việc triển khai (release).
-\item[•] Hỗ trợ chạy trên môi trường phát triển (development environment).
-\end{list}
+Một ví dụ về việc áp dụng Webpack trong quá trình phát triển thư viện: Theo dõi sự thay đổi của các tập tin Javascript, CSS trong quá trình coding để tiến hành build lại thư viện (Hình \ref{fig:webpack_build}).
 
-Một ví dụ về việc áp dụng Webpack trong quá trình phát triển thư viện: Hình \ref{fig:webpack_build} Theo dõi sự thay đổi của các tập tin Javascript, CSS trong quá trình coding để tiến hành build lại thư viện.
-
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.8]{image/webpack_build}
     \caption{Theo dõi thay đổi mã nguồn với Webpack}
@@ -844,39 +839,39 @@ Một ví dụ về việc áp dụng Webpack trong quá trình phát triển th
 %----------------------------------%
 
 \subsubsection{Unit Testing}
-Kiểm thử đơn vị (\textbf{Unit Testing}), còn được gọi là kiểm thử thành phần (component testing), tập trung vào việc kiểm tra các phần nhỏ của source code như là class mà người phát triển (developer) viết nên. Những test này có ý nghĩa rất quan trọng trong việc giúp đỡ người phát triển đảm bảo những phần nhỏ trong code chạy đúng theo mong đợi và hoạt động một cách chính xác khi được kết hợp với những phần khác của ứng dụng. Kiểm thử như vậy giúp cho việc quản lí ứng dụng theo thời gian bằng cách đảm bảo những thay đổi do người lập trình tạo ra sẽ không vô tình ảnh hưởng đến những phần khác của hệ thống.
+Kiểm thử đơn vị (\textit{Unit Testing}), còn được gọi là kiểm thử thành phần (\textit{component testing}), tập trung vào việc kiểm tra các phần nhỏ của mã nguồn như là \textit{Class} mà người phát triển viết nên. Những \textit{test} này có ý nghĩa rất quan trọng trong việc giúp đỡ người phát triển đảm bảo những phần nhỏ trong code chạy đúng theo mong đợi và hoạt động một cách chính xác khi được kết hợp với những phần khác của ứng dụng. Kiểm thử như vậy giúp cho việc quản lí ứng dụng theo thời gian bằng cách đảm bảo những thay đổi do người lập trình tạo ra sẽ không vô tình ảnh hưởng đến những phần khác của hệ thống.
 
 Việc kiểm thử đối với Javascript đang ngày càng trở nên quan trọng đối với người lập trình. Ngày nay, có rất nhiều framework để chọn lựa cho việc kiểm thử. Và C9js đã sử dụng những công cụ sau để thực hiện việc kiểm thử:
 
 \subsubsubsection{Jasmine}
 %----------------------------------%
-\myparagraph{Các khái niệm liên quan}
-
-\textit{Test-driven development (TDD):}
-\begin{list}{}{}
+\myparagraph{Các khái niệm}
+Một số khái niệm liên quan cần biết:
+\begin{enumerate}
+\item \emph{Test-driven development (TDD)\cite{tdd_1}:}
+\begin{itemize}
 \item[•] Là một phương pháp tiên tiến để phát triển phần mềm bắt đầu với việc phát triển các test cho mỗi một tính năng. Các test có thể chạy không đúng như mong muốn bởi vì nó được phát triển thậm chí trước cả khi phát triển phần mềm. Người lập trình sau đó sẽ phát triển và cấu trúc lại mã để vượt qua được những test này. 
-\item[•] Mục tiêu của TDD là khuyến khích các thiết kế đơn giản và tạo ra sự tự tin (Kent Beck), viết mã một cách gọn gàng và chạy được (Ron Jeffries).
-\item[•] TDD liên quan đến test-first programming, tức viết test trước khi viết vừa đủ mã để thực hiện test và cấu trúc lại.
-\end{list}
+\item[•] Mục tiêu của TDD là khuyến khích các thiết kế đơn giản và tạo ra sự tự tin (\textit{Kent Beck}), viết mã một cách gọn gàng và chạy được (\textit{Ron Jeffries}).
+\item[•] TDD liên quan đến \textit{test-first programming}, tức viết test trước khi viết vừa đủ mã để thực hiện test và cấu trúc lại.
+\end{itemize}
 
-\textit{Behavior-driven development (BDD):}
-\begin{list}{}{}
-\item[•] Là một quá trình phát triển phần mềm được mở rộng từ TDD. BDD kết hợp những kĩ thuật chung và nguyên tắc của TDD để cung cấp cho việc phát triển phần mềm cũng như quản lý các đội (team) với các công cụ được chia sẽ và một quá trình chia sẽ để hợp tác với nhau trong quá trình phát triển phần mềm.
-
-\item[•] Mục tiêu của BDD là tập trung vào việc lấy được hiểu biết rõ ràng về hành vi của phần mềm thông qua thảo luận với các bên liên quan. BDD viết các test bằng ngôn ngữ tự nhiên giúp cho người không phải là lập trình viên cũng có thể đọc được. Các lập trình viên sẽ sử dụng ngôn ngữ thuần túy của họ để mô tả mục đích mã (code) mà họ viết. Điều này sẽ giúp cho các lập trình viên tập trung vào vấn đề tại sao mã này nên được viết ra, chứ không phải về vấn đề kĩ thuật, và giảm thiểu tối đa vấn đề dịch thuật giữa các ngôn ngữ.
-\end{list}
+\item \emph{Behavior-driven development (BDD)\cite{bdd_1}:}
+\begin{itemize}
+\item[•] Là một quá trình phát triển phần mềm được mở rộng từ TDD. BDD kết hợp những kĩ thuật chung và nguyên tắc của TDD để cung cấp cho việc phát triển phần mềm cũng như quản lý các nhóm với các công cụ được chia sẽ và một quá trình chia sẽ để hợp tác với nhau trong quá trình phát triển phần mềm.
+\item[•] Mục tiêu của BDD là tập trung vào việc lấy được hiểu biết rõ ràng về hành vi của phần mềm thông qua thảo luận với các bên liên quan. BDD viết các test bằng ngôn ngữ tự nhiên giúp cho người không phải là lập trình viên cũng có thể đọc được. Các lập trình viên sẽ sử dụng ngôn ngữ thuần túy của họ để mô tả mục đích mã mà họ viết. Điều này sẽ giúp cho các lập trình viên tập trung vào vấn đề tại sao mã này nên được viết ra, chứ không phải về vấn đề kĩ thuật, và giảm thiểu tối đa vấn đề dịch thuật giữa các ngôn ngữ.
+\end{itemize}
+\end{enumerate}
 %----------------------------------%
 %----------------------------------%
 \myparagraph{Giới thiệu về Jasmine}
-Jasmine là một framework theo mô hình BDD (behavior-driven framework), tức là sự phát triển hướng theo hành vi cho Javascript, dùng cho việc kiểm thử mã Javascript. Jasmine không phụ thuộc vào bất kì framework Javascript nào, không yêu cầu DOM, và cú pháp của Jasmine rất gọn gàng, rõ ràng, dễ dàng viết các test.
+Jasmine là một \textit{framework} theo mô hình BDD (\textit{behavior-driven framework}), tức là sự phát triển hướng theo hành vi cho Javascript, dùng cho việc kiểm thử mã Javascript. Jasmine không phụ thuộc vào bất kì framework Javascript nào, không yêu cầu DOM, và cú pháp của Jasmine rất gọn gàng, rõ ràng, dễ dàng viết các test.
 %----------------------------------%
 %----------------------------------%
 \myparagraph{Đặc điểm}
-Để thấy được đặc điểm, cũng như các điểm mạnh, điểm yếu của Jasmine, chúng ta sẽ so sánh nó với một framework phổ biến khác dùng cho việc kiểm thử, đó là Mocha.
-
-\begin{list}{}{}
+Để thấy được đặc điểm, cũng như các điểm mạnh, điểm yếu của Jasmine, chúng ta sẽ so sánh\cite{mocha_vs_jasmine} nó với một framework phổ biến khác dùng cho việc kiểm thử, đó là Mocha.
+\begin{itemize}
 \item[•] \emph{API:} 
-API của Jasmine và Mocha tương tự như nhau. Người lập trình viết bộ mô tả kiểm thử (test suite) với những khối (block) describe và với mỗi testcase, hay còn gọi là một đặc tả (spec), thì sử dụng hàm it.
+API của Jasmine và Mocha tương tự như nhau. Người lập trình viết bộ mô tả kiểm thử (\textit{test-suite}) với những khối (\textit{block}) \textsf{describe} và với mỗi \textit{testcase}, hay còn gọi là một đặc tả (\textit{spec}), thì sử dụng hàm \textsf{it} (Mã nguồn \ref{code:jasmine_1}).
 
 \begin{lstlisting}[caption=Cấu trúc của một test-suite trong Jasmine,label={code:jasmine_1}]
 describe('calculator add()', function() {
@@ -886,22 +881,20 @@ describe('calculator add()', function() {
 });
 \end{lstlisting}
 
-Sự khác nhau bắt đầu đến từ các hàm khẳng định hoặc kỳ vọng (assertion or expectation). Mocha không có thư viện khẳng định (assertion library) được xây dựng sẵn (có thể dùng một số thư viện hỗ trợ thêm như: Chai, should.js, expect.js,…), trong khi đó Jasmine thì hầu như có mọi thứ được xây dựng sẵn.
+Sự khác nhau bắt đầu đến từ các hàm khẳng định hoặc kỳ vọng (\textit{assertion} hoặc \textit{expectation}). Mocha không có thư viện khẳng định (\textit{assertion library}) được xây dựng sẵn (có thể dùng một số thư viện hỗ trợ thêm như: \textit{Chai}, \textit{should.js}, \textit{expect.js},…), trong khi đó Jasmine thì hầu như có mọi thứ được xây dựng sẵn.
 
-\begin{lstlisting}[caption=Ví dụ sử dụng expect trong Jasmine,label={code:jasmine_2}]
+\begin{lstlisting}[caption=Ví dụ sử dụng \textsf{expect} trong Jasmine,label={code:jasmine_2}]
 expect(calculator.add(1, 4)).toEqual(5);
 \end{lstlisting}
 
 \item[•] \emph{Kiểm tra đôi (test doubles):}
-Test doubles thường được so sánh với đôi đóng thế (stunt doubles), tức là khi thay thế một object bằng một object khác dùng cho mục đích kiểm thử, tương tự như cách các diễn viên được thay thế bởi diễn viên đóng thế trong các cảnh hành động nguy hiểm.
+Test doubles thường được so sánh với đôi đóng thế (\textit{stunt doubles}), tức là khi thay thế một đối tượng này bằng một đối tượng khác dùng cho mục đích kiểm thử, tương tự như cách các diễn viên được thay thế bởi diễn viên đóng thế trong các cảnh hành động nguy hiểm.
 
-Trong Jasmine, test doubles có hình thái của spy. Một spy là một hàm thay thế một hàm cụ thể mà người lập trình muốn điều khiển hành vi của nó trong một test và ghi lại cách mà hàm đó được sử dụng trong suốt quá trình thực thi của test đó.
-Ngược lại đối với Mocha, nó không có thư viện cho test double. Thay vào đó người lập trình cần dùng thêm Sinon.
-
-Spy trong Jasmine hầu như làm được mọi thứ cần thiết cho test doubles, do đó người lập trình có thể không cần sử dụng Sinon nếu đang dùng Jasmine, nhưng Jasmine và Sinon có thể được sử dụng chung với nhau nếu người lập trình cần.
+Trong Jasmine, test doubles có hình thái của \textit{spy}. Một \textit{spy} là một hàm thay thế một hàm cụ thể mà người lập trình muốn điều khiển hành vi của nó trong một test và ghi lại cách mà hàm đó được sử dụng trong suốt quá trình thực thi của test đó.
+Ngược lại đối với Mocha, nó không có thư viện cho test double. Thay vào đó người lập trình cần dùng thêm \textit{Sinon}. \textit{Spy} trong Jasmine hầu như làm được mọi thứ cần thiết cho test doubles, do đó người lập trình có thể không cần sử dụng Sinon nếu đang dùng Jasmine, nhưng Jasmine và Sinon có thể được sử dụng chung với nhau nếu người lập trình cần.
 
 \item[•] \emph{Kiểm thử bất đồng bộ:}
-Kiểm thử bất đồng bộ trong Jasmine phiên bản 2.x và Mocha là giống nhau.
+Kiểm thử bất đồng bộ trong Jasmine phiên bản \textsf{2.x} và Mocha là giống nhau.
 
 \begin{lstlisting}[caption=Ví dụ sử dụng Jasmine để kiểm thử bất đồng bộ,label={code:jasmine_3}]
 it('should resolve with the User object', function(done) {
@@ -918,82 +911,78 @@ it('should resolve with the User object', function(done) {
 });
 \end{lstlisting}
 
-Ở ví dụ Mã nguồn \ref{code:jasmine_3}, User là một constructor có hàm tĩnh get. Hàm get sử dụng fetch để thực hiện gửi yêu cầu XHR (bất đồng bộ). Ở đây người lập trình muốn kiểm tra khi hàm get thực thi xong, thì giá trị trả về là một instance của User.
+Ở ví dụ mã nguồn \ref{code:jasmine_3}, \textit{User} là một \textit{constructor} có hàm tĩnh \textsf{get}. Hàm \textsf{get} sử dụng \textsf{fetch} để thực hiện gửi yêu cầu \textit{XHR} (một thao tác bất đồng bộ). Ở đây người lập trình muốn kiểm tra khi hàm \textsf{get} thực thi xong, thì giá trị trả về là một \textit{instance} của \textit{User}.
 
 \item[•] \emph{Sinon (Sinon Fake Server):}
-Một tính năng có trong Sinon nhưng không có trong Jasmine đó là fake server. Điều này cho phép người lập trình có thể thiết lập những phản hồi giả cho những yêu cầu AJAX.
+Một tính năng có trong Sinon nhưng không có trong Jasmine đó là \textit{fake server}. Điều này cho phép người lập trình có thể thiết lập những phản hồi giả cho những yêu cầu \textit{AJAX}.
 
 \item[•] \emph{Thực thi các testcase:}
-Trong Mocha, người lập trình có thể chạy các test bằng cách viết dòng lệnh như Mã nguồn \ref{code:mocha_test} trong command line:
+Trong Mocha, người lập trình có thể chạy các test bằng cách viết dòng lệnh như mã nguồn \ref{code:mocha_test} trong \textit{command line}:
 
 \begin{lstlisting}[caption=Khởi chạy trình kiểm thử testcase với Mocha,label={code:mocha_test}]
 mocha test --recursive --watch
 \end{lstlisting}
 
-Trong Jasmine, người lập trình không có tiện ích giống như Mocha. Thay vào đó, người lập trình phải sử dụng những trình chạy test (test runner), và một test runner rất phổ biến đó là Karma, sẽ được trình bày kĩ ở phần tiếp theo.
-\\
+Trong Jasmine, người lập trình không có tiện ích giống như Mocha. Thay vào đó, người lập trình phải sử dụng những trình chạy test (\textit{test runner}), và một \textit{test runner} rất phổ biến đó là Karma, sẽ được trình bày kĩ ở phần tiếp theo.
+\end{itemize}
 
-Tóm lại, Jasmine có hầu hết mọi thứ được xây dựng sẵn bao gồm các thư viện kỳ vọng và các tiện ích test double. Tuy nhiên, Jasmine không có một test runner vì vậy người lập trình cần một công cụ như Karma để làm việc này.
-\end{list}
+Tóm lại, Jasmine có hầu hết mọi thứ được xây dựng sẵn bao gồm các thư viện kỳ vọng và các tiện ích test double. Tuy nhiên, Jasmine không có một \textit{test runner} vì vậy người lập trình cần một công cụ như Karma để làm việc này.
+
 %----------------------------------%
-
 \subsubsubsection{Karma}
-
 %----------------------------------%
 \myparagraph{Giới thiệu}
-Karma là một môi trường để chạy test (test runner) cho Javascript chạy trên nền Node.js. Karma rất thích hợp để kiểm thử AngularJS hoặc bất kì các dự án Javascript khác. Sử dụng Karma để chạy các test thì người lập trình sẽ dùng một trong những các bộ mô tả kiểm thử Javascript phổ biến như Jasmine, Mocha, Qunit, … và những test đó được thực thi không chỉ trong những trình duyệt khác nhau do người lập trình chọn (Chrome, PhantomJS, Safari,…), mà còn có thể là trên các thiết bị (platform) họ chọn (máy tính để bàn, điện thoại, máy tính bảng). Ở Karma, người lập trình dễ dàng tùy chỉnh, tích hợp với các dịch vụ tích hợp liên tục phổ biến (continuous intergration packages) như Travis CI, Jenkins, Semaphore và có sự hỗ trợ mạnh mẽ về các plugin.
+Karma\cite{karma_1} là một môi trường để chạy test (\textit{test runner}) cho Javascript chạy trên nền Node.js. Karma rất thích hợp để kiểm thử \textit{AngularJS} hoặc bất kì các dự án Javascript khác. Sử dụng Karma để chạy các test thì người lập trình sẽ dùng một trong những các bộ mô tả kiểm thử Javascript phổ biến như \textit{Jasmine, Mocha, Qunit, …} và những test đó được thực thi không chỉ trong những trình duyệt khác nhau do người lập trình chọn (\textit{Chrome, PhantomJS, Safari,…}), mà còn có thể là trên các thiết bị (\textit{platform}) họ chọn (máy tính để bàn, điện thoại, máy tính bảng). Ở Karma, người lập trình dễ dàng tùy chỉnh, tích hợp với các dịch vụ tích hợp liên tục phổ biến (\textit{continuous intergration packages}) như \textit{Travis CI, Jenkins, Semaphore} và có sự hỗ trợ mạnh mẽ về các \textit{plugins}.
 
-Nhìn chung, Karma có các tính năng tương tự như Webpack: preprocessor, plugin, loader,… Sức mạnh của Karma nằm ở khả năng chạy các test trên các trình duyệt khác nhau. 
+Nhìn chung, Karma có các tính năng tương tự như Webpack: \textit{preprocessor, plugin, loader,…} Sức mạnh của Karma nằm ở khả năng chạy các test trên các trình duyệt khác nhau. 
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Hoạt động và Tính năng}
-Karma sẽ tạo ra một server giả, và sau đó chạy các test ở nhiều loại trình duyệt khác nhau do người dùng chỉ định sử dụng dữ liệu từ server giả đó. Do Karma chỉ là môi trường nên nó cần một framework như Jasmine, Mocha để chạy test. Kết quả của mỗi test trên mỗi trình duyệt sẽ được xem xét và hiển thị thông qua command line để giúp người lập trình có thể nhìn thấy trình duyệt nào và test nào thành công hay thất bại.
+Karma sẽ tạo ra một server giả, và sau đó chạy các test ở nhiều loại trình duyệt khác nhau do người dùng chỉ định sử dụng dữ liệu từ server giả đó. Do Karma chỉ là môi trường nên nó cần một framework như Jasmine, Mocha để chạy test. Kết quả của mỗi test trên mỗi trình duyệt sẽ được xem xét và hiển thị thông qua \textit{command line} để giúp người lập trình có thể nhìn thấy trình duyệt nào và test nào thành công hay thất bại.
 
 Karma có thể làm những việc sau:
-
-\begin{list}{}{}
-\item[•] Tạo ra web server.
+\begin{itemize}
+\item[•] Tạo ra \textit{web server}.
 \item[•] Thực thi lại các test đối với mỗi trình duyệt.
-\item[•] Hiển thị kết quả của mỗi test trong console.
-\end{list}
-%----------------------------------%
+\item[•] Hiển thị kết quả của mỗi test trong \textit{console}.
+\end{itemize}
 
+%----------------------------------%
 \subsubsubsection{PhantomJS}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-PhantomJS là một trình duyệt không có giao diện người dùng nhưng lại cung cấp Javascript API (headless webkit scriptable), làm cho trình duyệt trở nên hữu dụng. Nó có sự hỗ trợ nhanh chóng và thuần túy cho nhiều chuẩn web khác nhau như: xử lí DOM, bộ chọn CSS (CSS selector), JSON, Canvas, và SVG.
+PhantomJS là một trình duyệt không có giao diện người dùng nhưng lại cung cấp Javascript API (\textit{headless webkit scriptable}), làm cho trình duyệt trở nên hữu dụng. Nó có sự hỗ trợ nhanh chóng và thuần túy cho nhiều chuẩn web khác nhau như: xử lí DOM, bộ chọn CSS (CSS selector), JSON, Canvas, và SVG.
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Tính năng}
 PhantomJS có các tính năng sau:
-
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Chụp ảnh màn hình (screen capture):} Vì PhantomJS sử dụng WebKit, một bố cục thực (real layout) và phần mềm dựng hình (rendering engine), do đó nó có thể chụp hình một trang web. Bởi vì PhantomJS có thể vẽ mọi thứ trên trang web, nên nó có thể được sử dụng để chuyển đổi nội dung không chỉ trong HTML và CSS, mà còn SVG và Canvas.
-\item[•] \emph{Kiểm thử (testing):} Đây là một tính năng phổ biến của PhantomJS. Nó phù hợp cho việc kiểm thử dựa trên command line, và là một phần của tích hợp liên tục. PhantomJS được xem như là công cụ phổ biến để chạy các unit test. Những công cụ như Mocha, Casper rất thích hợp khi kết hợp với PhantomJS, vì những công cụ này dựa trên nó.
+\item[•] \emph{Kiểm thử (testing):} Đây là một tính năng phổ biến của PhantomJS. Nó phù hợp cho việc kiểm thử dựa trên command line, và là một phần của tích hợp liên tục. PhantomJS được xem như là công cụ phổ biến để chạy các unit test. Những công cụ như \textit{Mocha, Casper} rất thích hợp khi kết hợp với PhantomJS, vì những công cụ này hoạt động dựa trên nó.
 \item[•] \emph{Giám sát mạng (network monitoring):} Bởi vì PhantomJS cho phép kiểm tra lưu lượng mạng, nên nó phù hợp để xây dựng nên các bản phân tích về hành vi và hiệu suất mạng.
 \item[•] \emph{Giả lập trang (page automation):} Do PhantomJS có thể tải và thao tác một trang web, nên nó rất phù hợp để giả lập nên nhiều trang khác nhau.
 \item[•] \emph{Giao tiếp giữa các quá trình (inter process communication):} Hỗ trợ việc giao tiếp giữa PhantomJS và các quá trình khác (I/O, HTTP,…).
-\end{list}
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Ưu điểm và nhược điểm}
-Chúng ta sẽ so sánh với một trình duyệt cũng rất phổ biến trong việc hỗ trợ kiểm thử, đó là jsdom, để tìm ra điểm mạnh cũng như điểm yếu của PhantomJS:
+Chúng ta sẽ so sánh với một trình duyệt cũng rất phổ biến trong việc hỗ trợ kiểm thử, đó là \textit{jsdom}, để tìm ra điểm mạnh cũng như điểm yếu của PhantomJS (Bảng \ref{table:phantomjs_jsdom}).
 
 \begin{table}
 \begin{tabu} to 1\textwidth { | X[l] | X[l] | X[l] | }
 \hline
 \textbf{Tiêu chí} & \textbf{PhantomJS} & \textbf{jsdom}\\
 \hline\hline
-Định nghĩa & Là một trình duyệt hoàn chỉnh (không hỗ trợ giao diện), với kỹ thuật dựng hình (rendering engine) rất cũ và hiếm thấy & Không phải là một trình duyệt hoàn chỉnh, nó không thể bố cục và dựng hình, và cũng không hỗ trợ điều hướng trang. Chỉ hỗ trợ DOM, HTML, canvas, nhiều web API khác (không hỗ trợ SVG), và chạy kịch bản (script)\\
+Định nghĩa & Là một trình duyệt hoàn chỉnh (không hỗ trợ giao diện), với kỹ thuật dựng hình (\textit{rendering engine}) rất cũ và hiếm thấy & Không phải là một trình duyệt hoàn chỉnh, nó không thể bố cục và dựng hình, và cũng không hỗ trợ điều hướng trang. Chỉ hỗ trợ DOM, HTML, canvas, nhiều web API khác (không hỗ trợ SVG), và chạy kịch bản (\textit{script})\\
 \hline
-Môi trường thực thi & Cần một trình thực thi (executable) để chạy PhantomJS, là native-code nên cần được biên dịch thông qua một framework & Hoàn toàn là JavaScript, có thể chạy thông qua NodeJS \\
+Môi trường thực thi & Cần một trình thực thi (\textit{executable}) để chạy PhantomJS, là \textit{native-code} nên cần được biên dịch thông qua một framework & Hoàn toàn là JavaScript, có thể chạy thông qua \textit{NodeJS} \\
 \hline
-Chi phí (overhead) để tải trang & Cao, tốn nhiều thời gian, do đó việc chạy test-case có thể mất vài phút & Mất vài giây với cùng số lượng test-case \\
+Chi phí (\textit{overhead}) để tải trang & Cao, tốn nhiều thời gian, do đó việc chạy test-case có thể mất vài phút & Mất vài giây với cùng số lượng test-case \\
 \hline
-Cách thực thi mã nguồn (load script) & Nếu tạo một đoạn mã  để kiểm (test) thử trong PhantomJS, thì test đó sẽ chạy ở một quá trình khác chứ không phải là ở ứng dụng web. Vì vậy khi thực hiện nhiều bước trong test và các bước này phụ thuộc lẫn nhau, khi đó ứng dụng có thể thay đổi DOM trong những bước này & Ngược lại với PhantomJS, các test sẽ nằm trong cùng luồng (thread) với ứng dụng web, do đó nếu test đang thực thi mã Javascript, thì ứng dụng web không thể chạy mã của nó cho tới khi test đó được thực thi xong\\
+Cách thực thi mã nguồn (\textit{load script}) & Nếu tạo một đoạn mã  để kiểm (test) thử trong PhantomJS, thì test đó sẽ chạy ở một quá trình khác chứ không phải là ở ứng dụng web. Vì vậy khi thực hiện nhiều bước trong test và các bước này phụ thuộc lẫn nhau, khi đó ứng dụng có thể thay đổi DOM trong những bước này & Ngược lại với PhantomJS, các test sẽ nằm trong cùng luồng (\textit{thread}) với ứng dụng web, do đó nếu test đang thực thi mã Javascript, thì ứng dụng web không thể chạy mã của nó cho tới khi test đó được thực thi xong\\
 \hline
 \end{tabu}
 \caption{So sánh PhantomJS và jsdom}
@@ -1003,19 +992,19 @@ Cách thực thi mã nguồn (load script) & Nếu tạo một đoạn mã  đ�
 
 %----------------------------------%
 \myparagraph{Ứng dụng}
-Hiện nay thì xu hướng sử dụng Mocha/Chai/jsdom ngày càng phổ biến, hiệu suất tốt hơn so với Jasmine/Karma/PhantomJS rất nhiều, đặc biệt là đối với những dự án lớn. Đã có nhiều dự án lớn đi theo mô hình TDD, bắt đầu với Jasmine/Karma/PhantomJS, tuy nhiên sau một thời gian, người ta đã nhận thấy món nợ kĩ thuật (technical debt) trở nên ngày càng lớn do tốc độ chạy của bộ ba này quá chậm khi dự án ngày một lớn hơn, khi đó Mocha/Chai/jsdom là một lựa chọn tốt hơn để giải quyết vấn đề và ngày càng được ưa chuộng.
+Hiện nay thì xu hướng sử dụng Mocha/Chai/jsdom ngày càng phổ biến, hiệu suất tốt hơn so với Jasmine/Karma/PhantomJS rất nhiều, đặc biệt là đối với những dự án lớn. Đã có nhiều dự án lớn đi theo mô hình TDD, bắt đầu với Jasmine/Karma/PhantomJS, tuy nhiên sau một thời gian, người ta đã nhận thấy món nợ kĩ thuật (\textit{technical debt}) trở nên ngày càng lớn do tốc độ chạy của bộ ba này quá chậm khi dự án ngày một lớn hơn, khi đó Mocha/Chai/jsdom là một lựa chọn tốt hơn để giải quyết vấn đề và ngày càng được ưa chuộng.
 
-C9js ban đầu cũng đã sử dụng bộ Mocha/Chai/jsdom để thực hiện việc kiểm thử. Tuy nhiên vì một lí do lớn nhất C9js đã không sử dụng, chính là jsdom không hỗ trợ SVG. Mà đây là thành phần chính trong các biểu đồ, do D3 dựng lên (render). Trong khi PhantomJS có hỗ trợ đầy đủ các chuẩn web, thuận lợi cho việc kiểm thử các thành phần khác nhau.
+C9js ban đầu cũng đã sử dụng bộ Mocha/Chai/jsdom để thực hiện việc kiểm thử. Tuy nhiên vì một lí do lớn nhất C9js đã không sử dụng, chính là jsdom không hỗ trợ SVG. Mà đây là thành phần chính trong các biểu đồ, do D3 dựng lên (\textit{render}). Trong khi PhantomJS có hỗ trợ đầy đủ các chuẩn web, thuận lợi cho việc kiểm thử các thành phần khác nhau.
+
 %----------------------------------%
-
 \subsubsubsection{Istanbul}\label{sec:istanbul}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-Là công cụ dùng để đo lường mức độ mà mã nguồn (source code) của thư viện, ứng dụng Javascript đã được kiểm thử thông qua các bộ mô tả kiểm thử (test suite), hay còn gọi với một thuật ngữ là code coverage. Istanbul được viết bằng Javascript.
+Là công cụ dùng để đo lường mức độ mà mã nguồn của thư viện, ứng dụng Javascript đã được kiểm thử thông qua các bộ mô tả kiểm thử (\textit{test-suite}), hay còn gọi với một thuật ngữ là \textit{code coverage}. Istanbul được viết bằng Javascript.
 
-Istanbul sẽ đo đạc số lượng các câu lệnh (statement), nhánh (branch), hàm (function), dòng lệnh (line) đã chạy bằng những test mà người lập trình đã viết nên.
+Istanbul sẽ đo đạc số lượng các câu lệnh (\textit{statement}), nhánh (\textit{branch}), hàm (\textit{function}), dòng lệnh (\textit{line}) đã chạy bằng những test mà người lập trình đã viết nên (Hình \ref{fig:istanbul_1}).
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.5]{image/istanbul_1}
     \caption{Kết quả Unit Testing của C9js được Istanbul tổng quan}
@@ -1027,18 +1016,17 @@ Istanbul sẽ đo đạc số lượng các câu lệnh (statement), nhánh (bra
 %----------------------------------%
 \myparagraph{Tính năng}
 Các tính năng của Istanbul:
+\begin{itemize}
+\item[•] Theo dõi sự bao phủ (\textit{coverage}) các câu lệnh, nhánh, và hàm của thư viện Javascript.
+\item[•] \textit{Module loader} sẽ móc nối với các đoạn mã đã được đo đạc trên các kênh (\textit{GitHub, Codecov,…}) (Hình \ref{fig:istanbul_2}).
+\item[•] Chạy độc lập với trình chạy test (\textit{test runner}) khi thực hiện kiểm thử đơn vị.
+\item[•] Có thể báo cáo kết quả đo đạc qua nhiều định dạng: \textit{HTML, LCOV, Cobertuna, …}
+\item[•] Có khả năng sử dụng những công cụ trung gian (\textit{middleware}) để kiểm thử tập tin Javascript trên trình duyệt.
+\item[•] Có thể được dùng trên \textit{command line} như là một thư viện (viết dòng lệnh trong command line với Istanbul đứng đầu).
+\item[•] Kiểm thử rất tốt trên \textit{NodeJS} và trình duyệt.
+\end{itemize}
 
-\begin{list}{}{}
-\item[•] Theo dõi sự bao phủ (coverage) các câu lệnh, nhánh, và hàm của thư viện Javascript.
-\item[•] Module loader sẽ móc nối với các đoạn mã đã được đo đạc trên các kênh (github, codecov,…).
-\item[•] Chạy độc lập với trình chạy test (test runner) khi thực hiện kiểm thử đơn vị.
-\item[•] Có thể báo cáo kết quả đo đạc qua nhiều định dạng: HTML, LCOV, Cobertuna, …
-\item[•] Có khả năng sử dụng những công cụ trung gian (middleware) để kiểm thử tập tin Javascript trên trình duyệt.
-\item[•] Có thể được dùng trên command line như là một thư viện (viết dòng lệnh trong command line với istanbul đứng đầu).
-\item[•] Kiểm thử rất tốt trên node và trình duyệt.
-\end{list}
-
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.5]{image/istanbul_2}
     \caption{Trạng thái các dòng lệnh C9js được cover trên GitHub, báo cáo bởi Istanbul}
@@ -1049,7 +1037,7 @@ Các tính năng của Istanbul:
 
 %----------------------------------%
 \myparagraph{Ứng dụng}
-Istanbul hỗ trợ bao phủ mã Javascript trong nhiều trường hợp bao gồm kiểm thử đơn vị và kiểm thử chức năng (functional test) ở phía server. C9js áp dụng Istanbul để đo lường mức bao phủ của các câu lệnh, nhánh, hàm trong khi thực hiện kiểm thử đơn vị, đảm bảo tính ổn định và độ tin cậy cho mã nguồn. 
+Istanbul hỗ trợ bao phủ mã Javascript trong nhiều trường hợp bao gồm kiểm thử đơn vị và kiểm thử chức năng (\textit{functional test}) ở phía server. C9js áp dụng Istanbul để đo lường mức bao phủ của các câu lệnh, nhánh, hàm trong khi thực hiện kiểm thử đơn vị, đảm bảo tính ổn định và độ tin cậy cho mã nguồn. 
 
 %----------------------------------%
 
@@ -1059,100 +1047,97 @@ Istanbul hỗ trợ bao phủ mã Javascript trong nhiều trường hợp bao g
 \subsubsection{Code Coverage}\label{sec:codecov}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-Như đã giới thiệu sơ qua về thuật ngữ code coverage ở mục \ref{sec:istanbul} (Istanbul), ở phần này sẽ nói rõ hơn về thuật ngữ này cũng như công cụ để báo cáo mức độ bao phủ mã nguồn, đó là codecov.io.
+Như đã giới thiệu sơ qua về thuật ngữ \textit{code coverage} ở mục \ref{sec:istanbul} (Istanbul), ở phần này sẽ nói rõ hơn về thuật ngữ này cũng như công cụ để báo cáo mức độ bao phủ mã nguồn, đó là \textit{Codecov.io}.
 
-\textit{Code coverage:}
-
+\begin{enumerate}
+\item \emph{Code coverage:}
 Là một sự đo lường được dùng để cho thấy những dòng nào trong mã nguồn được thực thi bởi bộ mô tả kiểm thử (test suite). Có ba thuật ngữ được dùng để mô tả sự thực thi của mỗi dòng:
 
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Hit:} Cho biết đoạn mã được thực thi.
 \item[•] \emph{Partial:} Cho biết đoạn mã không hoàn toàn được thực thi và vẫn còn nhánh (branch) không được thực thi.
 \item[•] \emph{Miss:} Cho biết đoạn mã không được thực thi.
-\end{list}
+\end{itemize}
 
 Độ bao phủ được tính bằng công thức:
 \[
     \frac{\textit{total hits}}{\sum{(\textit{hit, partial, miss})}}
 \]
 
-Theo thuật ngữ của Layman\citep{codecov_wiki} Code coverage cung cấp sự đo lường trực quan của mã nguồn được thực thi bởi bộ kiểm thử. Thông tin này cho lập trình viên biết họ cần viết những test mới ở đâu để đạt được mức độ bao phủ cao hơn. Code coverage thúc đẩy lập trình viên tăng mức độ bao phủ, và có thể tìm ra các lỗi mới, các vấn đề về cú pháp trong mã nguồn trong quá trình phát triển, để họ có thể giải quyết trước khi đưa ứng dụng ra cộng đồng.
+Theo thuật ngữ của Layman\citep{codecov_wiki} Code coverage cung cấp sự đo lường trực quan của mã nguồn được thực thi bởi bộ kiểm thử. Thông tin này cho lập trình viên biết họ cần viết những test mới ở đâu để đạt được mức độ bao phủ cao hơn. Code coverage thúc đẩy lập trình viên tăng mức độ bao phủ, và có thể tìm ra các lỗi mới, các vấn đề về cú pháp trong mã nguồn trong quá trình phát triển, để họ có thể giải quyết trước khi đưa ứng dụng ra cộng đồng. \\
 
-\textit{Codecov.io:}
-
+\item \emph{Codecov.io:}
 Là công cụ hỗ trợ tạo báo cáo về mức độ bao phủ mã nguồn của codecov.io và có thêm một huy hiệu coverage trong tập tin README của mã nguồn C9js trên GitHub (Hình \ref{fig:codecovio}). 
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
-    \includegraphics[scale=.5]{image/codecovio}
-    \caption{Huy hiệu coverage được thêm vào reposioty C9js}
+    \includegraphics[scale=1]{image/codecovio}
+    \caption{Huy hiệu coverage được thêm vào repository C9js}
     \label{fig:codecovio}
 	\end{center}
 \end{figure}
 
-Codecov.io đem vấn đề bao phủ mã nguồn lên một tầm cao mới. Không giống như những công cụ coverage khác, các công cụ mã nguồn mở hay tính phí. Codecov tập trung vào vấn đề tích hợp (integration) và thúc đẩy các pull request (các yêu cầu được ghép mã vào nhánh chính – master) một cách trong sáng. Công cụ Codecov cho phép các số liệu bao phủ (coverage) được thể hiện trực tiếp trong quá trình làm việc (workflow) để thúc đẩy nhiều hơn việc tăng cao mức độ bao phủ, đặc biệt là ở các pull request, nơi mà ở trong những quy trình làm việc hiện đại ngày nay, các tính năng mới và các vấn đề sửa lỗi xảy ra phổ biến.
+Codecov.io đem vấn đề bao phủ mã nguồn lên một tầm cao mới. Không giống như những công cụ coverage khác, các công cụ mã nguồn mở hay tính phí. Codecov tập trung vào vấn đề tích hợp (\textit{integration}) và thúc đẩy các \textit{pull request} (các yêu cầu được ghép mã vào nhánh chính – \textsf{master}) một cách trong sáng. Công cụ Codecov cho phép các số liệu bao phủ được thể hiện trực tiếp trong quá trình làm việc (\textit{workflow}) để thúc đẩy nhiều hơn việc tăng cao mức độ bao phủ, đặc biệt là ở các \textit{pull request}, nơi mà ở trong những quy trình làm việc hiện đại ngày nay, các tính năng mới và các vấn đề sửa lỗi xảy ra phổ biến.
+\end{enumerate}
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Tính năng}
-
-\begin{list}{}{}
+Một số tính năng nổi bật của Codecov.io: 
+\begin{itemize}
 \item[•] \emph{Browser Extension:} Hỗ trợ xuất báo cáo với các đo đạc, thông số trên trình duyệt. Dễ dàng theo dõi và có cái nhìn tổng quan.
 \item[•] \emph{Auto-Merging Builds:} Hỗ trợ hầu hết các ngôn ngữ, kết hợp với tích hợp liên tục và xây dựng trong một báo cáo.
-\item[•] \emph{Notifications:} Gửi thông báo qua nhiều kênh giao tiếp như Slack, Gitter, Hipchat, hỗ trợ tạo Webhook,… .
-\item[•] \emph{Coverage Compare:} So sánh sự khác biệt trong sự thay đổi mã nguồn nhờ \textit{git diff}.
-\item[•] \emph{Pull Request Comments:} Là một bản mô tả chi tiết của một pull request. Nó cung cấp thông tin chi tiết về các thay đổi trong sự bao phủ (coverage) của pull request để giúp tăng nhanh tốc độ xem lại mã nguồn và đảm bảo các pull request đều đã được kiểm tra.
-\item[•] \emph{Commit Status:} Trạng thái dự án trong thư mục codecov sẽ đo đạc độ bao phủ của dự án đó và so sánh nó với pull request hoặc commit cha (parent commit).
-\end{list}
-
+\item[•] \emph{Notifications:} Gửi thông báo qua nhiều kênh giao tiếp như \textit{Slack, Gitter, Hipchat}, hỗ trợ tạo \textit{Webhook}.
+\item[•] \emph{Coverage Compare:} So sánh sự khác biệt trong sự thay đổi mã nguồn nhờ \textsf{git diff}.
+\item[•] \emph{Pull Request Comments:} Là một bản mô tả chi tiết của một pull request. Nó cung cấp thông tin chi tiết về các thay đổi trong sự bao phủ của \textit{pull request} để giúp tăng nhanh tốc độ xem lại mã nguồn và đảm bảo các \textit{pull request} đều đã được kiểm tra.
+\item[•] \emph{Commit Status:} Trạng thái dự án trong thư mục codecov sẽ đo đạc độ bao phủ của dự án đó và so sánh nó với \textit{pull request} hoặc commit cha (\textit{parent commit}).
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Ứng dụng}
-
 C9js sử dụng codecov.io để cho biết mức độ bao phủ của mã nguồn thư viện trực tiếp trên các kênh như GitHub và codecov.io:
 
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{GitHub}: \url{https://github.com/csethanhcong/C9js}
 \item[•] \emph{codecov.io}: \url{https://codecov.io/gh/csethanhcong/C9js}
-\end{list}
+\end{itemize}
 
-Qua các báo cáo mà codecov.io đem lại như tính chính xác của mã nguồn (thông qua các test đã đạt hay không đạt), số lượng các câu lệnh, dòng, nhánh, hàm đã được bao phủ (cover),… đã góp phần làm cho mã nguồn thêm sự ổn định và tin cậy.
+Qua các báo cáo mà Codecov.io đem lại như tính chính xác của mã nguồn (thông qua các test đã đạt hay không đạt), số lượng các câu lệnh, dòng, nhánh, hàm đã được bao phủ,… đã góp phần làm cho mã nguồn thêm sự ổn định và tin cậy.
 
 %----------------------------------%
 \subsubsection{Semantic Versioning}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-
 Trong hệ thống có nhiều các phụ thuộc (\textit{dependency}), vấn đề phát hành (\textit{release}) những gói phiên bản mới nhanh chóng trở thành nổi ác mộng. 
 
-\begin{list}{}{}
+\begin{itemize}
 \item[•] Nếu các đặc tả phụ thuộc (\textit{dependency specification}) quá chặt chẽ, người dùng sẽ ở trong tình trạng khóa phiên bản (version lock), tức là gói (package) không có khả năng nâng cấp mà không phải phát hành ra một phiên bản mới đối với mỗi gói phụ thuộc.
 \item[•] Nếu các phụ thuộc được đặc tả quá lỏng lẽo, các phiên bản sẽ trở nên hỗn tạp (\textit{version promiscuity}).
-\end{list}
+\end{itemize}
 
 Những nguyên nhân trên sẽ khiến dự án gặp khó khăn trong việc phát triển sau này. Và một giải pháp cho vấn đề này đó là đưa ra một tập các quy tắc và yêu cầu để chỉ ra cách các số phiên bản được gán cho và tăng lên. Và hệ thống này được gọi là \textit{Semantic Versioning}, dưới hệ thống này, số phiên bản và cách nó thay đổi sẽ cho biết ý nghĩa về những đoạn mã và những gì đã được thay đổi từ một phiên bản đến phiên bản tiếp theo.
 
 \textit{Semantic Versioning} định nghĩa số phiên bản sẽ theo định dạng \texttt{x.y.z}, hay còn có thể ghi là \texttt{major.minor.patch}, mỗi con số này tăng lên sẽ có nghĩa là:
 
-\begin{list}{}{}
+\begin{itemize}
 \item[•] Thay đổi \textit{MAJOR} khi có một thay đổi lớn trong API mà không tương thích với API phiên bản trước, hay nói các khác là hoàn toàn khác với API trước trong mã nguồn, về kiến trúc cũng như cách sử dụng API.
 \item[•] Thay đổi \textit{MINOR} khi có thêm chức năng mới cho API, sự thay đổi này vẫn giữ được sự tương thích đối với API phiên bản trước.
-\item[•] Thay đổi \textit{PATCH} khi sửa chữa các lỗi (fix bug) có trong API.
-\end{list}
+\item[•] Thay đổi \textit{PATCH} khi sửa chữa các lỗi (\textit{fix bug}) có trong API.
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Semantic Release}
 Semanic Release là công cụ giúp cho việc xuất bản package một cách hoàn toàn tự động:
 
-\begin{list}{}{}
+\begin{itemize}
 \item[•] Xác định phiên bản một các đúng đắn dựa vào commit của những người lập trình, số phiên bản được xác định giống như các quy tắc mà \textit{Semantic Versioning} đã đưa ra.
 \item[•] Tạo một bản phát hành trên \textit{Github}, bao gồm tag cho phiên bản, tạo ra \textit{changelog} (Hình \ref{fig:semantic_1}).
 \item[•] Phát hành qua các kênh như \textit{npm, bower, GitHub} (Hình \ref{fig:semantic_2}).
-\end{list}
+\end{itemize}
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.8]{image/semantic_1}
     \caption{Triển khai trên \textit{GitHub} với \textit{Semantic Release}}
@@ -1160,7 +1145,7 @@ Semanic Release là công cụ giúp cho việc xuất bản package một cách
 	\end{center}
 \end{figure}
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.8]{image/semantic_2}
     \caption{Triển khai trên \textit{npm} với \textit{Semantic Release}}
@@ -1179,21 +1164,19 @@ Theo Martin Fowler\cite{cd}, tích hợp liên tục là phương pháp phát tr
 
 \myparagraph{1.1.2.	Điều kiện áp dụng}
 Những dự án được hưởng lợi từ tích hợp liên tục:
-
-\begin{list}{}{}
+\begin{itemize}
 \item[•] Nhóm phát triển có ít hơn 50 người, độ phức tạp của dự án không cao.
 \item[•] Các sản phẩm có sử dụng phần mềm nhúng.
-\end{list}
+\end{itemize}
 
 \myparagraph{Lợi ích}
 Một số lợi ích mà tích hợp liên tục mang lại:
-
-\begin{list}{}{}
+\begin{itemize}
 \item[•] Giảm thiểu rủi ro vì có thể phát hiện sớm lỗi, tiết kiệm thời gian và tiền bạc khi sửa lỗi.
 \item[•] Hạn chế lỗi khi sắp đến ngày bàn giao sản phẩm.
 \item[•] Nhà phát triển giảm thời gian sửa lỗi khi phát hiện lỗi lúc chạy kiểm thử đơn vị do họ thường xuyên tích hợp.
 \item[•] Luôn có sản phẩm có thể chạy hoặc demo cho khách hàng.
-\end{list}
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
@@ -1204,20 +1187,20 @@ Theo Martin Fowler\cite{cd}, Chuyển giao liên tục là nguyên tắc phát t
 
 \myparagraph{Điều kiện áp dụng}
 Nên áp dụng chuyển giao liên tục khi:
-\begin{list}{}{}
+\begin{itemize}
 \item[•] Phần mềm có thể triển khai xuyên suốt vòng đời của nó.
 \item[•] Ưu tiên việc triển khai hơn là tạo ra tính năng mới.
 \item[•] Mọi người có thể lấy được phản hồi nhanh chóng và tự động khi có người thay đổi hệ thống.
 \item[•] Có thể triển khai bất kì phiên bản ở bất kì môi trường nào theo nhu cầu.
-\end{list}
+\end{itemize}
 
 \myparagraph{Lợi ích}
 Các lợi ích chủ yếu của chuyển giao liên tục:
-\begin{list}{}{}
+\begin{itemize}
 \item[•] Giảm rủi ro khi triển khai: khi người phát triển triển khai những thay đổi nhỏ, khi đó khả năng sai sót sẽ ít hơn và dễ dàng sửa lỗi khi trục trặc phát sinh.
 \item[•] Tiến trình trở nên tin cậy: những nhà phát triển theo dõi tiến trình bằng cách theo dõi công việc khi hoàn thành. Nếu “hoàn thành” tức là “nhà phát triển sẽ thông báo là nó được hoàn thành”, điều này có ít độ tin cậy hơn việc triển khai nó thành sản phẩm.
 \item[•] Phản hồi người dùng: rủi ro lớn nhất đối với bất kì phần mềm nào đó là nhà phát triển cho ra một thứ nào đó không hữu dụng. Nếu nhà lập trình làm việc với người dùng thật sớm hơn và thường xuyên hơn, thì họ sẽ có được phản hồi nhanh chóng hơn để tìm ra giá trị thực sự của phần mềm.
-\end{list}
+\end{itemize}
 %----------------------------------%
 
 %----------------------------------%
@@ -1227,7 +1210,8 @@ Các lợi ích chủ yếu của chuyển giao liên tục:
 Travis CI là hệ thống hiện thực tích hợp liên tục (CI) nhanh chóng và gọn lẹ, tích hợp với Github, GitLab, Bitbucket.
 
 \myparagraph{Tính năng}
-\begin{list}{}{}
+Các tính năng chính của TravisCI: 
+\begin{itemize}
 \item[•] Theo dõi các test khi các test này chạy.
 \item[•] Giữ các cấu hình (config) cùng với mã nguồn của nhà phát triển.
 \item[•] Hỗ trợ thông báo qua các kênh: Slack, HipChat, Email,...
@@ -1236,14 +1220,14 @@ Travis CI là hệ thống hiện thực tích hợp liên tục (CI) nhanh chó
 \item[•] Hỗ trợ thêm các hệ điều hành Linux, Mac (và iOS).
 \item[•] Có command line và API mạnh mẽ.
 \item[•] Hoàn toàn miễn phí cho các phần mềm mã nguồn mở.
-\end{list}
+\end{itemize}
 
 \myparagraph{Ứng dụng}
 Mọi việc trở nên tự động khi sử dụng Travis CI. Mỗi khi commit mã nguồn, hệ thống sẽ tự động lấy mã từ nguồn tích hợp, biên dịch, sau đó chạy các bộ kiểm thử cũng như thông báo tình trạng hiện tại của dự án qua nhiều kênh: email, Slack, ... từ đó dễ dàng tìm ra “hung thủ” làm hư hại mã, cũng như các test không vượt qua được,... Sau khi hệ thống chạy thành công, có thể yêu cầu thực hiện một vài tác vụ như báo cáo độ bao phủ mã nguồn, phát hành phần mềm,...
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
-    \includegraphics[scale=1]{image/ci_cd}
+    \includegraphics[scale=0.9]{image/ci_cd}
     \caption{Sự kết hợp giữa tích hợp liên tục (CI) và phát triển theo hướng kiểm thử (TDD)}
     \label{fig:ci_cd}
 	\end{center}
@@ -1251,7 +1235,7 @@ Mọi việc trở nên tự động khi sử dụng Travis CI. Mỗi khi commit
 
 C9js áp dụng Travis CI để hiện thực tích hợp liên tục, phát triển hướng kiểm thử, cùng với chuyển giao liên tục trong quá trình phát triển thư viện (Hình \ref{fig:ci_c9}). Qui trình thực hiện sẽ được nêu chi tiết trong phần Hiện thực thư viện.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=1]{image/ci_c9}
     \caption{Chạy kiểm thử đơn vị thư viện C9js bởi Travis CI}
@@ -1264,22 +1248,22 @@ C9js áp dụng Travis CI để hiện thực tích hợp liên tục, phát tri
 \section{Thư viện C9js}
 %----------------------------------%
 \subsection{Mô tả bài toán}
-Thông qua các công trình đã tìm hiểu, nhóm đề tài đánh giá và trích xuất ra các điểm hạn chế, các vấn đề mà các công trình đó chưa giải quyết được hoặc đã giải quyết nhưng đã lỗi thời cần nâng cấp để phù hợp với bối cảnh hiện tại của các công nghệ Web. Phần đánh giá, so sánh với các công trình liên quan sẽ được thể hiện chi tiết trong mục \textbf{Đánh giá}.
+Thông qua các công trình đã tìm hiểu, nhóm đề tài đánh giá và trích xuất ra các điểm hạn chế, các vấn đề mà các công trình đó chưa giải quyết được hoặc đã giải quyết nhưng đã lỗi thời cần nâng cấp để phù hợp với bối cảnh hiện tại của các công nghệ Web. Phần đánh giá, so sánh với các công trình liên quan sẽ được thể hiện chi tiết trong mục \ref{sec:eval}.
 
 \myparagraph{Bài toán mà nhóm đề tài đặt ra:}
 \textit{Hỗ trợ trực quan dữ liệu trên Web thông qua thư viện C9js}.
  
-\myparagraph{Các vấn đề \textit{"thắt nút"} cần giải quyết:}
+\myparagraph{Các vấn đề quan trọng cần giải quyết:}
 Cũng là các mục tiêu và hướng phát triển \textbf{C9js} đã, đang và mong muốn đạt được: 
-\begin{list}{}{}
-\item[•] \emph{Hoàn toàn là mã nguồn mở:} \textbf{C9js} là thư viện JavaScript mã nguồn mở, được triển khai thông qua GitHub ở địa chỉ \url{https://github.com/csethanhcong/C9js}.
+\begin{itemize}
+\item[•] \emph{Hoàn toàn là mã nguồn mở:} C9js là thư viện JavaScript mã nguồn mở, được triển khai thông qua GitHub ở địa chỉ \url{https://github.com/csethanhcong/C9js}.
 
 \item[•] \emph{Kiến trúc xây dựng theo tiêu chuẩn ES2015 (hay ES6):} Nghiên cứu cẩn trọng qua các mã nguồn mở có khả năng trực quan dữ liệu, việc chon kiến trúc để xây dựng từ ban đầu là rất quan trọng, đặc biệt trong khả năng mở rộng nhằm đáp ứng nhu cầu tuỳ chỉnh hay đóng góp từ cộng đồng mã nguồn mở. Tiêu chuẩn ES6 hỗ trợ lập trình hướng đối tượng với các tính năng như \textit{class, import/export, kế thừa} đáp ứng được yêu cầu mở rộng về sau của C9js, cũng như tính năng \textit{getter/setter} giúp đảm bảo các thuộc tính được bảo toàn, không được truy xuất trực tiếp bởi người dùng.
 
 \item[•] \emph{Bao gồm các tính năng mới và mạnh mẽ:}
 Các tính năng riêng biệt của C9js được thể hiện rõ trên trang chủ của thư viện, tại địa chỉ \url{http://c9js.me/}. Ví dụ như tính năng \textit{DataAdapter}, đây là tính năng mới hỗ trợ người dùng tự định nghĩa định dạng dữ liệu đầu vào, giảm thiểu tối đa nỗ lực trong quá trình tiền xử lý dữ liệu. Ngoài ra còn có các tính năng khác phát triển và có nhiều đặc tính nổi bật. Phần trình bày chi tiết sẽ được nêu ở phần sau.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.5]{image/c9js_feature}
     \caption{Các tính năng chính của C9js trên trang chủ c9js.me}
@@ -1287,7 +1271,7 @@ Các tính năng riêng biệt của C9js được thể hiện rõ trên trang 
 	\end{center}
 \end{figure}
 
-\end{list}
+\end{itemize}
 
 %----------------------------------%
 %----------------------------------%
@@ -1296,7 +1280,7 @@ Với mong muốn đem lại trải nghiệm nhanh nhất, đơn giản nhất v
 
 Qua Website c9js.me, có thể thấy mục \textbf{Getting Started} ở các nút ở trang chủ (landing page) hay thông qua menu ở đầu trang như hình \ref{fig:getting_started}
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.8]{image/getting_started}
     \caption{Menu hướng dẫn trên trang chủ c9js.me}
@@ -1304,8 +1288,8 @@ Qua Website c9js.me, có thể thấy mục \textbf{Getting Started} ở các n�
 	\end{center}
 \end{figure}
 
-Khi đó, màn hình hướng dẫn xuất hiện như hình \ref{fig:gs_1}
-\begin{figure}[htp]
+Khi đó, màn hình hướng dẫn xuất hiện như hình \ref{fig:gs_1}. Như có thể thấy, menu giao diện bên trái thể hiện các mục hướng dẫn người dùng, bao gồm các bước cơ bản nhất để sử dụng và tuỳ biến các tính năng trong C9js theo ý muốn.
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.5]{image/gs_1}
     \caption{Trang hướng dẫn trên Website c9js.me}
@@ -1313,44 +1297,40 @@ Khi đó, màn hình hướng dẫn xuất hiện như hình \ref{fig:gs_1}
 	\end{center}
 \end{figure}
 
-Như có thể thấy, menu giao diện bên trái thể hiện các mục hướng dẫn người dùng, bao gồm các bước cơ bản nhất để sử dụng và tuỳ biến các tính năng trong C9js theo ý muốn
-
 \subsubsection{Cài đặt (Setup)}
 \myparagraph{Tải xuống (Download):}
 Hiện tại, nhằm đáp ứng tối đa lượng người dùng, C9js được triển khai qua nhiều kênh khác nhau
 
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Tải trực tiếp:} Có thể tải trực tiếp ở địa chỉ \url{https://github.com/csethanhcong/C9js/releases/latest}.
 
 \item[•] \emph{Các trình quản lý tập tin (Package Manager):} Hiện tại phổ biến nhất có 2 trình quản lý là \textbf{npm} và \textbf{bower}. Và C9js được phân phối qua cả 2 kênh này. Người dùng cài đặt thông qua một trong các lệnh:
 
 \begin{itemize}
-\item[-] \textbf{npm:} npm install C9js
-\item[-] \textbf{bower:} bower install C9js
+\item[-] \textbf{npm:} \textsf{npm install C9js} 
+\item[-] \textbf{bower:} \textsf{bower install C9js} 
 \end{itemize}
 
-\item[•] \emph{Mạng phân phối nội dung (CDN):} Ngoài ra, người dùng còn có thể truy cập các mã nguồn cần thiết từ C9js thông qua hai dịch vụ CDN phổ biến là \textbf{npmcdn} và \textbf{unpkg}
+\item[•] \emph{Mạng phân phối nội dung (CDN):} Ngoài ra, người dùng còn có thể truy cập các mã nguồn cần thiết từ C9js thông qua hai dịch vụ CDN phổ biến là \textit{npmcdn} và \textit{unpkg}
 
 \begin{itemize}
-\item[-] \textbf{npmcdn:} 
-	\begin{lstlisting}[caption=Tải mã nguồn thông qua \textbf{npmcdn}]
+\item[-] \emph{npmcdn:} 
+	\begin{lstlisting}[caption=Tải mã nguồn thông qua \textit{npmcdn}]
 <link href="https://npmcdn.com/C9js/dist/C9.min.css" type="text/css" rel="stylesheet" >
 <script src="https://npmcdn.com/C9js/dist/C9.min.js" type="text/javascript"></script>
 	\end{lstlisting}
 
-\item[-] \textbf{unpkg:}
-	\begin{lstlisting}[caption=Tải mã nguồn thông qua \textbf{unpkg}]
+\item[-] \emph{unpkg:}
+	\begin{lstlisting}[caption=Tải mã nguồn thông qua \textit{unpkg}]
 <link href="https://unpkg.com/C9js/dist/C9.min.css" type="text/css" rel="stylesheet" >
 <script src="https://unpkg.com/C9js/dist/C9.min.js" type="text/javascript"></script>
 	\end{lstlisting}
 \end{itemize}
 
-\end{list}
+\end{itemize}
 
 \myparagraph{Cách dùng (Usage):}
-Thư viện C9js hỗ trợ tạo biểu đồ dựa trên \textit{d3.js} và bản đồ dựa trên \textit{OpenLayers 3} nên người dùng cần tải các thư viện này trước. 
-
-Tuỳ theo mục đích sử dụng, nếu chỉ dùng chức năng tạo biểu đồ thì chỉ cần tải thư viện \textit{d3.js}, tương tự đối với chức năng tạo bản đồ.
+Thư viện C9js hỗ trợ tạo biểu đồ dựa trên \textit{d3.js} và bản đồ dựa trên \textit{OpenLayers 3} nên người dùng cần tải các thư viện này trước. Tuỳ theo mục đích sử dụng, nếu chỉ dùng chức năng tạo biểu đồ thì chỉ cần tải thư viện \textit{d3.js}, tương tự đối với chức năng tạo bản đồ.
 
 \begin{lstlisting}[caption=Tải mã nguồn \textit{d3.js} trước tiên]
 <link href="/path/to/C9.css" rel="stylesheet" type="text/css">
@@ -1371,7 +1351,7 @@ Sau khi đã tải đầy đủ các tập tin như bước trên, người dùn
 \myparagraph{Tạo bản đồ cột (Bar Chart):}
 C9js đươc nhóm xây dựng dựa trên các tính năng mới nhất của \textit{ES6}, ngoài ra còn mong muốn đem lại sự tiện dụng và rõ ràng cho người dùng.
 
-Đầu tiên, cần tạo một \textit{khung chứa (container)} trong cấu trúc cây \textbf{DOM} của Website.
+Đầu tiên, cần tạo một \textit{khung chứa (container)} trong cấu trúc cây DOM của Web.
 
 \begin{lstlisting}[caption=Tạo \textit{container} để chứa biểu đồ]
 <div id="chart"></div>
@@ -1398,7 +1378,7 @@ barChart.draw();
 
 Khi đó, trên Website sẽ xuất hiện biểu đồ cột như hình \ref{fig:gs_2}, người dùng có thể tương tác với các thành phần trên đồ thị như \textit{Cột, Chú thích (Legend)} sẽ hiển thị các \textit{Tooltip} chứa các dữ liệu liên quan đến thành phần đang được tương tác..
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.7]{image/gs_2}
     \caption{Đồ thị cột từ C9js}
@@ -1425,11 +1405,11 @@ var map = new C9.Map(option);
 map.draw();
 \end{lstlisting}
 
-Kết quả ta có bản đồ với \textbf{Layer} mặc định là \textit{Tile} cùng \textbf{dữ liệu địa lý} được cung cấp bởi \textit{OpenStreetMap} như hình \ref{fig:gs_3}. Bên cạnh đó, C9js hỗ trợ nhiều loại \textbf{Layer} khác nhau như: \textit{Tile, Vector, Image, VectorTile,...} với nhiều nhà cung cấp \textbf{dữ liệu địa lý} khác nhau như: \textit{OpenStreetMap\citep{osm}, Bing Map\citep{bingmap}, Stamen\citep{stamen}, ...}.
+Kết quả ta có bản đồ với \textit{Layer} mặc định là \textit{Tile} cùng \textit{dữ liệu địa lý} được cung cấp bởi \textit{OpenStreetMap} như hình \ref{fig:gs_3}. Bên cạnh đó, C9js hỗ trợ nhiều loại \textit{Layer} khác nhau như: \textit{Tile, Vector, Image, VectorTile,...} với nhiều nhà cung cấp \textit{dữ liệu địa lý} khác nhau như: \textit{OpenStreetMap\cite{osm}, Bing Map\cite{bingmap}, Stamen\cite{stamen}, ...}.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
-    \includegraphics[scale=.7]{image/gs_3}
+    \fbox{\includegraphics[scale=.7]{image/gs_3}}
     \caption{Bản đồ từ C9js}
     \label{fig:gs_3}
 	\end{center}
@@ -1458,9 +1438,9 @@ map.draw();
 
 Như Mã nguồn \ref{code:gs_map_data}, với dữ liệu được truyền vào thông qua địa chỉ bên ngoài (ở đây là dữ liệu các quốc gia được lấy từ \textit{OpenLayers}) bởi thông số \textit{url}. Ta được kết quả như hình \ref{fig:gs_4}. , các giá trị được thể hiện khi đưa chuột (\textit{hover}) lên các vùng trên bản đồ, ở đây là tên các quốc gia trên thế giới.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
-    \includegraphics[scale=.7]{image/gs_4}
+    \fbox{\includegraphics[scale=.7]{image/gs_4}}
     \caption{Thêm dữ liệu vào bản đồ với C9js}
     \label{fig:gs_4}
 	\end{center}
@@ -1468,7 +1448,7 @@ Như Mã nguồn \ref{code:gs_map_data}, với dữ liệu được truyền và
 %----------------------------------%
 %----------------------------------%
 \subsubsection{Tuỳ biến định dạng dữ liệu đầu vào}
-Với tên gọi là DataAdapter, đây là một trong những tính năng độc đáo và mới lạ của C9js, nhằm tạo điều kiện tốt nhất cho người dùng trong quá trình tiền xử lý dữ liệu đầu vào. Nội dung cụ thể, tính năng và mô hình xây dựng nên DataAdapter sẽ được trình bày chi tiết trong mục \textbf{Kiến trúc xây dựng}.
+Với tên gọi là DataAdapter, đây là một trong những tính năng độc đáo và mới lạ của C9js, nhằm tạo điều kiện tốt nhất cho người dùng trong quá trình tiền xử lý dữ liệu đầu vào. Nội dung cụ thể, tính năng và mô hình xây dựng nên DataAdapter sẽ được trình bày chi tiết trong mục \ref{sec:kientruc}.
 
 Quay lại với cách sử dụng tính năng DataAdapter. Trên trang chủ C9js, nhóm có trình bày về khái niệm cở bản để người dùng dễ dàng nắm bắt, cũng như ví dụ sử dụng. DataAdapter hỗ trợ nhiều định dạng dữ liệu khác nhau như \textit{csv (Comma-separated values), tsv (Tab-separated values), json, text, xml} và cả \textit{XHR (XMLHttpRequest)}\cite{xhr}\cite{csv}\cite{tsv}. Thêm nữa, DataAdapter còn cung cấp tính năng tự định nghĩa định dạng dữ liệu đầu vào. Ví dụ ta có một dữ liệu mẫu như Mã nguồn \ref{code:da_1}.
 
@@ -1486,7 +1466,7 @@ Quay lại với cách sử dụng tính năng DataAdapter. Trên trang chủ C9
 ]
 \end{lstlisting}
 
-Khi đó, người dùng chỉ việc định nghĩa các khoá tương ứng \textit{name, value} tuỳ ý, theo bất kỳ trường nào trong dữ liệu mẫu, như ví dụ trên có thể định nghĩa theo các khoá lồng nhiều cấp bằng dấu \textit{"."} (Mã nguồn \ref{code:da_2}).
+Khi đó, người dùng chỉ việc định nghĩa các khoá tương ứng \textit{name, value} tuỳ ý, theo bất kỳ trường nào trong dữ liệu mẫu, như ví dụ trên có thể định nghĩa theo các khoá lồng nhiều cấp bằng dấu \textsf{'.'} (Mã nguồn \ref{code:da_2}).
 
 \begin{lstlisting}[caption=Định nghĩa định dạng dữ liệu đầu vào với C9js, label={code:da_2}]
 var option = {
@@ -1506,11 +1486,10 @@ chart.draw();
 Việc trực quan dữ liệu có mang tính hiệu quả, hay gây ấn tượng với thị hiếu người dùng hay không hoàn toàn phụ thuộc vào \textit{style} của loại trực quan đó. C9js cho phép lập trình viên toàn quyền tuỳ chỉnh \textit{style} theo ý muốn và mục đích của mình.
 
 Có 3 cách để thay đổi \textit{style} trong C9js:
-
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Thông qua các thiết lập (option) tại thời điểm khởi tạo đối tượng Chart/Map}
 
-Mã nguồn \ref{code:option_1} thực hiện các thay đổi về các trục toạ độ (axis), cụ thể là xoay các tick trên trục x 45\degree  (theo chiều kim đồng hồ), không hiện lưới (grid), đối với trục y thực hiện thay đổi nội dung hiển thị trên các tick dựa vào dữ liệu trả về. Ta được kết quả như hình \ref{fig:option_2}.
+Mã nguồn \ref{code:option_1} thực hiện các thay đổi về các trục toạ độ (\textit{axis}), cụ thể là xoay các \textit{tick} trên trục \textit{x} \textit{45\degree}  (theo chiều kim đồng hồ), không hiện lưới (\textit{grid}), đối với trục \textit{y} thực hiện thay đổi nội dung hiển thị trên các \textit{tick} dựa vào dữ liệu trả về. Ta được kết quả như hình \ref{fig:option_2}.
  
 \begin{lstlisting}[caption=Thay đổi \textit{style} tại thời điểm khởi tạo Chart, label={code:option_1}]
 var option = {
@@ -1536,7 +1515,7 @@ var chart = new C9.LineChart(option);
 chart.draw();
 \end{lstlisting}
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.8]{image/option_2}
     \caption{Một ví dụ về thay đổi \textit{style} với C9js}
@@ -1555,7 +1534,7 @@ Mỗi thành phần (axis, tick, grid, bar, legend, line, ...) trong C9js đều
 }
 \end{lstlisting}
 
-\item[•] \emph{Thông qua hàm \textit{setOption}}
+\item[•] \emph{Thông qua hàm \textsf{setOption()}}
 
 Nhằm giảm thời gian và rắc rối khi phải đưa toàn bộ các tuỳ chỉnh, thuộc tính vào lúc khởi tạo, C9js có một tính năng gọi là hàm-đứng-riêng (stand-alone function) \textit{setOption} giúp lập trình viên có thể thay đổi tuỳ chỉnh bất cứ lúc nào sau khi khởi tạo đối tượng Chart/Map. Việc thay đổi được ví dụ như Mã nguồn \ref{code:setoption}, có thể thay đổi các tuỳ chỉnh lồng nhiều cấp bằng phân cách dấu \textit{"."}, tương tự như tính năng DataAdapter đã trình bày ở trên.
 
@@ -1563,7 +1542,7 @@ Nhằm giảm thời gian và rắc rối khi phải đưa toàn bộ các tuỳ
 chart.setOption('grid.x.show', true);
 \end{lstlisting}
 
-\end{list}
+\end{itemize}
 
 \subsubsection{Cập nhật đồ thị theo dữ liệu}
 Một tính năng không thể thiếu đối với trực quan dữ liệu trên nền Web, đó là cập nhật theo thời gian thực. C9js cung cấp API với hàm \textit{updateData} giúp lập trình viên hiện thực điều đó. Ví dụ \ref{code:updatedata_1} thể hiện cách sử dụng \textit{updateData}, ở đây biểu đồ \textit{DonutChart} sẽ được cập nhật lại sau 5 giây với dữ liệu mới được đưa vào, cùng định dạng với dữ liệu ban đầu.
@@ -1610,43 +1589,41 @@ setTimeout(function(){
 Bên cạnh các hướng dẫn từ cơ bản đến chuyên sâu như trên, nhóm đề tài còn tạo một mục gồm các mã nguồn có sẵn ứng với các tính năng, tuỳ chỉnh và đặc điểm của C9js. Tham khảo tại mục \textbf{Examples} trên trang chủ C9js (Hình \ref{fig:getting_started}). 
 
 Các ví dụ được phân loại theo (Hình \ref{fig:example_page}):
-
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Kiểu đồ thị, bản đồ:} BarChart, LineChart, Timeline, DonutChart, PieChart, Map.
 \item[•] \emph{Các tiện ích mở rộng:} Axis, Legend, Tooltip, Table.
 \item[•] \emph{Các tính năng:} EventListener, DataAdapter, UpdateData.
 \item[•] \emph{Các ví dụ mở rộng:} Advance Examples.
-\end{list}
+\end{itemize}
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
-    \includegraphics[scale=.6]{image/example_page}
+    \fbox{\includegraphics[scale=.6]{image/example_page}}
     \caption{Các ví dụ được phân loại theo kiểu đồ thị}
     \label{fig:example_page}
 	\end{center}
 \end{figure}
 
 Cấu trúc của một trang ví dụ bao gồm ba thành phần (Hình \ref{fig:example_page_2}):
-
-\begin{list}{}{}
+\begin{itemize}
 \item[1 - ] Biểu đồ, bản đồ được tạo ra.
 \item[2 - ] Mã nguồn mẫu.
 \item[3 - ] Đường dẫn tới trang \href{https://jsfiddle.net/}{\textit{jsfiddle}} - đây là một trang chỉnh sửa code trực tuyến, nhóm đã để sẵn code mẫu như trên ví dụ và người dùng có thể trực tiếp chỉnh sửa ở \textit{jsfiddle}.
-\end{list}
+\end{itemize}
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
-    \includegraphics[scale=.5]{image/example_page_2}
+    \fbox{\includegraphics[scale=.5]{image/example_page_2}}
     \caption{Cấu trúc một trang ví dụ trên trang chủ C9js}
     \label{fig:example_page_2}
 	\end{center}
 \end{figure}
 
-Bên cạnh đó, nhóm còn tạo sẵn ví dụ mở rộng: Tương tác giữa bản đồ - biểu đồ (nằm trong mục Advance Examples), một phần nhằm tái hiện ứng dụng Global Health Atlas - WHO\cite{einstein} đã trình bày ở mục \ref{sec:related_work}, một phần muốn giúp người dùng có cái nhìn sâu sắc hơn về tính tương tác trong C9js. Qua đó, có thể tạo các ví dụ mở rộng khác dựa trên mã nguồn mẫu. Như có thể thấy ở hình \ref{fig:advance_1}, có ba thành phần chính được tạo ra: \textit{BarChart, Map, Table}. Khi tương tác với một điểm trên \textit{Map}, \textit{BarChart} sẽ được cập nhật lại dựa trên dữ liệu trả về từ sự kiện tương tác với \textit{Map} - đây là tính năng EventListener của C9js, các tương tác (click, hover, mousemove) trên các thành phần của C9js (Chart, Map) sẽ được trả về dữ liệu tương ứng với điểm đó. Đối với thành phần \textit{Table}, khi hover lên \textit{BarChart}, hàng chứa giá trị tương đương sẽ được làm nổi bật giúp người dùng có cái nhìn trực quan và sinh động đối với dữ liệu.
+Bên cạnh đó, nhóm còn tạo sẵn ví dụ mở rộng: Tương tác giữa bản đồ - biểu đồ (nằm trong mục Advance Examples), một phần nhằm tái hiện ứng dụng Global Health Atlas - WHO\cite{gha} đã trình bày ở mục \ref{sec:related_work}, một phần muốn giúp người dùng có cái nhìn sâu sắc hơn về tính tương tác trong C9js. Qua đó, có thể tạo các ví dụ mở rộng khác dựa trên mã nguồn mẫu. Như có thể thấy ở hình \ref{fig:advance_1}, có ba thành phần chính được tạo ra: \textit{BarChart, Map, Table}. Khi tương tác với một điểm trên \textit{Map}, \textit{BarChart} sẽ được cập nhật lại dựa trên dữ liệu trả về từ sự kiện tương tác với \textit{Map} - đây là tính năng \textit{EventListener} của C9js, các tương tác (\textit{click, hover, mousemove}) trên các thành phần của C9js (Chart, Map) sẽ được trả về dữ liệu tương ứng với điểm đó. Đối với thành phần \textit{Table}, khi hover lên \textit{BarChart}, hàng chứa giá trị tương đương sẽ được làm nổi bật giúp người dùng có cái nhìn trực quan và sinh động đối với dữ liệu.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
-    \includegraphics[scale=.6]{image/advance_1}
+    \fbox{\includegraphics[scale=.6]{image/advance_1}}
     \caption{Ví dụ mở rộng tái hiện ứng dụng GHA-WHO}
     \label{fig:advance_1}
 	\end{center}
@@ -1655,138 +1632,136 @@ Bên cạnh đó, nhóm còn tạo sẵn ví dụ mở rộng: Tương tác gi�
 \subsection{Các hàm chức năng (API)}
 C9js gồm hai thành phần chính là Chart và Map, nên API được tổ chức nhằm hỗ trợ tối đa các lập trình viên theo hai thành phần này.
 
-\myparagraph{Chart}
-
+\myparagraph{Thành phần Chart}
+Các API trong Chart:
 \begin{enumerate}
-\item draw(): Tạo Chart dựa vào đối tượng đã được khai báo và khởi tạo.
+\item \textsf{draw():}  Tạo Chart dựa vào đối tượng đã được khai báo và khởi tạo.
 
-\item setOption(\textit{key, value}): Thay đổi một tuỳ chỉnh trong đối tượng khởi tạo.
-	\begin{list}{}{}
+\item \textsf{setOption(\textit{key, value})}: Thay đổi một tuỳ chỉnh trong đối tượng khởi tạo.
+	\begin{itemize}
 		\item[•] \textit{key} <String>: Khoá định nghĩa tuỳ chỉnh sẽ thay đổi.
 		\item[•] \textit{value} <String, Number>: Giá trị áp dụng cho thay đổi.
-	\end{list}
+	\end{itemize}
 	
-\item updateData(\textit{newData [, newDataConfig]}): Cập nhật lại đồ thị dựa trên dữ liệu mới nhập vào.
-	\begin{list}{}{}
+\item \textsf{updateData(\textit{newData [, newDataConfig]})}: Cập nhật lại đồ thị dựa trên dữ liệu mới nhập vào.
+	\begin{itemize}
 		\item[•] \textit{newData} <Object>: Dữ liệu mới để cập nhật.
 		\item[•] \textit{newDataConfig } <Object>: Định nghĩa lại khoá mới.
-	\end{list}
+	\end{itemize}
 	
-\item on(\textit{eventType, callback}): Lắng nghe sự kiện và trả về dữ liệu tương ứng trên đối tượng được tương tác.
-	\begin{list}{}{}
-		\item[•] \textit{eventType} <String>: Loại sự kiện (hover, click, mousemove).
+\item \textsf{on(\textit{eventType, callback})}: Lắng nghe sự kiện và trả về dữ liệu tương ứng trên đối tượng được tương tác.
+	\begin{itemize}
+		\item[•] \textit{eventType} <String>: Loại sự kiện (\textit{hover, click, mousemove}).
 		\item[•] \textit{callback} <Function>: Chứa dữ liệu trả về.
-	\end{list}
+	\end{itemize}
 \end{enumerate}
 
-\myparagraph{Map}
-
+\myparagraph{Thành phần Map}
 Đối với Map, C9js phân biệt hai loại đối tượng (\textit{Object}) như sau: \label{sec:map_api}
 
-\begin{list}{}{}
+\begin{itemize}
 \item[•] Đối tượng người dùng tự định nghĩa: Thông qua các hàm addData() hoặc createObject() và sẽ gồm các trường sau khi chuẩn hoá là coor (\textit{coordinate}), name, value.
 \item[•] Đối tượng GeoJSON: Đối tượng được tạo ra bởi tập tin GeoJson truyền vào bởi người dùng, dữ liệu mặc định sẽ được C9js truy xuất thông qua trường \textit{properties} (mặc định các tập tin GeoJSON có trường này) và trường \textit{id}.
-\end{list}
+\end{itemize}
 
 Các hàm API của Map trong C9js được liệt kê như sau:
-
 \begin{enumerate}
-\item addData(plain [, keys]): Tạo một/nhiều đối tượng trên bản đồ (Line, Polygon, Marker), có thể định nghĩa khoá đầu vào.
-	\begin{list}{}{}
+\item \textsf{addData(plain [, keys])}: Tạo một/nhiều đối tượng trên bản đồ (Line, Polygon, Marker), có thể định nghĩa khoá đầu vào.
+	\begin{itemize}
 		\item[•] \textit{plain} <Object>: Dữ liệu đầu vào, yêu cầu có các trường \textit{coor, name, value}.
 		\item[•] \textit{keys} <Object>: Định nghĩa các trường dữ liệu đầu vào để C9js truy xuất.
-	\end{list}
+	\end{itemize}
 	
-\item createObject(\textit{data, style}): Tạo một đối tượng mẫu trên Map, chứa các trường theo yêu cầu.
-	\begin{list}{}{}
+\item \textsf{createObject(\textit{data, style})}: Tạo một đối tượng mẫu trên Map, chứa các trường theo yêu cầu.
+	\begin{itemize}
 		\item[•] \textit{data} <Object>: Dữ liệu đầu vào, yêu cầu có các trường \textit{coor, name, value}.
 		\item[•] \textit{style} <Object>: Tuỳ chỉnh style cho đối tượng được vẽ lên Map.
-	\end{list}
+	\end{itemize}
 	
-\item getObjects(): Trả về FeatureObject từ OpenLayers, người dùng có thể truy xuất dữ liệu qua hàm get('data').
+\item \textsf{getObjects()}: Trả về FeatureObject từ OpenLayers, người dùng có thể truy xuất dữ liệu qua hàm get('data').
 
-\item createLayer(\textit{layerType, layerSource}): Tạo một lớp(\textit{layer}) trên Map.
-	\begin{list}{}{}
+\item \textsf{createLayer(\textit{layerType, layerSource})}: Tạo một lớp(\textit{layer}) trên Map.
+	\begin{itemize}
 		\item[•] \textit{layerType} <String>: Kiểu của \textit{Layer} (\textit{Tile, Vector, Image, VectorTile}).
 		\item[•] \textit{layerSource} <String>: Hỗ trợ việc cấu hình đơn giản cho nguồn(\textit{source}). C9js hỗ trợ một số nguồn như \textit{BingMaps, Stamen, TileJSON, TileArcGISRest, Vector, Cluster, ImageVector, OSM}.
-	\end{list}
+	\end{itemize}
 
-\item createLayerFromGeojson(\textit{url, data, style}): Tương tự như hàm createObject() nhưng ở đây có thêm tham số \textit{url} cho phép người dùng tải tập tin GeoJSON để liên kết với dữ liệu đầu vào. Là bảng mở rộng từ hàm createLayer().
-	\begin{list}{}{}
+\item \textsf{createLayerFromGeojson(\textit{url, data, style})}: Tương tự như hàm createObject() nhưng ở đây có thêm tham số \textit{url} cho phép người dùng tải tập tin GeoJSON để liên kết với dữ liệu đầu vào. Là bảng mở rộng từ hàm createLayer().
+	\begin{itemize}
 		\item[•] \textit{url} <String>: Đường dẫn chứa tập tin GeoJSON.
 		\item[•] \textit{data} <Object>:
-		\begin{list}{}{}
+		\begin{itemize}
 			\item[-] \emph{plain} <Object>: Dữ liệu thô, chứa các trường \textit{coor, name, value}.
 			\item[-] \emph{file} <Object>: Dữ liệu đầu vào được tải từ tập tin
 			\item[-] \emph{process} <Function>: Hàm cho phép người dùng tiền xử lý dữ liệu, như thêm/xoá/sửa.
 			\item[-] \emph{condition} <Function>: Điều kiện để liên kết dữ liệu từ tập tin GeoJSON với dữ liệu đầu vào của người dùng. 
-		\end{list}
+		\end{itemize}
 		\item[•] \textit{style} <Object>: Tuỳ chỉnh style cho đối tượng được vẽ lên Map.
-	\end{list}
+	\end{itemize}
 	
-\item updateGeojsonData(\textit{url, data, style}): Tương tự như hàm createLayerFromGeojson(), dùng để cập nhật lại dữ liệu tại một đối tượng trên Map.
-	\begin{list}{}{}
+\item \textsf{updateGeojsonData(\textit{url, data, style})}: Tương tự như hàm createLayerFromGeojson(), dùng để cập nhật lại dữ liệu tại một đối tượng trên Map.
+	\begin{itemize}
 		\item[•] \textit{url} <String>: Đường dẫn chứa tập tin GeoJSON.
 		\item[•] \textit{data} <Object>:
-		\begin{list}{}{}
+		\begin{itemize}
 			\item[-] \emph{plain} <Object>: Dữ liệu thô, chứa các trường \textit{coor, name, value}.
 			\item[-] \emph{file} <Object>: Dữ liệu đầu vào được tải từ tập tin
 			\item[-] \emph{process} <Function>: Hàm cho phép người dùng tiền xử lý dữ liệu, như thêm/xoá/sửa.
 			\item[-] \emph{condition} <Function>: Điều kiện để liên kết dữ liệu từ tập tin GeoJSON với dữ liệu đầu vào của người dùng. 
-		\end{list}
+		\end{itemize}
 		\item[•] \textit{style} <Object>: Tuỳ chỉnh style cho đối tượng được vẽ lên Map.
-	\end{list}
+	\end{itemize}
 	
-\item on(\textit{eventType, callback}): Lắng nghe sự kiện và trả về dữ liệu tương ứng trên đối tượng được tương tác, ở đây là \textit{FeatureObject} - đối tượng cung cấp bởi OpenLayers, người dùng có thể truy xuất dữ liệu đối tượng bằng hàm get('data').
-	\begin{list}{}{}
+\item \textsf{on(\textit{eventType, callback})}: Lắng nghe sự kiện và trả về dữ liệu tương ứng trên đối tượng được tương tác, ở đây là \textit{FeatureObject} - đối tượng cung cấp bởi OpenLayers, người dùng có thể truy xuất dữ liệu đối tượng bằng hàm get('data').
+	\begin{itemize}
 		\item[•] \textit{eventType} <String>: Loại sự kiện (hover, click, mousemove).
 		\item[•] \textit{callback} <Function>: Chứa dữ liệu trả về.
-	\end{list}
+	\end{itemize}
 \end{enumerate}
 
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
 \section{Hiện thực thư viện}
-\subsection{Kiến trúc xây dựng}
+\subsection{Kiến trúc xây dựng}\label{sec:kientruc}
 Thư viện C9js được nhóm xây dựng trên hai nguyên tắc chính, xuyên suốt cả quá trình phát triển: \textit{Component-based} và \textit{Data-driven}.
 
 \myparagraph{Component-based} 
 \textit{Component-based}\cite{component_based} được hiểu là xây dựng theo kiến trúc chia nhỏ thành các thành phần riêng biệt, hoạt động theo từng luồng chức năng riêng biệt, không tác động tới các thành phần khác. Việc xây dựng theo tiêu chí này giúp kiến trúc rõ ràng, mã nguồn trong sáng, việc mở rộng các thành phần về sau không ảnh hưởng tới các thành phần đã tồn tại.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
-    \includegraphics[scale=1]{image/chart}
+    \fbox{\includegraphics[scale=1]{image/chart}}
     \caption{Kiến trúc các thành phần của Chart trong C9js}
     \label{fig:chart}
 	\end{center}
 \end{figure}
 
 Đối với thành phần Chart (Hình \ref{fig:chart}), có một \textit{Base Class} là \textit{Chart} sẽ bao gồm:
-\begin{list}{}{}
+\begin{itemize}
 \item[-] Các thuộc tính chính:
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{margin:} Khoảng cách tới khung chứa ngoài của Chart.
 \item[•] \emph{size:} Bao gồm chiều rộng (\textit{width}) và chiều cao (\textit{height}).
 \item[•] \emph{colorRange:} Mảng chứa giá trị các màu để thể hiện lên các thành phần một cách nhất quán.
 \item[•] \emph{id:} \textit{id} của khung chứa Chart.\\
 ...
-\end{list}
+\end{itemize}
 \item[-] Các thành phần trong \textit{Utils}:
-\begin{list}{}{}
+\begin{itemize}
 \item[•] \emph{Tooltip:} Bảng hiển thị khi lướt chuột qua các thành phần Chart.
 \item[•] \emph{Legend:} Chú thích các dữ liệu.
 \item[•] \emph{Axis:} Các trục toạ độ (\textit{x, y}).
 \item[•] \emph{Table:} Bảng tổng quan dữ liệu.
 \item[•] \emph{Title:} Tiêu đề Chart.
-\end{list}
-\end{list}
+\end{itemize}
+\end{itemize}
 
 Ngoài ra, còn có thành phần \textit{Events} bao gồm các sự kiện tương tác (\textit{click, hover, mousemove}) trên các thành phần của Chart. Khi các sự kiện này xảy ra, dữ liệu tương ứng tại vùng được tương tác sẽ được trả về cho người dùng.
 
 Kế thừa từ \textit{Base Class - Chart}, các đồ thị khác nhau như đồ thị cột (\textit{Bar Chart}), đồ thị tròn (\textit{Pie Chart}), đồ thị dòng (\textit{Line Chart}), đồ thị thời gian (\textit{Timeline Chart}), đồ thị hình khuyên (\textit{Donut Chart}) sẽ là các đối tượng chính được lập trình viên sử dụng trong mã nguồn của họ. Ứng với mỗi thành phần sẽ có một tập tin mã nguồn tương ứng tổ chức theo cấu trúc thư mục giống như kiến trúc các thành phần của Chart trong C9js (Hình \ref{fig:chart}).
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=0.6]{image/chart_flow}
     \caption{Luồng thực thi một đối tượng trong Chart của C9js}
@@ -1794,24 +1769,23 @@ Kế thừa từ \textit{Base Class - Chart}, các đồ thị khác nhau như �
 	\end{center}
 \end{figure}
 
-Ví dụ minh hoạ (Hình \ref{fig:chart_flow}) mô tả một đối tượng \textit{BarChart} được vẽ bởi C9js. Tại thời điểm khởi tạo, lớp (\textit{Class}) sẽ gọi hàm khởi tạo của đối tượng \textit{Base}, sau đó các thuộc tính mà phương thức mà mỗi đối tượng \textit{Chart} đều có sẽ được tạo thông qua hàm \textit{initConfig()}. Tiếp theo, các tuỳ chỉnh người dùng nhập vào lúc khởi tạo sẽ được kết hợp với các tuỳ chỉnh mặc định bởi hàm \textit{updateConfig()} - vì các tuỳ chỉnh trong C9js thuộc kiểu \textit{Object} nên hàm \textit{updateConfig()} hỗ trợ tính năng trộn sâu (\textit{Deep Merge})\cite{merge_deep} nhằm đảm bảo các tuỳ chỉnh thống nhất và toàn vẹn. Cuối cùng, biểu đồ được hiển thị trên Web thông qua hàm \textit{draw()}, nhưng trước tiên các đối tượng của lớp \textit{Base} sẽ được vẽ trước bằng \textit{super.draw()}. Ngoài ra, C9js còn cung cấp các API như \textit{setOption()} và \textit{updateData()}, xét về bản chất cả hai hàm này đều cập nhật các thuộc tính trong một đối tượng của C9js nên sẽ gọi hàm \textit{updateConfig()} để thực hiện thao tác này và cập nhật lại đồ thị bằng \textit{draw()} .
+Ví dụ minh hoạ (Hình \ref{fig:chart_flow}) mô tả một đối tượng \textit{BarChart} được vẽ bởi C9js. Tại thời điểm khởi tạo, lớp (\textit{Class}) sẽ gọi hàm khởi tạo của đối tượng \textit{Base}, sau đó các thuộc tính mà phương thức mà mỗi đối tượng \textit{Chart} đều có sẽ được tạo thông qua hàm \textsf{initConfig()}. Tiếp theo, các tuỳ chỉnh người dùng nhập vào lúc khởi tạo sẽ được kết hợp với các tuỳ chỉnh mặc định bởi hàm \textsf{updateConfig()} - vì các tuỳ chỉnh trong C9js thuộc kiểu \textit{Object} nên hàm \textsf{updateConfig()} hỗ trợ tính năng trộn sâu (\textit{Deep Merge})\cite{merge_deep} nhằm đảm bảo các tuỳ chỉnh thống nhất và toàn vẹn. Cuối cùng, biểu đồ được hiển thị trên Web thông qua hàm \textit{draw()}, nhưng trước tiên các đối tượng của lớp \textit{Base} sẽ được vẽ trước bằng \textsf{super.draw()}. Ngoài ra, C9js còn cung cấp các API như \textsf{setOption()} và \textsf{updateData()}, xét về bản chất cả hai hàm này đều cập nhật các thuộc tính trong một đối tượng của C9js nên sẽ gọi hàm \textsf{updateConfig()} để thực hiện thao tác này và cập nhật lại đồ thị bằng \textsf{draw()} .
 
 Đối với thành phần Map, chỉ có một \textit{Class} chính là \textit{Map} sẽ bao gồm các thành phần cần cho một bản đồ cơ bản:
-
-\begin{list}{}{}
-\item[•] \emph{Bản đồ}: chứa tất cả các thành phần của bản đồ (tương ứng với thành phần ol.Map của Openlayer 3).
+\begin{itemize}
+\item[•] \emph{Bản đồ}: chứa tất cả các thành phần của bản đồ (tương ứng với thành phần \textit{ol.Map} của Openlayer 3).
 \item[•] \emph{Vị trí nhìn (View)}: C9js hỗ trợ tập trung góc nhìn (zoom) đến một vị trí kinh độ, vĩ độ (longitude, latitude) cụ thể do người dùng chỉ định (tương ứng với thành phần ol.View của Openlayer 3).
-\item[•] \emph{Các lớp (Layer)}: Các lớp trên bản đồ, trong mỗi lớp phải định nghĩa nguồn (source) của lớp đó như là OSM, BingMaps, Vector,… (xem mục 3.4), có thể có nhiều lớp, đè lên lẫn nhau tùy vào thứ tự tạo lớp.
+\item[•] \emph{Các lớp (Layer)}: Các lớp trên bản đồ, trong mỗi lớp phải định nghĩa nguồn (\textit{source}) của lớp đó như là \textit{OSM, BingMaps, Vector,…} (xem mục 3.4), có thể có nhiều lớp, đè lên lẫn nhau tùy vào thứ tự tạo lớp.
 \item[•] \emph{Các đối tượng (Feature)} như đã trình bày ở mục \ref{sec:map_api}.
 \item[•] \emph{Cửa sổ bật lên (Popup)}: Hiện lên cửa số hiển thị các dữ liệu với định dạng do người dùng chỉ định (thông qua định nghĩa thuộc tính format lúc truyền các thuộc tính cho Map).
-\end{list}
+\end{itemize}
 
 Ngoài ra còn có thành phần \textit{Events} bao gồm các sự kiện như: \textit{click, pointermove} (vị trí chuột nằm trên một đối tượng) và \textit{postrender} (sau khi bản đồ được hiển thị hoàn toàn). Sau khi sự kiện xảy ra, đối tượng tương tác sẽ được trả về cho người dùng.
 
 \myparagraph{Data-driven}
 \textit{Data-driven}\cite{data_driven} là mô hình lập trình tập trung vào xử lý và thao tác trên dữ liệu, dữ liệu sinh ra sẽ kiểm soát luồng thực thi chương trình.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=0.6]{image/data_model}
     \caption{Mô hình chuẩn hoá dữ liệu bởi \textit{Data Adapter} trong C9js}
@@ -1845,9 +1819,9 @@ Map & name, value, coor(toạ độ) \\
 \label{table:da_1}
 \end{table}
 
-\textit{Data Adapter} còn có chức năng tạo một trường gọi là \textit{data-ref}. Vì các thành phần trong C9js đều tương tác được với nhau thông qua thao tác của người dùng, nên cần thiết phải có một cầu nối giữa các thành phần này dựa trên một sự nhất quán về dữ liệu, hay nói cách khác, phải dựa trên một đặc điểm chung liên quan tới dữ liệu. Mỗi một giá trị (vì mỗi tập dữ liệu đầu vào đều được chuyển thành các mảng chứa các dữ liệu con) sẽ được \textit{đánh dấu} bằng một \textit{UUID}\cite{uuid} có định dạng \texttt{c9-xxxxxx-4xxx-yxxx}, khi đó thông qua các \textit{selection} của \textit{d3} ta có thể dễ dàng tham khảo đến tất cả các thành phần đang có chung \textit{UUID} về dữ liệu đang được tương tác.
+\textit{Data Adapter} còn có chức năng tạo một trường gọi là \textsf{data-ref}. Vì các thành phần trong C9js đều tương tác được với nhau thông qua thao tác của người dùng, nên cần thiết phải có một cầu nối giữa các thành phần này dựa trên một sự nhất quán về dữ liệu, hay nói cách khác, phải dựa trên một đặc điểm chung liên quan tới dữ liệu. Mỗi một giá trị (vì mỗi tập dữ liệu đầu vào đều được chuyển thành các mảng chứa các dữ liệu con) sẽ được \textit{đánh dấu} bằng một \textit{UUID}\cite{uuid} có định dạng \texttt{c9-xxxxxx-4xxx-yxxx}, khi đó thông qua các \textit{selection} của \textit{d3} ta có thể dễ dàng tham khảo đến tất cả các thành phần đang có chung \textit{UUID} về dữ liệu đang được tương tác.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=0.6]{image/data_flow}
     \caption{Quá trình nhận dữ liệu được chuẩn hoá trong C9js}
@@ -1855,14 +1829,14 @@ Map & name, value, coor(toạ độ) \\
 	\end{center}
 \end{figure}
 
-Bây giờ, xét về luồng đi của dữ liệu trong C9js. Qua hình \ref{fig:data_flow}, khi người dùng khởi tạo một đối tượng trong C9js và gọi hàm \textit{draw()} để hiển thị ra Web, lúc đó một đối tượng \textit{DataAdapter} sẽ được khởi tạo và xử lý dữ liệu trên đối tượng ban đầu. Quá trình \textit{process} bao gồm các thao tác như xử lý tập tin (nếu người dùng truyền dữ liệu thông qua tập tin), xử lý yêu cầu (nếu là \textit{external request}) và cuối cùng là chuẩn hoá dữ liệu như đã trình bày ở trên. Để đảm bảo dữ liệu luôn sẵn sàng trước khi hiển thị, nhóm sử dụng tính năng \textit{callback}\cite{callback} trong JavaScript. Sau khi dữ liệu đã được xử lý xong, các thao tác để hiển thị các thành phần của Chart, Map được đưa vào trong \textit{callback} và thực thi với \textit{data} sau cuối.
+Bây giờ, xét về luồng đi của dữ liệu trong C9js. Qua hình \ref{fig:data_flow}, khi người dùng khởi tạo một đối tượng trong C9js và gọi hàm \textsf{draw()} để hiển thị ra Web, lúc đó một đối tượng \textit{DataAdapter} sẽ được khởi tạo và xử lý dữ liệu trên đối tượng ban đầu. Quá trình \textit{process} bao gồm các thao tác như xử lý tập tin (nếu người dùng truyền dữ liệu thông qua tập tin), xử lý yêu cầu (nếu là \textit{external request}) và cuối cùng là chuẩn hoá dữ liệu như đã trình bày ở trên. Để đảm bảo dữ liệu luôn sẵn sàng trước khi hiển thị, nhóm sử dụng tính năng \textit{callback}\cite{callback} trong JavaScript. Sau khi dữ liệu đã được xử lý xong, các thao tác để hiển thị các thành phần của Chart, Map được đưa vào trong \textit{callback} và thực thi với \textit{data} sau cuối.
 
 Đối với thành phần Map, dữ liệu sẽ được móc nối với các đối tượng, thông qua phương thức \textsf{get(‘data’)} của đối tượng, người dùng có thể lấy được dữ liệu mà họ đã nhập vào (từ dữ liệu nhập tay hoặc từ tập tin). Ngoài ra người dùng có thể lấy được kiểu của đối tượng thông qua phương thức \textsf{get(‘type’)} trên đối tượng đó, kết quả trả về sẽ là \textit{c9-geojson} nếu đó là đối tượng \textit{GeoJSON}, tương tự đối với các đối tượng thông thường sẽ là: \textit{c9-marker, c9-line, c9-polygon, c9-multipolygon}.
 
 \subsection{Hiện thực thư viện}
 Quá trình hiện thực thư viện C9js được nhóm chia làm 3 giai đoạn riêng biệt nhằm tối ưu hoá kết quả đạt được từ từng giai đoạn (Hình \ref{fig:implementation}).
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=0.4]{image/implementation}
     \caption{Ba giai đoạn hiện thực thư viện C9js}
@@ -1873,7 +1847,7 @@ Quá trình hiện thực thư viện C9js được nhóm chia làm 3 giai đo�
 \subsubsection{Hiện thực (Coding)}
 Dựa trên các kiến thức nền tảng đã trình bày và kiến trúc hệ thống đề xuất xây dựng, C9js được hiện thực dưới môi trường phát triển (\textit{environment}) sử dụng \textit{Webpack, D3.js, OpenLayers} (Hình \ref{fig:webpack_1}).
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=1]{image/webpack_1}
     \caption{Khởi chạy môi trường phát triển với Webpack}
@@ -1885,7 +1859,7 @@ Lệnh \textsf{npm run dev} sẽ chạy dựa trên tập tin cấu hình cho We
 
 \subsubsection{Kiểm thử (Testing)}
 
-Các testcase được viết bằng \textit{Jasmine}. Như ví dụ \ref{code:jasmine_test_1} mô tả một testcase với mong muốn tạo một đối tượng \textit{BarChart} với id là \textit{\#chart}.
+Các testcase được viết bằng \textit{Jasmine}. Như ví dụ \ref{code:jasmine_test_1} mô tả một testcase với mong muốn tạo một đối tượng \textit{BarChart} với id là \textsf{\#chart}.
 
 \begin{lstlisting}[caption=Một testcase trong C9js được viết bằng Jasmine,label={code:jasmine_test_1}]
 describe('C9 Unit Test - Bar Chart', function() {
@@ -1920,9 +1894,9 @@ describe('C9 Unit Test - Bar Chart', function() {
 
 Các testcase được nhóm hiện thực theo đúng nguyên tắc trong thiết kế hệ thống đã đề ra, tức là hướng tới đối tượng hiện thực. Ứng với mỗi thành phần trong mã nguồn sẽ có một bộ testcase (\textit{test-suite}) mô tả các hành vi của một thành phần trong C9js, như ví dụ \ref{code:jasmine_test_1} là một \textit{test-suite} về \textit{Bar Chart}.
 
-Các \textit{test-suite} này được quản lý và kiểm soát trạng thái bởi \textit{Karma}. Thông qua lệnh \textsf{karma start}, \textit{Karma} được khởi chạy với tập tin cấu hình (\textit{karma.conf.js}) (Hình \ref{fig:karma_1}). Như có thể thấy, \textit{Karma} khởi động một \textit{server} và kiểm soát trạng thái các \textit{test-suite} trên trình duyệt mà nhóm đã chỉ định, ở đây là \textit{PhantomJS}. Kết quả, ứng với mỗi \textit{test-suite}, tình trạng \textit{SUCCESS-FAILED} của mỗi \textit{test-case} được \textit{Karma} tổng hợp lại, đồng thời đi kèm với thời gian thực thi cho mỗi \textit{test-case}. Đặc biệt, giống như \textit{Webpack}, \textit{Karma} cũng hỗ trợ chức năng \textit{live server}, tức là không cần phải chạy lại (\textit{re-run}) quá trình kiểm thử mỗi lần thay đổi mã nguồn, mà \textit{Karma} sẽ tự kiểm soát và quản lý thao tác này.
+Các \textit{test-suite} này được quản lý và kiểm soát trạng thái bởi \textit{Karma}. Thông qua lệnh \textsf{karma start}, \textit{Karma} được khởi chạy với tập tin cấu hình (\textit{karma.conf.js}) (Hình \ref{fig:karma_1}). Như có thể thấy, \textit{Karma} khởi động một \textit{server} và kiểm soát trạng thái các \textit{test-suite} trên trình duyệt mà nhóm đã chỉ định, ở đây là \textit{PhantomJS}. Kết quả, ứng với mỗi \textit{test-suite}, tình trạng \textit{Success-Failed} của mỗi \textit{test-case} được \textit{Karma} tổng hợp lại, đồng thời đi kèm với thời gian thực thi cho mỗi \textit{test-case}. Đặc biệt, giống như \textit{Webpack}, \textit{Karma} cũng hỗ trợ chức năng \textit{live server}, tức là không cần phải chạy lại (\textit{re-run}) quá trình kiểm thử mỗi lần thay đổi mã nguồn, mà \textit{Karma} sẽ tự kiểm soát và quản lý thao tác này.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=0.6]{image/karma_1}
     \caption{Kiểm soát Unit Testing với Karma}
@@ -1933,7 +1907,6 @@ Các \textit{test-suite} này được quản lý và kiểm soát trạng thái
 Bước cuối cùng trong giai đoạn Testing là phát sinh tập tin báo cáo (\textit{lcov.info}) để \textit{codecov.io} sử dụng cho mục đích thống kê mức độ bao phủ trên mã nguồn. Chi tiết về thống kê sẽ được trình bày trong mục \ref{sec:eval}.
 
 \subsubsection{Triển khai (Release)}
-
 Việc triển khai thư viện C9js qua nhiều kênh khác nhau được hỗ trợ bởi \textit{semantic-release}. \textit{Semantic-release} chia quá trình này làm 3 bước chính:
 
 \begin{enumerate}
@@ -1988,18 +1961,18 @@ after_success:
 \item \emph{Về trực quan hóa dữ liệu:} Hiện tại C9js đã hỗ trợ trực quan hóa dữ liệu người dùng (từ tập tin bên ngoài hoặc dữ liệu nhập tay) thành các dạng biểu đồ: cột, đường, vùng, tròn, bánh rán, thời gian; và dạng bản đồ với các tùy chỉnh cực kì đa dạng, phong phú. Ngoài ra cũng hỗ trợ tương tác trên các biểu đồ, bản đồ, qua đó theo dõi, tìm ra được xu hướng, sở thích của người dùng.
 \item \emph{Về vấn đề viết mã:} C9js là một thư viện mã nguồn mở, hướng đến cộng đồng, các công nghệ (D3, OpenLayers 3) được sử dụng cũng hoàn toàn là mã nguồn mở, từ đó các nhà phát triển khác nhau có thể hiểu được mã nguồn và đóng góp phát triển thư viện hơn. Bên cạnh đó, C9js tuân theo kiến trúc component-based, do đó có thể dễ dàng mở rộng thêm các thành phần khác nhau như là biểu đồ công tơ mét (gauge), biểu đồ phân tán (scatter plot),…
 \item \emph{Về số lượng mã viết ra:} Dễ dàng thấy được khi dùng C9js, người dùng viết ra số dòng mã ít hơn rất nhiều so với các công nghệ đã dùng ban đầu, không chỉ giúp rút ngắn thời gian lập trình cho các lập trình viên, mà còn có thể dễ dàng giúp người dùng trực quan dữ liệu nếu họ không biết về d3, Openlayer 3. Có thể tham khảo số lượng dòng mã viết ra thông qua việc tạo ra một biểu đồ cột đơn giản từ hai nguồn sau:
-	\begin{list}{}{}
+	\begin{itemize}
 	\item[•] \emph{C9js:} \url{http://c9js.me/samples/bar_chart/single_bar_chart.html}
 	\item[•] \emph{Viết từ D3: } \url{https://bl.ocks.org/mbostock/3885304
 }
-	\end{list}
+	\end{itemize}
 \item \emph{Về môi trường phát triển:} C9js được phát triển theo phương pháp tích hợp liên tục kết hợp với phát triển theo hướng kiểm thử và chuyển giao liên tục với sự hỗ trợ của Travis CI, do đó vấn đề môi trường phát triển, môi trường kiểm thử cũng như xuất bản thư viện đều đã sẵn có và để làm tất cả những việc này là hoàn toàn tự động, dễ dàng hỗ trợ cho các nhà phát triển hứng thú với C9js để đóng góp phát triển thư viện sau này.
 \item \emph{Về vấn đề kiểm thử:} Mã nguồn C9js được bao phủ bởi việc kiểm thử bằng các bộ mô tả kiểm thử. Mức độ bao phủ càng cao cho thấy mã nguồn càng có độ tin cậy, độ chính xác cao, và càng ít xảy ra lỗi. Hình dưới là mức độ bao phủ mã nguồn của C9js trên \textit{Codecov.io}\cite{codecov_c9js}.
 
 Cụ thể, C9js gồm có gần 2700 câu lệnh, thông qua các bộ mô tả kiểm thử, mã nguồn của C9js đã được thực thi qua (hit) gần 1400 dòng lệnh, và còn gần 1300 dòng lệnh chưa được bao phủ (miss), và không có câu lệnh nào thuộc dạng partial, từ đó tính ra được độ bao phủ khoảng 52\% (xem cách tính cũng như các thuật ngữ ở phần \ref{sec:codecov}) (Hình \ref{fig:codecov_c9js}).
 \end{enumerate}
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=0.5]{image/codecov_c9js}
     \caption{Mức độ bao phủ của C9js được thống kê trên \textit{Codecov.io}}
@@ -2011,7 +1984,7 @@ Cụ thể, C9js gồm có gần 2700 câu lệnh, thông qua các bộ mô tả
 \subsubsection{Đánh giá khách quan}
 Sau khi xuất bản C9js, nhóm đề tài đã phổ biến thư viện trên nhiều kênh mạng xã hội, cộng đồng các lập trình viên trong và ngoài nước để cho mọi người dùng thử và thu được kết quả được trực quan bởi bản đồ ở hình \ref{fig:ga_map}. Hình \ref{fig:ga_map} cho thấy số lượt người dùng ở Việt Nam chiếm đại đa số với 233 lượt, tiếp theo sau là Nga với 131, Pháp với 15 lượt, … Kết quả trên được lấy từ thống kê của Google Analytics qua một đoạn mã để quan sát lưu lượng người dùng cung cấp bởi Google Analytics\cite{ga_c9js}.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=1]{image/ga_map}
     \caption{Mật độ truy cập và sử dụng thư viện C9js trên toàn thế giới}
@@ -2048,13 +2021,12 @@ Kiểm thử mã nguồn & Được kiểm thử với 52\% mã nguồn theo đ�
 
 \subsection{Hướng phát triển}
 Với mục tiêu tạo công cụ trực quan dữ liệu mới mẻ, cung cấp các tính năng mới và cải thiện một số tính năng đã có nhằm rút ngắn thời gian hiện thực ứng dụng trực quan dữ liệu trên Web cho các lập trình viên. Đồng thời, dựa trên đánh giá và so sánh với thư viện đã có sẵn, nhóm đề ra những điểm cần được cải tiến và mở rộng ở thư viện C9js:
-
-\begin{list}{}{}
+\begin{itemize}
 \item[•] Hỗ trợ nhiều kênh triển khai thư viện hơn, đáp ứng tối đa nhu cầu của các lập trình viên khác.
 \item[•] Hiện thực Unit Testing đạt được tỉ lệ cao hơn so với hiện tại (52\%) nhằm tăng độ tin cậy và kiểm soát mã nguồn tốt hơn.
 \item[•] Hiện thực thành phần Chart hỗ trợ nhiều hơn các loại khác nhau, có thể tham khảo thư viện \textit{c3.js} về các loại đồ thị đã có, và mở rộng thêm các loại khác như \textit{Node-link Tree, Calendar, Heat Map, Plot, ...}
 \item[•] Cải thiện các hàm chức năng trong thành phần Map để dễ dàng cho người sử dụng nhất.
-\end{list}
+\end{itemize}
 %----------------------------------------------%
 %----------------------------------------------%
 \newpage
