@@ -64,7 +64,7 @@
 \definecolor{editorOcher}{rgb}{1, 0.5, 0} % #FF7F00 -> rgb(239, 169, 0)
 \definecolor{editorGreen}{rgb}{0, 0.5, 0} % #007C00 -> rgb(0, 124, 0)
 \usepackage{upquote}
-\lstdefinelanguage{JavaScript}{
+\lstdefinelanguage{Javascript}{
   morekeywords={typeof, new, true, false, catch, function, return, null, catch, switch, var, if, in, while, do, else, case, break},
   morecomment=[s]{/*}{*/},
   morecomment=[l]//,
@@ -226,7 +226,7 @@
     stringstyle=\color{editorOcher},
     % Code
     language=HTML5,
-    alsolanguage=JavaScript,
+    alsolanguage=Javascript,
     alsodigit={.:;},
     tabsize=2,
     showtabs=false,
@@ -345,7 +345,7 @@
 \makeatother
 
 \setcounter{secnumdepth}{4}
-\setcounter{tocdepth}{4}
+\setcounter{tocdepth}{3}
 
 % Tạo đường chéo trong table
 \usepackage{slashbox}
@@ -387,6 +387,7 @@
 \pagenumbering{arabic} %reset numbering to normal for the main content
 %----------------------------------------------%
 \section{Giới thiệu đề tài}
+Phần này trình bày về bối cảnh của trực quan dữ liệu, ứng dụng trực quan trên nền tảng Web cũng như mục tiêu và lí do nhóm chọn đề tài.
 \subsection{Bối cảnh}
 \subsubsection{Trực quan hoá dữ liệu}
 %----------------------------------%
@@ -407,13 +408,13 @@ Ngày nay trong lĩnh vực kinh doanh hiệu quả (Business Intelligence) khô
 
 Trực quan dữ liệu ngày càng đóng vai trò quan trọng trong mọi lĩnh vực đời sống. Như sử dụng trong nghiên cứu, trong những công việc liên quan tới xử lý dữ liệu, giao dịch bởi người dùng phổ thông, và được áp dụng với tỷ lệ tăng cao trong lực lượng lao động trí óc, đặc biệt đối với các nhà phân tích.
 
-Với sự phát triển của công nghệ cùng với sự tiến triển của dữ liệu trực quan; bắt đầu với hình ảnh vẽ tay và chuyển biến thành các ứng dụng kỹ thuật - bao gồm thiết kế tương tác cho đến các phần mềm. \cite{wiki_history_2} Các chương trình như SAS, SOFA, R, Minitab, và nhiều hơn nữa khởi đầu cho việc trực quan dữ liệu trong lĩnh vực thống kê. Các ứng dụng khác, tập trung nhiều hơn vào cá nhân hoá, các ngôn ngữ lập trình như D3, Python và JavaScript giúp cho việc hiện thực trực quan khả thi và dễ dàng hơn.
+Với sự phát triển của công nghệ cùng với sự tiến triển của dữ liệu trực quan; bắt đầu với hình ảnh vẽ tay và chuyển biến thành các ứng dụng kỹ thuật - bao gồm thiết kế tương tác cho đến các phần mềm. \cite{wiki_history_2} Các chương trình như SAS, SOFA, R, Minitab, và nhiều hơn nữa khởi đầu cho việc trực quan dữ liệu trong lĩnh vực thống kê. Các ứng dụng khác, tập trung nhiều hơn vào cá nhân hoá, các ngôn ngữ lập trình như D3.js, Python và Javascript giúp cho việc hiện thực trực quan khả thi và dễ dàng hơn.
 %----------------------------------%
 
 \subsubsection{Ứng dụng trên nền tảng Web}
 Sự tăng trưởng trong khối lượng dữ liệu trong các dự án với nhu cầu chia sẻ mang tính toàn cầu ngày càng gia tăng, đòi hỏi sự đáp ứng bởi các công nghệ trên nền tảng Web để phân tích, xử lý, tương tác và hiển thị dữ liệu ngày càng lớn. 
 
-Các công nghệ trên nền Web hiện đại như HTML5, CSS3 và các thư viện JavaScript mạnh mẽ mang đến những triển vọng về trực quan trên các trình duyệt hiện tại. Hiện tại đã có hàng chục, thậm chí hàng trăm các loại thư viện, framework và ứng dụng phục vụ cho nhu cầu trực quan tuỳ từng mục đích cụ thể của cá nhân, doanh nghiệp, các công trình nghiên cứu,...
+Các công nghệ trên nền Web hiện đại như HTML5, CSS3 và các thư viện Javascript mạnh mẽ mang đến những triển vọng về trực quan trên các trình duyệt hiện tại. Hiện tại đã có hàng chục, thậm chí hàng trăm các loại thư viện, framework và ứng dụng phục vụ cho nhu cầu trực quan tuỳ từng mục đích cụ thể của cá nhân, doanh nghiệp, các công trình nghiên cứu,...
 
 \subsection{Lí do chọn đề tài}
 \myparagraph{Đam mê trong các công nghệ mới trên nền tảng Web}
@@ -455,6 +456,7 @@ Về kiến trúc, cũng như tài liệu (documentation), C9js được thể h
 %----------------------------------------------%
 \newpage
 \section{Công trình liên quan và Kiến thức nền tảng}
+Phần này trình bày các công trình liên quan trong cùng lĩnh vực mà đề tài hướng tới cũng như các kiến thức quan trọng cần nắm để hiện thực đề tài.
 \subsection{Công trình liên quan}\label{sec:related_work}
 \subsubsection{Công cụ hỗ trợ trực quan dữ liệu phân tán Gapminder}
 %----------------------------------%
@@ -487,9 +489,9 @@ Như ở hình \ref{fig:gapminder}, chúng ta có thể thấy với 1 lượng 
 
 %----------------------------------%
 \myparagraph{Phương pháp}
-Gapminder sử dụng D3.js, một thư việc JavaScript phổ biến trong việc thao tác với các thành phần của một trang web (Document Object Model) dựa trên dữ liệu. 
+Gapminder sử dụng D3.js, một thư việc Javascript phổ biến trong việc thao tác với các thành phần của một trang web (Document Object Model) dựa trên dữ liệu. 
 
-D3 cho phép thể hiện dữ liệu thông qua HTML, SVG và CSS. D3 còn là một tiêu chuẩn web cung cấp hầu hết các khả năng mà một trình duyệt hiện đại mang lại, mà không cần phải tự viết lại hay dựa trên một nền tảng khuôn khổ. Kết hợp các thành phần trực quan mạnh mẽ và hướng tiếp cận dữ liệu để thao tác trên DOM.
+D3.js cho phép thể hiện dữ liệu thông qua HTML, SVG và CSS. D3.js còn là một tiêu chuẩn web cung cấp hầu hết các khả năng mà một trình duyệt hiện đại mang lại, mà không cần phải tự viết lại hay dựa trên một nền tảng khuôn khổ. Kết hợp các thành phần trực quan mạnh mẽ và hướng tiếp cận dữ liệu để thao tác trên DOM.
 %----------------------------------%
 
 %----------------------------------%
@@ -571,7 +573,7 @@ Toàn bộ mã nguồn của thư viện nằm ở: \url{https://github.com/masa
 \begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3js}
-    \caption{Thư viện đồ thị C3js}
+    \caption{Đồ thị đường tạo bởi C3.js}
     \label{fig:c3js}
 	\end{center}
 \end{figure}
@@ -579,38 +581,38 @@ Toàn bộ mã nguồn của thư viện nằm ở: \url{https://github.com/masa
 
 %----------------------------------%
 \myparagraph{Mục tiêu}
-Các mục tiêu của C3 được trình bày trên trang chủ của mình như sau:
+Các mục tiêu của C3.js được trình bày trên trang chủ của mình như sau:
 \begin{itemize}
-\item[•] \emph{Sự thoải mái (Comfortable):} C3 giúp người dùng có thể dễ dàng tạo một đồ thị dựa trên D3 bằng cách gộp chung các đoạn code cần thiết để cấu trúc một đồ thị hoàn chỉnh. Qua đó, người dùng không cần phải viết các đoạn code D3 rườm rà như trước nữa.
+\item[•] \emph{Sự thoải mái (Comfortable):} C3.js giúp người dùng có thể dễ dàng tạo một đồ thị dựa trên D3.js bằng cách gộp chung các đoạn code cần thiết để cấu trúc một đồ thị hoàn chỉnh. Qua đó, người dùng không cần phải viết các đoạn code D3.js rườm rà như trước nữa.
     
 \begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.3]{image/c3syntax}
-    \caption{Thư viện đồ thị C3js}
+    \caption{Ví dụ mã nguồn trong C3.js}
     \label{fig:c3syntax}
 	\end{center}
 \end{figure}
 
-Thông qua một số câu lệnh định nghĩa dữ liệu (Hình \ref{fig:c3syntax}), C3 khởi tạo một đồ thị cho phép tương tác một cách trực quan thông qua hover, click,.. các thành phần của đồ thị.
+Thông qua một số câu lệnh định nghĩa dữ liệu (Hình \ref{fig:c3syntax}), C3.js khởi tạo một đồ thị cho phép tương tác một cách trực quan thông qua hover, click,.. các thành phần của đồ thị.
 
-\item[•] \emph{Khả năng tuỳ chỉnh (Customizable):} C3 cung cấp các class tương ứng cho mỗi đối tượng trong đồ thị khi khởi tạo. Qua đó, người dùng có thể định nghĩa các style theo ý muốn theo class cũng như mở rộng cấu trúc các thành phần của đồ thị (trục dữ liệu, hình dạng hiển thị, kiểu đồ thị,.. ) một cách trực tiếp.
+\item[•] \emph{Khả năng tuỳ chỉnh (Customizable):} C3.js cung cấp các class tương ứng cho mỗi đối tượng trong đồ thị khi khởi tạo. Qua đó, người dùng có thể định nghĩa các style theo ý muốn theo class cũng như mở rộng cấu trúc các thành phần của đồ thị (trục dữ liệu, hình dạng hiển thị, kiểu đồ thị,.. ) một cách trực tiếp.
     
 \begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3custom}
-    \caption{Thư viện đồ thị C3js}
+    \caption{Tuỳ chỉnh múi giờ trên trục đồ thị với C3.js}
     \label{fig:c3custom}
 	\end{center}
 \end{figure}    
   
 Trục hoành của đồ thị được tuỳ chỉnh theo thời gian hiện tại với định dạng hoàn toàn tuỳ thuộc người sử dụng (Hình \ref{fig:c3custom}).
  
-\item[•] \emph{Khả năng kiểm soát (Controllable):} C3 cung cấp đa dạng các APIs và các hàm callback để truy xuất trạng thái của đồ thị. Bằng cách đó, người dùng có thể cập nhật lại đồ thị thậm chí sau khi đồ thị đã được thể hiện. Thể hiện một số thành phần được hỗ trợ bởi thư viện C3js (Hình \ref{fig:c3apis}).
+\item[•] \emph{Khả năng kiểm soát (Controllable):} C3.js cung cấp đa dạng các APIs và các hàm callback để truy xuất trạng thái của đồ thị. Bằng cách đó, người dùng có thể cập nhật lại đồ thị thậm chí sau khi đồ thị đã được thể hiện. Thể hiện một số thành phần được hỗ trợ bởi thư viện C3js (Hình \ref{fig:c3apis}).
     
 \begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3apis}
-    \caption{Thư viện đồ thị C3js}
+    \caption{Các ví dụ trên trang chủ C3.js}
     \label{fig:c3apis}
 	\end{center}
 \end{figure}
@@ -627,7 +629,7 @@ Ngoài ra dựa theo cấu trúc mã nguồn mà C3js chia sẻ, có thể thấ
 \begin{figure}[!h]
 	\begin{center}
     \includegraphics[scale=.4]{image/c3source}
-    \caption{Thư viện đồ thị C3js}
+    \caption{Cấu trúc mã nguồn thư viện C3.js trên GitHub}
     \label{fig:c3source}
 	\end{center}
 \end{figure}
@@ -635,9 +637,9 @@ Ngoài ra dựa theo cấu trúc mã nguồn mà C3js chia sẻ, có thể thấ
 
 %----------------------------------%
 \myparagraph{Đánh giá}
-Cách tổ chức và hiện thực theo hướng hướng đối tượng như trên giúp tiết kiệm số dòng mã, tận dụng khả năng tái sử dụng, đồng thời giúp việc mở rộng về sau rất hiệu quả.
+Cách tổ chức và hiện thực theo hướng hướng đối tượng như trên giúp tiết kiệm số dòng mã, tận dụng khả năng tái sử dụng, đồng thời giúp việc mở rộng về sau rất hiệu quả (Hình \ref{fig:c3source}).
 
-Đề tài đề xuất sử dụng cách hiện thực API theo hướng như thư viện C3js.
+Đề tài đề xuất sử dụng cách hiện thực API theo hướng như thư viện C3.js.
 
 %----------------------------------%
 \subsubsection{Ứng dụng tạo bản đồ online Mapme}
@@ -693,22 +695,22 @@ Ngoài ra, ứng dụng cho phép người dùng tương tác trực tiếp vớ
 %----------------------------------%
 
 \subsection{Kiến thức nền tảng}
-\subsubsection{JavaScript}
+\subsubsection{Javascript}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-JavaScript là một ngôn ngữ nhẹ (\textit{lightweight}), thông dịch, hướng đối tượng với first-class function, và được biết đến nhất như là một ngôn ngữ kịch bản (\textit{scripting language}) cho các trang Web, nhưng JavaScript cũng có thể được sử dụng trong các môi trường non-browser như \textit{node.js} hay \textit{Apache CouchDB}. Javascript là một \textit{prototype-based}, ngôn ngữ kịch bản đa mô hình lập trình (\textit{multi-paradigm}), động (\textit{dynamic}), hỗ trợ nhiều kiểu như hướng đối tượng, lập trình mệnh lệnh (\textit{imperative programming}), và lập trình hàm (\textit{functional programming}).
+Javascript là một ngôn ngữ nhẹ (\textit{lightweight}), thông dịch, hướng đối tượng với first-class function, và được biết đến nhất như là một ngôn ngữ kịch bản (\textit{scripting language}) cho các trang Web, nhưng Javascript cũng có thể được sử dụng trong các môi trường non-browser như \textit{node.js} hay \textit{Apache CouchDB}. Javascript là một \textit{prototype-based}, ngôn ngữ kịch bản đa mô hình lập trình (\textit{multi-paradigm}), động (\textit{dynamic}), hỗ trợ nhiều kiểu như hướng đối tượng, lập trình mệnh lệnh (\textit{imperative programming}), và lập trình hàm (\textit{functional programming}).
 
-Chuẩn cho JavaScript là \textit{ECMAScript}. Phiên bản hiện nay là \textit{ECMAScript 7} được công bố vào tháng 6/2016. Tuy nhiên, cho đến hiện nay, các trình duyệt chỉ hỗ trợ chuẩn \textit{ECMAScript 5}, sắp tới đây sẽ hỗ trợ cho \textit{ECMAScript 6}. Nhóm sử dụng chuẩn \textit{ECMAScript 6} như là tiêu chuẩn để coding thư viện. Các tính năng mạnh mẽ của \textit{ECMAScript 6} sẽ được liệt kê ở những phần sau.
+Chuẩn cho Javascript là \textit{ECMAScript}. Phiên bản hiện nay là \textit{ECMAScript 7} được công bố vào tháng 6/2016. Tuy nhiên, cho đến hiện nay, các trình duyệt chỉ hỗ trợ chuẩn \textit{ECMAScript 5}, sắp tới đây sẽ hỗ trợ cho \textit{ECMAScript 6}. Nhóm sử dụng chuẩn \textit{ECMAScript 6} như là tiêu chuẩn để coding thư viện. Các tính năng mạnh mẽ của \textit{ECMAScript 6} sẽ được liệt kê ở những phần sau.
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Tính năng}
-JavaScript nâng cao sự linh động và khả năng tương tác cho website bằng cách sử dụng các hiệu ứng của nó như thực hiện các phép tính, kiểm tra form, viết các trò chơi, bổ sung các hiệu ứng đặc biệt, tuỳ biến các chọn lựa đồ hoạ, tạo ra các mật khẩu bảo mật và hơn thế nữa.
+Javascript nâng cao sự linh động và khả năng tương tác cho website bằng cách sử dụng các hiệu ứng của nó như thực hiện các phép tính, kiểm tra form, viết các trò chơi, bổ sung các hiệu ứng đặc biệt, tuỳ biến các chọn lựa đồ hoạ, tạo ra các mật khẩu bảo mật và hơn thế nữa.
 
-Cụ thể, JavaScript có thể được dùng để:
+Cụ thể, Javascript có thể được dùng để:
 \begin{itemize}
 \item[•] \emph{Tương tác với người dùng:} Chúng ta có thể viết mã để đáp lại các sự kiện. Các sự kiện này sẽ có thể phát sinh bởi người dùng: nhấp chuột hay được phát sinh từ hệ thống, định lại kích thước của trang …
-\item[•] \emph{Thay đổi nội dung động:} Mã JavaScript có thể dùng để thay đổi nội dung và vị trí các phần tử một cách động trên một trang nhằm đáp lại sự tương tác với người dùng.
+\item[•] \emph{Thay đổi nội dung động:} Mã Javascript có thể dùng để thay đổi nội dung và vị trí các phần tử một cách động trên một trang nhằm đáp lại sự tương tác với người dùng.
 \item[•] \emph{Kiểm tra tính hợp lệ dữ liệu:} Chúng ta có thể viết mã nhằm kiểm tra tính hợp lệ của dữ liệu do người dùng nhập vào trước khi nó được gửi lên Web server để xử lý.
 \end{itemize}
 %----------------------------------%
@@ -723,7 +725,7 @@ Một số tính năng mạnh mẽ của ES6:
 \item[•] \emph{Modules:} Hỗ trợ import/export các giá trị (biến, hàm, …) từ/đến các module.
 \item[•] \emph{Block Scoped:} Khai báo biến với từ khóa let để cho biết biến này chỉ tồn tại trong phạm vi block của nó.
 \item[•] \emph{Destructuring Assignment:} Dễ dàng khởi tạo các biến trong suốt các câu lệnh gán từ một mảng.
-\item[•] \emph{Arrow function}
+\item[•] \emph{Arrow function:} Sử dụng dấu mũi tên thay thế cho cách biểu diễn dùng ngoặc nhọn như truyền thống, giảm thiểu số dòng lệnh.
 \item[•] \emph{Default Parameter Values:} Cho phép gán giá trị mặc định cho tham số.
 \item[•] \emph{Rest Parameter:} Kết hợp các argument còn lại thành một tham số của hàm.
 \end{itemize}
@@ -731,37 +733,37 @@ Một số tính năng mạnh mẽ của ES6:
 
 %----------------------------------%
 \myparagraph{Ứng dụng}
-Dựa trên những đặc điểm và khả năng mạnh mẽ trong hỗ trợ lập trình API của JavaScript đã kể trên, nhóm đề xuất sử dụng JavaScript làm ngôn ngữ chính để hiện thực API.
+Dựa trên những đặc điểm và khả năng mạnh mẽ trong hỗ trợ lập trình API của Javascript đã kể trên, nhóm đề xuất sử dụng Javascript làm ngôn ngữ chính để hiện thực API.
 
 Ngoài ra, nhóm đề xuất sử dụng chuẩn \textit{ECMAScript 6} làm tiêu chuẩn cho các ràng buộc, quy tắc (\textit{coding conventions}) khi hiện thực thư viện.
 %----------------------------------%
 \subsubsection{D3.js}
 %----------------------------------%
 \myparagraph{Giới thiệu}
-D3.js được viết bởi \textit{Mike Bostock}, là một thư viện JavaScript dùng để thao tác với \textit{document} dựa trên dữ liệu. D3 giúp mang dữ liệu đến cuộc sống bằng cách sử dụng HTML, SVG, và CSS. Sức mạnh của D3 trên chuẩn web cung cấp đầy đủ các tính năng của những trình duyệt hiện đại mà không buộc mình vào một khuôn khổ nhất định nào, kết hợp với các thành phần trực quan mạnh mẽ và một phương pháp hướng dữ liệu để thao tác DOM (\textit{Document Object Model}).
+D3.js được viết bởi \textit{Mike Bostock}, là một thư viện Javascript dùng để thao tác với \textit{document} dựa trên dữ liệu. D3.js giúp mang dữ liệu đến cuộc sống bằng cách sử dụng HTML, SVG, và CSS. Sức mạnh của D3.js trên chuẩn web cung cấp đầy đủ các tính năng của những trình duyệt hiện đại mà không buộc mình vào một khuôn khổ nhất định nào, kết hợp với các thành phần trực quan mạnh mẽ và một phương pháp hướng dữ liệu để thao tác DOM (\textit{Document Object Model}).
 
-D3 không phải là framework giải quyết mỗi vấn đề riêng biệt nào, thay vào đó D3 giải quyết điểm cốt lõi của vấn đề: sự thao tác hiệu quả các document dựa trên dữ liệu. Do đó, D3 có được sự linh hoạt cao, có thể sử dụng toàn bộ các tính năng của các tiêu chuẩn web như HTML, SVG, và CSS.
+D3.js không phải là framework giải quyết mỗi vấn đề riêng biệt nào, thay vào đó D3.js giải quyết điểm cốt lõi của vấn đề: sự thao tác hiệu quả các document dựa trên dữ liệu. Do đó, D3.js có được sự linh hoạt cao, có thể sử dụng toàn bộ các tính năng của các tiêu chuẩn web như HTML, SVG, và CSS.
 
-D3 cho phép nhúng bất kì kiểu dữ liệu nào vào 1 phần tử DOM, và sau đó có thể áp dụng CSS3, HTML, và/hoặc SVG lên dữ liệu này. Cuối cùng, D3.js có thể giúp tạo ra dữ liệu tương tác thông qua việc sử dụng những sự biến đổi (\textit{transformation}), chuyển đổi (\textit{transition}) hướng dữ liệu của D3.js.
+D3.js cho phép nhúng bất kì kiểu dữ liệu nào vào 1 phần tử DOM, và sau đó có thể áp dụng CSS3, HTML, và/hoặc SVG lên dữ liệu này. Cuối cùng, D3.js có thể giúp tạo ra dữ liệu tương tác thông qua việc sử dụng những sự biến đổi (\textit{transformation}), chuyển đổi (\textit{transition}) hướng dữ liệu của D3.js.
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Tính năng}
-Một số tính năng mạnh mẽ của D3:
+Một số tính năng mạnh mẽ của D3.js:
 \begin{itemize}
-\item[•] \emph{Selections:} Tập hợp các node tùy ý gọi là selections, và D3 sử dụng phương pháp declarative để biến đổi selections này. Đặc biệt D3 cũng áp dụng các selectors được định nghĩa bởi W3C Selectors API, nhờ đó các phần tử sẽ được chọn lựa ra một cách dễ dàng.
-\item[•] \emph{Dynamic Properties:} Dễ dàng thay đổi các thuộc tính, style một các động thông qua các function trong D3.
+\item[•] \emph{Selections:} Tập hợp các node tùy ý gọi là selections, và D3.js sử dụng phương pháp declarative để biến đổi selections này. Đặc biệt D3.js cũng áp dụng các selectors được định nghĩa bởi W3C Selectors API, nhờ đó các phần tử sẽ được chọn lựa ra một cách dễ dàng.
+\item[•] \emph{Dynamic Properties:} Dễ dàng thay đổi các thuộc tính, style một các động thông qua các function trong D3.js.
 \item[•] \emph{Enter và Exit:} Sử dụng enter và exit các selections, người dùng có thể tạo ra nhiều node mới cho các dữ liệu mới và xóa các node mà không cần thiết. Với việc sử dụng đúng những tác vụ cần thiết trên các node sẽ làm tăng hiệu suất và mang đến những hiệu ứng chuyển đổi tuyệt vời hơn.
-\item[•] \emph{Transformation:} D3 sử dụng các tiêu chuẩn web: HTML, SVG, và CSS. Do đó nếu trình duyệt giới thiệu một phiên bản mới, người dùng có thể sử dụng D3 ngay lập tức, không yêu cầu cập nhật. Ngoài ra giúp người dùng dễ dàng debug với sự trợ giúp của trình duyệt.
-\item[•] \emph{Transitions:} Interpolator của D3 hỗ trợ cả 2 kiểu primitive, ví dụ như là số và số nhúng trong string (font-size, dữ liệu về path, …) và các giá trị phức tạp. Người dùng thậm chí có thể mở rộng interpolator để hỗ trợ cho các thuộc tính phức tạp và cấu trúc dữ liệu.
+\item[•] \emph{Transformation:} D3.js sử dụng các tiêu chuẩn web: HTML, SVG, và CSS. Do đó nếu trình duyệt giới thiệu một phiên bản mới, người dùng có thể sử dụng D3.js ngay lập tức, không yêu cầu cập nhật. Ngoài ra giúp người dùng dễ dàng debug với sự trợ giúp của trình duyệt.
+\item[•] \emph{Transitions:} Interpolator của D3.js hỗ trợ cả 2 kiểu primitive, ví dụ như là số và số nhúng trong string (font-size, dữ liệu về path, …) và các giá trị phức tạp. Người dùng thậm chí có thể mở rộng interpolator để hỗ trợ cho các thuộc tính phức tạp và cấu trúc dữ liệu.
 \end{itemize}
 %----------------------------------%
 
 %----------------------------------%
 \myparagraph{Ứng dụng}
-D3 được viết bằng JavaScript, và sử dụng kiểu lập trình hàm (functional programming) do đó có thể sử dụng lại code và thêm những hàm chức năng mà người dùng muốn. Điều đó có nghĩa là nó sẽ mạnh mẽ như thế nào là dựa vào người dùng muốn làm ra nó. Cách người dùng chọn để định dạng, thao tác, tương tác với dữ liệu là tùy thuộc ở họ.
+D3.js được viết bằng Javascript, và sử dụng kiểu lập trình hàm (functional programming) do đó có thể sử dụng lại code và thêm những hàm chức năng mà người dùng muốn. Điều đó có nghĩa là nó sẽ mạnh mẽ như thế nào là dựa vào người dùng muốn làm ra nó. Cách người dùng chọn để định dạng, thao tác, tương tác với dữ liệu là tùy thuộc ở họ.
 
-D3 rất thích hợp dùng trong đề tài, nó giúp xây dựng framework trực quan dữ liệu mà người dùng muốn, dễ dàng sử dụng, do đó giúp tạo ra thư viện một cách dễ dàng hơn, dễ hiểu và dễ sử dụng hơn.
+D3.js rất thích hợp dùng trong đề tài, nó giúp xây dựng framework trực quan dữ liệu mà người dùng muốn, dễ dàng sử dụng, do đó giúp tạo ra thư viện một cách dễ dàng hơn, dễ hiểu và dễ sử dụng hơn.
 %----------------------------------%
 
 \subsubsection{OpenLayers}
@@ -769,7 +771,7 @@ D3 rất thích hợp dùng trong đề tài, nó giúp xây dựng framework tr
 \myparagraph{Giới thiệu}
 OpenLayers\cite{ol} được tạo ra bởi \textit{MetaCarta} sau hội nghị \textit{O'Reilly Where 2.0} (29-30/06/2005) và chính thức phát hành thành mã nguồn mở trước hội nghị  \textit{O'Reilly Where 2.0} (13-14/06/2006) bởi \textit{MetaCarta Labs}. Hai dự án khác về công cụ xây dựng bản đồ phát hành bởi \textit{MetaCarta} là \textit{FeatureServer} và \textit{TileCache}. Từ tháng 11/2007, OpenLayers trở thành dự án mã nguồn mở chính thức của Hội đồng Không gian địa lý.
 
-Sơ qua về OpenLayers, đây là một thư viện JavaScript mã nguồn mở (được chứng nhận bởi BSD License) nhằm phục vụ mục đích biểu diễn thông tin trên bản đồ  đối với các trình duyệt Web, không phụ thuộc phía server. Nó cung cấp API chuyên về xây dựng các ứng dụng địa lý trên nền Web tương tự như Google Maps và Bing Maps, với một điểm khác biệt duy nhất, OpenLayers hoàn toàn miễn phí, được xây dựng và phát triển nên bởi cộng đồng phát triển phần mềm mã nguồn mở. Thư viện xây dựng trên \textit{Prototype JavaScript Framework}\citep{prototypejs}.
+Sơ qua về OpenLayers, đây là một thư viện Javascript mã nguồn mở (được chứng nhận bởi BSD License) nhằm phục vụ mục đích biểu diễn thông tin trên bản đồ  đối với các trình duyệt Web, không phụ thuộc phía server. Nó cung cấp API chuyên về xây dựng các ứng dụng địa lý trên nền Web tương tự như Google Maps và Bing Maps, với một điểm khác biệt duy nhất, OpenLayers hoàn toàn miễn phí, được xây dựng và phát triển nên bởi cộng đồng phát triển phần mềm mã nguồn mở. Thư viện xây dựng trên \textit{Prototype Javascript Framework}\citep{prototypejs}.
 
 Hiện nay, OpenLayers đã ra tới phiên bản OpenLayers 3. OpenLayers 3 được viết lại nhằm dễ hiểu hơn, hướng tới các tính năng của HTML5 và CSS3. Thư viện tiếp tục hỗ trợ trình chiếu, các giao thức tiêu chuẩn và các chức năng chỉnh sửa. Phiên bản mới này tập trung vào cải thiện hiệu năng, xây dựng đơn giản hơn, các thành phần trở nên trực quan hơn, API được cải tiến và còn nhiều hơn nữa.
 %----------------------------------%
@@ -787,7 +789,7 @@ Openlayers có 4 tính năng chính:
 
 %----------------------------------%
 \myparagraph{Ứng dụng}
-Đề tài hướng tới xây dựng thư viện JavaScript cho phép tương tác giữa bản đồ và các đồ thị dựa trên dữ liệu đầu vào, cho nên OpenLayers, cụ thể OpenLayers 3 sẽ là công cụ đắc lực cho việc xây dựng thành phần bản đồ trong đề tài.
+Đề tài hướng tới xây dựng thư viện Javascript cho phép tương tác giữa bản đồ và các đồ thị dựa trên dữ liệu đầu vào, cho nên OpenLayers, cụ thể OpenLayers 3 sẽ là công cụ đắc lực cho việc xây dựng thành phần bản đồ trong đề tài.
 %----------------------------------%
 
 \subsubsection{Webpack}
@@ -969,7 +971,7 @@ PhantomJS có các tính năng sau:
 
 %----------------------------------%
 \myparagraph{Ưu điểm và nhược điểm}
-Chúng ta sẽ so sánh với một trình duyệt cũng rất phổ biến trong việc hỗ trợ kiểm thử, đó là \textit{jsdom}, để tìm ra điểm mạnh cũng như điểm yếu của PhantomJS (Bảng \ref{table:phantomjs_jsdom}).
+Chúng ta sẽ so sánh\cite{jsdom_phantomjs} với một trình duyệt cũng rất phổ biến trong việc hỗ trợ kiểm thử, đó là \textit{jsdom}, để tìm ra điểm mạnh cũng như điểm yếu của PhantomJS (Bảng \ref{table:phantomjs_jsdom}).
 
 \begin{table}
 \begin{tabu} to 1\textwidth { | X[l] | X[l] | X[l] | }
@@ -978,7 +980,7 @@ Chúng ta sẽ so sánh với một trình duyệt cũng rất phổ biến tron
 \hline\hline
 Định nghĩa & Là một trình duyệt hoàn chỉnh (không hỗ trợ giao diện), với kỹ thuật dựng hình (\textit{rendering engine}) rất cũ và hiếm thấy & Không phải là một trình duyệt hoàn chỉnh, nó không thể bố cục và dựng hình, và cũng không hỗ trợ điều hướng trang. Chỉ hỗ trợ DOM, HTML, canvas, nhiều web API khác (không hỗ trợ SVG), và chạy kịch bản (\textit{script})\\
 \hline
-Môi trường thực thi & Cần một trình thực thi (\textit{executable}) để chạy PhantomJS, là \textit{native-code} nên cần được biên dịch thông qua một framework & Hoàn toàn là JavaScript, có thể chạy thông qua \textit{NodeJS} \\
+Môi trường thực thi & Cần một trình thực thi (\textit{executable}) để chạy PhantomJS, là \textit{native-code} nên cần được biên dịch thông qua một framework & Hoàn toàn là Javascript, có thể chạy thông qua \textit{NodeJS} \\
 \hline
 Chi phí (\textit{overhead}) để tải trang & Cao, tốn nhiều thời gian, do đó việc chạy test-case có thể mất vài phút & Mất vài giây với cùng số lượng test-case \\
 \hline
@@ -994,7 +996,7 @@ Cách thực thi mã nguồn (\textit{load script}) & Nếu tạo một đoạn 
 \myparagraph{Ứng dụng}
 Hiện nay thì xu hướng sử dụng Mocha/Chai/jsdom ngày càng phổ biến, hiệu suất tốt hơn so với Jasmine/Karma/PhantomJS rất nhiều, đặc biệt là đối với những dự án lớn. Đã có nhiều dự án lớn đi theo mô hình TDD, bắt đầu với Jasmine/Karma/PhantomJS, tuy nhiên sau một thời gian, người ta đã nhận thấy món nợ kĩ thuật (\textit{technical debt}) trở nên ngày càng lớn do tốc độ chạy của bộ ba này quá chậm khi dự án ngày một lớn hơn, khi đó Mocha/Chai/jsdom là một lựa chọn tốt hơn để giải quyết vấn đề và ngày càng được ưa chuộng.
 
-C9js ban đầu cũng đã sử dụng bộ Mocha/Chai/jsdom để thực hiện việc kiểm thử. Tuy nhiên vì một lí do lớn nhất C9js đã không sử dụng, chính là jsdom không hỗ trợ SVG. Mà đây là thành phần chính trong các biểu đồ, do D3 dựng lên (\textit{render}). Trong khi PhantomJS có hỗ trợ đầy đủ các chuẩn web, thuận lợi cho việc kiểm thử các thành phần khác nhau.
+C9js ban đầu cũng đã sử dụng bộ Mocha/Chai/jsdom để thực hiện việc kiểm thử. Tuy nhiên vì một lí do lớn nhất C9js đã không sử dụng, chính là jsdom không hỗ trợ SVG. Mà đây là thành phần chính trong các biểu đồ, do D3.js dựng lên (\textit{render}). Trong khi PhantomJS có hỗ trợ đầy đủ các chuẩn web, thuận lợi cho việc kiểm thử các thành phần khác nhau.
 
 %----------------------------------%
 \subsubsubsection{Istanbul}\label{sec:istanbul}
@@ -1158,7 +1160,7 @@ Dưới đây là những phương pháp phát triển phần mềm mà C9js đ�
 \subsubsubsection{Tích hợp liên tục (Continuous Integration)}
 
 \myparagraph{Khái niệm}
-Theo Martin Fowler\cite{cd}, tích hợp liên tục là phương pháp phát triển phần mềm đòi hỏi các thành viên trong nhóm tích hợp công việc thường xuyên. Mỗi ngày, các thành viên đều phải theo dõi và phát triển công việc của họ ít nhất một lần. Việc này sẽ được một nhóm khác kiểm tra tự động, nhóm này sẽ tiền hành kiểm thử truy hồi để phát hiện lỗi nhanh nhất có thể. Cả nhóm thấy rằng phương pháp tiếp cận này giúp giảm bớt vấn đề về tích hợp hơn và cho phép phát triển phần mềm gắn kết nhanh hơn.
+Theo \textit{Martin Fowler}\cite{cd}, tích hợp liên tục là phương pháp phát triển phần mềm đòi hỏi các thành viên trong nhóm tích hợp công việc thường xuyên. Mỗi ngày, các thành viên đều phải theo dõi và phát triển công việc của họ ít nhất một lần. Việc này sẽ được một nhóm khác kiểm tra tự động, nhóm này sẽ tiền hành kiểm thử truy hồi để phát hiện lỗi nhanh nhất có thể. Cả nhóm thấy rằng phương pháp tiếp cận này giúp giảm bớt vấn đề về tích hợp hơn và cho phép phát triển phần mềm gắn kết nhanh hơn.
 
 \myparagraph{1.1.2.	Điều kiện áp dụng}
 Những dự án được hưởng lợi từ tích hợp liên tục:
@@ -1244,6 +1246,7 @@ C9js áp dụng Travis CI để hiện thực tích hợp liên tục, phát tri
 %----------------------------------------------%
 \newpage
 \section{Thư viện C9js}
+Giới thiệu về thư viện được nhóm hiện thực, các tính năng, ví dụ và hướng dẫn sử dụng thư viện C9js.
 %----------------------------------%
 \subsection{Mô tả bài toán}
 Thông qua các công trình đã tìm hiểu, nhóm đề tài đánh giá và trích xuất ra các điểm hạn chế, các vấn đề mà các công trình đó chưa giải quyết được hoặc đã giải quyết nhưng đã lỗi thời cần nâng cấp để phù hợp với bối cảnh hiện tại của các công nghệ Web. Phần đánh giá, so sánh với các công trình liên quan sẽ được thể hiện chi tiết trong mục \ref{sec:eval}.
@@ -1254,7 +1257,7 @@ Thông qua các công trình đã tìm hiểu, nhóm đề tài đánh giá và 
 \myparagraph{Các vấn đề quan trọng cần giải quyết:}
 Cũng là các mục tiêu và hướng phát triển \textbf{C9js} đã, đang và mong muốn đạt được: 
 \begin{itemize}
-\item[•] \emph{Hoàn toàn là mã nguồn mở:} C9js là thư viện JavaScript mã nguồn mở, được triển khai thông qua GitHub ở địa chỉ \url{https://github.com/csethanhcong/C9js}.
+\item[•] \emph{Hoàn toàn là mã nguồn mở:} C9js là thư viện Javascript mã nguồn mở, được triển khai thông qua GitHub ở địa chỉ \url{https://github.com/csethanhcong/C9js}.
 
 \item[•] \emph{Kiến trúc xây dựng theo tiêu chuẩn ES2015 (hay ES6):} Nghiên cứu cẩn trọng qua các mã nguồn mở có khả năng trực quan dữ liệu, việc chon kiến trúc để xây dựng từ ban đầu là rất quan trọng, đặc biệt trong khả năng mở rộng nhằm đáp ứng nhu cầu tuỳ chỉnh hay đóng góp từ cộng đồng mã nguồn mở. Tiêu chuẩn ES6 hỗ trợ lập trình hướng đối tượng với các tính năng như \textit{class, import/export, kế thừa} đáp ứng được yêu cầu mở rộng về sau của C9js, cũng như tính năng \textit{getter/setter} giúp đảm bảo các thuộc tính được bảo toàn, không được truy xuất trực tiếp bởi người dùng.
 
@@ -1328,11 +1331,11 @@ Hiện tại, nhằm đáp ứng tối đa lượng người dùng, C9js đượ
 \end{itemize}
 
 \myparagraph{Cách dùng (Usage):}
-Thư viện C9js hỗ trợ tạo biểu đồ dựa trên \textit{d3.js} và bản đồ dựa trên \textit{OpenLayers 3} nên người dùng cần tải các thư viện này trước. Tuỳ theo mục đích sử dụng, nếu chỉ dùng chức năng tạo biểu đồ thì chỉ cần tải thư viện \textit{d3.js}, tương tự đối với chức năng tạo bản đồ.
+Thư viện C9js hỗ trợ tạo biểu đồ dựa trên \textit{D3.js} và bản đồ dựa trên \textit{OpenLayers 3} nên người dùng cần tải các thư viện này trước. Tuỳ theo mục đích sử dụng, nếu chỉ dùng chức năng tạo biểu đồ thì chỉ cần tải thư viện \textit{D3.js}, tương tự đối với chức năng tạo bản đồ.
 
-\begin{lstlisting}[caption=Tải mã nguồn \textit{d3.js} trước tiên]
+\begin{lstlisting}[caption=Tải mã nguồn \textit{D3.js} trước tiên]
 <link href="/path/to/C9.css" rel="stylesheet" type="text/css">
-<!-- Load d3.js and C9.js -->
+<!-- Load D3.js and C9.js -->
 <script src="/path/to/d3.v3.min.js" charset="utf-8"></script>
 <script src="/path/to/C9.min.js"></script>
 \end{lstlisting}
@@ -1721,6 +1724,7 @@ Các hàm API của Map trong C9js được liệt kê như sau:
 %----------------------------------------------%
 \newpage
 \section{Hiện thực thư viện}
+Phần này trình bày kiến trúc thư viện C9js sử dụng và quá trình hiện thực cũng như các công nghệ và tiêu chí phát triển một thư viện chuẩn.
 \subsection{Kiến trúc xây dựng}\label{sec:kientruc}
 Thư viện C9js được nhóm xây dựng trên hai nguyên tắc chính, xuyên suốt cả quá trình phát triển: \textit{Component-based} và \textit{Data-driven}.
 
@@ -1817,7 +1821,7 @@ Map & name, value, coor(toạ độ) \\
 \label{table:da_1}
 \end{table}
 
-\textit{Data Adapter} còn có chức năng tạo một trường gọi là \textsf{data-ref}. Vì các thành phần trong C9js đều tương tác được với nhau thông qua thao tác của người dùng, nên cần thiết phải có một cầu nối giữa các thành phần này dựa trên một sự nhất quán về dữ liệu, hay nói cách khác, phải dựa trên một đặc điểm chung liên quan tới dữ liệu. Mỗi một giá trị (vì mỗi tập dữ liệu đầu vào đều được chuyển thành các mảng chứa các dữ liệu con) sẽ được \textit{đánh dấu} bằng một \textit{UUID}\cite{uuid} có định dạng \texttt{c9-xxxxxx-4xxx-yxxx}, khi đó thông qua các \textit{selection} của \textit{d3} ta có thể dễ dàng tham khảo đến tất cả các thành phần đang có chung \textit{UUID} về dữ liệu đang được tương tác.
+\textit{Data Adapter} còn có chức năng tạo một trường gọi là \textsf{data-ref}. Vì các thành phần trong C9js đều tương tác được với nhau thông qua thao tác của người dùng, nên cần thiết phải có một cầu nối giữa các thành phần này dựa trên một sự nhất quán về dữ liệu, hay nói cách khác, phải dựa trên một đặc điểm chung liên quan tới dữ liệu. Mỗi một giá trị (vì mỗi tập dữ liệu đầu vào đều được chuyển thành các mảng chứa các dữ liệu con) sẽ được \textit{đánh dấu} bằng một \textit{UUID}\cite{uuid} có định dạng \texttt{c9-xxxxxx-4xxx-yxxx}, khi đó thông qua các \textit{selection} của \textit{D3.js} ta có thể dễ dàng tham khảo đến tất cả các thành phần đang có chung \textit{UUID} về dữ liệu đang được tương tác.
 
 \begin{figure}[!h]
 	\begin{center}
@@ -1827,7 +1831,7 @@ Map & name, value, coor(toạ độ) \\
 	\end{center}
 \end{figure}
 
-Bây giờ, xét về luồng đi của dữ liệu trong C9js. Qua hình \ref{fig:data_flow}, khi người dùng khởi tạo một đối tượng trong C9js và gọi hàm \textsf{draw()} để hiển thị ra Web, lúc đó một đối tượng \textit{DataAdapter} sẽ được khởi tạo và xử lý dữ liệu trên đối tượng ban đầu. Quá trình \textit{process} bao gồm các thao tác như xử lý tập tin (nếu người dùng truyền dữ liệu thông qua tập tin), xử lý yêu cầu (nếu là \textit{external request}) và cuối cùng là chuẩn hoá dữ liệu như đã trình bày ở trên. Để đảm bảo dữ liệu luôn sẵn sàng trước khi hiển thị, nhóm sử dụng tính năng \textit{callback}\cite{callback} trong JavaScript. Sau khi dữ liệu đã được xử lý xong, các thao tác để hiển thị các thành phần của Chart, Map được đưa vào trong \textit{callback} và thực thi với \textit{data} sau cuối.
+Bây giờ, xét về luồng đi của dữ liệu trong C9js. Qua hình \ref{fig:data_flow}, khi người dùng khởi tạo một đối tượng trong C9js và gọi hàm \textsf{draw()} để hiển thị ra Web, lúc đó một đối tượng \textit{DataAdapter} sẽ được khởi tạo và xử lý dữ liệu trên đối tượng ban đầu. Quá trình \textit{process} bao gồm các thao tác như xử lý tập tin (nếu người dùng truyền dữ liệu thông qua tập tin), xử lý yêu cầu (nếu là \textit{external request}) và cuối cùng là chuẩn hoá dữ liệu như đã trình bày ở trên. Để đảm bảo dữ liệu luôn sẵn sàng trước khi hiển thị, nhóm sử dụng tính năng \textit{callback}\cite{callback} trong Javascript. Sau khi dữ liệu đã được xử lý xong, các thao tác để hiển thị các thành phần của Chart, Map được đưa vào trong \textit{callback} và thực thi với \textit{data} sau cuối.
 
 Đối với thành phần Map, dữ liệu sẽ được móc nối với các đối tượng, thông qua phương thức \textsf{get(‘data’)} của đối tượng, người dùng có thể lấy được dữ liệu mà họ đã nhập vào (từ dữ liệu nhập tay hoặc từ tập tin). Ngoài ra người dùng có thể lấy được kiểu của đối tượng thông qua phương thức \textsf{get(‘type’)} trên đối tượng đó, kết quả trả về sẽ là \textit{c9-geojson} nếu đó là đối tượng \textit{GeoJSON}, tương tự đối với các đối tượng thông thường sẽ là: \textit{c9-marker, c9-line, c9-polygon, c9-multipolygon}.
 
@@ -1853,7 +1857,7 @@ Dựa trên các kiến thức nền tảng đã trình bày và kiến trúc h�
 	\end{center}
 \end{figure}
 
-Lệnh \textsf{npm run dev} sẽ chạy dựa trên tập tin cấu hình cho Webpack (\textit{webpack.config.js}) đã dựng sẵn. Ở đây, Webpack sẽ gộp chung các tập tin mã nguồn JavaScript thành một tập tin có tên \textit{C9.js}, sau đó nén và sinh tập tin \textit{source map}\cite{source_map} nhằm giảm thời gian truy vấn dòng lệnh thực thi trên mã nguồn chính. Như hình \ref{fig:webpack_1}, Webpack sẽ quan sát khi có thay đổi trong mã nguồn trong thư mục \textsf{src} nhờ vào cấu hình \textsf{--watch} và tự động sinh ra các tập tin như \textit{C9.js, C9.js.map, C9.min.css, C9.min.css.map} trong thư mục \textsf{dist}. Nhóm chỉ tập trung vào hiện thực các tính năng mà không cần quan tâm tới việc gộp, nén hay sinh các tập tin cần thiết trong quá trình phát triển.
+Lệnh \textsf{npm run dev} sẽ chạy dựa trên tập tin cấu hình cho Webpack (\textit{webpack.config.js}) đã dựng sẵn. Ở đây, Webpack sẽ gộp chung các tập tin mã nguồn Javascript thành một tập tin có tên \textit{C9.js}, sau đó nén và sinh tập tin \textit{source map}\cite{source_map} nhằm giảm thời gian truy vấn dòng lệnh thực thi trên mã nguồn chính. Như hình \ref{fig:webpack_1}, Webpack sẽ quan sát khi có thay đổi trong mã nguồn trong thư mục \textsf{src} nhờ vào cấu hình \textsf{--watch} và tự động sinh ra các tập tin như \textit{C9.js, C9.js.map, C9.min.css, C9.min.css.map} trong thư mục \textsf{dist}. Nhóm chỉ tập trung vào hiện thực các tính năng mà không cần quan tâm tới việc gộp, nén hay sinh các tập tin cần thiết trong quá trình phát triển.
 
 \subsubsection{Kiểm thử (Testing)}
 
@@ -1951,35 +1955,10 @@ after_success:
 %----------------------------------------------%
 \newpage
 \section{Kết luận}
+Phần này đánh giá, so sánh thư viện C9js, nêu ra các ưu/nhược điểm và hướng phát triển để cải tiến C9js.
 %----------------------------------------------%
-\subsection{Đánh giá}\label{sec:eval}
+\subsection{Đánh giá chung}\label{sec:eval}
 %-------------------------------%
-\subsubsection{Đánh giá chủ quan}
-\begin{enumerate}
-\item \emph{Về trực quan hóa dữ liệu:} Hiện tại C9js đã hỗ trợ trực quan hóa dữ liệu người dùng (từ tập tin bên ngoài hoặc dữ liệu nhập tay) thành các dạng biểu đồ: cột, đường, vùng, tròn, bánh rán, thời gian; và dạng bản đồ với các tùy chỉnh cực kì đa dạng, phong phú. Ngoài ra cũng hỗ trợ tương tác trên các biểu đồ, bản đồ, qua đó theo dõi, tìm ra được xu hướng, sở thích của người dùng.
-\item \emph{Về vấn đề viết mã:} C9js là một thư viện mã nguồn mở, hướng đến cộng đồng, các công nghệ (D3, OpenLayers 3) được sử dụng cũng hoàn toàn là mã nguồn mở, từ đó các nhà phát triển khác nhau có thể hiểu được mã nguồn và đóng góp phát triển thư viện hơn. Bên cạnh đó, C9js tuân theo kiến trúc component-based, do đó có thể dễ dàng mở rộng thêm các thành phần khác nhau như là biểu đồ công tơ mét (gauge), biểu đồ phân tán (scatter plot),…
-\item \emph{Về số lượng mã viết ra:} Dễ dàng thấy được khi dùng C9js, người dùng viết ra số dòng mã ít hơn rất nhiều so với các công nghệ đã dùng ban đầu, không chỉ giúp rút ngắn thời gian lập trình cho các lập trình viên, mà còn có thể dễ dàng giúp người dùng trực quan dữ liệu nếu họ không biết về d3, Openlayers 3. Có thể tham khảo số lượng dòng mã viết ra thông qua việc tạo ra một biểu đồ cột đơn giản từ hai nguồn sau:
-	\begin{itemize}
-	\item[•] \emph{C9js:} \url{http://c9js.me/samples/bar_chart/single_bar_chart.html}
-	\item[•] \emph{Viết từ D3: } \url{https://bl.ocks.org/mbostock/3885304
-}
-	\end{itemize}
-\item \emph{Về môi trường phát triển:} C9js được phát triển theo phương pháp tích hợp liên tục kết hợp với phát triển theo hướng kiểm thử và chuyển giao liên tục với sự hỗ trợ của Travis CI, do đó vấn đề môi trường phát triển, môi trường kiểm thử cũng như xuất bản thư viện đều đã sẵn có và để làm tất cả những việc này là hoàn toàn tự động, dễ dàng hỗ trợ cho các nhà phát triển hứng thú với C9js để đóng góp phát triển thư viện sau này.
-\item \emph{Về vấn đề kiểm thử:} Mã nguồn C9js được bao phủ bởi việc kiểm thử bằng các bộ mô tả kiểm thử. Mức độ bao phủ càng cao cho thấy mã nguồn càng có độ tin cậy, độ chính xác cao, và càng ít xảy ra lỗi. Hình dưới là mức độ bao phủ mã nguồn của C9js trên \textit{Codecov.io}\cite{codecov_c9js}.
-
-Cụ thể, C9js gồm có gần 2700 câu lệnh, thông qua các bộ mô tả kiểm thử, mã nguồn của C9js đã được thực thi qua (hit) gần 1400 dòng lệnh, và còn gần 1300 dòng lệnh chưa được bao phủ (miss), và không có câu lệnh nào thuộc dạng partial, từ đó tính ra được độ bao phủ khoảng 52\% (xem cách tính cũng như các thuật ngữ ở phần \ref{sec:codecov}) (Hình \ref{fig:codecov_c9js}).
-\end{enumerate}
-
-\begin{figure}[!h]
-	\begin{center}
-    \includegraphics[scale=0.5]{image/codecov_c9js}
-    \caption{Mức độ bao phủ của C9js được thống kê trên \textit{Codecov.io}}
-    \label{fig:codecov_c9js}
-	\end{center}
-\end{figure}
-%-------------------------------%
-%-------------------------------%
-\subsubsection{Đánh giá khách quan}
 Sau khi xuất bản C9js, nhóm đề tài đã phổ biến thư viện trên nhiều kênh mạng xã hội, cộng đồng các lập trình viên trong và ngoài nước để cho mọi người dùng thử và thu được kết quả được trực quan bởi bản đồ ở hình \ref{fig:ga_map}. Hình \ref{fig:ga_map} cho thấy số lượt người dùng ở Việt Nam chiếm đại đa số với 233 lượt, tiếp theo sau là Nga với 131, Pháp với 15 lượt, … Kết quả trên được lấy từ thống kê của Google Analytics qua một đoạn mã để quan sát lưu lượng người dùng cung cấp bởi Google Analytics\cite{ga_c9js}.
 
 \begin{figure}[!h]
@@ -1990,13 +1969,39 @@ Sau khi xuất bản C9js, nhóm đề tài đã phổ biến thư viện trên 
 	\end{center}
 \end{figure}
 %-------------------------------%
-\subsubsection{So sánh với thư viện c3.js}
-Như đã giới thiệu ở mục \ref{sec:c3js}, \textit{c3.js} hiện đang là thư viện mã nguồn mở với các tính năng và mục tiêu tương đương nhất khi so sánh với C9js (Bảng \ref{table:compare_c3_c9}).
+%-------------------------------%
+Ngoài những đánh giá mang tính khách quan trên, nhóm cũng đánh giá trên một số yếu tố sau:
+\begin{enumerate}
+\item \emph{Về trực quan hóa dữ liệu:} Hiện tại C9js đã hỗ trợ trực quan hóa dữ liệu người dùng (từ tập tin bên ngoài hoặc dữ liệu nhập tay) thành các dạng biểu đồ: cột, đường, vùng, tròn, bánh rán, thời gian; và dạng bản đồ với các tùy chỉnh cực kì đa dạng, phong phú. Ngoài ra cũng hỗ trợ tương tác trên các biểu đồ, bản đồ, qua đó theo dõi, tìm ra được xu hướng, sở thích của người dùng.
+\item \emph{Về vấn đề viết mã:} C9js là một thư viện mã nguồn mở, hướng đến cộng đồng, các công nghệ (D3.js, OpenLayers 3) được sử dụng cũng hoàn toàn là mã nguồn mở, từ đó các nhà phát triển khác nhau có thể hiểu được mã nguồn và đóng góp phát triển thư viện hơn. Bên cạnh đó, C9js tuân theo kiến trúc component-based, do đó có thể dễ dàng mở rộng thêm các thành phần khác nhau như là biểu đồ công tơ mét (gauge), biểu đồ phân tán (scatter plot),…
+\item \emph{Về số lượng mã viết ra:} Dễ dàng thấy được khi dùng C9js, người dùng viết ra số dòng mã ít hơn rất nhiều so với các công nghệ đã dùng ban đầu, không chỉ giúp rút ngắn thời gian lập trình cho các lập trình viên, mà còn có thể dễ dàng giúp người dùng trực quan dữ liệu nếu họ không biết về D3.js, Openlayers 3. Có thể tham khảo số lượng dòng mã viết ra thông qua việc tạo ra một biểu đồ cột đơn giản từ hai nguồn sau:
+	\begin{itemize}
+	\item[•] \emph{C9js:} \url{http://c9js.me/samples/bar_chart/single_bar_chart.html}
+	\item[•] \emph{Viết từ D3.js: } \url{https://bl.ocks.org/mbostock/3885304
+}
+	\end{itemize}
+\item \emph{Về môi trường phát triển:} C9js được phát triển theo phương pháp tích hợp liên tục kết hợp với phát triển theo hướng kiểm thử và chuyển giao liên tục với sự hỗ trợ của Travis CI, do đó vấn đề môi trường phát triển, môi trường kiểm thử cũng như xuất bản thư viện đều đã sẵn có và để làm tất cả những việc này là hoàn toàn tự động, dễ dàng hỗ trợ cho các nhà phát triển hứng thú với C9js để đóng góp phát triển thư viện sau này.
+\item \emph{Về vấn đề kiểm thử:} Mã nguồn C9js được bao phủ bởi việc kiểm thử bằng các bộ mô tả kiểm thử. Mức độ bao phủ càng cao cho thấy mã nguồn càng có độ tin cậy, độ chính xác cao, và càng ít xảy ra lỗi. Hình dưới là mức độ bao phủ mã nguồn của C9js trên \textit{Codecov.io}\cite{codecov_c9js}.
+
+Cụ thể, C9js gồm có gần 2700 câu lệnh, thông qua các bộ mô tả kiểm thử, mã nguồn của C9js đã được thực thi qua (\textit{hit}) gần 1400 dòng lệnh, và còn gần 1300 dòng lệnh chưa được bao phủ (\textit{miss}), và không có câu lệnh nào thuộc dạng \textit{partial}, từ đó tính ra được độ bao phủ khoảng 52\% (xem cách tính cũng như các thuật ngữ ở phần \ref{sec:codecov}) (Hình \ref{fig:codecov_c9js}).
+\end{enumerate}
+
+\begin{figure}[!h]
+	\begin{center}
+    \includegraphics[scale=0.5]{image/codecov_c9js}
+    \caption{Mức độ bao phủ của C9js được thống kê trên \textit{Codecov.io}}
+    \label{fig:codecov_c9js}
+	\end{center}
+\end{figure}
+%-------------------------------%
+
+\subsection{So sánh với thư viện C3.js}
+Như đã giới thiệu ở mục \ref{sec:c3js}, \textit{C3.js} hiện đang là thư viện mã nguồn mở với các tính năng và mục tiêu tương đương nhất khi so sánh với C9js (Bảng \ref{table:compare_c3_c9}).
 
 \begin{table}
 \begin{tabu} to 1\textwidth { | X[l] | X[l] | X[l] | }
 \hline
-\textbf{Tiêu chí so sánh} & \textbf{C9js} & \textbf{c3.js}\\
+\textbf{Tiêu chí so sánh} & \textbf{C9js} & \textbf{C3.js}\\
 \hline\hline
 Hỗ trợ trực quan & Có thêm thành phần Map & Hỗ trợ nhiều loại Chart hơn, nhưng không có thành phần Map\\
 \hline
@@ -2004,7 +2009,7 @@ Tính năng mở rộng & Hỗ trợ định nghĩa dữ liệu bởi người d
 \hline
 Kiến trúc hệ thống & Xây dựng trên chuẩn \textit{ES6} dễ dàng mở rộng & Xây dựng theo lối \textit{prototype} của \textit{ES5} đang dần được thay thế bởi cộng đồng mã nguồn mở\\
 \hline
-Hiệu suất & Cả hai thư viện đều được xây dựng thành phần Chart trên \textit{D3.js} nên hiệu suất tương đương nhau & \textit{c3.js} không hỗ trợ thành phần Map nên không thể so sánh hiệu suất ở thành phần này\\
+Hiệu suất & Cả hai thư viện đều được xây dựng thành phần Chart trên \textit{D3.js} nên hiệu suất tương đương nhau & \textit{C3.js} không hỗ trợ thành phần Map nên không thể so sánh hiệu suất ở thành phần này\\
 \hline
 Tài liệu và hướng dẫn & Đầy đủ và rõ ràng, trang chủ \url{http://c9js.me/} & Đầy đủ và rõ ràng, trang chủ \url{/http://c3js.org/}\\
 \hline
@@ -2013,16 +2018,35 @@ Kiểm thử mã nguồn & Được kiểm thử với 52\% mã nguồn theo đ�
 Đóng góp từ cộng đồng & Triển khai được khoảng 1 tháng (tính từ thời điểm bài báo cáo) nên hiên tại chưa có phản hồi từ người dùng trên GitHub, đạt 20 \textit{star} và 4 \textit{fork} & Đã triển khai được 3 năm (từ năm 2014) và nhận được đóng góp từ 89 cộng sự khác, đạt 6362 \textit{star} và 1018 \textit{fork}\\
 \hline
 \end{tabu}
-\caption{So sánh thư viện C9js và c3.js}
+\caption{So sánh thư viện C9js và C3.js}
 \label{table:compare_c3_c9}
 \end{table}
+
+\subsection*{Tổng kết}
+Dựa trên những đánh giá đã trình bày, nhóm rút ra những ưu/nhược điểm về thư viện C9js như sau:
+\begin{enumerate}
+\item \emph{Ưu điểm:}
+	\begin{itemize}
+	\item[•] Thư viện được phân phối qua nhiều kênh phổ biến như \textit{npm, bower, GitHub}.
+	\item[•] Hỗ trợ trực quan trên nhiều loại dữ liệu và các đối tượng khác nhau như Chart và Map.
+	\item[•] Có các tính năng riêng biệt, tạo sự thoải mái và tiện lợi cho các lập trình viên sử dụng thư viện.
+	\end{itemize}
+\item \emph{Nhược điểm:}
+	\begin{itemize}
+	\item[•] Thành phần tương tác nằm chung với các thành phần Chart, Map nên việc quản lý tương tác giữa các thành phần khó khăn.
+	\item[•] Unit Testing hiện chỉ đạt khoảng 52\%, chưa tạo được sự tin cậy đúng mức cho người dùng.
+	\item[•] Hiện tại đối thành phần Chart chỉ hỗ trợ 5 loại chính, chưa đáp ứng được đủ nhu cầu người dùng.
+	\item[•] Thành phần Map hiện tại khá rắc rối cho người dùng ban đầu nếu không tìm hiểu kỹ thư viện C9js.
+	\item[•] Chưa cập nhật đủ tài liệu hướng dẫn về thư viện trên trang chủ C9js.
+	\end{itemize}
+\end{enumerate}
 
 \subsection{Hướng phát triển}
 Với mục tiêu tạo công cụ trực quan dữ liệu mới mẻ, cung cấp các tính năng mới và cải thiện một số tính năng đã có nhằm rút ngắn thời gian hiện thực ứng dụng trực quan dữ liệu trên Web cho các lập trình viên. Đồng thời, dựa trên đánh giá và so sánh với thư viện đã có sẵn, nhóm đề ra những điểm cần được cải tiến và mở rộng ở thư viện C9js:
 \begin{itemize}
 \item[•] Hỗ trợ nhiều kênh triển khai thư viện hơn, đáp ứng tối đa nhu cầu của các lập trình viên khác.
 \item[•] Hiện thực Unit Testing đạt được tỉ lệ cao hơn so với hiện tại (52\%) nhằm tăng độ tin cậy và kiểm soát mã nguồn tốt hơn.
-\item[•] Hiện thực thành phần Chart hỗ trợ nhiều hơn các loại khác nhau, có thể tham khảo thư viện \textit{c3.js} về các loại đồ thị đã có, và mở rộng thêm các loại khác như \textit{Node-link Tree, Calendar, Heat Map, Plot, ...}
+\item[•] Hiện thực thành phần Chart hỗ trợ nhiều hơn các loại khác nhau, có thể tham khảo thư viện \textit{C3.js} về các loại đồ thị đã có, và mở rộng thêm các loại khác như \textit{Node-link Tree, Calendar, Heat Map, Plot, ...}
 \item[•] Cải thiện các hàm chức năng trong thành phần Map để dễ dàng cho người sử dụng nhất.
 \end{itemize}
 %----------------------------------------------%

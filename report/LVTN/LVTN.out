@@ -14,41 +14,32 @@
 \BOOKMARK [3][-]{subsubsection.2.1.3}{Th vin \040thi C3.js}{subsection.2.1}% 14
 \BOOKMARK [3][-]{subsubsection.2.1.4}{ng dung tao ban \040online Mapme}{subsection.2.1}% 15
 \BOOKMARK [2][-]{subsection.2.2}{Kin thc nn tang}{section.2}% 16
-\BOOKMARK [3][-]{subsubsection.2.2.1}{JavaScript}{subsection.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Javascript}{subsection.2.2}% 17
 \BOOKMARK [3][-]{subsubsection.2.2.2}{D3.js}{subsection.2.2}% 18
 \BOOKMARK [3][-]{subsubsection.2.2.3}{OpenLayers}{subsection.2.2}% 19
 \BOOKMARK [3][-]{subsubsection.2.2.4}{Webpack}{subsection.2.2}% 20
 \BOOKMARK [3][-]{subsubsection.2.2.5}{Unit Testing}{subsection.2.2}% 21
-\BOOKMARK [4][-]{subsubsubsection.2.2.5.1}{Jasmine}{subsubsection.2.2.5}% 22
-\BOOKMARK [4][-]{subsubsubsection.2.2.5.2}{Karma}{subsubsection.2.2.5}% 23
-\BOOKMARK [4][-]{subsubsubsection.2.2.5.3}{PhantomJS}{subsubsection.2.2.5}% 24
-\BOOKMARK [4][-]{subsubsubsection.2.2.5.4}{Istanbul}{subsubsection.2.2.5}% 25
-\BOOKMARK [3][-]{subsubsection.2.2.6}{Code Coverage}{subsection.2.2}% 26
-\BOOKMARK [3][-]{subsubsection.2.2.7}{Semantic Versioning}{subsection.2.2}% 27
-\BOOKMARK [3][-]{subsubsection.2.2.8}{CI - CD}{subsection.2.2}% 28
-\BOOKMARK [4][-]{subsubsubsection.2.2.8.1}{T\355ch hp li\352n tuc \(Continuous Integration\)}{subsubsection.2.2.8}% 29
-\BOOKMARK [4][-]{subsubsubsection.2.2.8.2}{Chuyn giao li\352n tuc \(Continuous Delivery\)}{subsubsection.2.2.8}% 30
-\BOOKMARK [4][-]{subsubsubsection.2.2.8.3}{Travis CI}{subsubsection.2.2.8}% 31
-\BOOKMARK [1][-]{section.3}{Th vin C9js}{}% 32
-\BOOKMARK [2][-]{subsection.3.1}{M\364 ta b\340i to\341n}{section.3}% 33
-\BOOKMARK [2][-]{subsection.3.2}{Hng dn s dung}{section.3}% 34
-\BOOKMARK [3][-]{subsubsection.3.2.1}{C\340i t \(Setup\)}{subsection.3.2}% 35
-\BOOKMARK [3][-]{subsubsection.3.2.2}{Tao biu \040v\340 ban \040vi C9js}{subsection.3.2}% 36
-\BOOKMARK [3][-]{subsubsection.3.2.3}{Tuy bin inh dang d liu u v\340o}{subsection.3.2}% 37
-\BOOKMARK [3][-]{subsubsection.3.2.4}{Tuy bin kiu \040thi}{subsection.3.2}% 38
-\BOOKMARK [3][-]{subsubsection.3.2.5}{Cp nht \040thi theo d liu}{subsection.3.2}% 39
-\BOOKMARK [2][-]{subsection.3.3}{C\341c v\355 du minh hoa}{section.3}% 40
-\BOOKMARK [2][-]{subsection.3.4}{C\341c h\340m chc nang \(API\)}{section.3}% 41
-\BOOKMARK [1][-]{section.4}{Hin thc th vin}{}% 42
-\BOOKMARK [2][-]{subsection.4.1}{Kin tr\372c x\342y dng}{section.4}% 43
-\BOOKMARK [2][-]{subsection.4.2}{Hin thc th vin}{section.4}% 44
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Hin thc \(Coding\)}{subsection.4.2}% 45
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Kim th \(Testing\)}{subsection.4.2}% 46
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Trin khai \(Release\)}{subsection.4.2}% 47
-\BOOKMARK [1][-]{section.5}{Kt lun}{}% 48
-\BOOKMARK [2][-]{subsection.5.1}{\320\341nh gi\341}{section.5}% 49
-\BOOKMARK [3][-]{subsubsection.5.1.1}{\320\341nh gi\341 chu quan}{subsection.5.1}% 50
-\BOOKMARK [3][-]{subsubsection.5.1.2}{\320\341nh gi\341 kh\341ch quan}{subsection.5.1}% 51
-\BOOKMARK [3][-]{subsubsection.5.1.3}{So s\341nh vi th vin c3.js}{subsection.5.1}% 52
-\BOOKMARK [2][-]{subsection.5.2}{Hng ph\341t trin}{section.5}% 53
-\BOOKMARK [1][-]{subsection.5.2}{T\340i liu tham khao}{}% 54
+\BOOKMARK [3][-]{subsubsection.2.2.6}{Code Coverage}{subsection.2.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.2.7}{Semantic Versioning}{subsection.2.2}% 23
+\BOOKMARK [3][-]{subsubsection.2.2.8}{CI - CD}{subsection.2.2}% 24
+\BOOKMARK [1][-]{section.3}{Th vin C9js}{}% 25
+\BOOKMARK [2][-]{subsection.3.1}{M\364 ta b\340i to\341n}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.2}{Hng dn s dung}{section.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.2.1}{C\340i t \(Setup\)}{subsection.3.2}% 28
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Tao biu \040v\340 ban \040vi C9js}{subsection.3.2}% 29
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Tuy bin inh dang d liu u v\340o}{subsection.3.2}% 30
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Tuy bin kiu \040thi}{subsection.3.2}% 31
+\BOOKMARK [3][-]{subsubsection.3.2.5}{Cp nht \040thi theo d liu}{subsection.3.2}% 32
+\BOOKMARK [2][-]{subsection.3.3}{C\341c v\355 du minh hoa}{section.3}% 33
+\BOOKMARK [2][-]{subsection.3.4}{C\341c h\340m chc nang \(API\)}{section.3}% 34
+\BOOKMARK [1][-]{section.4}{Hin thc th vin}{}% 35
+\BOOKMARK [2][-]{subsection.4.1}{Kin tr\372c x\342y dng}{section.4}% 36
+\BOOKMARK [2][-]{subsection.4.2}{Hin thc th vin}{section.4}% 37
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Hin thc \(Coding\)}{subsection.4.2}% 38
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Kim th \(Testing\)}{subsection.4.2}% 39
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Trin khai \(Release\)}{subsection.4.2}% 40
+\BOOKMARK [1][-]{section.5}{Kt lun}{}% 41
+\BOOKMARK [2][-]{subsection.5.1}{\320\341nh gi\341 chung}{section.5}% 42
+\BOOKMARK [2][-]{subsection.5.2}{So s\341nh vi th vin C3.js}{section.5}% 43
+\BOOKMARK [2][-]{subsection.5.3}{Hng ph\341t trin}{section.5}% 44
+\BOOKMARK [1][-]{subsection.5.3}{T\340i liu tham khao}{}% 45
