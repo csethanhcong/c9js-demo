@@ -59,6 +59,13 @@
 
 % Required to redefine space of section, subsection
 \usepackage{titlesec}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{Chương \thesection}{1em}{}
+%\titleformat{\section}[block]
+%{\normalfont\bfseries\filcenter}{\fbox{\itshape\thesection}}{1em}{}
+%\titleformat{\section}
+%{\normalfont\Large\bfseries}{\thesection}{1em}{}
+
 \titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
 \titlespacing\subsubsection{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
@@ -384,13 +391,15 @@
 
 \thispagestyle{empty}
 %\input{titlepage}
-\thispagestyle{empty}
-\NewPage
+%\thispagestyle{empty}
+%\NewPage
 
 \input{thankpage}
+\NewPage
 \input{assurepage}
+\NewPage
 \input{tomtatpage}
-%\thispagestyle{empty}
+\NewPage
 
 \pagenumbering{roman} %numbering before main content starts
 \tableofcontents
@@ -401,10 +410,12 @@
 %\newpage
 \listoftables
 \clearpage
+\NewPage
 %\newpage
 \addcontentsline{toc}{section}{Danh sách mã nguồn}
 \lstlistoflistings
 \clearpage
+\NewPage
 %\thispagestyle{empty}
 %\newpage
 \pagenumbering{arabic} %reset numbering to normal for the main content
@@ -478,7 +489,8 @@ Về kiến trúc, cũng như tài liệu (\textit{documentation}), C9js đượ
 
 %----------------------------------------------%
 \clearpage
-\section{Công trình liên quan và Kiến thức nền tảng}
+\NewPage
+\section{Công trình liên quan \& Kiến thức nền tảng}
 Phần này trình bày các công trình liên quan trong cùng lĩnh vực mà đề tài hướng tới cũng như các kiến thức quan trọng cần nắm để hiện thực đề tài.
 \subsection{Công trình liên quan}\label{sec:related_work}
 \subsubsection{Công cụ hỗ trợ trực quan dữ liệu phân tán Gapminder}
@@ -1268,6 +1280,7 @@ C9js áp dụng Travis CI để hiện thực tích hợp liên tục, phát tri
 %----------------------------------%
 %----------------------------------------------%
 \clearpage
+\NewPage
 \section{Thư viện C9js}
 Giới thiệu về thư viện được nhóm hiện thực, các tính năng, ví dụ và hướng dẫn sử dụng thư viện C9js.
 %----------------------------------%
@@ -1647,7 +1660,7 @@ Bên cạnh đó, nhóm còn tạo sẵn ví dụ mở rộng: Tương tác gi�
 
 \begin{figure}[!h]
 	\begin{center}
-    \fbox{\includegraphics[scale=.6]{image/advance_1}}
+    \fbox{\includegraphics[scale=.55]{image/advance_1}}
     \caption{Ví dụ mở rộng tái hiện ứng dụng GHA-WHO}
     \label{fig:advance_1}
 	\end{center}
@@ -1977,6 +1990,7 @@ after_success:
 %----------------------------------------------%
 %----------------------------------------------%
 \clearpage
+\NewPage
 \section{Kết luận}
 Phần này đánh giá, so sánh thư viện C9js, nêu ra các ưu/nhược điểm và hướng phát triển để cải tiến C9js.
 %----------------------------------------------%
@@ -2075,6 +2089,7 @@ Với mục tiêu tạo công cụ trực quan dữ liệu mới mẻ, cung cấ
 %----------------------------------------------%
 %----------------------------------------------%
 \clearpage
+\NewPage
 %\bibliography{refs}
 %\bibliographystyle{unsrt}
 % Hỗ trợ hiển thị URL

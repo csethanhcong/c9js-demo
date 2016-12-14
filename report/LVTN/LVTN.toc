@@ -1,6 +1,6 @@
 \contentsline {section}{Danh s\'ach h\`inh v\~e}{iii}{section*.1}
 \contentsline {section}{Danh s\'ach b\h {a}ng}{v}{section*.2}
-\contentsline {section}{Danh s\IeC {\'a}ch m\IeC {\~a} ngu\IeC {\`\ocircumflex }n}{vi}{section*.2}
+\contentsline {section}{Danh s\IeC {\'a}ch m\IeC {\~a} ngu\IeC {\`\ocircumflex }n}{vii}{section*.2}
 \contentsline {section}{\numberline {1}Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}B\IeC {\'\ocircumflex }i c\IeC {\h a}nh}{1}{subsection.1.1}
 \contentsline {subsubsection}{\numberline {1.1.1}Tr\IeC {\d \uhorn }c quan ho\IeC {\'a} d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{1}{subsubsection.1.1.1}
@@ -14,111 +14,111 @@
 \contentsline {subsection}{\numberline {1.3}M\IeC {\d u}c ti\IeC {\^e}u \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i}{4}{subsection.1.3}
 \contentsline {paragraph}{C\IeC {\^o}ng c\IeC {\d u} h\IeC {\~\ocircumflex } tr\IeC {\d \ohorn } tr\IeC {\d \uhorn }c quan gi\IeC {\'u}p r\IeC {\'u}t ng\IeC {\'\abreve }n th\IeC {\`\ohorn }i gian cho c\IeC {\'a}c l\IeC {\d \acircumflex }p tr\IeC {\`\i }nh vi\IeC {\^e}n}{4}{section*.8}
 \contentsline {paragraph}{H\IeC {\uhorn }\IeC {\'\ohorn }ng \IeC {\dj }\IeC {\'\ecircumflex }n c\IeC {\d \ocircumflex }ng \IeC {\dj }\IeC {\`\ocircumflex }ng m\IeC {\~a} ngu\IeC {\`\ocircumflex }n m\IeC {\h \ohorn }}{4}{section*.9}
-\contentsline {section}{\numberline {2}C\IeC {\^o}ng tr\IeC {\`\i }nh li\IeC {\^e}n quan v\IeC {\`a} Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c n\IeC {\`\ecircumflex }n t\IeC {\h a}ng}{6}{section.2}
-\contentsline {subsection}{\numberline {2.1}C\IeC {\^o}ng tr\IeC {\`\i }nh li\IeC {\^e}n quan}{6}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}C\IeC {\^o}ng c\IeC {\d u} h\IeC {\~\ocircumflex } tr\IeC {\d \ohorn } tr\IeC {\d \uhorn }c quan d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u ph\IeC {\^a}n t\IeC {\'a}n Gapminder}{6}{subsubsection.2.1.1}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{6}{section*.11}
-\contentsline {paragraph}{M\IeC {\d u}c ti\IeC {\^e}u}{6}{section*.12}
-\contentsline {paragraph}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p}{8}{section*.14}
-\contentsline {paragraph}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a}}{8}{section*.15}
-\contentsline {subsubsection}{\numberline {2.1.2}Global Health Atlas - WHO}{8}{subsubsection.2.1.2}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{8}{section*.16}
-\contentsline {paragraph}{M\IeC {\d u}c ti\IeC {\^e}u}{9}{section*.18}
-\contentsline {paragraph}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p}{9}{section*.19}
-\contentsline {paragraph}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a}}{10}{section*.22}
-\contentsline {subsubsection}{\numberline {2.1.3}Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n \IeC {\dj }\IeC {\`\ocircumflex } th\IeC {\d i} C3.js}{11}{subsubsection.2.1.3}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{11}{section*.23}
-\contentsline {paragraph}{M\IeC {\d u}c ti\IeC {\^e}u}{11}{section*.25}
-\contentsline {paragraph}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p}{12}{section*.29}
-\contentsline {paragraph}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a}}{15}{section*.31}
-\contentsline {subsubsection}{\numberline {2.1.4}\IeC {\'\UHORN }ng d\IeC {\d u}ng t\IeC {\d a}o b\IeC {\h a}n \IeC {\dj }\IeC {\`\ocircumflex } online Mapme}{15}{subsubsection.2.1.4}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{15}{section*.32}
-\contentsline {paragraph}{M\IeC {\d u}c ti\IeC {\^e}u}{15}{section*.34}
-\contentsline {paragraph}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p}{16}{section*.35}
-\contentsline {paragraph}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a}}{17}{section*.38}
-\contentsline {subsection}{\numberline {2.2}Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c n\IeC {\`\ecircumflex }n t\IeC {\h a}ng}{18}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}Javascript}{18}{subsubsection.2.2.1}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{18}{section*.39}
-\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{18}{section*.40}
-\contentsline {paragraph}{ECMAScript 6}{19}{section*.41}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{19}{section*.42}
-\contentsline {subsubsection}{\numberline {2.2.2}D3.js}{20}{subsubsection.2.2.2}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{20}{section*.43}
-\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{20}{section*.44}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{21}{section*.45}
-\contentsline {subsubsection}{\numberline {2.2.3}OpenLayers}{21}{subsubsection.2.2.3}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{21}{section*.46}
-\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{22}{section*.47}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{23}{section*.48}
-\contentsline {subsubsection}{\numberline {2.2.4}Webpack}{23}{subsubsection.2.2.4}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{23}{section*.49}
-\contentsline {paragraph}{Ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng v\IeC {\`a} T\IeC {\'\i }nh n\IeC {\u a}ng}{24}{section*.50}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{24}{section*.51}
-\contentsline {subsubsection}{\numberline {2.2.5}Unit Testing}{24}{subsubsection.2.2.5}
-\contentsline {subsubsubsection}{\numberline {2.2.5.1}Jasmine}{25}{subsubsubsection.2.2.5.1}
-\contentsline {paragraph}{C\IeC {\'a}c kh\IeC {\'a}i ni\IeC {\d \ecircumflex }m}{25}{section*.53}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u v\IeC {\`\ecircumflex } Jasmine}{26}{section*.54}
-\contentsline {paragraph}{\IeC {\DJ }\IeC {\d \abreve }c \IeC {\dj }i\IeC {\h \ecircumflex }m}{26}{section*.55}
-\contentsline {subsubsubsection}{\numberline {2.2.5.2}Karma}{29}{subsubsubsection.2.2.5.2}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{29}{section*.56}
-\contentsline {paragraph}{Ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng v\IeC {\`a} T\IeC {\'\i }nh n\IeC {\u a}ng}{29}{section*.57}
-\contentsline {subsubsubsection}{\numberline {2.2.5.3}PhantomJS}{30}{subsubsubsection.2.2.5.3}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{30}{section*.58}
-\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{30}{section*.59}
-\contentsline {paragraph}{\IeC {\UHORN }u \IeC {\dj }i\IeC {\h \ecircumflex }m v\IeC {\`a} nh\IeC {\uhorn }\IeC {\d \ohorn }c \IeC {\dj }i\IeC {\h \ecircumflex }m}{31}{section*.60}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{31}{section*.62}
-\contentsline {subsubsubsection}{\numberline {2.2.5.4}Istanbul}{31}{subsubsubsection.2.2.5.4}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{31}{section*.63}
-\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{33}{section*.65}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{33}{section*.67}
-\contentsline {subsubsection}{\numberline {2.2.6}Code Coverage}{34}{subsubsection.2.2.6}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{34}{section*.68}
-\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{35}{section*.70}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{36}{section*.71}
-\contentsline {subsubsection}{\numberline {2.2.7}Semantic Versioning}{36}{subsubsection.2.2.7}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{36}{section*.72}
-\contentsline {paragraph}{Semantic Release}{37}{section*.73}
-\contentsline {subsubsection}{\numberline {2.2.8}CI - CD}{37}{subsubsection.2.2.8}
-\contentsline {subsubsubsection}{\numberline {2.2.8.1}T\IeC {\'\i }ch h\IeC {\d \ohorn }p li\IeC {\^e}n t\IeC {\d u}c (\textit {Continuous Integration})}{39}{subsubsubsection.2.2.8.1}
-\contentsline {paragraph}{Kh\IeC {\'a}i ni\IeC {\d \ecircumflex }m}{39}{section*.76}
-\contentsline {paragraph}{\IeC {\DJ }i\IeC {\`\ecircumflex }u ki\IeC {\d \ecircumflex }n \IeC {\'a}p d\IeC {\d u}ng}{39}{section*.77}
-\contentsline {paragraph}{L\IeC {\d \ohorn }i \IeC {\'\i }ch}{39}{section*.78}
-\contentsline {subsubsubsection}{\numberline {2.2.8.2}Chuy\IeC {\h \ecircumflex }n giao li\IeC {\^e}n t\IeC {\d u}c (\textit {Continuous Delivery})}{39}{subsubsubsection.2.2.8.2}
-\contentsline {paragraph}{Kh\IeC {\'a}i ni\IeC {\d \ecircumflex }m}{39}{section*.79}
-\contentsline {paragraph}{\IeC {\DJ }i\IeC {\`\ecircumflex }u ki\IeC {\d \ecircumflex }n \IeC {\'a}p d\IeC {\d u}ng}{40}{section*.80}
-\contentsline {paragraph}{L\IeC {\d \ohorn }i \IeC {\'\i }ch}{40}{section*.81}
-\contentsline {subsubsubsection}{\numberline {2.2.8.3}Travis CI}{40}{subsubsubsection.2.2.8.3}
-\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{40}{section*.82}
-\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{40}{section*.83}
-\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{41}{section*.84}
-\contentsline {section}{\numberline {3}Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n C9js}{43}{section.3}
-\contentsline {subsection}{\numberline {3.1}M\IeC {\^o} t\IeC {\h a} b\IeC {\`a}i to\IeC {\'a}n}{43}{subsection.3.1}
-\contentsline {paragraph}{B\IeC {\`a}i to\IeC {\'a}n m\IeC {\`a} nh\IeC {\'o}m \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t ra:}{43}{section*.87}
-\contentsline {paragraph}{C\IeC {\'a}c v\IeC {\'\acircumflex }n \IeC {\dj }\IeC {\`\ecircumflex } quan tr\IeC {\d o}ng c\IeC {\`\acircumflex }n gi\IeC {\h a}i quy\IeC {\'\ecircumflex }t:}{43}{section*.88}
-\contentsline {subsection}{\numberline {3.2}H\IeC {\uhorn }\IeC {\'\ohorn }ng d\IeC {\~\acircumflex }n s\IeC {\h \uhorn } d\IeC {\d u}ng}{44}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t (\textit {Setup})}{45}{subsubsection.3.2.1}
-\contentsline {paragraph}{T\IeC {\h a}i xu\IeC {\'\ocircumflex }ng (\textit {Download}):}{45}{section*.92}
-\contentsline {paragraph}{C\IeC {\'a}ch d\IeC {\`u}ng (\textit {Usage}):}{46}{section*.93}
-\contentsline {subsubsection}{\numberline {3.2.2}T\IeC {\d a}o bi\IeC {\h \ecircumflex }u \IeC {\dj }\IeC {\`\ocircumflex } v\IeC {\`a} b\IeC {\h a}n \IeC {\dj }\IeC {\`\ocircumflex } v\IeC {\'\ohorn }i C9js}{47}{subsubsection.3.2.2}
-\contentsline {paragraph}{T\IeC {\d a}o b\IeC {\h a}n \IeC {\dj }\IeC {\`\ocircumflex } c\IeC {\d \ocircumflex }t (\textit {Bar Chart}):}{47}{section*.94}
-\contentsline {paragraph}{T\IeC {\d a}o b\IeC {\h a}n \IeC {\dj }\IeC {\`\ocircumflex } (\textit {Map}):}{48}{section*.96}
-\contentsline {subsubsection}{\numberline {3.2.3}Tu\IeC {\`y} bi\IeC {\'\ecircumflex }n \IeC {\dj }\IeC {\d i}nh d\IeC {\d a}ng d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u \IeC {\dj }\IeC {\`\acircumflex }u v\IeC {\`a}o}{50}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Tu\IeC {\`y} bi\IeC {\'\ecircumflex }n ki\IeC {\h \ecircumflex }u \IeC {\dj }\IeC {\`\ocircumflex } th\IeC {\d i}}{52}{subsubsection.3.2.4}
-\contentsline {subsubsection}{\numberline {3.2.5}C\IeC {\d \acircumflex }p nh\IeC {\d \acircumflex }t \IeC {\dj }\IeC {\`\ocircumflex } th\IeC {\d i} theo d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{54}{subsubsection.3.2.5}
-\contentsline {subsection}{\numberline {3.3}C\IeC {\'a}c v\IeC {\'\i } d\IeC {\d u} minh ho\IeC {\d a}}{56}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}C\IeC {\'a}c h\IeC {\`a}m ch\IeC {\'\uhorn }c n\IeC {\u a}ng (\textit {API})}{58}{subsection.3.4}
-\contentsline {paragraph}{Th\IeC {\`a}nh ph\IeC {\`\acircumflex }n Chart}{59}{section*.103}
-\contentsline {paragraph}{Th\IeC {\`a}nh ph\IeC {\`\acircumflex }n Map}{60}{section*.104}
-\contentsline {section}{\numberline {4}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n}{63}{section.4}
-\contentsline {subsection}{\numberline {4.1}Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c x\IeC {\^a}y d\IeC {\d \uhorn }ng}{63}{subsection.4.1}
-\contentsline {paragraph}{Component-based}{63}{section*.105}
-\contentsline {paragraph}{Data-driven}{66}{section*.108}
-\contentsline {subsection}{\numberline {4.2}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n}{69}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c (\textit {Coding})}{69}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } (\textit {Testing})}{70}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Tri\IeC {\h \ecircumflex }n khai (\textit {Release})}{72}{subsubsection.4.2.3}
-\contentsline {section}{\numberline {5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{74}{section.5}
-\contentsline {subsection}{\numberline {5.1}\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a} chung}{74}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}So s\IeC {\'a}nh v\IeC {\'\ohorn }i th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n C3.js}{76}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{78}{subsection.5.3}
-\contentsline {section}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{79}{subsection.5.3}
+\contentsline {section}{\numberline {2}C\IeC {\^o}ng tr\IeC {\`\i }nh li\IeC {\^e}n quan \& Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c n\IeC {\`\ecircumflex }n t\IeC {\h a}ng}{7}{section.2}
+\contentsline {subsection}{\numberline {2.1}C\IeC {\^o}ng tr\IeC {\`\i }nh li\IeC {\^e}n quan}{7}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}C\IeC {\^o}ng c\IeC {\d u} h\IeC {\~\ocircumflex } tr\IeC {\d \ohorn } tr\IeC {\d \uhorn }c quan d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u ph\IeC {\^a}n t\IeC {\'a}n Gapminder}{7}{subsubsection.2.1.1}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{7}{section*.11}
+\contentsline {paragraph}{M\IeC {\d u}c ti\IeC {\^e}u}{7}{section*.12}
+\contentsline {paragraph}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p}{9}{section*.14}
+\contentsline {paragraph}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a}}{9}{section*.15}
+\contentsline {subsubsection}{\numberline {2.1.2}Global Health Atlas - WHO}{9}{subsubsection.2.1.2}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{9}{section*.16}
+\contentsline {paragraph}{M\IeC {\d u}c ti\IeC {\^e}u}{10}{section*.18}
+\contentsline {paragraph}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p}{10}{section*.19}
+\contentsline {paragraph}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a}}{11}{section*.22}
+\contentsline {subsubsection}{\numberline {2.1.3}Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n \IeC {\dj }\IeC {\`\ocircumflex } th\IeC {\d i} C3.js}{12}{subsubsection.2.1.3}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{12}{section*.23}
+\contentsline {paragraph}{M\IeC {\d u}c ti\IeC {\^e}u}{12}{section*.25}
+\contentsline {paragraph}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p}{13}{section*.29}
+\contentsline {paragraph}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a}}{16}{section*.31}
+\contentsline {subsubsection}{\numberline {2.1.4}\IeC {\'\UHORN }ng d\IeC {\d u}ng t\IeC {\d a}o b\IeC {\h a}n \IeC {\dj }\IeC {\`\ocircumflex } online Mapme}{16}{subsubsection.2.1.4}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{16}{section*.32}
+\contentsline {paragraph}{M\IeC {\d u}c ti\IeC {\^e}u}{16}{section*.34}
+\contentsline {paragraph}{Ph\IeC {\uhorn }\IeC {\ohorn }ng ph\IeC {\'a}p}{17}{section*.35}
+\contentsline {paragraph}{\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a}}{18}{section*.38}
+\contentsline {subsection}{\numberline {2.2}Ki\IeC {\'\ecircumflex }n th\IeC {\'\uhorn }c n\IeC {\`\ecircumflex }n t\IeC {\h a}ng}{19}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Javascript}{19}{subsubsection.2.2.1}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{19}{section*.39}
+\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{19}{section*.40}
+\contentsline {paragraph}{ECMAScript 6}{20}{section*.41}
+\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{20}{section*.42}
+\contentsline {subsubsection}{\numberline {2.2.2}D3.js}{21}{subsubsection.2.2.2}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{21}{section*.43}
+\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{21}{section*.44}
+\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{22}{section*.45}
+\contentsline {subsubsection}{\numberline {2.2.3}OpenLayers}{22}{subsubsection.2.2.3}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{22}{section*.46}
+\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{23}{section*.47}
+\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{24}{section*.48}
+\contentsline {subsubsection}{\numberline {2.2.4}Webpack}{24}{subsubsection.2.2.4}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{24}{section*.49}
+\contentsline {paragraph}{Ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng v\IeC {\`a} T\IeC {\'\i }nh n\IeC {\u a}ng}{25}{section*.50}
+\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{25}{section*.51}
+\contentsline {subsubsection}{\numberline {2.2.5}Unit Testing}{25}{subsubsection.2.2.5}
+\contentsline {subsubsubsection}{\numberline {2.2.5.1}Jasmine}{26}{subsubsubsection.2.2.5.1}
+\contentsline {paragraph}{C\IeC {\'a}c kh\IeC {\'a}i ni\IeC {\d \ecircumflex }m}{26}{section*.53}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u v\IeC {\`\ecircumflex } Jasmine}{27}{section*.54}
+\contentsline {paragraph}{\IeC {\DJ }\IeC {\d \abreve }c \IeC {\dj }i\IeC {\h \ecircumflex }m}{27}{section*.55}
+\contentsline {subsubsubsection}{\numberline {2.2.5.2}Karma}{30}{subsubsubsection.2.2.5.2}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{30}{section*.56}
+\contentsline {paragraph}{Ho\IeC {\d a}t \IeC {\dj }\IeC {\d \ocircumflex }ng v\IeC {\`a} T\IeC {\'\i }nh n\IeC {\u a}ng}{30}{section*.57}
+\contentsline {subsubsubsection}{\numberline {2.2.5.3}PhantomJS}{31}{subsubsubsection.2.2.5.3}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{31}{section*.58}
+\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{31}{section*.59}
+\contentsline {paragraph}{\IeC {\UHORN }u \IeC {\dj }i\IeC {\h \ecircumflex }m v\IeC {\`a} nh\IeC {\uhorn }\IeC {\d \ohorn }c \IeC {\dj }i\IeC {\h \ecircumflex }m}{32}{section*.60}
+\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{32}{section*.62}
+\contentsline {subsubsubsection}{\numberline {2.2.5.4}Istanbul}{32}{subsubsubsection.2.2.5.4}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{32}{section*.63}
+\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{34}{section*.65}
+\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{34}{section*.67}
+\contentsline {subsubsection}{\numberline {2.2.6}Code Coverage}{35}{subsubsection.2.2.6}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{35}{section*.68}
+\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{36}{section*.70}
+\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{37}{section*.71}
+\contentsline {subsubsection}{\numberline {2.2.7}Semantic Versioning}{37}{subsubsection.2.2.7}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{37}{section*.72}
+\contentsline {paragraph}{Semantic Release}{38}{section*.73}
+\contentsline {subsubsection}{\numberline {2.2.8}CI - CD}{38}{subsubsection.2.2.8}
+\contentsline {subsubsubsection}{\numberline {2.2.8.1}T\IeC {\'\i }ch h\IeC {\d \ohorn }p li\IeC {\^e}n t\IeC {\d u}c (\textit {Continuous Integration})}{40}{subsubsubsection.2.2.8.1}
+\contentsline {paragraph}{Kh\IeC {\'a}i ni\IeC {\d \ecircumflex }m}{40}{section*.76}
+\contentsline {paragraph}{\IeC {\DJ }i\IeC {\`\ecircumflex }u ki\IeC {\d \ecircumflex }n \IeC {\'a}p d\IeC {\d u}ng}{40}{section*.77}
+\contentsline {paragraph}{L\IeC {\d \ohorn }i \IeC {\'\i }ch}{40}{section*.78}
+\contentsline {subsubsubsection}{\numberline {2.2.8.2}Chuy\IeC {\h \ecircumflex }n giao li\IeC {\^e}n t\IeC {\d u}c (\textit {Continuous Delivery})}{40}{subsubsubsection.2.2.8.2}
+\contentsline {paragraph}{Kh\IeC {\'a}i ni\IeC {\d \ecircumflex }m}{40}{section*.79}
+\contentsline {paragraph}{\IeC {\DJ }i\IeC {\`\ecircumflex }u ki\IeC {\d \ecircumflex }n \IeC {\'a}p d\IeC {\d u}ng}{41}{section*.80}
+\contentsline {paragraph}{L\IeC {\d \ohorn }i \IeC {\'\i }ch}{41}{section*.81}
+\contentsline {subsubsubsection}{\numberline {2.2.8.3}Travis CI}{41}{subsubsubsection.2.2.8.3}
+\contentsline {paragraph}{Gi\IeC {\'\ohorn }i thi\IeC {\d \ecircumflex }u}{41}{section*.82}
+\contentsline {paragraph}{T\IeC {\'\i }nh n\IeC {\u a}ng}{41}{section*.83}
+\contentsline {paragraph}{\IeC {\'\UHORN }ng d\IeC {\d u}ng}{42}{section*.84}
+\contentsline {section}{\numberline {3}Th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n C9js}{45}{section.3}
+\contentsline {subsection}{\numberline {3.1}M\IeC {\^o} t\IeC {\h a} b\IeC {\`a}i to\IeC {\'a}n}{45}{subsection.3.1}
+\contentsline {paragraph}{B\IeC {\`a}i to\IeC {\'a}n m\IeC {\`a} nh\IeC {\'o}m \IeC {\dj }\IeC {\`\ecircumflex } t\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t ra:}{45}{section*.87}
+\contentsline {paragraph}{C\IeC {\'a}c v\IeC {\'\acircumflex }n \IeC {\dj }\IeC {\`\ecircumflex } quan tr\IeC {\d o}ng c\IeC {\`\acircumflex }n gi\IeC {\h a}i quy\IeC {\'\ecircumflex }t:}{45}{section*.88}
+\contentsline {subsection}{\numberline {3.2}H\IeC {\uhorn }\IeC {\'\ohorn }ng d\IeC {\~\acircumflex }n s\IeC {\h \uhorn } d\IeC {\d u}ng}{46}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}C\IeC {\`a}i \IeC {\dj }\IeC {\d \abreve }t (\textit {Setup})}{47}{subsubsection.3.2.1}
+\contentsline {paragraph}{T\IeC {\h a}i xu\IeC {\'\ocircumflex }ng (\textit {Download}):}{47}{section*.92}
+\contentsline {paragraph}{C\IeC {\'a}ch d\IeC {\`u}ng (\textit {Usage}):}{48}{section*.93}
+\contentsline {subsubsection}{\numberline {3.2.2}T\IeC {\d a}o bi\IeC {\h \ecircumflex }u \IeC {\dj }\IeC {\`\ocircumflex } v\IeC {\`a} b\IeC {\h a}n \IeC {\dj }\IeC {\`\ocircumflex } v\IeC {\'\ohorn }i C9js}{49}{subsubsection.3.2.2}
+\contentsline {paragraph}{T\IeC {\d a}o b\IeC {\h a}n \IeC {\dj }\IeC {\`\ocircumflex } c\IeC {\d \ocircumflex }t (\textit {Bar Chart}):}{49}{section*.94}
+\contentsline {paragraph}{T\IeC {\d a}o b\IeC {\h a}n \IeC {\dj }\IeC {\`\ocircumflex } (\textit {Map}):}{50}{section*.96}
+\contentsline {subsubsection}{\numberline {3.2.3}Tu\IeC {\`y} bi\IeC {\'\ecircumflex }n \IeC {\dj }\IeC {\d i}nh d\IeC {\d a}ng d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u \IeC {\dj }\IeC {\`\acircumflex }u v\IeC {\`a}o}{52}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Tu\IeC {\`y} bi\IeC {\'\ecircumflex }n ki\IeC {\h \ecircumflex }u \IeC {\dj }\IeC {\`\ocircumflex } th\IeC {\d i}}{54}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}C\IeC {\d \acircumflex }p nh\IeC {\d \acircumflex }t \IeC {\dj }\IeC {\`\ocircumflex } th\IeC {\d i} theo d\IeC {\~\uhorn } li\IeC {\d \ecircumflex }u}{56}{subsubsection.3.2.5}
+\contentsline {subsection}{\numberline {3.3}C\IeC {\'a}c v\IeC {\'\i } d\IeC {\d u} minh ho\IeC {\d a}}{58}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}C\IeC {\'a}c h\IeC {\`a}m ch\IeC {\'\uhorn }c n\IeC {\u a}ng (\textit {API})}{60}{subsection.3.4}
+\contentsline {paragraph}{Th\IeC {\`a}nh ph\IeC {\`\acircumflex }n Chart}{61}{section*.103}
+\contentsline {paragraph}{Th\IeC {\`a}nh ph\IeC {\`\acircumflex }n Map}{62}{section*.104}
+\contentsline {section}{\numberline {4}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n}{65}{section.4}
+\contentsline {subsection}{\numberline {4.1}Ki\IeC {\'\ecircumflex }n tr\IeC {\'u}c x\IeC {\^a}y d\IeC {\d \uhorn }ng}{65}{subsection.4.1}
+\contentsline {paragraph}{Component-based}{65}{section*.105}
+\contentsline {paragraph}{Data-driven}{68}{section*.108}
+\contentsline {subsection}{\numberline {4.2}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n}{71}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Hi\IeC {\d \ecircumflex }n th\IeC {\d \uhorn }c (\textit {Coding})}{71}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Ki\IeC {\h \ecircumflex }m th\IeC {\h \uhorn } (\textit {Testing})}{72}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Tri\IeC {\h \ecircumflex }n khai (\textit {Release})}{74}{subsubsection.4.2.3}
+\contentsline {section}{\numberline {5}K\IeC {\'\ecircumflex }t lu\IeC {\d \acircumflex }n}{77}{section.5}
+\contentsline {subsection}{\numberline {5.1}\IeC {\DJ }\IeC {\'a}nh gi\IeC {\'a} chung}{77}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}So s\IeC {\'a}nh v\IeC {\'\ohorn }i th\IeC {\uhorn } vi\IeC {\d \ecircumflex }n C3.js}{79}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}H\IeC {\uhorn }\IeC {\'\ohorn }ng ph\IeC {\'a}t tri\IeC {\h \ecircumflex }n}{81}{subsection.5.3}
+\contentsline {section}{T\`ai li\d \ecircumflex u tham kh\h {a}o}{83}{subsection.5.3}
