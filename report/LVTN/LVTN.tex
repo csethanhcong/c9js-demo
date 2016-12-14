@@ -824,7 +824,7 @@ Webpack là một mô-đun đóng gói (\textit{module bundler}) rất mạnh. M
 Có 4 khái niệm quan trọng (\textit{core concepts}) trong Webpack:
 
 \begin{itemize}
-\item[•] \emph{Entry:} Webpack tạo ra đồ thị của tất cả các phụ thuộc (\textit{dependency}) trong ứng dụng. Điểm bắt đầu của đồ thị này chính là điểm đầu vào (entry). Điểm đầu vào nói cho webpack biết được nơi bắt đầu và đi theo đồ thị này để biết cần gộp những gì.
+\item[•] \emph{Entry:} Webpack tạo ra đồ thị của tất cả các phụ thuộc (\textit{dependency}) trong ứng dụng. Điểm bắt đầu của đồ thị này chính là điểm đầu vào (\textit{entry}). Điểm đầu vào nói cho webpack biết được nơi bắt đầu và đi theo đồ thị này để biết cần gộp những gì.
 \item[•] \emph{Output:} Một khi đã gộp tất cả các tài nguyên lại với nhau, người lập trình cần nói cho webpack biết nơi đóng gói ứng dụng. Output mô tả cho webpack cách xử lý các mã được gộp.
 \item[•] \emph{Loaders:} Mọi tài nguyên trong dự án của người lập trình đều là mối quan tâm của webpack (điều này không có nghĩa là mọi tài nguyên đều được gộp lại cùng với nhau). Webpack xem mỗi tập tin (CSS, HTML, SCSS, JGP, …) như là một mô-đun. Tuy nhiên, webpack chỉ biết Javascript. Loaders trong webpack sẽ chuyển đổi những tập tin này thành những mô-đun khi nó được thêm vào trong đồ thị.
 \item[•] \emph{Plugins:} Loaders chỉ thực thi chuyển đổi trên mỗi tập tin, do đó plugins được sử dụng rất phổ biến để thực hiện những hành động và chức năng tùy chỉnh trên các mảnh (\textit{chunk}) hoặc bộ (\textit{compilation}) của các mô-đun. Hệ thống \textit{plugin} của webpack cực kỳ mạnh mẽ và dễ dàng tùy chỉnh.
@@ -1077,7 +1077,7 @@ Như đã giới thiệu sơ qua về thuật ngữ \textit{code coverage} ở m
 
 \begin{enumerate}
 \item \emph{Code coverage:}
-Là một sự đo lường được dùng để cho thấy những dòng nào trong mã nguồn được thực thi bởi bộ mô tả kiểm thử (test suite). Có ba thuật ngữ được dùng để mô tả sự thực thi của mỗi dòng:
+Là một sự đo lường được dùng để cho thấy những dòng nào trong mã nguồn được thực thi bởi bộ mô tả kiểm thử (\textit{test-suite}). Có ba thuật ngữ được dùng để mô tả sự thực thi của mỗi dòng:
 
 \begin{itemize}
 \item[•] \emph{Hit:} Cho biết đoạn mã được thực thi.
