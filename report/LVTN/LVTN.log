@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  14 DEC 2016 12:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  14 DEC 2016 16:21
 entering extended mode
 **LVTN.tex
 (D:\LVTN\c9js-demo\report\LVTN\LVTN.tex
@@ -1397,7 +1397,7 @@ arning (ext4): destination with the same identifier (name{page.1}) has been alr
 eady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 \end{titlepage}
+l.19 \end{titlepage}
                      [1]) (D:\LVTN\c9js-demo\report\LVTN\LVTN.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 1.
@@ -3459,7 +3459,7 @@ x/vnr/vnti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti8.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/vntex/vnr/vntt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/vntex/vnr/vntt12.pfb>
-Output written on LVTN.pdf (93 pages, 3400254 bytes).
+Output written on LVTN.pdf (93 pages, 3400217 bytes).
 PDF statistics:
  1521 PDF objects out of 1728 (max. 8388607)
  528 named destinations out of 1000 (max. 500000)
