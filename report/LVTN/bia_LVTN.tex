@@ -1,5 +1,44 @@
-\begin{titlepage}
+\PassOptionsToPackage{svgnames}{xcolor}
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage{graphicx}
 
+% Tạo thanh ngang đẹp: http://altermundus.com/pages/downloads/packages/pgfornament/ornaments.pdf
+\usepackage[object=vectorian]{pgfornament}
+\newcommand{\nicehr}[2]{%
+  \nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+  {\resizebox{0.5\linewidth}{1.2ex}
+    {\pgfornament[color = #1]{#2}
+    }}%
+    \hspace{\fill}
+    \par\nointerlineskip \vspace{.5\baselineskip}
+  }
+
+% Tạo border frame cho bìa
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+% Set spacing between each paragraph
+\setlength{\parindent}{4em}
+\setlength{\parskip}{0.7em}
+\renewcommand{\baselinestretch}{1.2}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.5} % Line spacing
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+\usepackage[a4paper,bindingoffset=0.2in,%
+            left=1in,right=0.8in,top=0.8in,bottom=1in,%
+            footskip=.25in]{geometry}
+
+\begin{document}
+\begin{titlepage}
 \begin{tikzpicture}[overlay,remember picture]
     \draw [line width=3pt,
         ]
@@ -57,6 +96,7 @@
 %	DATE SECTION
 %----------------------------------------------------------------------------------------
 \vfill
-{\normalsize THÀNH PHỐ HỒ CHÍ MINH, 12/2016}
+{\normalsize TP. HỒ CHÍ MINH, 12/2016}
 
 \end{titlepage}
+\end{document}

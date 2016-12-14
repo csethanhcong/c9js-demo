@@ -23,234 +23,257 @@
 
 \bibitem{dataviz_wiki}
 \BIBentryALTinterwordspacing
-Wikipedia, ``Data visualization.'' [Online]. Available:
-  \url{https://en.wikipedia.org/wiki/Data_visualization}
+Wikipedia, ``Data visualization,'' last accessed 11 December 2016. [Online].
+  Available: \url{https://en.wikipedia.org/wiki/Data_visualization}
 \BIBentrySTDinterwordspacing
 
 \bibitem{wiki_history_1}
 \BIBentryALTinterwordspacing
 ------, ``Data visualization for human perception, the interaction design
-  foundation,'' 11 2015. [Online]. Available:
+  foundation,'' Nov. 2015, last accessed 11 December 2016. [Online]. Available:
   \url{https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/data-visualization-for-human-perception}
 \BIBentrySTDinterwordspacing
 
 \bibitem{wiki_history_2}
 \BIBentryALTinterwordspacing
-F.~. Michael, ``A brief history of data visualization,'' York University,
-  Springer-Verlag, 11 2015. [Online]. Available:
-  \url{http://www.datavis.ca/papers/hbook.pdf}
+M.~Friendly, ``A brief history of data visualization,'' in \emph{Handbook of
+  Computational Statistics: Data Visualization}, C.~Chen, W.~H{\"a}rdle, and
+  A.~Unwin, Eds.\hskip 1em plus 0.5em minus 0.4em\relax Heidelberg:
+  Springer-Verlag, 2007, vol. III, ch.~1, p. 1–34, last accessed 11 December
+  2016. [Online]. Available: \url{http://datavis.ca/papers/hbook.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{web_evolution}
 \BIBentryALTinterwordspacing
-V.~Hyperakt, ``The evolution of the web,'' Google. [Online]. Available:
-  \url{http://www.evolutionoftheweb.com/}
+V.~Hyperakt, ``The evolution of the web,'' Google, last accessed 11 December
+  2016. [Online]. Available: \url{http://www.evolutionoftheweb.com/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{technology_boom}
 \BIBentryALTinterwordspacing
-------, ``Bùng nổ thông tin: co hội và thách thức,'' 08 2015.
-  [Online]. Available:
+------, ``Bùng nổ thông tin: co hội và thách thức,'' Aug. 2015, last
+  accessed 11 December 2016. [Online]. Available:
   \url{http://skhcn.binhthuan.gov.vn/wps/portal/!ut/p/c4/04_SB8K8xLLM9MSSzPy8xBz9CP0os3hfRxMDTyNnA3cLPzdDA88woxBfc89gQxd3Y_2CbEdFAPd11IA!/?WCM_PORTLET=PC_7_MA40I2C0G8NF10IV2TM7IS1D45_WCM&WCM_GLOBAL_CONTEXT=/wps/wcm/connect/sbn_khcn_vi/sbn_khcn/kho_noi_dung/tin_tuc/hoat_dong/b070b5004985499baf8bbf7ba796b3b8&cur_id=b070b5004985499baf8bbf7ba796b3b8}
 \BIBentrySTDinterwordspacing
 
 \bibitem{c9js_github}
 \BIBentryALTinterwordspacing
-GitHub, ``C9js opensource,'' 2016. [Online]. Available:
-  \url{https://github.com/csethanhcong/C9js}
+GitHub, ``C9js opensource,'' 2016, last accessed 11 December 2016. [Online].
+  Available: \url{https://github.com/csethanhcong/C9js}
 \BIBentrySTDinterwordspacing
 
 \bibitem{c9js_repo}
 \BIBentryALTinterwordspacing
-C.~Repository, ``C9js opensource,'' 2016. [Online]. Available:
+C.~Repository, ``C9js opensource,'' 2016, last accessed 11 December 2016.
+  [Online]. Available:
   \url{https://en.wikipedia.org/wiki/Repository_(version_control)}
 \BIBentrySTDinterwordspacing
 
 \bibitem{gapminder}
 \BIBentryALTinterwordspacing
-Gapminder, ``About gapminder,'' 5 2016. [Online]. Available:
-  \url{http://www.gapminder.org/about-gapminder/our-mission/}
+Gapminder, ``About gapminder,'' last accessed 11 December 2016. [Online].
+  Available: \url{http://www.gapminder.org/about-gapminder/our-mission/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{gapminderworld}
 \BIBentryALTinterwordspacing
-G.~World, ``How may i use gapminder world?'' [Online]. Available:
+G.~World, ``How may i use gapminder world?'' last accessed 11 December 2016.
+  [Online]. Available:
   \url{http://www.gapminder.org/faq_frequently_asked_questions/#13}
 \BIBentrySTDinterwordspacing
 
 \bibitem{subgraph}
 \BIBentryALTinterwordspacing
-Gapminder, ``Gapminder sub-graph. examples about gapminder sub-graph.''
-  [Online]. Available:
+Gapminder, ``Gapminder sub-graph. examples about gapminder sub-graph,'' last
+  accessed 11 December 2016. [Online]. Available:
   \url{https://www.gapminder.org/tools/bubbles#_state_marker_size}
 \BIBentrySTDinterwordspacing
 
 \bibitem{gha}
 \BIBentryALTinterwordspacing
-W.~H.~O. (WHO), ``Global health atlas.'' [Online]. Available:
-  \url{http://apps.who.int/globalatlas/}
+W.~H.~O. (WHO), ``Global health atlas,'' last accessed 11 December 2016.
+  [Online]. Available: \url{http://apps.who.int/globalatlas/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{ghaex}
 \BIBentryALTinterwordspacing
-WHO, ``Health workforce: Density of physicsians.'' [Online]. Available:
+WHO, ``Health workforce: Density of physicsians,'' last accessed 11 December
+  2016. [Online]. Available:
   \url{http://gamapserver.who.int/gho/interactive_charts/health_workforce/PhysiciansDensity_Total/atlas.html}
 \BIBentrySTDinterwordspacing
 
 \bibitem{c3js}
 \BIBentryALTinterwordspacing
-M.~Tanaka, ``C3.js | d3-based reusable chart library,'' 2014. [Online].
-  Available: \url{http://c3js.org/}
+M.~Tanaka, ``C3.js | d3-based reusable chart library,'' 2014, last accessed 11
+  December 2016. [Online]. Available: \url{http://c3js.org/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{mapme}
 \BIBentryALTinterwordspacing
 ``Maps built with mapme. plot your story - combine maps, photos, videos \&
-  words.'' [Online]. Available: \url{http://mapme.com/gallery/}
+  words,'' last accessed 11 December 2016. [Online]. Available:
+  \url{http://mapme.com/gallery/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{osm}
 \BIBentryALTinterwordspacing
 OpenStreetMap, ``The project that creates and distributes free geographic data
-  for the world.'' [Online]. Available: \url{https://www.openstreetmap.org/}
+  for the world.'' last accessed 11 December 2016. [Online]. Available:
+  \url{https://www.openstreetmap.org/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{ol}
 \BIBentryALTinterwordspacing
 O.~L. 3, ``Open layers 3. a high-performance, feature-packed library for all
-  your mapping needs.'' [Online]. Available:
+  your mapping needs.'' last accessed 11 December 2016. [Online]. Available:
   \url{http://openlayers.org/en/latest/doc/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{prototypejs}
 \BIBentryALTinterwordspacing
 ``Prototype javascript framework. a foundation for ambitious web
-  applications,'' 2 2005. [Online]. Available:
-  \url{https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework}
+  applications,'' Feb. 2005, last accessed 11 December 2016. [Online].
+  Available: \url{https://en.wikipedia.org/wiki/Prototype_JavaScript_Framework}
 \BIBentrySTDinterwordspacing
 
 \bibitem{tdd_1}
 \BIBentryALTinterwordspacing
-Wikipedia, ``Tdd - wikipedia.'' [Online]. Available:
-  \url{https://en.wikipedia.org/wiki/Test-driven_development}
+Wikipedia, ``Tdd - wikipedia,'' last accessed 11 December 2016. [Online].
+  Available: \url{https://en.wikipedia.org/wiki/Test-driven_development}
 \BIBentrySTDinterwordspacing
 
 \bibitem{bdd_1}
 \BIBentryALTinterwordspacing
-I.~Jovanovic, ``Introduction to javascript bdd testing with jasmine library.''
-  [Online]. Available:
+I.~Jovanovic, ``Introduction to javascript bdd testing with jasmine library,''
+  last accessed 11 December 2016. [Online]. Available:
   \url{http://ivanjovanovic.com/2011/07/22/introduction-to-javascript-bdd-testing-with-jasmine-library/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{mocha_vs_jasmine}
 \BIBentryALTinterwordspacing
-Codementor, ``Javascript testing framework comparison: Jasmine vs mocha.''
-  [Online]. Available:
+Codementor, ``Javascript testing framework comparison: Jasmine vs mocha,'' last
+  accessed 11 December 2016. [Online]. Available:
   \url{https://www.codementor.io/javascript/tutorial/javascript-testing-framework-comparison-jasmine-vs-mocha}
 \BIBentrySTDinterwordspacing
 
 \bibitem{karma_1}
 \BIBentryALTinterwordspacing
-``Karma - a javascript test runner.'' [Online]. Available:
-  \url{http://www.methodsandtools.com/tools/karma.php}
+``Karma - a javascript test runner,'' last accessed 11 December 2016. [Online].
+  Available: \url{http://www.methodsandtools.com/tools/karma.php}
+\BIBentrySTDinterwordspacing
+
+\bibitem{jsdom_phantomjs}
+\BIBentryALTinterwordspacing
+``Compare jsdom and phantomjs,'' last accessed 11 December 2016. [Online].
+  Available: \url{https://github.com/tmpvar/jsdom/blob/master/README.md}
 \BIBentrySTDinterwordspacing
 
 \bibitem{codecov_wiki}
 \BIBentryALTinterwordspacing
-Wikipedia, ``Code coverage.'' [Online]. Available:
-  \url{https://en.wikipedia.org/wiki/Code_coverage}
+Wikipedia, ``Code coverage,'' last accessed 11 December 2016. [Online].
+  Available: \url{https://en.wikipedia.org/wiki/Code_coverage}
 \BIBentrySTDinterwordspacing
 
 \bibitem{cd}
 \BIBentryALTinterwordspacing
-M.~Fowler, ``Continuousdelivery,'' 5 2013. [Online]. Available:
+M.~Fowler, ``Continuousdelivery,'' May 2013, last accessed 11 December 2016.
+  [Online]. Available:
   \url{https://martinfowler.com/bliki/ContinuousDelivery.html}
 \BIBentrySTDinterwordspacing
 
 \bibitem{bingmap}
 \BIBentryALTinterwordspacing
 B.~Maps, ``Web mapping service provided as a part of microsoft's bing suite of
-  search engines and powered by the bing maps for enterprise framework,'' 5
-  2010. [Online]. Available: \url{https://en.wikipedia.org/wiki/Bing_Maps}
+  search engines and powered by the bing maps for enterprise framework,'' May
+  2010, last accessed 11 December 2016. [Online]. Available:
+  \url{https://en.wikipedia.org/wiki/Bing_Maps}
 \BIBentrySTDinterwordspacing
 
 \bibitem{stamen}
 \BIBentryALTinterwordspacing
-Stamen, ``Stamen design: Data visualization and map design studio.'' [Online].
-  Available: \url{http://stamen.com/}
+Stamen, ``Stamen design: Data visualization and map design studio,'' last
+  accessed 11 December 2016. [Online]. Available: \url{http://stamen.com/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{xhr}
 \BIBentryALTinterwordspacing
-``Ajax.'' [Online]. Available:
+``Ajax,'' last accessed 11 December 2016. [Online]. Available:
   \url{http://hoccungdoanhnghiep.vn/tai-lieu-lap-trinh/bai-1--doi-tuong-xmlhttprequest-trong-ajax}
 \BIBentrySTDinterwordspacing
 
 \bibitem{csv}
 \BIBentryALTinterwordspacing
-Wikipedia, ``Comma-separated values.'' [Online]. Available:
+Wikipedia, ``Comma-separated values,'' last accessed 11 December 2016.
+  [Online]. Available:
   \url{https://en.wikipedia.org/wiki/Comma-separated_values}
 \BIBentrySTDinterwordspacing
 
 \bibitem{tsv}
 \BIBentryALTinterwordspacing
-------, ``Tab-separated values.'' [Online]. Available:
-  \url{https://en.wikipedia.org/wiki/TSV}
+------, ``Tab-separated values,'' last accessed 11 December 2016. [Online].
+  Available: \url{https://en.wikipedia.org/wiki/TSV}
 \BIBentrySTDinterwordspacing
 
 \bibitem{css_class}
 \BIBentryALTinterwordspacing
-Mozilla, ``Class selectors - css | mdn.'' [Online]. Available:
+Mozilla, ``Class selectors - css | mdn,'' last accessed 11 December 2016.
+  [Online]. Available:
   \url{https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors}
 \BIBentrySTDinterwordspacing
 
 \bibitem{component_based}
 \BIBentryALTinterwordspacing
-Wikipedia, ``Component-based software engineering.'' [Online]. Available:
+Wikipedia, ``Component-based software engineering,'' last accessed 11 December
+  2016. [Online]. Available:
   \url{https://en.wikipedia.org/wiki/Component-based_software_engineering#Software_component}
 \BIBentrySTDinterwordspacing
 
 \bibitem{merge_deep}
 \BIBentryALTinterwordspacing
-``Painfully obvious, blog archive, deep-extending objects in javascript.''
-  [Online]. Available:
+``Painfully obvious, blog archive, deep-extending objects in javascript.'' last
+  accessed 11 December 2016. [Online]. Available:
   \url{http://andrewdupont.net/2009/08/28/deep-extending-objects-in-javascript/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{data_driven}
 \BIBentryALTinterwordspacing
-Wikipedia, ``Data-driven programming.'' [Online]. Available:
+Wikipedia, ``Data-driven programming,'' last accessed 11 December 2016.
+  [Online]. Available:
   \url{https://en.wikipedia.org/wiki/Data-driven_programming}
 \BIBentrySTDinterwordspacing
 
 \bibitem{uuid}
 \BIBentryALTinterwordspacing
-------, ``Universally unique identifier.'' [Online]. Available:
+------, ``Universally unique identifier,'' last accessed 11 December 2016.
+  [Online]. Available:
   \url{https://en.wikipedia.org/wiki/Universally_unique_identifier}
 \BIBentrySTDinterwordspacing
 
 \bibitem{callback}
 \BIBentryALTinterwordspacing
-MozDevNet, ``Declaring and using callbacks.'' [Online]. Available:
+MozDevNet, ``Declaring and using callbacks,'' last accessed 11 December 2016.
+  [Online]. Available:
   \url{https://developer.mozilla.org/en-US/docs/Mozilla/js-ctypes/Using_js-ctypes/Declaring_and_Using_Callbacks}
 \BIBentrySTDinterwordspacing
 
 \bibitem{source_map}
 \BIBentryALTinterwordspacing
-H.~Rocks, ``Introduction to javascript source maps.'' [Online]. Available:
+H.~Rocks, ``Introduction to javascript source maps,'' last accessed 11 December
+  2016. [Online]. Available:
   \url{https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/}
-\BIBentrySTDinterwordspacing
-
-\bibitem{codecov_c9js}
-\BIBentryALTinterwordspacing
-Codecov.io, ``Codecov.io - c9js.'' [Online]. Available:
-  \url{https://codecov.io/gh/csethanhcong/C9js}
 \BIBentrySTDinterwordspacing
 
 \bibitem{ga_c9js}
 \BIBentryALTinterwordspacing
-G.~Analytics, ``Google analytics - c9js.'' [Online]. Available:
+G.~Analytics, ``Google analytics - c9js,'' last accessed 11 December 2016.
+  [Online]. Available:
   \url{https://analytics.google.com/analytics/web/?hl=vi&pli=1#dashboard/default/a79729339w118889956p124358060/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{codecov_c9js}
+\BIBentryALTinterwordspacing
+Codecov.io, ``Codecov.io - c9js,'' last accessed 11 December 2016. [Online].
+  Available: \url{https://codecov.io/gh/csethanhcong/C9js}
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

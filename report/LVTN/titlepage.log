@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  12 DEC 2016 00:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  13 DEC 2016 20:45
 entering extended mode
 **titlepage.tex
 (D:\LVTN\c9js-demo\report\LVTN\titlepage.tex
@@ -46,8 +46,8 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 6--6
 ! Undefined control sequence.
 <recently read> \large 
                        
-l.12 ...åC B√ÅCH KHOA TH√ÄNH PH·ªê H·ªí CH√ç MINH}
-                                                  \\[0.2cm] % Name of your u...
+l.11 ...åC QU·ªêC GIA TH√ÄNH PH·ªê H·ªí CH√ç MINH}
+                                                  \\[0.2cm]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -62,8 +62,9 @@ Missing character: There is no † in font cmcsc10!
 Missing character: There is no · in font cmcsc10!
 Missing character: There is no ª in font cmcsc10!
 Missing character: There is no å in font cmcsc10!
-Missing character: There is no √ in font cmcsc10!
-Missing character: There is no Å in font cmcsc10!
+Missing character: There is no · in font cmcsc10!
+Missing character: There is no ª in font cmcsc10!
+Missing character: There is no ê in font cmcsc10!
 Missing character: There is no √ in font cmcsc10!
 Missing character: There is no Ä in font cmcsc10!
 Missing character: There is no · in font cmcsc10!
@@ -74,6 +75,82 @@ Missing character: There is no ª in font cmcsc10!
 Missing character: There is no í in font cmcsc10!
 Missing character: There is no √ in font cmcsc10!
 Missing character: There is no ç in font cmcsc10!
+
+Overfull \hbox (4.0555pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/m/sc/10 I 
+ []
+
+
+Overfull \hbox (15.99985pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/m/sc/10 HC 
+ []
+
+
+Overfull \hbox (24.44421pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/m/sc/10 QUC 
+ []
+
+
+Overfull \hbox (20.70811pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/m/sc/10 GIA 
+ []
+
+
+Overfull \hbox (32.27747pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/m/sc/10 THNH 
+ []
+
+
+Overfull \hbox (15.55539pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/m/sc/10 PH 
+ []
+
+
+Overfull \hbox (8.13881pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/m/sc/10 H 
+ []
+
+
+Overfull \hbox (15.99985pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/m/sc/10 CH 
+ []
+
+
+Overfull \hbox (30.2219pt too wide) in paragraph at lines 11--11
+ \OT1/cmr/m/sc/10 MINH 
+ []
+
+! Undefined control sequence.
+<recently read> \large 
+                       
+l.12 ...{\large TR∆Ø·ªúNG ƒê·∫†I H·ªåC B√ÅCH KHOA}
+                                                  \\[0.2cm]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ∆ in font cmcsc10!
+Missing character: There is no Ø in font cmcsc10!
+Missing character: There is no · in font cmcsc10!
+Missing character: There is no ª in font cmcsc10!
+Missing character: There is no ú in font cmcsc10!
+Missing character: There is no ƒ in font cmcsc10!
+Missing character: There is no ê in font cmcsc10!
+Missing character: There is no · in font cmcsc10!
+Missing character: There is no ∫ in font cmcsc10!
+Missing character: There is no † in font cmcsc10!
+Missing character: There is no · in font cmcsc10!
+Missing character: There is no ª in font cmcsc10!
+Missing character: There is no å in font cmcsc10!
+Missing character: There is no √ in font cmcsc10!
+Missing character: There is no Å in font cmcsc10!
+
+Overfull \hbox (32.51358pt too wide) in paragraph at lines 12--12
+ []\OT1/cmr/m/sc/10 TRNG 
+ []
+
 
 Overfull \hbox (4.0555pt too wide) in paragraph at lines 12--12
  \OT1/cmr/m/sc/10 I 
@@ -94,36 +171,11 @@ Overfull \hbox (32.8608pt too wide) in paragraph at lines 12--12
  \OT1/cmr/m/sc/10 KHOA 
  []
 
-
-Overfull \hbox (32.27747pt too wide) in paragraph at lines 12--12
- \OT1/cmr/m/sc/10 THNH 
- []
-
-
-Overfull \hbox (15.55539pt too wide) in paragraph at lines 12--12
- \OT1/cmr/m/sc/10 PH 
- []
-
-
-Overfull \hbox (8.13881pt too wide) in paragraph at lines 12--12
- \OT1/cmr/m/sc/10 H 
- []
-
-
-Overfull \hbox (15.99985pt too wide) in paragraph at lines 12--12
- \OT1/cmr/m/sc/10 CH 
- []
-
-
-Overfull \hbox (30.2219pt too wide) in paragraph at lines 12--12
- \OT1/cmr/m/sc/10 MINH 
- []
-
 ! Undefined control sequence.
-<recently read> \Large 
+<recently read> \large 
                        
-l.13 ...oa khoa h·ªçc v√† k·ªπ thu·∫≠t m√°y t√≠nh}
-                                                  \\[0.5cm] % Major heading ...
+l.13 ...HOA KHOA H·ªåC \& K·ª∏ THU·∫¨T M√ÅY T√çNH}
+                                                  \\[0.5cm]
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -132,57 +184,55 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no · in font cmcsc10!
 Missing character: There is no ª in font cmcsc10!
-Missing character: There is no ç in font cmcsc10!
-Missing character: There is no √ in font cmcsc10!
-Missing character: There is no † in font cmcsc10!
+Missing character: There is no å in font cmcsc10!
 Missing character: There is no · in font cmcsc10!
 Missing character: There is no ª in font cmcsc10!
-Missing character: There is no π in font cmcsc10!
+Missing character: There is no ∏ in font cmcsc10!
 Missing character: There is no · in font cmcsc10!
 Missing character: There is no ∫ in font cmcsc10!
-Missing character: There is no ≠ in font cmcsc10!
+Missing character: There is no ¨ in font cmcsc10!
 Missing character: There is no √ in font cmcsc10!
-Missing character: There is no ° in font cmcsc10!
+Missing character: There is no Å in font cmcsc10!
 Missing character: There is no √ in font cmcsc10!
-Missing character: There is no ≠ in font cmcsc10!
+Missing character: There is no ç in font cmcsc10!
 
-Overfull \hbox (24.75546pt too wide) in paragraph at lines 13--13
- []\OT1/cmr/m/sc/10 khoa 
+Overfull \hbox (32.8608pt too wide) in paragraph at lines 13--13
+ []\OT1/cmr/m/sc/10 KHOA 
  []
 
 
-Overfull \hbox (24.75546pt too wide) in paragraph at lines 13--13
- \OT1/cmr/m/sc/10 khoa 
+Overfull \hbox (32.8608pt too wide) in paragraph at lines 13--13
+ \OT1/cmr/m/sc/10 KHOA 
  []
 
 
-Overfull \hbox (12.04439pt too wide) in paragraph at lines 13--13
- \OT1/cmr/m/sc/10 hc 
+Overfull \hbox (15.99985pt too wide) in paragraph at lines 13--13
+ \OT1/cmr/m/sc/10 HC 
  []
 
 
-Overfull \hbox (6.13332pt too wide) in paragraph at lines 13--13
- \OT1/cmr/m/sc/10 v 
+Overfull \hbox (8.44437pt too wide) in paragraph at lines 13--13
+ \OT1/cmr/m/sc/10 & 
  []
 
 
-Overfull \hbox (6.35553pt too wide) in paragraph at lines 13--13
- \OT1/cmr/m/sc/10 k 
+Overfull \hbox (8.43048pt too wide) in paragraph at lines 13--13
+ \OT1/cmr/m/sc/10 K 
  []
 
 
-Overfull \hbox (24.08878pt too wide) in paragraph at lines 13--13
- \OT1/cmr/m/sc/10 thut 
+Overfull \hbox (31.9997pt too wide) in paragraph at lines 13--13
+ \OT1/cmr/m/sc/10 THUT 
  []
 
 
-Overfull \hbox (13.59995pt too wide) in paragraph at lines 13--13
- \OT1/cmr/m/sc/10 my 
+Overfull \hbox (18.02759pt too wide) in paragraph at lines 13--13
+ \OT1/cmr/m/sc/10 MY 
  []
 
 
-Overfull \hbox (18.1777pt too wide) in paragraph at lines 13--13
- \OT1/cmr/m/sc/10 tnh 
+Overfull \hbox (24.13866pt too wide) in paragraph at lines 13--13
+ \OT1/cmr/m/sc/10 TNH 
  []
 
 ! Undefined control sequence.
@@ -218,7 +268,7 @@ Missing character: There is no o in font nullfont!
 ! Undefined control sequence.
 <recently read> \large 
                        
-l.18 ...arge B√ÅO C√ÅO LU·∫¨N VƒÇN T·ªêT NGHI·ªÜP}
+l.18 ...e LU·∫¨N VƒÇN T·ªêT NGHI·ªÜP ƒê·∫†I H·ªåC}
                                                   \\[0.2cm] % Minor heading ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -226,10 +276,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no √ in font cmcsc10!
-Missing character: There is no Å in font cmcsc10!
-Missing character: There is no √ in font cmcsc10!
-Missing character: There is no Å in font cmcsc10!
 Missing character: There is no · in font cmcsc10!
 Missing character: There is no ∫ in font cmcsc10!
 Missing character: There is no ¨ in font cmcsc10!
@@ -241,19 +287,17 @@ Missing character: There is no ê in font cmcsc10!
 Missing character: There is no · in font cmcsc10!
 Missing character: There is no ª in font cmcsc10!
 Missing character: There is no Ü in font cmcsc10!
-
-Overfull \hbox (16.15262pt too wide) in paragraph at lines 18--18
- []\OT1/cmr/m/sc/10 BO 
- []
-
-
-Overfull \hbox (16.3054pt too wide) in paragraph at lines 18--18
- \OT1/cmr/m/sc/10 CO 
- []
-
+Missing character: There is no ƒ in font cmcsc10!
+Missing character: There is no ê in font cmcsc10!
+Missing character: There is no · in font cmcsc10!
+Missing character: There is no ∫ in font cmcsc10!
+Missing character: There is no † in font cmcsc10!
+Missing character: There is no · in font cmcsc10!
+Missing character: There is no ª in font cmcsc10!
+Missing character: There is no å in font cmcsc10!
 
 Overfull \hbox (23.11089pt too wide) in paragraph at lines 18--18
- \OT1/cmr/m/sc/10 LUN 
+ []\OT1/cmr/m/sc/10 LUN 
  []
 
 
@@ -271,9 +315,19 @@ Overfull \hbox (36.2635pt too wide) in paragraph at lines 18--18
  \OT1/cmr/m/sc/10 NGHIP 
  []
 
+
+Overfull \hbox (4.0555pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/m/sc/10 I 
+ []
+
+
+Overfull \hbox (15.99985pt too wide) in paragraph at lines 18--18
+ \OT1/cmr/m/sc/10 HC 
+ []
+
 ! Undefined control sequence.
 l.25 { \huge
-             \bfseries Tr·ª±c quan d·ªØ li·ªáu v·ªõi th∆∞ vi·ªán C9js}\\[0.4...
+             \bfseries TR·ª∞C QUAN D·ªÆ LI·ªÜU V·ªöI TH∆Ø VI·ªÜN C9JS}\\[0.4...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -282,59 +336,59 @@ and I'll forget about whatever was undefined.
 
 Missing character: There is no · in font cmbx10!
 Missing character: There is no ª in font cmbx10!
-Missing character: There is no ± in font cmbx10!
-Missing character: There is no · in font cmbx10!
-Missing character: There is no ª in font cmbx10!
-Missing character: There is no Ø in font cmbx10!
-Missing character: There is no · in font cmbx10!
-Missing character: There is no ª in font cmbx10!
-Missing character: There is no á in font cmbx10!
-Missing character: There is no · in font cmbx10!
-Missing character: There is no ª in font cmbx10!
-Missing character: There is no õ in font cmbx10!
-Missing character: There is no ∆ in font cmbx10!
 Missing character: There is no ∞ in font cmbx10!
 Missing character: There is no · in font cmbx10!
 Missing character: There is no ª in font cmbx10!
-Missing character: There is no á in font cmbx10!
+Missing character: There is no Æ in font cmbx10!
+Missing character: There is no · in font cmbx10!
+Missing character: There is no ª in font cmbx10!
+Missing character: There is no Ü in font cmbx10!
+Missing character: There is no · in font cmbx10!
+Missing character: There is no ª in font cmbx10!
+Missing character: There is no ö in font cmbx10!
+Missing character: There is no ∆ in font cmbx10!
+Missing character: There is no Ø in font cmbx10!
+Missing character: There is no · in font cmbx10!
+Missing character: There is no ª in font cmbx10!
+Missing character: There is no Ü in font cmbx10!
 
-Overfull \hbox (16.88881pt too wide) in paragraph at lines 25--25
- []\OT1/cmr/bx/n/10 Trc 
+Overfull \hbox (24.93042pt too wide) in paragraph at lines 25--25
+ []\OT1/cmr/bx/n/10 TRC 
  []
 
 
-Overfull \hbox (24.43735pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 quan 
+Overfull \hbox (35.18036pt too wide) in paragraph at lines 25--25
+ \OT1/cmr/bx/n/10 QUAN 
  []
 
 
-Overfull \hbox (6.38885pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 d 
+Overfull \hbox (8.8194pt too wide) in paragraph at lines 25--25
+ \OT1/cmr/bx/n/10 D 
  []
 
 
-Overfull \hbox (12.77771pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 liu 
+Overfull \hbox (20.12488pt too wide) in paragraph at lines 25--25
+ \OT1/cmr/bx/n/10 LIU 
  []
 
 
-Overfull \hbox (9.26384pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 vi 
+Overfull \hbox (13.05548pt too wide) in paragraph at lines 25--25
+ \OT1/cmr/bx/n/10 VI 
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 th 
+Overfull \hbox (16.99991pt too wide) in paragraph at lines 25--25
+ \OT1/cmr/bx/n/10 TH 
  []
 
 
-Overfull \hbox (15.6527pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 vin 
+Overfull \hbox (22.05544pt too wide) in paragraph at lines 25--25
+ \OT1/cmr/bx/n/10 VIN 
  []
 
 
-Overfull \hbox (22.10542pt too wide) in paragraph at lines 25--25
- \OT1/cmr/bx/n/10 C9js 
+Overfull \hbox (26.38875pt too wide) in paragraph at lines 25--25
+ \OT1/cmr/bx/n/10 C9JS 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -632,11 +686,11 @@ or  <return>  to continue without it.
 
  
 Here is how much of TeX's memory you used:
- 23 strings out of 493921
- 326 string characters out of 3147267
+ 22 strings out of 493921
+ 321 string characters out of 3147267
  52031 words of memory out of 3000000
- 3413 multiletter control sequences out of 15000+200000
+ 3412 multiletter control sequences out of 15000+200000
  4595 words of font info for 17 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 20i,2n,18p,145b,172s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 20i,2n,18p,139b,172s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!
