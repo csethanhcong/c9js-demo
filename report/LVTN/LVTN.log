@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  15 DEC 2016 23:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  15 DEC 2016 23:45
 entering extended mode
 **LVTN.tex
 (D:\LVTN\c9js-demo\report\LVTN\LVTN.tex
@@ -1687,6 +1687,10 @@ Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 467.
 
+
+LaTeX Warning: Reference `fig:repo_status' on page 4 undefined on input line 47
+9.
+
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 491.
@@ -1780,7 +1784,7 @@ Package pdftex.def Info: image/logo.png used on input line 512.
  [5
 
 ]
-<image/gapminder.png, id=479, 1013.28563pt x 484.05844pt>
+<image/gapminder.png, id=476, 1013.28563pt x 484.05844pt>
 File: image/gapminder.png Graphic file (type png)
 
 <use image/gapminder.png>
@@ -1791,7 +1795,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 531.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [6 <D:/LVTN/c9js-demo/report/LVTN/image/gapminder.png>]
-<image/globalatlas.png, id=491, 1027.58907pt x 478.78876pt>
+<image/globalatlas.png, id=487, 1027.58907pt x 478.78876pt>
 File: image/globalatlas.png Graphic file (type png)
 
 <use image/globalatlas.png>
@@ -1811,14 +1815,14 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 575.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [8 <D:/LVTN/c9js-demo/report/LVTN/image/globalatlas.png>]
-<image/clickatlas.png, id=510, 1027.58907pt x 481.8pt>
+<image/clickatlas.png, id=505, 1027.58907pt x 481.8pt>
 File: image/clickatlas.png Graphic file (type png)
 
 <use image/clickatlas.png>
 Package pdftex.def Info: image/clickatlas.png used on input line 578.
 (pdftex.def)             Requested size: 411.02835pt x 192.71658pt.
 
-<image/hoveratlas.png, id=511, 1028.34187pt x 478.78876pt>
+<image/hoveratlas.png, id=506, 1028.34187pt x 478.78876pt>
 File: image/hoveratlas.png Graphic file (type png)
 
 <use image/hoveratlas.png>
@@ -1866,7 +1870,7 @@ LaTeX Font Info:    Try loading font information for T5+cmtt on input line 607.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\vntex\t5cmtt.fd"
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<image/c3js.png, id=519, 1020.81375pt x 415.5525pt>
+<image/c3js.png, id=513, 1020.81375pt x 415.5525pt>
 File: image/c3js.png Graphic file (type png)
  <use image/c3js.png>
 Package pdftex.def Info: image/c3js.png used on input line 610.
@@ -1877,14 +1881,14 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 622.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [10 <D:/LVTN/c9js-demo/report/LVTN/image/c3js.png>]
-<image/c3syntax.png, id=531, 1371.1225pt x 1248.665pt>
+<image/c3syntax.png, id=524, 1371.1225pt x 1248.665pt>
 File: image/c3syntax.png Graphic file (type png)
 
 <use image/c3syntax.png>
 Package pdftex.def Info: image/c3syntax.png used on input line 625.
 (pdftex.def)             Requested size: 411.33992pt x 374.60239pt.
 
-<image/c3custom.png, id=533, 1015.54407pt x 348.55219pt>
+<image/c3custom.png, id=526, 1015.54407pt x 348.55219pt>
 File: image/c3custom.png Graphic file (type png)
 
 <use image/c3custom.png>
@@ -1895,7 +1899,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 641.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [11 <D:/LVTN/c9js-demo/report/LVTN/image/c3syntax.png>] <image/c3apis.png, id=
-543, 1014.79124pt x 475.02469pt>
+535, 1014.79124pt x 475.02469pt>
 File: image/c3apis.png Graphic file (type png)
 
 <use image/c3apis.png>
@@ -1907,7 +1911,7 @@ Package pdftex.def Info: image/logo.png used on input line 661.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [12 <D:/LVTN/c9js-demo/report/LVTN/image/c3custom.png> <D:/LVTN/c9js-demo/repo
 rt/LVTN/image/c3apis.png>]
-<image/c3source.png, id=550, 992.20688pt x 621.07031pt>
+<image/c3source.png, id=542, 992.20688pt x 621.07031pt>
 File: image/c3source.png Graphic file (type png)
 
 <use image/c3source.png>
@@ -1955,7 +1959,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 684.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [13 <D:/LVTN/c9js-demo/report/LVTN/image/c3source.png>]
-<image/mapme.png, id=561, 1015.54407pt x 488.57532pt>
+<image/mapme.png, id=552, 1015.54407pt x 488.57532pt>
 File: image/mapme.png Graphic file (type png)
  <use image/mapme.png>
 Package pdftex.def Info: image/mapme.png used on input line 687.
@@ -1966,14 +1970,14 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 702.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [14 <D:/LVTN/c9js-demo/report/LVTN/image/mapme.png>]
-<image/mapmeOSM.png, id=574, 1028.34187pt x 491.58656pt>
+<image/mapmeOSM.png, id=564, 1028.34187pt x 491.58656pt>
 File: image/mapmeOSM.png Graphic file (type png)
 
 <use image/mapmeOSM.png>
 Package pdftex.def Info: image/mapmeOSM.png used on input line 705.
 (pdftex.def)             Requested size: 411.32947pt x 196.63113pt.
 
-<image/mapmeExport.png, id=576, 525.46312pt x 311.66437pt>
+<image/mapmeExport.png, id=566, 525.46312pt x 311.66437pt>
 File: image/mapmeExport.png Graphic file (type png)
 
 <use image/mapmeExport.png>
@@ -2056,7 +2060,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 841.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [21]
-<image/webpack_build.png, id=628, 511.9125pt x 258.21469pt>
+<image/webpack_build.png, id=617, 511.9125pt x 258.21469pt>
 File: image/webpack_build.png Graphic file (type png)
 
 <use image/webpack_build.png>
@@ -2144,7 +2148,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1033.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [29]
-<image/istanbul_1.png, id=718, 955.31906pt x 134.00063pt>
+<image/istanbul_1.png, id=705, 955.31906pt x 134.00063pt>
 File: image/istanbul_1.png Graphic file (type png)
 
 <use image/istanbul_1.png>
@@ -2160,7 +2164,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1057.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [30 <D:/LVTN/c9js-demo/report/LVTN/image/istanbul_1.png>]
-<image/istanbul_2.png, id=728, 851.43094pt x 147.55125pt>
+<image/istanbul_2.png, id=714, 851.43094pt x 147.55125pt>
 File: image/istanbul_2.png Graphic file (type png)
 
 <use image/istanbul_2.png>
@@ -2175,7 +2179,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1104--1105
 
  []
 
-<image/codecovio.png, id=740, 407.27156pt x 124.96687pt>
+<image/codecovio.png, id=725, 407.27156pt x 124.96687pt>
 File: image/codecovio.png Graphic file (type png)
 
 <use image/codecovio.png>
@@ -2200,7 +2204,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1170.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [34]
-<image/semantic_1.png, id=766, 581.17125pt x 310.15875pt>
+<image/semantic_1.png, id=750, 581.17125pt x 310.15875pt>
 File: image/semantic_1.png Graphic file (type png)
 
 <use image/semantic_1.png>
@@ -2211,7 +2215,7 @@ Overfull \hbox (9.69353pt too wide) in paragraph at lines 1177--1178
  [] 
  []
 
-<image/semantic_2.png, id=767, 552.56438pt x 335.75438pt>
+<image/semantic_2.png, id=751, 552.56438pt x 335.75438pt>
 File: image/semantic_2.png Graphic file (type png)
 
 <use image/semantic_2.png>
@@ -2259,7 +2263,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1238.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [37] <image/ci_cd.png, id=795, 518.6878pt x 314.67563pt>
+ [37] <image/ci_cd.png, id=778, 518.6878pt x 314.67563pt>
 File: image/ci_cd.png Graphic file (type png)
 
 <use image/ci_cd.png>
@@ -2273,7 +2277,7 @@ Overfull \hbox (11.5706pt too wide) in paragraph at lines 1265--1266
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<image/ci_c9.png, id=797, 383.18156pt x 201.00093pt>
+<image/ci_c9.png, id=780, 383.18156pt x 201.00093pt>
 File: image/ci_c9.png Graphic file (type png)
  <use image/ci_c9.png>
 Package pdftex.def Info: image/ci_c9.png used on input line 1275.
@@ -2312,7 +2316,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 1287.
 
-<image/c9js_feature.png, id=819, 954.56625pt x 306.39468pt>
+<image/c9js_feature.png, id=801, 954.56625pt x 306.39468pt>
 File: image/c9js_feature.png Graphic file (type png)
 
 <use image/c9js_feature.png>
@@ -2363,14 +2367,14 @@ Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 1315.
 
-<image/getting_started.png, id=829, 295.85532pt x 32.37094pt>
+<image/getting_started.png, id=811, 295.85532pt x 32.37094pt>
 File: image/getting_started.png Graphic file (type png)
 
 <use image/getting_started.png>
 Package pdftex.def Info: image/getting_started.png used on input line 1322.
 (pdftex.def)             Requested size: 236.68456pt x 25.89677pt.
 
-<image/gs_1.png, id=831, 885.3075pt x 380.17032pt>
+<image/gs_1.png, id=813, 885.3075pt x 380.17032pt>
 File: image/gs_1.png Graphic file (type png)
  <use image/gs_1.png>
 Package pdftex.def Info: image/gs_1.png used on input line 1331.
@@ -2534,7 +2538,7 @@ Overfull \hbox (17.7723pt too wide) in paragraph at lines 1414--1414
 [] $[]$ 
  []
 
-<image/gs_2.png, id=858, 588.69937pt x 375.65344pt>
+<image/gs_2.png, id=839, 588.69937pt x 375.65344pt>
 File: image/gs_2.png Graphic file (type png)
  <use image/gs_2.png>
 Package pdftex.def Info: image/gs_2.png used on input line 1420.
@@ -2562,7 +2566,7 @@ Overfull \hbox (17.7723pt too wide) in paragraph at lines 1443--1443
 [] $[]$ 
  []
 
-<image/gs_3.png, id=882, 638.385pt x 322.95656pt>
+<image/gs_3.png, id=863, 638.385pt x 322.95656pt>
 File: image/gs_3.png Graphic file (type png)
  <use image/gs_3.png>
 Package pdftex.def Info: image/gs_3.png used on input line 1449.
@@ -2583,7 +2587,7 @@ Overfull \hbox (17.7723pt too wide) in paragraph at lines 1474--1474
 [] $[]$ 
  []
 
-<image/gs_4.png, id=919, 640.64343pt x 344.78813pt>
+<image/gs_4.png, id=898, 640.64343pt x 344.78813pt>
 File: image/gs_4.png Graphic file (type png)
  <use image/gs_4.png>
 Package pdftex.def Info: image/gs_4.png used on input line 1480.
@@ -2716,7 +2720,7 @@ Overfull \hbox (47.14699pt too wide) in paragraph at lines 1553--1553
 [] $[]$ 
  []
 
-<image/option_2.png, id=988, 574.39594pt x 367.3725pt>
+<image/option_2.png, id=967, 574.39594pt x 367.3725pt>
 File: image/option_2.png Graphic file (type png)
 
 <use image/option_2.png>
@@ -2829,7 +2833,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1628.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [53]
-<image/example_page.png, id=1051, 707.64375pt x 644.4075pt>
+<image/example_page.png, id=1030, 707.64375pt x 644.4075pt>
 File: image/example_page.png Graphic file (type png)
 
 <use image/example_page.png>
@@ -2840,7 +2844,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1648.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [54 <D:/LVTN/c9js-demo/report/LVTN/image/example_page.png>]
-<image/example_page_2.png, id=1059, 949.29657pt x 880.03781pt>
+<image/example_page_2.png, id=1038, 949.29657pt x 880.03781pt>
 File: image/example_page_2.png Graphic file (type png)
 
 <use image/example_page_2.png>
@@ -2856,7 +2860,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1660.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [55 <D:/LVTN/c9js-demo/report/LVTN/image/example_page_2.png>] <image/advance_1
-.png, id=1068, 787.44188pt x 698.61pt>
+.png, id=1047, 787.44188pt x 698.61pt>
 File: image/advance_1.png Graphic file (type png)
 
 <use image/advance_1.png>
@@ -2953,7 +2957,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\uhorn' on input line 1765.
 
-<image/chart.png, id=1105, 417.56pt x 238.8925pt>
+<image/chart.png, id=1084, 417.56pt x 238.8925pt>
 File: image/chart.png Graphic file (type png)
  <use image/chart.png>
 Package pdftex.def Info: image/chart.png used on input line 1773.
@@ -2964,7 +2968,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1783.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [61 <D:/LVTN/c9js-demo/report/LVTN/image/chart.png>]
-<image/chart_flow.png, id=1116, 656.4525pt x 494.84875pt>
+<image/chart_flow.png, id=1094, 656.4525pt x 494.84875pt>
 File: image/chart_flow.png Graphic file (type png)
 
 <use image/chart_flow.png>
@@ -2984,7 +2988,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1819.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [63 <D:/LVTN/c9js-demo/report/LVTN/image/chart_flow.png>]
-<image/data_model.png, id=1131, 405.515pt x 154.5775pt>
+<image/data_model.png, id=1109, 405.515pt x 154.5775pt>
 File: image/data_model.png Graphic file (type png)
 
 <use image/data_model.png>
@@ -2995,7 +2999,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 1862.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [64 <D:/LVTN/c9js-demo/report/LVTN/image/data_model.png>]
-<image/data_flow.png, id=1144, 586.19pt x 424.58624pt>
+<image/data_flow.png, id=1121, 586.19pt x 424.58624pt>
 File: image/data_flow.png Graphic file (type png)
 
 <use image/data_flow.png>
@@ -3041,7 +3045,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 1875.
 
-<image/implementation.png, id=1156, 880.28876pt x 109.40875pt>
+<image/implementation.png, id=1132, 880.28876pt x 109.40875pt>
 File: image/implementation.png Graphic file (type png)
 
 <use image/implementation.png>
@@ -3072,7 +3076,7 @@ Package pdftex.def Info: image/logo.png used on input line 1888.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [66 <D:/LVTN/c9js-demo/report/LVTN/image/data_flow.png> <D:/LVTN/c9js-demo/rep
 ort/LVTN/image/implementation.png>]
-<image/webpack_1.png, id=1165, 408.77719pt x 236.38312pt>
+<image/webpack_1.png, id=1140, 408.77719pt x 236.38312pt>
 File: image/webpack_1.png Graphic file (type png)
 
 <use image/webpack_1.png>
@@ -3108,7 +3112,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1936.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [68] <image/karma_1.png, id=1209, 737.00343pt x 385.44pt>
+ [68] <image/karma_1.png, id=1184, 737.00343pt x 385.44pt>
 File: image/karma_1.png Graphic file (type png)
 
 <use image/karma_1.png>
@@ -3163,7 +3167,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 1995.
 
-<image/ga_map.png, id=1261, 398.99063pt x 260.47313pt>
+<image/ga_map.png, id=1236, 398.99063pt x 260.47313pt>
 File: image/ga_map.png Graphic file (type png)
  <use image/ga_map.png>
 Package pdftex.def Info: image/ga_map.png used on input line 2004.
@@ -3180,7 +3184,7 @@ File: image/logo.png Graphic file (type png)
 Package pdftex.def Info: image/logo.png used on input line 2025.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [74]
-<image/codecov_c9js.png, id=1284, 854.44218pt x 178.41656pt>
+<image/codecov_c9js.png, id=1259, 854.44218pt x 178.41656pt>
 File: image/codecov_c9js.png Graphic file (type png)
 
 <use image/codecov_c9js.png>
@@ -3349,110 +3353,38 @@ Package rerunfilecheck Info: File `LVTN.out' has not changed.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2102.
  ) 
 Here is how much of TeX's memory you used:
- 23949 strings out of 493921
- 414715 string characters out of 3147267
- 548805 words of memory out of 3000000
+ 23925 strings out of 493921
+ 414304 string characters out of 3147267
+ 548708 words of memory out of 3000000
  26221 multiletter control sequences out of 15000+200000
  28355 words of font info for 54 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,18n,58p,1432b,2351s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.caption.117} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.110} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.61} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.116} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.109} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.107} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.102} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.95} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.91} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.86} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.75} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.69} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.66} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.64} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.52} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.37} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.33} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.30} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.28} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.24} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.17} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not
- exist, replaced by a fixed one
-
- <C:\Users\Thanh Cong\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
-00\tcti1200.pk> <C:\Users\Thanh Cong\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\j
-knappen\ec\dpi600\tctt1095.pk> <C:\Users\Thanh Cong\AppData\Local\MiKTeX\2.9\fo
-nts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/
-vnbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnbxti10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/vntex/vnr/vnr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/vntex/vnr/vnr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnr8.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnss10.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/vntex/vnr/vnss12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/vntex/vnr/vnssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/
-vnr/vnti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti12.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti8.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/vntex/vnr/vntt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/vntex/vnr/vntt12.pfb>
-Output written on LVTN.pdf (96 pages, 3398401 bytes).
+ <C:\Users\Thanh Cong\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
+i600\tcti1200.pk> <C:\Users\Thanh Cong\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour
+\jknappen\ec\dpi600\tctt1095.pk> <C:\Users\Thanh Cong\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vn
+r/vnbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnbx12.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnbxti10.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/vntex/vnr/vnr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/vntex/vnr/vnr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnr8
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnss10.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnss12.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/vntex/vnr/vnssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vnte
+x/vnr/vnti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/vntex/vnr/vntt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/vntex/vnr/vntt12.pfb>
+Output written on LVTN.pdf (96 pages, 3395684 bytes).
 PDF statistics:
- 1561 PDF objects out of 1728 (max. 8388607)
- 554 named destinations out of 1000 (max. 500000)
+ 1530 PDF objects out of 1728 (max. 8388607)
+ 530 named destinations out of 1000 (max. 500000)
  581 words of extra memory for PDF output out of 10000 (max. 10000000)
 
