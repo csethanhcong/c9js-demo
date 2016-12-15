@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  15 DEC 2016 17:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  15 DEC 2016 23:33
 entering extended mode
 **LVTN_twoside.tex
 (D:\LVTN\c9js-demo\report\LVTN\LVTN_twoside.tex
@@ -1700,25 +1700,15 @@ Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 467.
 
-<image/repo_status.png, id=459, 291.33844pt x 43.66313pt>
-File: image/repo_status.png Graphic file (type png)
 
-<use image/repo_status.png>
-Package pdftex.def Info: image/repo_status.png used on input line 483.
-(pdftex.def)             Requested size: 291.33772pt x 43.66301pt.
+LaTeX Warning: Reference `fig:repo_status' on page 4 undefined on input line 47
+9.
+
 File: image/logo.png Graphic file (type png)
- <use image/logo.png>
+<use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 491.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
  [4]
-File: image/logo.png Graphic file (type png)
- <use image/logo.png>
-Package pdftex.def Info: image/logo.png used on input line 491.
-(pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
-
-[5 <D:/LVTN/c9js-demo/report/LVTN/image/repo_status.png>] [6
-
-]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -1804,8 +1794,10 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 512.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [7]
-<image/gapminder.png, id=491, 1013.28563pt x 484.05844pt>
+ [5
+
+]
+<image/gapminder.png, id=476, 1013.28563pt x 484.05844pt>
 File: image/gapminder.png Graphic file (type png)
 
 <use image/gapminder.png>
@@ -1815,8 +1807,8 @@ File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 531.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [8 <D:/LVTN/c9js-demo/report/LVTN/image/gapminder.png>]
-<image/globalatlas.png, id=500, 1027.58907pt x 478.78876pt>
+ [6 <D:/LVTN/c9js-demo/report/LVTN/image/gapminder.png>]
+<image/globalatlas.png, id=487, 1027.58907pt x 478.78876pt>
 File: image/globalatlas.png Graphic file (type png)
 
 <use image/globalatlas.png>
@@ -1834,20 +1826,20 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 558.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [9]
+ [7]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 575.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [10 <D:/LVTN/c9js-demo/report/LVTN/image/globalatlas.png>]
-<image/clickatlas.png, id=518, 1027.58907pt x 481.8pt>
+ [8 <D:/LVTN/c9js-demo/report/LVTN/image/globalatlas.png>]
+<image/clickatlas.png, id=505, 1027.58907pt x 481.8pt>
 File: image/clickatlas.png Graphic file (type png)
 
 <use image/clickatlas.png>
 Package pdftex.def Info: image/clickatlas.png used on input line 578.
 (pdftex.def)             Requested size: 411.02835pt x 192.71658pt.
 
-<image/hoveratlas.png, id=519, 1028.34187pt x 478.78876pt>
+<image/hoveratlas.png, id=506, 1028.34187pt x 478.78876pt>
 File: image/hoveratlas.png Graphic file (type png)
 
 <use image/hoveratlas.png>
@@ -1857,8 +1849,8 @@ File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 599.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [11 <D:/LVTN/c9js-demo/report/LVTN/image/clickatlas.png> <D:/LVTN/c9js-demo/re
-port/LVTN/image/hoveratlas.png>]
+ [9 <D:/LVTN/c9js-demo/report/LVTN/image/clickatlas.png> <D:/LVTN/c9js-demo/rep
+ort/LVTN/image/hoveratlas.png>]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\uhorn' on input line 602.
@@ -1895,7 +1887,7 @@ LaTeX Font Info:    Try loading font information for T5+cmtt on input line 607.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\vntex\t5cmtt.fd"
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-<image/c3js.png, id=527, 1020.81375pt x 415.5525pt>
+<image/c3js.png, id=513, 1020.81375pt x 415.5525pt>
 File: image/c3js.png Graphic file (type png)
  <use image/c3js.png>
 Package pdftex.def Info: image/c3js.png used on input line 610.
@@ -1905,15 +1897,15 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 622.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [12 <D:/LVTN/c9js-demo/report/LVTN/image/c3js.png>]
-<image/c3syntax.png, id=538, 1371.1225pt x 1248.665pt>
+ [10 <D:/LVTN/c9js-demo/report/LVTN/image/c3js.png>]
+<image/c3syntax.png, id=524, 1371.1225pt x 1248.665pt>
 File: image/c3syntax.png Graphic file (type png)
 
 <use image/c3syntax.png>
 Package pdftex.def Info: image/c3syntax.png used on input line 625.
 (pdftex.def)             Requested size: 411.33992pt x 374.60239pt.
 
-<image/c3custom.png, id=540, 1015.54407pt x 348.55219pt>
+<image/c3custom.png, id=526, 1015.54407pt x 348.55219pt>
 File: image/c3custom.png Graphic file (type png)
 
 <use image/c3custom.png>
@@ -1923,8 +1915,8 @@ File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 641.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [13 <D:/LVTN/c9js-demo/report/LVTN/image/c3syntax.png>] <image/c3apis.png, id=
-548, 1014.79124pt x 475.02469pt>
+ [11 <D:/LVTN/c9js-demo/report/LVTN/image/c3syntax.png>] <image/c3apis.png, id=
+535, 1014.79124pt x 475.02469pt>
 File: image/c3apis.png Graphic file (type png)
 
 <use image/c3apis.png>
@@ -1934,9 +1926,9 @@ File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 661.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [14 <D:/LVTN/c9js-demo/report/LVTN/image/c3custom.png> <D:/LVTN/c9js-demo/repo
+ [12 <D:/LVTN/c9js-demo/report/LVTN/image/c3custom.png> <D:/LVTN/c9js-demo/repo
 rt/LVTN/image/c3apis.png>]
-<image/c3source.png, id=555, 992.20688pt x 621.07031pt>
+<image/c3source.png, id=542, 992.20688pt x 621.07031pt>
 File: image/c3source.png Graphic file (type png)
 
 <use image/c3source.png>
@@ -1987,8 +1979,8 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 684.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [15 <D:/LVTN/c9js-demo/report/LVTN/image/c3source.png>]
-<image/mapme.png, id=565, 1015.54407pt x 488.57532pt>
+ [13 <D:/LVTN/c9js-demo/report/LVTN/image/c3source.png>]
+<image/mapme.png, id=552, 1015.54407pt x 488.57532pt>
 File: image/mapme.png Graphic file (type png)
  <use image/mapme.png>
 Package pdftex.def Info: image/mapme.png used on input line 687.
@@ -1998,15 +1990,15 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 702.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [16 <D:/LVTN/c9js-demo/report/LVTN/image/mapme.png>]
-<image/mapmeOSM.png, id=577, 1028.34187pt x 491.58656pt>
+ [14 <D:/LVTN/c9js-demo/report/LVTN/image/mapme.png>]
+<image/mapmeOSM.png, id=564, 1028.34187pt x 491.58656pt>
 File: image/mapmeOSM.png Graphic file (type png)
 
 <use image/mapmeOSM.png>
 Package pdftex.def Info: image/mapmeOSM.png used on input line 705.
 (pdftex.def)             Requested size: 411.32947pt x 196.63113pt.
 
-<image/mapmeExport.png, id=579, 525.46312pt x 311.66437pt>
+<image/mapmeExport.png, id=566, 525.46312pt x 311.66437pt>
 File: image/mapmeExport.png Graphic file (type png)
 
 <use image/mapmeExport.png>
@@ -2020,7 +2012,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 731.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [17 <D:/LVTN/c9js-demo/report/LVTN/image/mapmeOSM.png>]
+ [15 <D:/LVTN/c9js-demo/report/LVTN/image/mapmeOSM.png>]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -2056,23 +2048,23 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 740.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [18 <D:/LVTN/c9js-demo/report/LVTN/image/mapmeExport.png>]
+ [16 <D:/LVTN/c9js-demo/report/LVTN/image/mapmeExport.png>]
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 761.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [19]
+ [17]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 784.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [20]
+ [18]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 803.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
 
-[21]
+[19]
 Overfull \hbox (6.04634pt too wide) in paragraph at lines 806--808
 \T5/cmr/m/n/12 OpenLayers$[]$ ÷ñc t¤o ra bði \T5/cmr/m/it/12 MetaCarta \T5/cmr
 /m/n/12 sau hëi nghà \T5/cmr/m/it/12 O'Reilly Where 2.0 \T5/cmr/m/n/12 (29-30/0
@@ -2083,13 +2075,13 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 821.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [22]
+ [20]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 841.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [23]
-<image/webpack_build.png, id=630, 511.9125pt x 258.21469pt>
+ [21]
+<image/webpack_build.png, id=617, 511.9125pt x 258.21469pt>
 File: image/webpack_build.png Graphic file (type png)
 
 <use image/webpack_build.png>
@@ -2107,17 +2099,17 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 880.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [24]
+ [22]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 891.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [25 <D:/LVTN/c9js-demo/report/LVTN/image/webpack_build.png>]
+ [23 <D:/LVTN/c9js-demo/report/LVTN/image/webpack_build.png>]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 912.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [26]
+ [24]
 LaTeX Font Info:    Try loading font information for TS1+cmtt on input line 914
 .
 
@@ -2142,7 +2134,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 939.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [27]
+ [25]
 Overfull \hbox (47.14699pt too wide) in paragraph at lines 949--949
 [] $[]$ 
  []
@@ -2156,7 +2148,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 969.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [28]
+ [26]
 Overfull \hbox (4.90462pt too wide) in paragraph at lines 974--976
 []\T5/cmr/m/n/12 Nh¼n chung, Karma câ c¡c t½nh n«ng t÷ìng tü nh÷ Web-pack: \T5/
 cmr/m/it/12 pre-pro-ces-sor, plu-gin, loader,...
@@ -2170,18 +2162,18 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 994.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [29]
+ [27]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1033.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [30]
+ [28]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1033.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
 
-[31] <image/istanbul_1.png, id=717, 955.31906pt x 134.00063pt>
+[29] <image/istanbul_1.png, id=705, 955.31906pt x 134.00063pt>
 File: image/istanbul_1.png Graphic file (type png)
 
 <use image/istanbul_1.png>
@@ -2200,8 +2192,8 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1057.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [32 <D:/LVTN/c9js-demo/report/LVTN/image/istanbul_1.png>]
-<image/istanbul_2.png, id=726, 851.43094pt x 147.55125pt>
+ [30 <D:/LVTN/c9js-demo/report/LVTN/image/istanbul_1.png>]
+<image/istanbul_2.png, id=714, 851.43094pt x 147.55125pt>
 File: image/istanbul_2.png Graphic file (type png)
 
 <use image/istanbul_2.png>
@@ -2211,12 +2203,12 @@ File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1090.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [33 <D:/LVTN/c9js-demo/report/LVTN/image/istanbul_2.png>]
+ [31 <D:/LVTN/c9js-demo/report/LVTN/image/istanbul_2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1104--1105
 
  []
 
-<image/codecovio.png, id=737, 407.27156pt x 124.96687pt>
+<image/codecovio.png, id=725, 407.27156pt x 124.96687pt>
 File: image/codecovio.png Graphic file (type png)
 
 <use image/codecovio.png>
@@ -2230,7 +2222,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1125.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [34]
+ [32]
 Underfull \vbox (badness 4595) has occurred while \output is active []
 
 File: image/logo.png Graphic file (type png)
@@ -2238,7 +2230,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1144.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [35 <D:/LVTN/c9js-demo/report/LVTN/image/codecovio.png>]
+ [33 <D:/LVTN/c9js-demo/report/LVTN/image/codecovio.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: image/logo.png Graphic file (type png)
@@ -2246,8 +2238,8 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1170.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [36]
-<image/semantic_1.png, id=763, 581.17125pt x 310.15875pt>
+ [34]
+<image/semantic_1.png, id=750, 581.17125pt x 310.15875pt>
 File: image/semantic_1.png Graphic file (type png)
 
 <use image/semantic_1.png>
@@ -2258,7 +2250,7 @@ Overfull \hbox (9.69351pt too wide) in paragraph at lines 1177--1178
  [] 
  []
 
-<image/semantic_2.png, id=764, 552.56438pt x 335.75438pt>
+<image/semantic_2.png, id=751, 552.56438pt x 335.75438pt>
 File: image/semantic_2.png Graphic file (type png)
 
 <use image/semantic_2.png>
@@ -2294,19 +2286,19 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1199.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [37 <D:/LVTN/c9js-demo/report/LVTN/image/semantic_1.png>]
+ [35 <D:/LVTN/c9js-demo/report/LVTN/image/semantic_1.png>]
 File: image/logo.png Graphic file (type png)
 
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1211.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [38 <D:/LVTN/c9js-demo/report/LVTN/image/semantic_2.png>]
+ [36 <D:/LVTN/c9js-demo/report/LVTN/image/semantic_2.png>]
 File: image/logo.png Graphic file (type png)
 
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1238.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [39] <image/ci_cd.png, id=791, 518.6878pt x 314.67563pt>
+ [37] <image/ci_cd.png, id=778, 518.6878pt x 314.67563pt>
 File: image/ci_cd.png Graphic file (type png)
 
 <use image/ci_cd.png>
@@ -2320,7 +2312,7 @@ Overfull \hbox (11.57059pt too wide) in paragraph at lines 1265--1266
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<image/ci_c9.png, id=793, 383.18156pt x 201.00093pt>
+<image/ci_c9.png, id=780, 383.18156pt x 201.00093pt>
 File: image/ci_c9.png Graphic file (type png)
  <use image/ci_c9.png>
 Package pdftex.def Info: image/ci_c9.png used on input line 1275.
@@ -2333,13 +2325,13 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1282.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [40]
+ [38]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1282.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [41 <D:/LVTN/c9js-demo/report/LVTN/image/ci_cd.png> <D:/LVTN/c9js-demo/report/
-LVTN/image/ci_c9.png>] [42
+ [39 <D:/LVTN/c9js-demo/report/LVTN/image/ci_cd.png> <D:/LVTN/c9js-demo/report/
+LVTN/image/ci_c9.png>] [40
 
 ]
 
@@ -2359,7 +2351,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 1287.
 
-<image/c9js_feature.png, id=815, 954.56625pt x 306.39468pt>
+<image/c9js_feature.png, id=801, 954.56625pt x 306.39468pt>
 File: image/c9js_feature.png Graphic file (type png)
 
 <use image/c9js_feature.png>
@@ -2374,7 +2366,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1309.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [43]
+ [41]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\uhorn' on input line 1315.
@@ -2410,14 +2402,14 @@ Package hyperref Warning: Composite letter `\textdotbelow+u'
 (hyperref)                not defined in PD1 encoding,
 (hyperref)                removing `\textdotbelow' on input line 1315.
 
-<image/getting_started.png, id=824, 295.85532pt x 32.37094pt>
+<image/getting_started.png, id=811, 295.85532pt x 32.37094pt>
 File: image/getting_started.png Graphic file (type png)
 
 <use image/getting_started.png>
 Package pdftex.def Info: image/getting_started.png used on input line 1322.
 (pdftex.def)             Requested size: 236.68456pt x 25.89677pt.
 
-<image/gs_1.png, id=826, 885.3075pt x 380.17032pt>
+<image/gs_1.png, id=813, 885.3075pt x 380.17032pt>
 File: image/gs_1.png Graphic file (type png)
  <use image/gs_1.png>
 Package pdftex.def Info: image/gs_1.png used on input line 1331.
@@ -2447,7 +2439,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1340.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [44 <D:/LVTN/c9js-demo/report/LVTN/image/c9js_feature.png> <D:/LVTN/c9js-demo/
+ [42 <D:/LVTN/c9js-demo/report/LVTN/image/c9js_feature.png> <D:/LVTN/c9js-demo/
 report/LVTN/image/getting_started.png>]
 Overfull \hbox (72.99667pt too wide) in paragraph at lines 1358--1358
 [] $[]$ 
@@ -2457,7 +2449,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1358.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [45 <D:/LVTN/c9js-demo/report/LVTN/image/gs_1.png>]pdfTeX warning (ext4): dest
+ [43 <D:/LVTN/c9js-demo/report/LVTN/image/gs_1.png>]pdfTeX warning (ext4): dest
 ination with the same identifier (name{lstnumber.\\z@\040.1}) has been already 
 used, duplicate ignored
 <to be read again> 
@@ -2564,7 +2556,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1390.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [46pdfTeX warning (ext4): destination with the same identifier (name{lstnumber
+ [44pdfTeX warning (ext4): destination with the same identifier (name{lstnumber
 .\\z@\040.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2585,7 +2577,7 @@ Overfull \hbox (17.7723pt too wide) in paragraph at lines 1414--1414
 [] $[]$ 
  []
 
-<image/gs_2.png, id=852, 588.69937pt x 375.65344pt>
+<image/gs_2.png, id=839, 588.69937pt x 375.65344pt>
 File: image/gs_2.png Graphic file (type png)
  <use image/gs_2.png>
 Package pdftex.def Info: image/gs_2.png used on input line 1420.
@@ -2602,7 +2594,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1431.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [47]pdfTeX warning (ext4): destination with the same identifier (name{lstnumbe
+ [45]pdfTeX warning (ext4): destination with the same identifier (name{lstnumbe
 r.\\z@\040.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
@@ -2617,7 +2609,7 @@ Overfull \hbox (17.7723pt too wide) in paragraph at lines 1443--1443
 [] $[]$ 
  []
 
-<image/gs_3.png, id=877, 638.385pt x 322.95656pt>
+<image/gs_3.png, id=863, 638.385pt x 322.95656pt>
 File: image/gs_3.png Graphic file (type png)
  <use image/gs_3.png>
 Package pdftex.def Info: image/gs_3.png used on input line 1449.
@@ -2627,18 +2619,18 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1453.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [48 <D:/LVTN/c9js-demo/report/LVTN/image/gs_2.png>]
+ [46 <D:/LVTN/c9js-demo/report/LVTN/image/gs_2.png>]
 File: image/logo.png Graphic file (type png)
 
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1471.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [49 <D:/LVTN/c9js-demo/report/LVTN/image/gs_3.png>]
+ [47 <D:/LVTN/c9js-demo/report/LVTN/image/gs_3.png>]
 Overfull \hbox (17.7723pt too wide) in paragraph at lines 1474--1474
 [] $[]$ 
  []
 
-<image/gs_4.png, id=911, 640.64343pt x 344.78813pt>
+<image/gs_4.png, id=898, 640.64343pt x 344.78813pt>
 File: image/gs_4.png Graphic file (type png)
  <use image/gs_4.png>
 Package pdftex.def Info: image/gs_4.png used on input line 1480.
@@ -2707,7 +2699,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1491.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [50 <D:/LVTN/c9js-demo/report/LVTN/image/gs_4.png>]
+ [48 <D:/LVTN/c9js-demo/report/LVTN/image/gs_4.png>]
 Overfull \hbox (17.7723pt too wide) in paragraph at lines 1504--1504
 [] $[]$ 
  []
@@ -2721,7 +2713,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1520.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [51]
+ [49]
 
 Package hyperref Warning: Composite letter `\textasciigrave+y'
 (hyperref)                not defined in PD1 encoding,
@@ -2766,12 +2758,12 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1550.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [52]
+ [50]
 Overfull \hbox (47.14699pt too wide) in paragraph at lines 1553--1553
 [] $[]$ 
  []
 
-<image/option_2.png, id=980, 574.39594pt x 367.3725pt>
+<image/option_2.png, id=967, 574.39594pt x 367.3725pt>
 File: image/option_2.png Graphic file (type png)
 
 <use image/option_2.png>
@@ -2786,7 +2778,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1571.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [53 <D:/LVTN/c9js-demo/report/LVTN/image/option_2.png>]
+ [51 <D:/LVTN/c9js-demo/report/LVTN/image/option_2.png>]
 Overfull \hbox (47.14699pt too wide) in paragraph at lines 1572--1572
 [] $[]$ 
  []
@@ -2864,7 +2856,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1600.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [54]
+ [52]
 Overfull \hbox (17.7723pt too wide) in paragraph at lines 1623--1623
 [] $[]$ 
  []
@@ -2883,8 +2875,8 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1628.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [55]
-<image/example_page.png, id=1043, 707.64375pt x 644.4075pt>
+ [53]
+<image/example_page.png, id=1030, 707.64375pt x 644.4075pt>
 File: image/example_page.png Graphic file (type png)
 
 <use image/example_page.png>
@@ -2894,8 +2886,8 @@ File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1648.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [56 <D:/LVTN/c9js-demo/report/LVTN/image/example_page.png>]
-<image/example_page_2.png, id=1051, 949.29657pt x 880.03781pt>
+ [54 <D:/LVTN/c9js-demo/report/LVTN/image/example_page.png>]
+<image/example_page_2.png, id=1038, 949.29657pt x 880.03781pt>
 File: image/example_page_2.png Graphic file (type png)
 
 <use image/example_page_2.png>
@@ -2910,8 +2902,8 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1660.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [57 <D:/LVTN/c9js-demo/report/LVTN/image/example_page_2.png>] <image/advance_1
-.png, id=1060, 787.44188pt x 698.61pt>
+ [55 <D:/LVTN/c9js-demo/report/LVTN/image/example_page_2.png>] <image/advance_1
+.png, id=1047, 787.44188pt x 698.61pt>
 File: image/advance_1.png Graphic file (type png)
 
 <use image/advance_1.png>
@@ -2939,7 +2931,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1672.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [58 <D:/LVTN/c9js-demo/report/LVTN/image/advance_1.png>]
+ [56 <D:/LVTN/c9js-demo/report/LVTN/image/advance_1.png>]
 Overfull \hbox (6.357pt too wide) in paragraph at lines 1706--1708
 []\T5/cmss/m/n/12 addData(plain [, keys])\T5/cmr/m/n/12 : T¤o mët/n-hi·u èi t÷
 ñng tr¶n b£n ç (\T5/cmr/m/it/12 Line, Poly-gon, Marker\T5/cmr/m/n/12 ),
@@ -2949,7 +2941,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1708.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [59]
+ [57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: image/logo.png Graphic file (type png)
@@ -2957,12 +2949,12 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1745.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [60]
+ [58]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1761.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [61] [62
+ [59] [60
 
 ]
 
@@ -3014,7 +3006,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\uhorn'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\uhorn' on input line 1765.
 
-<image/chart.png, id=1097, 417.56pt x 238.8925pt>
+<image/chart.png, id=1084, 417.56pt x 238.8925pt>
 File: image/chart.png Graphic file (type png)
  <use image/chart.png>
 Package pdftex.def Info: image/chart.png used on input line 1773.
@@ -3024,8 +3016,8 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1783.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [63 <D:/LVTN/c9js-demo/report/LVTN/image/chart.png>]
-<image/chart_flow.png, id=1107, 656.4525pt x 494.84875pt>
+ [61 <D:/LVTN/c9js-demo/report/LVTN/image/chart.png>]
+<image/chart_flow.png, id=1094, 656.4525pt x 494.84875pt>
 File: image/chart_flow.png Graphic file (type png)
 
 <use image/chart_flow.png>
@@ -3043,7 +3035,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1812.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [64]
+ [62]
 Underfull \vbox (badness 1365) has occurred while \output is active []
 
 File: image/logo.png Graphic file (type png)
@@ -3051,8 +3043,8 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1819.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [65 <D:/LVTN/c9js-demo/report/LVTN/image/chart_flow.png>]
-<image/data_model.png, id=1123, 405.515pt x 154.5775pt>
+ [63 <D:/LVTN/c9js-demo/report/LVTN/image/chart_flow.png>]
+<image/data_model.png, id=1109, 405.515pt x 154.5775pt>
 File: image/data_model.png Graphic file (type png)
 
 <use image/data_model.png>
@@ -3062,8 +3054,8 @@ File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1862.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [66 <D:/LVTN/c9js-demo/report/LVTN/image/data_model.png>]
-<image/data_flow.png, id=1135, 586.19pt x 424.58624pt>
+ [64 <D:/LVTN/c9js-demo/report/LVTN/image/data_model.png>]
+<image/data_flow.png, id=1121, 586.19pt x 424.58624pt>
 File: image/data_flow.png Graphic file (type png)
 
 <use image/data_flow.png>
@@ -3081,7 +3073,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1874.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [67]
+ [65]
 
 Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 (hyperref)                not defined in PD1 encoding,
@@ -3113,7 +3105,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 1875.
 
-<image/implementation.png, id=1145, 880.28876pt x 109.40875pt>
+<image/implementation.png, id=1132, 880.28876pt x 109.40875pt>
 File: image/implementation.png Graphic file (type png)
 
 <use image/implementation.png>
@@ -3146,9 +3138,9 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1888.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [68 <D:/LVTN/c9js-demo/report/LVTN/image/data_flow.png> <D:/LVTN/c9js-demo/rep
+ [66 <D:/LVTN/c9js-demo/report/LVTN/image/data_flow.png> <D:/LVTN/c9js-demo/rep
 ort/LVTN/image/implementation.png>]
-<image/webpack_1.png, id=1153, 408.77719pt x 236.38312pt>
+<image/webpack_1.png, id=1140, 408.77719pt x 236.38312pt>
 File: image/webpack_1.png Graphic file (type png)
 
 <use image/webpack_1.png>
@@ -3175,7 +3167,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1906.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [69 <D:/LVTN/c9js-demo/report/LVTN/image/webpack_1.png>]
+ [67 <D:/LVTN/c9js-demo/report/LVTN/image/webpack_1.png>]
 Overfull \hbox (17.7723pt too wide) in paragraph at lines 1932--1932
 [] $[]$ 
  []
@@ -3184,7 +3176,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1936.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [70] <image/karma_1.png, id=1197, 737.00343pt x 385.44pt>
+ [68] <image/karma_1.png, id=1184, 737.00343pt x 385.44pt>
 File: image/karma_1.png Graphic file (type png)
 
 <use image/karma_1.png>
@@ -3203,13 +3195,13 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1953.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [71 <D:/LVTN/c9js-demo/report/LVTN/image/karma_1.png>]
+ [69 <D:/LVTN/c9js-demo/report/LVTN/image/karma_1.png>]
 File: image/logo.png Graphic file (type png)
 
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1983.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [72]
+ [70]
 Overfull \hbox (17.7723pt too wide) in paragraph at lines 1989--1989
 [] $[]$ 
  []
@@ -3218,7 +3210,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 1993.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [73] [74
+ [71] [72
 
 ]
 
@@ -3239,7 +3231,7 @@ Package hyperref Warning: Composite letter `\textdotbelow+\acircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 1995.
 
-<image/ga_map.png, id=1249, 398.99063pt x 260.47313pt>
+<image/ga_map.png, id=1236, 398.99063pt x 260.47313pt>
 File: image/ga_map.png Graphic file (type png)
  <use image/ga_map.png>
 Package pdftex.def Info: image/ga_map.png used on input line 2004.
@@ -3249,7 +3241,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 2014.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [75 <D:/LVTN/c9js-demo/report/LVTN/image/ga_map.png>]
+ [73 <D:/LVTN/c9js-demo/report/LVTN/image/ga_map.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: image/logo.png Graphic file (type png)
@@ -3257,8 +3249,8 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 2025.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [76]
-<image/codecov_c9js.png, id=1272, 854.44218pt x 178.41656pt>
+ [74]
+<image/codecov_c9js.png, id=1259, 854.44218pt x 178.41656pt>
 File: image/codecov_c9js.png Graphic file (type png)
 
 <use image/codecov_c9js.png>
@@ -3308,12 +3300,12 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 2077.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [77 <D:/LVTN/c9js-demo/report/LVTN/image/codecov_c9js.png>]
+ [75 <D:/LVTN/c9js-demo/report/LVTN/image/codecov_c9js.png>]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 2077.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [78]
+ [76]
 
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\uhorn' on input line 2082.
@@ -3339,7 +3331,7 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 2092.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [79] [80
+ [77] [78
 
 ] (D:\LVTN\c9js-demo\report\LVTN\LVTN_twoside.bbl
 
@@ -3382,12 +3374,12 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 91.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [81]
+ [79]
 File: image/logo.png Graphic file (type png)
  <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 157.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [82]
+ [80]
 Underfull \hbox (badness 7486) in paragraph at lines 199--202
 []\T5/cmr/m/n/12 ``Ajax,'' last ac-cessed 11 De-cem-ber 2016. [On-
  []
@@ -3402,13 +3394,13 @@ File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 229.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [83]) 
+ [81]) 
 AED: lastpage setting LastPage
 File: image/logo.png Graphic file (type png)
 <use image/logo.png>
 Package pdftex.def Info: image/logo.png used on input line 2102.
 (pdftex.def)             Requested size: 34.13745pt x 34.1431pt.
- [84]
+ [82]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2102.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 2102.
  (D:\LVTN\c9js-demo\report\LVTN\LVTN_twoside.aux)
@@ -3422,15 +3414,18 @@ Package rerunfilecheck Info: File `LVTN_twoside.out' has not changed.
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
+LaTeX Warning: There were undefined references.
+
+
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2102.
  ) 
 Here is how much of TeX's memory you used:
- 23935 strings out of 493921
- 414685 string characters out of 3147267
- 548896 words of memory out of 3000000
- 26227 multiletter control sequences out of 15000+200000
+ 23927 strings out of 493921
+ 414535 string characters out of 3147267
+ 548801 words of memory out of 3000000
+ 26223 multiletter control sequences out of 15000+200000
  28355 words of font info for 54 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,18n,58p,1440b,2351s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3451,9 +3446,9 @@ x/vnr/vnti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti8.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/vntex/vnr/vntt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/vntex/vnr/vntt12.pfb>
-Output written on LVTN_twoside.pdf (98 pages, 3401547 bytes).
+Output written on LVTN_twoside.pdf (96 pages, 3407391 bytes).
 PDF statistics:
- 1544 PDF objects out of 1728 (max. 8388607)
- 533 named destinations out of 1000 (max. 500000)
- 586 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1530 PDF objects out of 1728 (max. 8388607)
+ 530 named destinations out of 1000 (max. 500000)
+ 581 words of extra memory for PDF output out of 10000 (max. 10000000)
 
