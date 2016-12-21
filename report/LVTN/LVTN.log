@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  16 DEC 2016 12:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.30)  21 DEC 2016 15:43
 entering extended mode
 **LVTN.tex
 (D:\LVTN\c9js-demo\report\LVTN\LVTN.tex
@@ -1661,10 +1661,6 @@ Package hyperref Warning: Composite letter `\textasciigrave+\ecircumflex'
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\ecircumflex' on input line 322.
 
-
-LaTeX Warning: Reference `fig:repo_status' on page 4 undefined on input line 33
-4.
-
 [4]
 
 Package hyperref Warning: Composite letter `\textacute+\ecircumflex'
@@ -2943,16 +2939,13 @@ Package rerunfilecheck Info: File `LVTN.out' has not changed.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1957.
  ) 
 Here is how much of TeX's memory you used:
- 23923 strings out of 493921
- 415033 string characters out of 3147267
- 533435 words of memory out of 3000000
- 26213 multiletter control sequences out of 15000+200000
+ 23922 strings out of 493921
+ 415016 string characters out of 3147267
+ 533450 words of memory out of 3000000
+ 26212 multiletter control sequences out of 15000+200000
  28355 words of font info for 54 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,16n,56p,1432b,1991s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2973,7 +2966,7 @@ x/vnr/vnti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/vntex/vnr/vnti8.pfb><C:/Program Files/
 MiKTeX 2.9/fonts/type1/vntex/vnr/vntt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
 type1/vntex/vnr/vntt12.pfb>
-Output written on LVTN.pdf (96 pages, 3343438 bytes).
+Output written on LVTN.pdf (96 pages, 3339971 bytes).
 PDF statistics:
  1538 PDF objects out of 1728 (max. 8388607)
  539 named destinations out of 1000 (max. 500000)
